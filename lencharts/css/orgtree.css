@@ -1,0 +1,233 @@
+
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:1px solid #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto;
+    
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:30px;
+    width:25px
+}
+.tree li span {
+    /* -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none */
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+
+/*len*/
+body,html,div{
+    margin: 0;
+}
+body{
+    overflow: hidden;
+
+}
+.orgWrap{
+    margin: 0 auto;
+    position: relative;
+    left:50%;
+    top:0;
+    -webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;
+}
+/*第一层*/
+.level1s .level1{
+    width: 200px;
+
+    margin: 0 auto;
+    /* border:1px solid #a9a9a9;*/
+
+    position: relative;
+    z-index: 0;
+    left:-80px;
+
+}
+/*.level1s .level1::before{
+    content: '';
+    display: block;
+    border-left: 1px solid #a9a9a9;
+    height: 100px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    z-index: 0;
+}*/
+.level1s .level1 .content{
+  margin-bottom: 20px;
+}
+.level1s .level1 .content::before{
+  content: '';
+  display: block;
+  border-left: 1px solid #a9a9a9;
+  height: 20px;
+
+  position: absolute;
+  top:calc(100% + 3px);
+  left:50%;
+  z-index: 0;
+
+}
+/*第二层*/
+.level2s{
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.divider{
+    height: 20px;
+    margin-left: 25px;
+    border-top:1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+}
+.level2s .level2{
+    display: inline-block;
+    position:absolute ;
+    list-style: none;
+}
+.level2s .level2 .content{
+    width: 170px;
+    border: 2px solid #a9a9a9;
+    position: relative;
+}
+.level2s .level2.noneChild{
+    padding-right: 40px;
+}
+.level2s .level2>.content::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 1px solid #a9a9a9;
+    left:50%;
+    height:20px;
+    top:-22px;
+    z-index:2;
+}
+.level2s .level2:first-child .content::before, .level2s .level2:last-child .content::before{
+    content: '';
+    border-left: none;
+}
+.tree{
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background: #fff;
+}
+/* .tree span{
+    width: 250px;
+    height: 100px;
+} */
+/*icon样式*/
+.level1>.icon,.noneChild .icon{
+    display: none;
+}
+.content{
+    position: relative;
+}
+
+/*第二层只有一个*/
+#oneChild .divider{
+    border: none;
+    display:none;
+
+}
+#oneChild .level1{
+    left:-112px;
+}
+
+/*内部样式*/
+.content{
+    border: 3px solid #a9a9a9;
+    text-align: center;
+    font-size:12px;
+    font-family: Arial;
+}
+.content .left,.content .right{
+    position: absolute;
+    top:0;
+    border: 1px dotted #a9a9a9;
+    height:20px;
+    width: 30px;
+    font-style: normal;
+}
+.content .right{
+    right:0;
+    width: 40px;
+    text-align: center;
+}
+.content .right .dv1,.content .right .dv2{
+    width: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-style: normal;
+}
+.content .right .dv2{
+    border-left:1px dotted #a9a9a9;
+}
+.content .left{
+    left:0;
+    width: 20px;
+}
+.content .middle{
+    margin:10px 0;
+
+}
+.content .bottom{
+}
+.content .bottom>div:not(:last-child){
+    border-bottom: 1px dotted #a9a9a9 ;
+    background: #38de29;
+}
+.content .bottom>div{
+    background: #38de29;
+}

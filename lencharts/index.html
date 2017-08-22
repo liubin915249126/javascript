@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特区建发</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/orgtree.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lenchart.js"></script>
+    <style type="text/css">
+        /*加减号样式*/
+        .orgWrap .content .plusMinus{
+        position:absolute;
+        bottom:3px;
+        left: 3px;
+        cursor:pointer;
+        }
+        ul,ol{
+        margin-left: 21px;
+        }
+        /*第一层减号图标去掉*/
+        .orgWrap .level1 i.plusMinus{
+        display: none;
+        }
+        .level2s {
+            position: relative;
+            z-index: 2;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .level2s .level2{
+            position: relative;
+            vertical-align:top;
+            min-width:215px; 
+        }
+        /*新加的css*/
+        /*组织样式*/
+        .orgWrap .content.organization{
+            background:#F3F3F3; 
+        }
+        .orgWrap .content .numWrap{
+          padding-left: 10px;
+          background: #D9D9D9;
+        }
+        .orgWrap .content .numWrap>div{
+            display:inline-block;
+            width:33.33%;
+        }
+        .orgWrap .content .name{
+            height:42px;
+            line-height: 42px;
+            font-weight:bold;
+            border-bottom: 1px solid #B9DC93;
+        }
+        /*岗位样式*/
+        .orgWrap .content.position{
+            background:#C3D7E9;
+        }
+        .orgWrap .content .person{
+            background:#E1EBF3;
+        }
+    </style>
+</head>
+<body>
+    <div class="orgWrap">
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var obj = {
+                id:001,
+                data:{
+                    name:'特区建发',
+                    plait:20,
+                    onduty:10,
+                    type:"organization"
+                },
+                children:[    
+                   {
+                        id: 001,
+                        data: {
+                            name: '总经理',
+                            person: '陈志明',
+                            type: "position"
+                        },
+                        children: [
+
+                        ]
+                    },
+                   {
+                        id: 001,
+                        data: {
+                            name: '特区建发',
+                            plait: 20,
+                            onduty: 10,
+                            type: "organization"
+                        },
+                        children: [
+                            {
+                                id: 001,
+                                data: {
+                                    name: '特区建发',
+                                    plait: 20,
+                                    onduty: 10,
+                                    type: "organization"
+                                },
+                                children: [
+                                    
+                                ]
+                            },
+                            {
+                                    id: 001,
+                                    data: {
+                                        name: '特区建发',
+                                        plait: 20,
+                                        onduty: 10,
+                                        type: "organization"
+                                    },
+                                    children: [
+                                       
+                                    ]
+                                }
+                        ]
+                    }
+                ]
+            }
+            
+            $('.orgWrap').lenChart({
+                data:obj,
+                drag:true,
+                renderdata:function(data,$dom){
+                    var value = data.data;
+                    if (value && Object.keys(value).length) {
+                        debugger;
+                        var $name = $('<div class="name"></div>')
+                        !!(value.name) && $name.text(value.name);
+                        $dom.append($name)
+                        //组织
+                        if (value.type && value.type === 'organization') {
+                            //编制 
+                            var $plait = $('<div><span>编制:</span><span class="num"></span></div>')
+                            !!(value.plait) && $plait.find('.num').text(value.plait)
+                            //在职    
+                            var $onduty = $('<div><span>在职:</span><span class="num"></span></div>')
+                            !!(value.onduty) && $onduty.find('.num').text(value.onduty)
+                            //缺编
+                            var $short = $('<div><span>缺编:</span><span class="num"></span></div>')
+                            if (value.plait && value.onduty) {
+                                $short.find('.num').text(value.plait - value.onduty)
+                            }
+                            var $wrap = $('<div class="numWrap"></div>')
+                            $wrap.append($plait, $onduty, $short);
+                            $dom.addClass('organization')
+                            $dom.append($wrap)
+                        } else {
+                            //岗位
+                            var $person = $('<div class="person"></div>');
+                            !!(value.person) && $person.text(value.person)
+                            $dom.addClass('position')
+                            $dom.append($person)
+                        }
+                        var icon = '<i class="icon plusMinus icon-minus-sign"></i>';
+                        var $icon = $(icon);
+                        if (data.children && data.children.length) {
+                            $dom.append($icon);
+                        }
+
+                    }
+                },
+                callback:function(){
+
+                }
+            })
+            
+        })
+    </script>
+    
+</body>
+</html>
