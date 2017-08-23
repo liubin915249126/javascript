@@ -13,7 +13,7 @@
             opts.renderdata(obj, $level1s.find('.content'))
         }
         if (obj.children && obj.children.length) {
-            var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+            var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
             var $icon = $(icon);
             $level1s.find('.content').append($icon);
         }
@@ -29,7 +29,7 @@
                     opts.renderdata(value, $level2.find('.content'));
                 }
                 if (value.children && value.children.length) {
-                    var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+                    var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
                     var $icon = $(icon);
                     $level2.find('.content').append($icon);
                 }
@@ -56,7 +56,7 @@
                                     opts.renderdata(value, $level3.find('.content'))
                                 }
                                 if (value.children && value.children.length) {
-                                    var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+                                    var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
                                     var $icon = $(icon);
                                     $level3.find('.content').append($icon);
                                 }
@@ -83,14 +83,18 @@
         $('.orgWrap li.parent_li .plusMinus').on('click', function (e) {
             var children = $(this).closest('li.parent_li').find(' > ul > li');
             if (children.is(":visible")) {
-                children.hide('fast');
+                children.hide('fast', function () {
+                    avoid();
+                });
                 $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
             } else {
-                children.show('fast');
+                children.show('fast', function () {
+                    avoid();
+                });
                 children.css({ overflow: 'visible' })
                 $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
             }
-            avoid();
+
             e.stopPropagation();
         });
         avoid();
