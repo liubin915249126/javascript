@@ -12,6 +12,11 @@
         if (obj.data && opts.renderdata) {
             opts.renderdata(obj, $level1s.find('.content'))
         }
+        if (obj.children && obj.children.length) {
+            var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+            var $icon = $(icon);
+            $level1s.find('.content').append($icon);
+        }
         $('.orgWrap').append($level1s);
         $('.orgWrap').append($devider);
         var level2length = 0; //第二层数量
@@ -22,6 +27,11 @@
                 var $level2 = $(level2);
                 if (value.data && opts.renderdata) {
                     opts.renderdata(value, $level2.find('.content'));
+                }
+                if (value.children && value.children.length) {
+                    var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+                    var $icon = $(icon);
+                    $level2.find('.content').append($icon);
                 }
                 if (value.children) {
                     var index = 3;
@@ -44,6 +54,11 @@
                                 var $level3 = $(level3);/*错*/
                                 if (value.data && opts.renderdata) {
                                     opts.renderdata(value, $level3.find('.content'))
+                                }
+                                if (value.children && value.children.length) {
+                                    var icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+                                    var $icon = $(icon);
+                                    $level3.find('.content').append($icon);
                                 }
                                 $level3s.append($level3);
                                 renderLevel3(value, $level3, $level3s);
@@ -69,10 +84,11 @@
             var children = $(this).closest('li.parent_li').find(' > ul > li');
             if (children.is(":visible")) {
                 children.hide('fast');
-                $(this).attr('title', 'Expand this branch').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+                $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
             } else {
                 children.show('fast');
-                $(this).attr('title', 'Collapse this branch').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+                children.css({ overflow: 'visible' })
+                $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
             }
             avoid();
             e.stopPropagation();
