@@ -2,6 +2,7 @@
     $.fn.lenChart = function (options) {
         var defaults = {};
         var opts = $.extend({}, defaults, options);
+
         var obj = opts.data;
         var level1s = '<div class="level1s"><div class="level1"><div class="content"></div></div></div>';
         var $level1s = $(level1s);
@@ -13,9 +14,7 @@
             opts.renderdata(obj, $level1s.find('.content'))
         }
         if (obj.children && obj.children.length) {
-            var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
-            var $icon = $(icon);
-            $level1s.find('.content').append($icon);
+            addIcon($level1s, false);
         }
         $('.orgWrap').append($level1s);
         $('.orgWrap').append($devider);
@@ -29,47 +28,13 @@
                     opts.renderdata(value, $level2.find('.content'));
                 }
                 if (value.children && value.children.length) {
-                    var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
-                    var $icon = $(icon);
-                    $level2.find('.content').append($icon);
+                    addIcon($level2, false);
                 }
                 if (value.children) {
-                    var index = 3;
+                    // var index = 3;
                     console.log(value.children.length)
-                    function renderLevel3(obj, $level, $levels) {
-                        var levels = 'level' + index + 's';
-                        var level = 'level' + index;
 
-                        var level3s = '<ul class="level' + index + 's"></ul>';
-                        var level3 = '<li class="level' + index + '"  data-level=""><div class="content"></div></li>';
-                        var $level3s = $(level3s);
-                        var $level3 = $(level3);
-                        $level3.attr('data-level', index);
-                        if (index == 3) {
-                            $level3s.addClass('tree')
-                        }
-                        if (obj.children.length) {
-                            $.each(obj.children, function (item, value) {
-                                index++;
-                                var $level3 = $(level3);/*错*/
-                                if (value.data && opts.renderdata) {
-                                    opts.renderdata(value, $level3.find('.content'))
-                                }
-                                if (value.children && value.children.length) {
-                                    var icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
-                                    var $icon = $(icon);
-                                    $level3.find('.content').append($icon);
-                                }
-                                $level3s.append($level3);
-                                renderLevel3(value, $level3, $level3s);
-                            });
-
-                        }
-                        $level.append($level3s);
-                        $levels.append($level)
-
-                    }  /*renderLevel3结束*/
-                    renderLevel3(value, $level2, $level2s);
+                    renderLevel3(value, $level2, $level2s, 3);
                 }
 
             })
@@ -78,25 +43,79 @@
             }
         }
         $('.orgWrap').append($level2s);
-        // 加减按钮点击事件
-        $('.orgWrap li:has(ul>li)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
-        $('.orgWrap li.parent_li .plusMinus').on('click', function (e) {
-            var children = $(this).closest('li.parent_li').find(' > ul > li');
-            if (children.is(":visible")) {
-                children.hide('fast', function () {
-                    avoid();
+        function renderLevel3(obj, $level, $levels, loopIndex) {
+            var levels = 'level' + loopIndex + 's';
+            var level = 'level' + loopIndex;
+
+            var level3s = '<ul class="level' + loopIndex + 's"></ul>';
+            var level3 = '<li class="level' + loopIndex + '"  data-level=""><div class="content"></div></li>';
+            var $level3s = $(level3s);
+            var $level3 = $(level3);
+            $level3.attr('data-level', loopIndex);
+            if (loopIndex == 3) {
+                $level3s.addClass('tree')
+            }
+            if (obj.children.length) {
+                $.each(obj.children, function (item, value) {
+                    var $level3 = $(level3);/*错*/
+                    if (value.data && opts.renderdata) {
+                        opts.renderdata(value, $level3.find('.content'))
+                    }
+                    if (value.children && value.children.length) {
+                        if (opts.depth && loopIndex == opts.depth) {
+                            // 收起
+                            addIcon($level3, true);
+                        } else {
+                            // 展开
+                            addIcon($level3, false);
+                        }
+
+                    }
+                    // 隐藏下级
+                    if (opts.depth && loopIndex == (parseInt(opts.depth) + 1)) {
+
+                        $level3.hide()
+                    }
+                    $level3s.append($level3);
+                    renderLevel3(value, $level3, $level3s, loopIndex + 1);
                 });
-                $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
-            } else {
-                children.show('fast', function () {
-                    avoid();
-                });
-                children.css({ overflow: 'visible' })
-                $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
+
             }
 
-            e.stopPropagation();
-        });
+            $level.append($level3s);
+            $levels.append($level)
+
+        }  /*renderLevel3结束*/
+        function addIcon($levels, flag) {
+            var icon
+            if (flag) {
+                icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
+            } else {
+                icon = '<i class="plusMinus glyphicon glyphicon-minus-sign"></i>'
+            }
+            $icon = $(icon);
+            $levels.find('.content').append($icon);
+            // 加减按钮点击事件
+            $icon.on('click', function (e) {
+                var children = $(this).closest('li.parent_li').find(' > ul > li');
+                if (children.is(":visible")) {
+                    children.hide('fast', function () {
+                        avoid();
+                    });
+                    $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
+                } else {
+                    children.show('fast', function () {
+                        avoid();
+                    });
+                    children.css({ overflow: 'visible' })
+                    $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
+                }
+
+                e.stopPropagation();
+            })
+        }
+        // 加减按钮点击事件
+        $('.orgWrap li:has(ul>li)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
         avoid();
         if (opts.drag) {
             drag(this)
@@ -104,7 +123,7 @@
                 opts.callback()
             }
         }
-    }
+    }//$.fn结束
 
     /*防止第二层折行*/
     function avoid() {
@@ -165,7 +184,7 @@
             _move = true;
             _x = e.pageX - parseInt(dragEle.css("left"));
             _y = e.pageY - parseInt(dragEle.css("top"));
-            dragEle.fadeTo(20, 0.9);//点击后开始拖动并透明显示
+            // dragEle.fadeTo(20, 0.9);//点击后开始拖动并透明显示
         });
         $(document).mousemove(function (e) {
             if (_move) {
