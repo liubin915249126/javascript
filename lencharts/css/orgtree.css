@@ -23,7 +23,7 @@
     left:-20px;
     position:absolute;
     right:auto;
-    
+
 }
 .tree li::before {
     border-left:1px solid #999;
@@ -122,7 +122,7 @@ body{
 }
 .divider{
     height: 20px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     border-top:1px solid #a9a9a9;
     border-left: 1px solid #a9a9a9;
     border-right: 1px solid #a9a9a9;
@@ -183,6 +183,15 @@ body{
 }
 #oneChild .level1{
     left:-112px;
+}
+/**没有第二层*/
+#noneLevel2  .divider{
+    border: none;
+}
+
+#noneLevel2 .level1s .level1 .content::before{
+    content:'';
+    border:none;
 }
 
 /*内部样式*/

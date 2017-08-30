@@ -42,6 +42,9 @@
                 if (level2length == 1) {
                     $('.orgWrap').attr('id', 'oneChild')
                 }
+                if (level2length == 0) {
+                    $('.orgWrap').attr('id', 'noneLevel2')
+                }
             }
             $('.orgWrap').append($level2s);
             function renderLevel3(obj, $level, $levels, loopIndex) {
@@ -123,7 +126,7 @@
             }
             if (opts.callback) {
                 opts.callback()
-            }        
+            }
         }
     }//$.fn结束
 
