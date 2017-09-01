@@ -6,6 +6,7 @@
   $('.orgWrap').lenChart({
              data:obj,   //数据源
              drag:true,  //是否可拖拽
+             depth:3,  //初始化展示的层级
              renderdata:function(data,$dom){}, //定制每个名片里面的数据
              callback:function(){} //渲染完图表后的回调函数    
              })
