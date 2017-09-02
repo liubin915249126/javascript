@@ -2,7 +2,6 @@
     $.fn.lenChart = function (options) {
         var defaults = {};
         var opts = $.extend({}, defaults, options);
-        debugger;
         var obj = opts.data;
         if(obj&&Object.keys(obj).length>0){
             var level1s = '<div class="level1s"><div class="level1"><div class="content"></div></div></div>';
