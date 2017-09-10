@@ -38,3 +38,4 @@
     instance.getAllConnections();//获取所有连线 
 
   ```  
+  #### 更多api查看[index.js](https://github.com/liubin915249126/javascript/blob/master/jsplumb/js/index.js)文件

@@ -3,3 +3,6 @@
 <!--lencharts-->
 #### 封装了一个组织架构图的jquery插件[lenharts](https://github.com/liubin915249126/javascript/tree/master/lencharts)
 
+<!-- jsplumb -->
+#### [jsplumb](https://github.com/liubin915249126/javascript/tree/master/jsplumb)流程图插件    
+
