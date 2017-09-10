@@ -1,8 +1,10 @@
 (function ($, window, document) {
+    var self
     $.fn.lenChart = function (options) {
         var defaults = {};
         var opts = $.extend({}, defaults, options);
         var obj = opts.data;
+        self = this; 
         if(obj&&Object.keys(obj).length>0){
             var level1s = '<div class="level1s"><div class="level1"><div class="content"></div></div></div>';
             var $level1s = $(level1s);
@@ -16,8 +18,8 @@
             if (obj.children && obj.children.length) {
                 addIcon($level1s, false);
             }
-            $('.orgWrap').append($level1s);
-            $('.orgWrap').append($devider);
+            this.append($level1s);
+            this.append($devider);
             var level2length = 0; //第二层数量
             if (obj.children) {
                 $.each(obj.children, function (item, value) {
@@ -39,13 +41,13 @@
 
                 })
                 if (level2length == 1) {
-                    $('.orgWrap').attr('id', 'oneChild')
+                    this.attr('id', 'oneChild')
                 }
                 if (level2length == 0) {
-                    $('.orgWrap').attr('id', 'noneLevel2')
+                    this.attr('id', 'noneLevel2')
                 }
             }
-            $('.orgWrap').append($level2s);
+            this.append($level2s);
             function renderLevel3(obj, $level, $levels, loopIndex) {
                 var levels = 'level' + loopIndex + 's';
                 var level = 'level' + loopIndex;
@@ -132,7 +134,6 @@
     /*防止第二层折行*/
     function avoid() {
         var $level2 = $('.level2s').children('.level2');
-
         var _width = parseInt($level2.width());
         var maxHeight = $level2.height();
         var allWidth = 0;/*累加第二层宽度*/
@@ -173,8 +174,8 @@
         $('.divider').css('left', parseInt($level2.find('.content').css('width')) / 2);
         /*防止第二层折行*/
         $('.level2s').css('width', allWidth + 200);
-        $('.orgWrap').css('width', allWidth + 200);
-        $('.orgWrap').css('margin-left', -allWidth / 2 - 100);
+        self.css('width', allWidth + 200);
+        self.css('margin-left', -allWidth / 2 - 100);
     }
     //拖拽
     /*网页拖拽*/

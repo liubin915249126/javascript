@@ -223,7 +223,6 @@
                 renderdata:function(data,$dom){
                     var value = data.data;
                     if (value && Object.keys(value).length) {
-                        debugger;
                         var $name = $('<div class="name"></div>')
                         !!(value.name) && $name.text(value.name);
                         $dom.append($name)
@@ -260,7 +259,6 @@
                     }
                 },
                 callback:function(){
-
                 }
             })
             
