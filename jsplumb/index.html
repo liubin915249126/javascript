@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学习</title>
+    <style type="text/css">
+        html,
+        body,
+        div,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body,
+        #container {
+            height: 100%;
+        }
+
+        #container {
+            position: relative;
+        }
+
+        #container .item {
+            position: absolute;
+            border: 1px solid #000;
+            padding: 10px;
+            padding-right: 25px;
+            border-radius: 5px;
+            cursor: move;
+        }
+
+        #container .item .dragPoint {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+        }
+        /*label样式*/
+
+        #container ._jsPlumb_overlay {
+            padding: 6px;
+            font-size: 14px;
+            background: #fff;
+            border: 1px solid #00bb00;
+            border-radius: 3px;
+        }
+
+        #container svg path {
+            stroke-width: 2;
+            cursor: pointer;
+        }
+        /*鼠标移入后前后变色*/
+
+        #container ._jsPlumb_target_hover {
+            background: #00a3ff;
+        }
+
+        #container ._jsPlumb_source_hover {
+            background: #00a3ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="save">保存</div>
+    </div>
+    <div id="container" class="wrap">
+
+    </div>
+    <!--增加节点-->
+    <div class="todoMenu wrapMenu" style="display: none">
+        <div id="addNode">增加节点</div>
+        <div id="addApartNode">增加分支节点</div>
+    </div>
+    <!--节点操作-->
+    <div class="todoMenu nodeMenu" style="display: none;">
+        <div class="nodeInfo">节点信息</div>
+        <div class="deleteNode">删除节点</div>
+        <div class="nodeSet">节点设置</div>
+    </div>
+    <div class="todoMenu pathMenu">
+        <div class="pathSet">连接设置</div>
+        <div class="deletePath">删除连接</div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jsPlumb-1.7.2.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
