@@ -39,3 +39,4 @@
 
   ```  
   #### 更多api查看[index.js](https://github.com/liubin915249126/javascript/blob/master/jsplumb/js/index.js)文件
+     

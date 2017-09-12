@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>spacetree示例</title>
+    <link rel="stylesheet" href="css/base.css"></link>
+</head>
+<body>
+    <div class="container">
+       <div id="log"></div>
+       <div id="infovis">
+
+       </div>
+    <div class="right-container">
+    <h4>Tree Orientation</h4>
+    <table>
+        <tr>
+            <td>
+                <label for="r-left">Left </label>
+            </td>
+            <td>
+                <input type="radio" id="r-left" name="orientation"  value="left" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="r-top">Top </label>
+            </td>
+            <td>
+                <input type="radio" id="r-top" name="orientation" checked="checked" value="top" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="r-bottom">Bottom </label>
+            </td>
+            <td>
+                <input type="radio" id="r-bottom" name="orientation" value="bottom" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="r-right">Right </label>
+            </td>
+            <td>
+                <input type="radio" id="r-right" name="orientation" value="right" />
+            </td>
+        </tr>
+    </table>
+
+    <h4>Selection Mode</h4>
+    <table>
+        <tr>
+            <td>
+                <label for="s-normal">Normal </label>
+            </td>
+            <td>
+                <input type="radio" id="s-normal" name="selection" checked="checked" value="normal" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="s-root">Set as Root </label>
+            </td>
+            <td>
+                <input type="radio" id="s-root" name="selection" value="root" />
+            </td>
+        </tr>
+    </table>
+    </div>
+    </div>
+    <!--[if IE]><script language="javascript" type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+    <!-- JIT Library File -->
+    <script type="text/javascript" src="js/jit.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <!-- example.js -->
+    <script type="text/javascript" src="js/example1.js"></script>
+    <script type="text/javascript">
+       $(function(){
+           init();
+       })
+    </script>
+</body>
+</html>
