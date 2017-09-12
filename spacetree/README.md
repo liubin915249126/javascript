@@ -7,8 +7,8 @@
      很好的canvas的组织架构图，从上到下按层级展示汇报关系,
      支持定制化内容，和异步加载子节点(下面会讲到)。
      相关api请参考
-     [官网](http://philogb.github.io/jit/static/v20/Docs/files/Core/Core-js.html)
-     或是[example1.js](https://github.com/liubin915249126/javascript/blob/master/spacetree/js/example1.js)
+[官网](http://philogb.github.io/jit/static/v20/Docs/files/Core/Core-js.html)
+或是[example1.js](https://github.com/liubin915249126/javascript/blob/master/spacetree/js/example1.js)
 #### 数据格式
 ```
      var data = {
