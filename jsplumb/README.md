@@ -1,4 +1,8 @@
 # jsPlumb流程图插件
+<!-- 说明 -->
+### 说明
+jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://github.com/liubin915249126/react-study/tree/master/jquery%20in%20react)
+
 ### 效果图
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/jsplumb/image/index.png)
 

@@ -1,5 +1,10 @@
 # javascript
-## javascript,jquery相关 
+## javascript,jquery相关
+<!-- 说明 -->
+### 说明
+jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://github.com/liubin915249126/react-study/tree/master/jquery%20in%20react)
+
+
 <!--lencharts-->
 ### 封装了一个组织架构图的jquery插件[lenharts](https://github.com/liubin915249126/javascript/tree/master/lencharts)
 #### 效果图 
