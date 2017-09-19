@@ -1,5 +1,32 @@
 # 常见js函数收集
 
+#### js获取url中的参数
+
+#### 判断两个对象是否相等
+```
+   function isObjectValueEqual(a, b) {
+      if(typeof a == 'number' && typeof b == 'number'){
+          return a == b
+      }
+      var aProps = Object.getOwnPropertyNames(a);
+      var bProps = Object.getOwnPropertyNames(b);
+
+      if (aProps.length != bProps.length) {
+          return false;
+      }
+
+      for (var i = 0; i < aProps.length; i++) {
+          var propName = aProps[i];
+          if(Object.prototype.toString(a[propName]) == '[Object Object]'||Object.prototype.toString(b[propName]) == '[Object Object]'){
+              isObjectValueEqual(a[propName],b[propName])
+          }
+          if (a[propName] !== b[propName]) {
+              return false;
+          }
+      }
+      return true;
+  }
+```
 #### 获取一个DIV的绝对坐标的功能函数,即使是非绝对定位,一样能获取到
 ```
      function getElCoordinate(dom) {
