@@ -193,6 +193,9 @@ body{
     content:'';
     border:none;
 }
+#noneLevel2 .level2s{
+    display: none;
+}
 
 /*内部样式*/
 .content{

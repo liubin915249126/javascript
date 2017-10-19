@@ -12,14 +12,21 @@
             var $devider = $(devider);
             var level2s = '<ul class="level2s"></ul>';
             var $level2s = $(level2s);
+            this.attr('id', '')
             if (obj.data && opts.renderdata) {
                 opts.renderdata(obj, $level1s.find('.content'))
             }
             if (obj.children && obj.children.length) {
-                addIcon($level1s, false);
+                if (opts.depth == 1) {//只显示一层
+                    this.attr('id', "noneLevel2")
+                    addIcon($level1s, true, 1);
+                }else{
+                    addIcon($level1s, false, 1);
+                }
             }
             this.append($level1s);
             this.append($devider);
+           
             var level2length = 0; //第二层数量
             if (obj.children) {
                 $.each(obj.children, function (item, value) {
@@ -30,16 +37,18 @@
                         opts.renderdata(value, $level2.find('.content'));
                     }
                     if (value.children && value.children.length) {
-                        addIcon($level2, false);
+                        if(opts.depth==2){//显示两层
+                            addIcon($level2, true);
+                        }else{
+                            addIcon($level2, false);
+                        }
+                        
                     }
                     if (value.children) {
-                        // var index = 3;
-                        console.log(value.children.length)
-
                         renderLevel3(value, $level2, $level2s, 3);
                     }
-
                 })
+                
                 if (level2length == 1) {
                     this.attr('id', 'oneChild')
                 }
@@ -91,7 +100,7 @@
                 $levels.append($level)
 
             }  /*renderLevel3结束*/
-            function addIcon($levels, flag) {
+            function addIcon($levels,flag,depth) {
                 var icon
                 if (flag) {
                     icon = '<i class="plusMinus glyphicon glyphicon-plus-sign"></i>'
@@ -101,23 +110,38 @@
                 $icon = $(icon);
                 $levels.find('.content').append($icon);
                 // 加减按钮点击事件
-                $icon.on('click', function (e) {
-                    var children = $(this).closest('li.parent_li').find(' > ul > li');
-                    if (children.is(":visible")) {
-                        children.hide('fast', function () {
+                //第一层区别事件
+                if(depth&&depth==1){
+                    $icon.on('click',function(e){
+                        var $level2s = self.find('.level2s')
+                        if ($level2s.is(":visible")){
+                            self.attr('id', 'noneLevel2');
+                            $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
+                        }else{
+                            self.attr('id', '');
                             avoid();
-                        });
-                        $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
-                    } else {
-                        children.show('fast', function () {
-                            avoid();
-                        });
-                        children.css({ overflow: 'visible' })
-                        $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
-                    }
+                            $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
+                        }
+                    }) 
+                }else{
+                    $icon.on('click', function (e) {
+                        var children = $(this).closest('li.parent_li').find(' > ul > li');
+                        if (children.is(":visible")) {
+                            children.hide('fast', function () {
+                                avoid();
+                            });
+                            $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
+                        } else {
+                            children.show('fast', function () {
+                                avoid();
+                            });
+                            children.css({ overflow: 'visible' })
+                            $(this).attr('title', 'Collapse this branch').addClass('glyphicon-minus-sign').removeClass('glyphicon-plus-sign');
+                        }
 
-                    e.stopPropagation();
-                })
+                        e.stopPropagation();
+                    })
+                }
             }
             // 加减按钮点击事件
             $('.orgWrap li:has(ul>li)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
