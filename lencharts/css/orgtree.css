@@ -136,7 +136,7 @@ body{
     list-style: none;
 }
 .level2s .level2 .content{
-    width: 170px;
+    /* width: 170px; */
     border: 2px solid #a9a9a9;
     position: relative;
 }
@@ -203,6 +203,8 @@ body{
     text-align: center;
     font-size:12px;
     font-family: Arial;
+    width:fit-content;
+    min-width:170px;
 }
 .content .left,.content .right{
     position: absolute;
