@@ -181,8 +181,11 @@ body{
     display:none;
 
 }
+#oneChild .level1s{
+    width:fit-content;
+}
 #oneChild .level1{
-    left:-112px;
+    left:0;
 }
 /**没有第二层*/
 #noneLevel2  .divider{

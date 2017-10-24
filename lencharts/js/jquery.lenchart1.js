@@ -17,12 +17,7 @@
                 opts.renderdata(obj, $level1s.find('.content'))
             }
             if (obj.children && obj.children.length) {
-                if (opts.depth == 1) {//只显示一层
-                    this.attr('id', "noneLevel2")
-                    addIcon($level1s, true, 1);
-                }else{
-                    addIcon($level1s, false, 1);
-                }
+               addIcon($level1s, false, 1);
             }
             this.append($level1s);
             this.append($devider);
@@ -30,17 +25,20 @@
             var level2length = 0; //第二层数量
             if (obj.children) {
                 $.each(obj.children, function (item, value) {
-                    level2length++;
                     var level2 = '<li class="level2"><div class="content"></div></li>';
                     var $level2 = $(level2);
                     if (value.data && opts.renderdata) {
                         opts.renderdata(value, $level2.find('.content'));
                     }
                     if (value.children && value.children.length) {
-                        if(opts.depth==2){//显示两层
+                        if(opts.depth==1){//显示一层时第二层只显示岗位
                             addIcon($level2, true);
+                            if (value.data && value.data.Type!==1){
+                                level2length++;
+                            }
                         }else{
                             addIcon($level2, false);
+                            level2length++;
                         }
                         
                     }
@@ -57,6 +55,7 @@
                 }
             }
             this.append($level2s);
+
             function renderLevel3(obj, $level, $levels, loopIndex) {
                 var levels = 'level' + loopIndex + 's';
                 var level = 'level' + loopIndex;
@@ -76,7 +75,7 @@
                             opts.renderdata(value, $level3.find('.content'))
                         }
                         if (value.children && value.children.length) {
-                            if (opts.depth && loopIndex == opts.depth) {
+                            if (opts.depth && loopIndex == (parseInt(opts.depth) + 2)) {
                                 // 收起
                                 addIcon($level3, true);
                             } else {
@@ -85,21 +84,47 @@
                             }
 
                         }
-                        // 隐藏下级
-                        if (opts.depth && loopIndex == (parseInt(opts.depth) + 1)) {
-
-                            $level3.hide()
-                        }
-                        $level3s.append($level3);
                         renderLevel3(value, $level3, $level3s, loopIndex + 1);
                     });
-
                 }
-
-                $level.append($level3s);
-                $levels.append($level)
-
+                if (loopIndex==3){//第二层特殊处理
+                    if (opts.depth && loopIndex < (parseInt(opts.depth) + 2)) {
+                        $level3s.css({ display: "inline-block" });
+                        $level.css({ display: "inline-block" });
+                    } else if (opts.depth && loopIndex == (parseInt(opts.depth) + 2)){
+                        if (obj.data.Type == 1){
+                            $level.hide();
+                        }
+                    }else{
+                        //$level.hide();
+                        
+                    }
+                    $level.append($level3s);
+                    $levels.append($level);
+                }else{//第三层以后
+                    if (opts.depth && loopIndex == (parseInt(opts.depth) + 2)) {
+                            //debugger;
+                            if (obj.data.Type == 1) {
+                                $level.hide()
+                                // $level.append($level3s);
+                                // $levels.append($level);
+                            }else{
+                                $level.append($level3s);
+                                $levels.append($level);
+                            }
+                         } else if (opts.depth && loopIndex < (parseInt(opts.depth) + 2)){
+                            $level.append($level3s);
+                            $levels.append($level);
+                         } else{
+                            $level.hide();
+                            $level.append($level3s);
+                            $levels.append($level);
+                    
+                         } 
+                        }
+                
             }  /*renderLevel3结束*/
+
             function addIcon($levels,flag,depth) {
                 var icon
                 if (flag) {
@@ -157,7 +182,7 @@
 
     /*防止第二层折行*/
     function avoid() {
-        var $level2 = $('.level2s').children('.level2');
+        var $level2 = $('.level2s').children('.level2:visible');
         var _width = parseInt($level2.width());
         var maxHeight = $level2.height();
         var allWidth = 0;/*累加第二层宽度*/
