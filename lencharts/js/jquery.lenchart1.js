@@ -31,13 +31,31 @@
                         opts.renderdata(value, $level2.find('.content'));
                     }
                     if (value.children && value.children.length) {
-                        if(opts.depth==1){//显示一层时第二层只显示岗位
-                            addIcon($level2, true);
-                            if (value.data && value.data.Type!==1){
-                                level2length++;
+                        var length2 = 0;
+                        value.children.forEach(function(item2,index2,arr2){
+                            if (item2.data.Type==1){
+                            }else{
+                                length2++;
+                            }
+                        })
+                        
+                        if (opts.depth == 1) {//显示一层时第二层只显示岗位
+                            if (length2 > 0) {
+                              addIcon($level2, true);
+                            }
+                        } else if (opts.depth == 2) {
+                            if (length2 > 0) {
+                             addIcon($level2, false);
                             }
                         }else{
-                            addIcon($level2, false);
+                             addIcon($level2, false);
+                        }
+                        
+                        if (opts.depth == 1) {//显示一层时第二层只显示岗位
+                            if (value.data && value.data.Type !== 1) {
+                                level2length++;
+                            }
+                        } else {
                             level2length++;
                         }
                         
@@ -74,15 +92,27 @@
                         if (value.data && opts.renderdata) {
                             opts.renderdata(value, $level3.find('.content'))
                         }
+                        var length = 0;//记录子节点Type!==1(岗位)的数量
                         if (value.children && value.children.length) {
-                            if (opts.depth && loopIndex == (parseInt(opts.depth) + 2)) {
-                                // 收起
-                                addIcon($level3, true);
-                            } else {
-                                // 展开
-                                addIcon($level3, false);
-                            }
+                            value.children.forEach(function(item1,index1,arr1){
+                                if(item1.data.Type==1){
+                                    
+                                }else{
+                                    length++;
+                                }
+                            })
+                           
+                                if (opts.depth && loopIndex == (parseInt(opts.depth) + 2)) {
+                                    if (length > 0) {
+                                        addIcon($level3, true);
+                                    }
+                                } else if (opts.depth && loopIndex < (parseInt(opts.depth) + 2)){
+                                    // 展开
+                                    addIcon($level3, false);
+                                }else{
 
+                                }
+                            
                         }
                         renderLevel3(value, $level3, $level3s, loopIndex + 1);
                     });
