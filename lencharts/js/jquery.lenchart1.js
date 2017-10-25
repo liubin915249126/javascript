@@ -5,7 +5,8 @@
         var opts = $.extend({}, defaults, options);
         var obj = opts.data;
         self = this;
-        var initialId = '' 
+        var initialId = ''
+        this.attr('id', initialId)
         if(obj&&Object.keys(obj).length>0){
             var level1s = '<div class="level1s"><div class="level1"><div class="content"></div></div></div>';
             var $level1s = $(level1s);
@@ -13,12 +14,9 @@
             var $devider = $(devider);
             var level2s = '<ul class="level2s"></ul>';
             var $level2s = $(level2s);
-            this.attr('id', '')
+            
             if (obj.data && opts.renderdata) {
                 opts.renderdata(obj, $level1s.find('.content'))
-            }
-            if (obj.children && obj.children.length) {
-               addIcon($level1s, false, 1);
             }
             this.append($level1s);
             this.append($devider);
@@ -46,14 +44,16 @@
                             }
                         } else if (opts.depth == 2) {
                             if (length2 > 0) {
-                             addIcon($level2, false);
+                             addIcon($level2, true);
                             }
                         }else{
                              addIcon($level2, false);
                         }
                         
                         if (opts.depth == 1) {//显示一层时第二层只显示岗位
-                            if (value.data && value.data.Type !== 1) {
+                            if (value.data && value.data.Type == 1) {
+                                //level2length++;
+                            }else{
                                 level2length++;
                             }
                         } else {
@@ -73,6 +73,17 @@
                     initialId = 'noneLevel2'
                 }
                 this.attr('id', initialId)
+            }
+            if (obj.children && obj.children.length) {
+                if (opts.depth&&opts.depth==1){
+                  if(level2length>0){
+                      addIcon($level1s, true, 1);
+                  }
+                  this.attr('id', 'noneLevel2')
+                } else if (opts.depth && opts.depth > 1){
+                    addIcon($level1s, false, 1);
+                }
+                
             }
             this.append($level2s);
 
@@ -106,7 +117,7 @@
                             }
                             if (opts.depth && loopIndex == (parseInt(opts.depth))) {
                                 if (length > 0) {
-                                        addIcon($level3, false);
+                                        addIcon($level3, true);
                                     }
                                 } else if (opts.depth && loopIndex < (parseInt(opts.depth))){
                                     // 展开
@@ -140,23 +151,18 @@
                                 // $level.append($level3s);
                                 // $levels.append($level);
                             }else{
+                                $level.hide();
                                 $level.append($level3s);
                                 $levels.append($level);
                             }
                          } else if (opts.depth && loopIndex < (parseInt(opts.depth) + 2)){
                             $level.append($level3s);
                             $levels.append($level);
-                            
                          } else{
                             $level.hide();
                             $level.append($level3s);
                             $levels.append($level);
                          }
-                        if (opts.depth && loopIndex < (parseInt(opts.depth) + 3)){
-                            if (obj.children.length) {
-                                // addIcon($level, false);
-                            }
-                        } 
                         }
                 
             }  /*renderLevel3结束*/
