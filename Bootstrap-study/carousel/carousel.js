@@ -117,6 +117,7 @@
   Carousel.prototype.slide = function (type, next) {
     var $active   = this.$element.find('.item.active')
     var $next     = next || this.getItemForDirection(type, $active)
+    debugger;
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
     var that      = this
@@ -174,9 +175,11 @@
   // ==========================
 
   function Plugin(option) {
+    
     return this.each(function () {
       var $this   = $(this)
       var data    = $this.data('bs.carousel')
+      debugger;
       var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
       var action  = typeof option == 'string' ? option : options.slide
 
