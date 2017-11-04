@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>箭头直线</title>
+    <style type="text/css">
+       body,html,div,svg{
+          margin:0;
+          padding:0; 
+       }
+       .wrap{
+           position:relative;
+           height:100vh;
+       }
+       .itemwrap{
+           position: absolute;
+           width:50%;
+           height:50%;
+           left:100px;
+           top:100px;
+       }
+       .item{
+           position: absolute;
+           left:100px;
+           top:100px;
+           border:1px solid #333;
+           height:20px;
+       }
+       .lineWrap{
+           position: absolute;
+           left:0;
+           top:0;
+           overflow:visible;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <svg>
+            <defs>
+                <marker id="arrow" markerUnits="strokeWidth" markerWidth="12" markerHeight="12" viewBox="0 0 12 12" refX="6" refY="6" orient="auto">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #000000;" />
+                </marker>
+            </defs>
+            <path d="M20,70 T80,100 T160,80 T200,90" fill="white" stroke="red" stroke-width="2" marker-start="url(#arrow)" marker-mid="url(#arrow)"
+                marker-end="url(#arrow)" />
+        </svg>
+        <svg class="lineWrap">
+            <line id="line" xmlns="http://www.w3.org/2000/svg" x1="0" y1="0" x2="200" y2="50" stroke="#000" stroke-width="2" marker-end="url(#arrow)"
+                stroke-dasharray="10,10"></line>
+        </svg>
+        <svg>
+            <path id="path" fill="white" stroke="red" stroke-width="2" marker-end="url(#arrow)" d="M20,20 L50,50"></path>
+        </svg>
+        <div class="itemwrap">
+            <div class="item item1">item1</div>
+        </div>
+        <div class="item item2">item2</div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+       $(function(){
+           
+           var pos1 = getElCoordinate($('.item1')[0])
+           var pos2 = getElCoordinate($('.item2')[0])
+           var start = getPos(pos1,pos2).start
+           var end = getPos(pos1, pos2).end
+
+           $('#line').attr({x1: start.x, y1:start.y, x2: end.x, y2: end.y})
+ 
+
+           $('#path').attr({d:'M20,20 L100,100'})
+         
+           drag($('.wrap'))
+           function getPos(pos1, pos2){
+              //分四种情况
+              var x1,y1,x2,y2;
+              if(pos2.top<pos1.top){
+                  //结束点位于左上角
+                  x1 = pos1.left + pos1.width/2;
+                  y1 = pos1.top;
+                  y2 = pos2.top + pos2.height
+                 if(pos2.left<pos1.left){
+                    x2 = pos2.left + pos2.width/2
+                 }else{//右上角
+                    x2 = pos2.left + pos2.width / 2
+                 }
+              }else{
+                  x1 = pos1.left + pos1.width / 2;
+                  y1 = pos1.top + pos1.height;
+                  x2 = pos2.left + pos2.width/2
+                  y2 = pos2.top 
+              }
+              return {
+                  start :{x:x1,y:y1},
+                  end : {x:x2,y:y2}
+              }
+           }
+           function drag(obj) {
+                var dragEle = obj;
+                var _move = false;//移动标记
+                var _x, _y;//鼠标离控件左上角的相对位置
+                dragEle.click(function () {
+                    //alert("click");//点击（松开后触发）
+                }).mousedown(function (e) {
+                    _move = true;
+                    _x = e.pageX - parseInt(dragEle.css("left"));
+                    _y = e.pageY - parseInt(dragEle.css("top"));
+                    // dragEle.fadeTo(20, 0.9);//点击后开始拖动并透明显示
+                });
+                $(document).mousemove(function (e) {
+                    if (_move) {
+                        var x = e.pageX - _x;//移动时根据鼠标位置计算控件左上角的绝对位置
+                        var y = e.pageY - _y;
+                        dragEle.css({ top: y, left: x });//控件新位置
+                    }
+                }).mouseup(function () {
+                    _move = false;
+                    dragEle.fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明
+                });
+           }
+        function getElCoordinate(dom) {
+                    var t = dom.offsetTop;
+                    var l = dom.offsetLeft;
+                    var w = dom.offsetWidth;
+                    var h = dom.offsetHeight;
+                    dom = dom.offsetParent;
+                    while (!$(dom).hasClass('wrap')) {
+                        t += dom.offsetTop;
+                        l += dom.offsetLeft;
+                        dom = dom.offsetParent;
+                    }; return {
+                        top: t,
+                        left: l,
+                        width:w,
+                        height:h
+                    };
+                }
+
+
+
+
+
+       })
+    </script>
+</body>
+</html>
