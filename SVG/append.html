@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>动态生成测试</title>
+    <style type="text/css">
+     svg{
+         overflow: visible
+     }
+    </style>
 </head>
 <body>
+    <svg>
+        <defs>
+            <marker id="arrow" markerUnits="strokeWidth" markerWidth="12" markerHeight="12" viewBox="0 0 12 12" refX="6" refY="6" orient="auto">
+                <path xmlns="http://www.w3.org/2000/svg" d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #000000;" />
+            </marker>
+        </defs>
+    </svg>
    <svg id="wrap">
        <path stroke="#000" d="M20,20 L100,100"></path>
        <path stroke="#000" d="M20,20 L200,100"></path>
@@ -16,7 +28,12 @@
    <script type="text/javascript">
       $(function(){
          var svg = d3.select('#wrap')
-         svg.append('path').attr("stroke",'#333').attr("d",'M20,20 L200,200')
+         svg.append('path')
+            .attr("stroke",'#333')
+            .attr("stroke-width", "2")
+            .attr("stroke-dasharray","10 10")
+            .attr("d",'M20,20 L200,200')
+            .attr("marker-end","url(#arrow)")
       })
    </script>
 </body>
