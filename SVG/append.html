@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态生成测试</title>
+</head>
+<body>
+   <svg id="wrap">
+       <path stroke="#000" d="M20,20 L100,100"></path>
+       <path stroke="#000" d="M20,20 L200,100"></path>
+   </svg>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+   <script type="text/javascript">
+      $(function(){
+         var svg = d3.select('#wrap')
+         svg.append('path').attr("stroke",'#333').attr("d",'M20,20 L200,200')
+      })
+   </script>
+</body>
+</html>
