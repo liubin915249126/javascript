@@ -22,5 +22,5 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 #### 定制化内容后的效果图
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/index.png)
 
-#### html+css+js 画出的架构图
+#### html+css+js 画出的架构图[index1.html](https://github.com/liubin915249126/javascript/blob/master/lencharts/examples/index1.html)
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/lencharts/image/%E7%89%B9%E5%8C%BA%E5%BB%BA%E5%8F%91.png)
