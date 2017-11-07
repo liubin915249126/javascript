@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+     .layerWrap{
+       transform-style: preserve-3d;
+     }
+    .banner-row .layer{
+      position: absolute;
+    }
+    .banner-row .layer img{
+      width:800px;
+    }
+  </style>
+</head>
+<body>
+    <div data-base-layer class="layerWrap">
+      <div class="banner-row">
+             <div class="layer right-image no-transition" data-zindex="50" style="transform: translateZ(50px);">
+               <img src="./img/TB161t3PVXXXXbXXpXXXXXXXXXX-1600-1120.png" alt="">
+             </div>
+             <div class="layer right-image no-transition" data-zindex="100" style="transform: translateZ(100px);">
+               <img src="./img/TB1alx1PVXXXXbOXpXXXXXXXXXX-1600-1120.png" alt="">
+             </div>
+             <div class="layer right-image no-transition" data-zindex="150" style="transform: translateZ(150px);">
+               <img src="./img/TB1bRx1PVXXXXamXpXXXXXXXXXX-1600-1120.png" alt="">
+             </div>
+           </div>
+    </div>
+    <!-- <script src="./阿里云-为了无法计算的价值_files/saved_resource(29)"></script> -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        //获取元素相对于屏幕绝对位置
+        function getAbsPosition(element){
+           var abs={x:0,y:0}
+           //如果浏览器兼容此方法
+           if (document.documentElement.getBoundingClientRect){
+               //注意，getBoundingClientRect()是jQuery对象的方法
+               //如果不用jQuery对象，可以使用else分支。
+               abs.x = element.getBoundingClientRect().left;
+               abs.y = element.getBoundingClientRect().top;
+
+               abs.x += window.screenLeft +
+                           document.documentElement.scrollLeft -
+                           document.documentElement.clientLeft;
+               abs.y += window.screenTop +
+                           document.documentElement.scrollTop -
+                           document.documentElement.clientTop;
+             }
+           //如果浏览器不兼容此方法
+           else{
+               while(element!=document.body){
+                   abs.x+=element.offsetLeft;
+                   abs.y+=element.offsetTop;
+                   element=element.offsetParent;
+               }
+            //计算想对位置
+                abs.x += window.screenLeft +
+                       document.body.clientLeft - document.body.scrollLeft;
+                abs.y += window.screenTop +
+                       document.body.clientTop - document.body.scrollTop;
+              }
+              return abs;
+          }
+        //获取元素中心点相对于屏幕的位移
+        function getCenterPosition(element){
+          center={x:0,y:0}
+          var leftTop=getAbsPosition(element[0])
+          // console.log(leftTop)
+          // console.log(element.css('width'),element.css('height'))
+          center.x =  leftTop.x + parseInt(element.css('width'))/2
+          center.y =  leftTop.y + parseInt(element.css('height'))/2
+          return center
+        }
+        console.log(getCenterPosition($('.layer img')))
+        $(document).on('mousemove','.layerWrap',function(e){
+            //console.log(e.clientX,e.clientY)
+            CenterPosition = getCenterPosition($('.layer img'))
+            moveY = (CenterPosition.x - e.clientX)/30
+            moveX = 0-(CenterPosition.y - e.clientY)/27
+            //console.log(moveX,moveY)
+            $('.layerWrap').css('transform','rotateX('+moveX+'deg)'+''+'rotateY('+moveY+'deg)')
+            $('.layerWrap').css('webKitTransform','rotateX('+moveX+'deg)'+''+'rotateY('+moveY+'deg)')
+        })
+
+      })
+
+
+    </script>
+</body>
+</html>
