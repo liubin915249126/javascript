@@ -24,7 +24,7 @@ $(function(){
             },
             // connector: ["Flowchart", {stub: [0, 0], gap: 2, cornerRadius: 5, alwaysRespectStubs: true }],
             //连接线的样式种类有[Bezier],[Flowchart],[StateMachine ],[Straight ]
-            connector: ["Flowchart", {stub: [0, 0], gap: 2, cornerRadius: 5, alwaysRespectStubs: true }],
+            connector: ["StateMachine", {stub: [0, 0], gap: 2, cornerRadius: 5, alwaysRespectStubs: true }],
             connectorStyle: {
                 lineWidth: 1,
                 strokeStyle: lineColor
