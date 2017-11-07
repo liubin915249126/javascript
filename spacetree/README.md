@@ -4,9 +4,9 @@
 jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://github.com/liubin915249126/react-study/blob/master/jquery-in-react.md)
 
 #### 效果图
-![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/index2.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree1.gif)
 #### 定制化内容的效果图
-![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/index.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree.gif)
 #### 插件说明  
      很好的canvas的组织架构图，从上到下按层级展示汇报关系,
      支持定制化内容，和异步加载子节点(下面会讲到)。

@@ -18,9 +18,9 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 <!-- spacetree -->
 ### [spacetree](https://github.com/liubin915249126/javascript/tree/master/spacetree)定制内容,异步加载子节点
 #### 效果图
-![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/index2.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree1.gif)
 #### 定制化内容后的效果图
-![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/index.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree.gif)
 
 <!--视差效果-->
 #### 视差效果：
