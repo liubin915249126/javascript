@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>判断鼠标划入方向</title>
+  <style>
+  #box{width: 200px;height: 200px;border:1px solid #999;margin: 200px auto;position:relative;zoom:1;overflow: hidden;}
+  #box1{height: 200px;background-color: orange;text-align: center;line-height: 200px;}
+  #box2{position: absolute;left: -200px;top: -200px;width: 200px;height: 200px;background-color: red;text-align: center;line-height: 200px;}
+  </style>
+  </head>
+  <body>
+
+
+  <div id="box">
+      <div id="box1">
+          #box1
+      </div>
+      <div id="box2">
+          #box2
+      </div>
+  </div>
+<script src="jquery.js"></script>
+<script>
+    $(function () {
+        $("#box").on("mouseenter mouseleave", function (e) {
+            var w = $(this).width();
+            var h = $(this).height();
+            var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+            var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+            var dirNum = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+            /*
+                dirNum:0,1,2,3 ---> t r b l
+                以上代码是网友分享
+                以下代码是模仿拉勾网首页的一个小效果做的
+            */
+            var eventType = e.type;
+            var aPos = [{ left: 0, top: -200 }, { left: 200, top: 0 }, { left: 0, top: 200 }, { left: -200, top: 0 }];
+            if (eventType == 'mouseenter') {
+                $("#box2").css(aPos[dirNum]).stop(true, true).animate({ left: 0, top: 0 }, 200);
+            } else {
+                $("#box2").stop(true, true).animate(aPos[dirNum], 200);
+            }
+        });
+    });
+    </script>
+  </body>
+  </html>
