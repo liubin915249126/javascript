@@ -8,7 +8,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 <!--lencharts-->
 ### 封装了一个组织架构图的jquery插件[lenharts](https://github.com/liubin915249126/javascript/tree/master/lencharts)
 #### 效果图 
-![效果图](https://github.com/liubin915249126/javascript/blob/master/lencharts/image/index.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/lencharts/image/lenchart.gif)
 
 <!-- jsplumb -->
 ### [jsplumb](https://github.com/liubin915249126/javascript/tree/master/jsplumb)流程图插件    
