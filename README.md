@@ -14,6 +14,10 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 #### 视差效果[parallax](https://github.com/liubin915249126/javascript/blob/master/Parallax/index.html)：
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/Parallax/img/parallax.gif)
 
+<!--判断鼠标划入方向-->
+#### js判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/mouseDirction.html)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/image/dirction.gif)
+
 <!-- jsplumb -->
 ### [jsplumb](https://github.com/liubin915249126/javascript/tree/master/jsplumb)流程图插件    
 #### 效果图 
