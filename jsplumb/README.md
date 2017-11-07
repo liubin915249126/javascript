@@ -4,7 +4,7 @@
 jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://github.com/liubin915249126/react-study/blob/master/jquery-in-react.md)
 
 ### 效果图
-![效果图](https://github.com/liubin915249126/javascript/blob/master/jsplumb/image/index.png)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/jsplumb/image/index.gif)
 
 ### 插件说明
     使用场景:审批，流转等流程的制作页面，
