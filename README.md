@@ -14,6 +14,9 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 #### 视差效果[parallax](https://github.com/liubin915249126/javascript/blob/master/Parallax/index.html)：
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/Parallax/img/parallax.gif)
 
+#### 用SVG连接两个div[index.html](https://github.com/liubin915249126/javascript/blob/master/SVG/index.html)d3.js动态修改SVG属性
+![效果图](https://github.com/liubin915249126/javascript/blob/master/SVG/image/svgDrag.gif)
+
 <!--判断鼠标划入方向-->
 #### js判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/mouseDirction.html)
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/image/dirction.gif)
@@ -29,9 +32,6 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree1.gif)
 #### 定制化内容后的效果图
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/spacetree/image/spacetree.gif)
-
-#### 用SVG连接两个div[index.html](https://github.com/liubin915249126/javascript/blob/master/SVG/index.html)d3.js动态修改SVG属性
-![效果图](https://github.com/liubin915249126/javascript/blob/master/SVG/image/svgDrag.gif)
 
 #### html+css+js 画出的架构图[index1.html](https://github.com/liubin915249126/javascript/blob/master/lencharts/examples/index1.html)
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/lencharts/image/%E7%89%B9%E5%8C%BA%E5%BB%BA%E5%8F%91.png)

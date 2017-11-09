@@ -20,3 +20,7 @@
      <line  x1="0" y1="0" x2="200" y2="50" stroke="#000" stroke-width="2" marker-end="url(#arrow)"stroke-dasharray="10,10"></line> 
   ```
 >
+#### 2.确定起始中止两个点位置
+>
+  需要连接的两个div及SVG都相对于某一个div.wrap绝对定位，
+>
