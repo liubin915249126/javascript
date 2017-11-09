@@ -13,6 +13,7 @@
        .wrap{
            position:relative;
            height:100vh;
+           user-select:none;
        }
        .itemwrap{
            position: absolute;
@@ -26,7 +27,10 @@
            left:100px;
            top:100px;
            border:1px solid #333;
-           height:20px;
+           height:50px;
+           line-height: 50px;
+           width:50px;
+           text-align: center;
        }
        .lineWrap{
            position: absolute;
@@ -62,16 +66,17 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
        $(function(){
-           
-           var pos1 = getElCoordinate($('.item1')[0])
-           var pos2 = getElCoordinate($('.item2')[0])
-           var start = getPos(pos1,pos2).start
-           var end = getPos(pos1, pos2).end
+           function move(){
+               var pos1 = getElCoordinate($('.item1')[0])
+               var pos2 = getElCoordinate($('.item2')[0])
+               var start = getPos(pos1, pos2).start
+               var end = getPos(pos1, pos2).end
 
-           $('#line').attr({x1: start.x, y1:start.y, x2: end.x, y2: end.y})
-           $('#path').attr({d:'M20,20 L100,100'})
-         
-           drag($('.wrap'))
+               $('#line').attr({ x1: start.x, y1: start.y, x2: end.x, y2: end.y })
+               $('#path').attr({ d: 'M20,20 L100,100' })
+           }
+           move()
+           drag($('.item'), move)
            function getPos(pos1, pos2){
               //分四种情况
               var x1,y1,x2,y2;
@@ -96,29 +101,35 @@
                   end : {x:x2,y:y2}
               }
            }
-           function drag(obj) {
-                var dragEle = obj;
-                var _move = false;//移动标记
-                var _x, _y;//鼠标离控件左上角的相对位置
-                dragEle.click(function () {
-                    //alert("click");//点击（松开后触发）
-                }).mousedown(function (e) {
-                    _move = true;
-                    _x = e.pageX - parseInt(dragEle.css("left"));
-                    _y = e.pageY - parseInt(dragEle.css("top"));
-                    // dragEle.fadeTo(20, 0.9);//点击后开始拖动并透明显示
-                });
-                $(document).mousemove(function (e) {
-                    if (_move) {
-                        var x = e.pageX - _x;//移动时根据鼠标位置计算控件左上角的绝对位置
-                        var y = e.pageY - _y;
-                        dragEle.css({ top: y, left: x });//控件新位置
-                    }
-                }).mouseup(function () {
-                    _move = false;
-                    dragEle.fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明
-                });
+           function drag(obj,callback) {
+                var dragEles = obj;
+                dragEles.each(function(index, dragEleDom){
+                    var _move = false;//移动标记
+                    var _x, _y;//鼠标离控件左上角的相对位置
+                    var dragEle = $(dragEleDom)
+                    dragEle.click(function () {
+                        //alert("click");//点击（松开后触发）
+                    }).mousedown(function (e) {
+                        _move = true;
+                        _x = e.pageX - parseInt(dragEle.css("left"));
+                        _y = e.pageY - parseInt(dragEle.css("top"));
+                        // dragEle.fadeTo(20, 0.9);//点击后开始拖动并透明显示
+                    });
+                    $(document).mousemove(function (e) {
+                        if (_move) {
+                            var x = e.pageX - _x;//移动时根据鼠标位置计算控件左上角的绝对位置
+                            var y = e.pageY - _y;
+                            dragEle.css({ top: y, left: x });//控件新位置
+                            if(callback){callback()}
+                        }
+                    }).mouseup(function () {
+                        _move = false;
+                        dragEle.fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明
+                    });
+                })
+                
            }
+           //获取元素左上角相对于某一元素的的位置
         function getElCoordinate(dom) {
                     var t = dom.offsetTop;
                     var l = dom.offsetLeft;
