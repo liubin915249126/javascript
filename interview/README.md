@@ -98,4 +98,25 @@ function add(x) {
 console.log(add(1)(2)(3));  //6
 console.log(add(1)(2)(3)(4));   //10
 ```
+```
+function add () {
+    var args = Array.prototype.slice.call(arguments);
+ 
+    var fn = function () {
+        var arg_fn = Array.prototype.slice.call(arguments);
+        return add.apply(null, args.concat(arg_fn));
+    }
+ 
+    fn.valueOf = function () {
+        return args.reduce(function(a, b) {
+            return a + b;
+        })
+    }
+ 
+    return fn;
+}
+add(1) // 1
+add(1,2)(3) //6
+add(1)(2)(3)(4)(5) // 15
+```
 #### ==与===区别
