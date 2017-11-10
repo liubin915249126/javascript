@@ -19,3 +19,4 @@
 #### clone 一个对象
 #### typeof 返回值
 #### event bus
+#### 
