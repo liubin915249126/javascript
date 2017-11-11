@@ -45,7 +45,13 @@
      }
      return newobj;
  };
-```  
+```
+jquery：
+```
+var y = $.extend({}, x),          //shallow copy
+    z = $.extend(true, {}, x);    //deep copy
+```
+[参考文献](https://segmentfault.com/a/1190000002801042#articleHeader6)
 >
 #### typeof 返回值
 >
@@ -68,7 +74,7 @@
 ```  
 >
 #### event bus
-#### 垂直水平居中一个元素
+#### 垂直水平居中一个元素(高度不固定)
 #### sum(1,2)===sum(1)(2)
 ```
 function sum() {
@@ -119,4 +125,5 @@ add(1) // 1
 add(1,2)(3) //6
 add(1)(2)(3)(4)(5) // 15
 ```
+[参考文献](https://www.cnblogs.com/coco1s/p/6509141.html)
 #### ==与===区别
