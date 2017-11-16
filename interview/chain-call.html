@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>链式调用</title>
+</head>
+<body>
+    <script type="text/javascript">
+      function sum(){
+          var args = Array.prototype.slice.call(arguments);
+          var fn = function(){
+              var fn_args = Array.prototype.slice.call(arguments);
+              return sum.apply(null, args.concat(fn_args));
+          }
+          fn.valueOf = function(){
+             return  args.reduce(function(a,b){
+                  return a+b
+              })
+          }
+          return fn
+      }   
+      var result= sum(1,2)(3,4) 
+      console.log(result)
+    </script>
+</body>
+</html>

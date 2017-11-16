@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Javascript EventBus Example</title>
+    <script type="text/javascript" src="eventbus.js"></script>
+    <script type="text/javascript">
+        var eventbus = yongboy.eventbus;
+
+        eventbus.on('myEvent', function () {
+            alert('Publish Message~');
+        });
+        eventbus.on('myEvent2', function () {
+            alert('Publish Message Again~');
+        });
+
+        eventbus.subscribe('myEvent3', function () {
+            alert('Publish Message 3rd Times~');
+        });
+
+        eventbus.on('myEvent4', function (msg) {
+            alert('Publish Message 4th Times with args : ' + msg);
+        });
+        eventbus.on('myEvent5', function (msg, id) {
+            alert('Publish Message 4th Times with args : ' + msg + " id : " + id);
+        });
+
+        function pubshMsg(event, args) {
+            eventbus.broadcast(event, args);
+        }
+
+        function pubshMsg2(event) {
+            eventbus.broadcast('myEvent5', 'EventBus Msg Here ..', 10);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Publish Message With myEvent" onClick="pubshMsg('myEvent')" />
+    <br />
+    <input type="button" value="Publish Message With myEvent2" onClick="pubshMsg('myEvent2')" />
+    <br />
+    <input type="button" value="Publish Message With myEvent3" onClick="pubshMsg('myEvent3')" />
+    <br/>
+    <input type="button" value="Publish Message With myEvent4" onClick="pubshMsg('myEvent4', 'EventBus Msg Here ..')" />
+    <br/>
+    <input type="button" value="Publish Message With myEvent5" onClick="pubshMsg2()" />
+</body>
+
+</html>
