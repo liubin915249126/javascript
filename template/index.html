@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML模板</title>
+</head>
+<body>
+    <div id="wrap">
+
+    </div>
+    <script type="text/tempalte" id="template">
+       <div>
+          <span>{{data}}</span>
+          <span>{{data1}}</span>
+       </div>
+    </script>
+    <script type="text/javascript">
+       var json = {data:'liubin',data1:'liubin1'}
+       var template = document.getElementById('template').innerHTML;
+       //template.replace(/\{\{data\}\}/,json["data"])
+        var tl ;
+        for(var key in json){
+              var reg = new RegExp('{{'+key+'}}','ig')
+              tl = (tl||template).replace(reg,json[key])
+        }
+       
+       document.getElementById('wrap').innerHTML = tl;
+    </script>
+</body>
+</html>
