@@ -15,7 +15,7 @@
               return sum.apply(null, args.concat(fn_args));
           }
           fn.valueOf = function(){
-             return  args.reduce(function(a,b){
+             return args.reduce(function(a,b){
                   return a+b
               })
           }

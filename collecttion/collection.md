@@ -1,7 +1,15 @@
 # 常见js函数收集
 
 #### js获取url中的参数
-
+#### 判断数据类型
+```
+       //判断数据类型    
+       function type(elem){
+           var reg = /^\[object\s(.*)\]$/
+           var type = Object.prototype.toString.call(elem).match(reg)[1].toLowerCase();
+           return type;
+       }
+```
 #### 判断两个对象是否相等
 ```
    function isObjectValueEqual(a, b) {
