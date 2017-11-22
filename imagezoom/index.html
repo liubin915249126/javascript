@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+  /* 图片容器 */
+   .imgBox{
+     width: 200px; /* 各位大老爷们看着办 */
+     height: 200px; /* 各位大老爷们看着办 */
+     position: relative; /* 必需 */
+   }
+
+   /* 图片标签 */
+   .mainImg{
+     width: 100%; /* 各位大老爷们看着办，尽量100%好看些[斜眼笑] */
+     height: 100%; /* 各位大老爷们看着办，尽量100%好看些[斜眼笑] */
+   }
+
+   /* 遮罩层-既放大区域 */
+   .glass{
+     position: absolute; /* 必需 */
+     width: 50px; /* 遮罩层宽度 此处是放大4倍，所以为200/4=50 */
+     height: 50px; /* 遮罩层高度 此处是放大4倍，所以为200/4=50  */
+     top: -9999px; /* 绝对位置，先放远些 */
+     left: -9999px; /* 绝对位置，先放远些 */
+     cursor: move; /* 鼠标样式，好看些 */
+     background: rgba(0,0,180,0.5); /* 遮罩层样式，好看些 */
+   }
+
+   /* 大图所在的容器 */
+   .imgMax{
+     position: absolute;  /* 必需 */
+     overflow: hidden; /* 必需，盖掉超出的大图[斜眼笑] */
+     left: 210px; /* 必需，此处为距原图左边10像素 */
+     top: 0; /* 必需，此处为距上边0像素 */
+     width: 200px; /* 放大图片容器的宽度 此处此处是放大4倍，为200，保持和原图容器一般大，若此处为400，则是放大2*4倍，那么相应的放大图片应该是200*4*2=1600 */
+     height: 200px; /* 放大图片容器的高度 此处此处是放大4倍，为200，保持和原图容器一般大，若此处为400，则是放大2*4倍，那么相应的放大图片应该是200*4*2=1600 */
+     display: none; /* 先隐藏 */
+   }
+   .maxImg{
+     position: absolute; /* 必需 */
+     width: 800px; /* 此处是放大4倍，所以为200*4=800  受放大图片所在的容器影响，规则如上 */
+     height: 800px; /* 此处是放大4倍，所以为200*4=800  受放大图片所在的容器影响，规则如上 */
+   }
+  </style>
+</head>
+<body>
+  <!-- 图片容器 -->
+   <div class="J_imgBox imgBox">
+     <!-- 需要放大的图片-原始图 -->
+     <img class="J_mainImg mainImg" src="http://img.alicdn.com/bao/uploaded/i7/TB1Xpe_NXXXXXXRXFXXGTq09XXX_035318.jpg_430x430q90.jpg" />
+     <!-- 遮罩-既放大的区域 -->
+     <div class="J_glass glass"></div>
+     <!-- 大图的容器 -->
+     <div class="J_imgMax imgMax">
+       <!-- 大图 -->
+       <img class="J_maxImg maxImg" />
+     </div>
+   </div>
+   <script type="text/javascript">
+   (function(){
+  /* 放大镜函数
+  ** @imgContainer  需要实现放大镜效果的图片容器  此处是 class 为 J_imgBox 的 div
+  */
+  function imgZoom(imgContainer){
+
+    // 取大图url，不知道淘宝图片规则如何，反正看了详情页的大图和小图url对比，随便写了个替换
+    var imgUrl = imgContainer.querySelector('.J_mainImg').src.replace(/.(jpg|jpeg|png|gif)(_)(d+)(x)(d+)(q90)?/g,'');
+
+    // 取大图标签的节点
+    var maxImg = imgContainer.querySelector('.J_maxImg');
+
+    // 给该节点的src属性赋值为大图的url
+    maxImg.src = imgUrl;
+
+    // 取大图所在的容器
+    var maxImgContainer = imgContainer.querySelector('.J_imgMax');
+
+    // 取遮罩块
+    var glassBlock = imgContainer.querySelector('.J_glass');
+
+    // 取消放大镜效果
+    var hideMaxImg = function(){
+      glassBlock.style.top = '-9999px';
+      glassBlock.style.left = '-9999px';
+      maxImgContainer.style.display = 'none';
+    }
+
+    // 鼠标移出图片区域，取消放大镜效果
+    imgContainer.onmouseout = function(event){
+      event.stopPropagation();
+      hideMaxImg();
+    };
+
+    // 鼠标在图片区域内移动事件
+    imgContainer.onmousemove = function(event) {
+      event.stopPropagation();
+
+      // 取图片容器的大小及其相对于视口的位置，需要实时取，所以放在move事件里
+      var clientRect = event.currentTarget.getBoundingClientRect();
+
+      // 获取距鼠标距的上和左的坐标
+      var leftX = event.clientX - clientRect.left;
+      var leftY = event.clientY - clientRect.top;
+
+      // 动态设置遮罩块的left和top位置  这里需要减去遮罩层的一半，因为鼠标位于遮罩块中心点
+      var pointerLeft = leftX - 25;
+      var pointerTop = leftY - 25;
+
+      // 如果鼠标坐标移动超出原始图片区域边缘 则取消放大镜效果  因为这里存在快速移动鼠标到大图区域时，鼠标仍处在外层的图片区域内，并不会触发mouseout事件(虽然中间隔了小小的间距，但是快速移动仍能产生这个bug,如代码下面的图所示)
+      if((pointerLeft+25) > clientRect.width || pointerLeft < clientRect.height || pointerTop ){
+        hideMaxImg();
+        return !1;
+      };
+
+      // 遮罩块在最左边的时候，鼠标仍在图片区域内，可在遮罩块左边缘至中心线区域内移动，且这时遮罩块为距左0像素
+      if(pointerLeft ){
+        pointerLeft = 0;
+      };
+
+      // 同上 右边限制
+      if(pointerLeft > clientRect.width - 50){
+        pointerLeft = clientRect.width - 50;
+      };
+
+      // 同上 顶部限制
+      if(pointerTop ){
+        pointerTop = 0;
+      };
+
+      // 同上 底部限制
+      if(pointerTop > clientRect.height - 50){
+        pointerTop = clientRect.height - 50;
+      };
+
+      // 设置遮罩块的位置
+      glassBlock.style.left = pointerLeft;
+      glassBlock.style.top = pointerTop;
+
+      // 取遮罩快距离左边的位置和图片区域的宽高比，用于计算大图偏移距离，展示遮罩块所对应的图片区域
+      var percentLeft = pointerLeft/clientRect.width;
+      var percentHeight = pointerTop/clientRect.height;
+
+      // 设置大图偏移距离 因为其父元素存在 overflow:hidden 所以只会展示对应区块
+      maxImg.style.left = -(percentLeft*maxImg.clientWidth)+'px';
+      maxImg.style.top = -(percentHeight*maxImg.clientHeight)+'px';
+    };
+  }
+
+  var elem = document.querySelectorAll('.J_imgBox');
+
+  elem.forEach(function(item,idx){
+    imgZoom(item)
+  })
+})()
+   </script>
+</body>
+</html>

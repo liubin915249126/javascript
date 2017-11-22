@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<body style="width:1400;height:1000">
+     <div id="testDiv" style="width:10px;height:20px;background:#f00"></div>
+     <script>
+       (function(){
+         var elem = document.getElementById('testDiv');
+         document.body.addEventListener('click',function(){
+             console.log(elem.getBoundingClientRect())
+         },false)
+       })()
+     </script>
+   </body>
+</body>
+</html>
