@@ -37,19 +37,39 @@
 ```
 #### 获取一个DIV的绝对坐标的功能函数,即使是非绝对定位,一样能获取到
 ```
-     function getElCoordinate(dom) {
-            var t = dom.offsetTop;
-            var l = dom.offsetLeft;
-            dom=dom.offsetParent;
-            while (dom) {
-                t += dom.offsetTop;
-                l += dom.offsetLeft;
-                dom=dom.offsetParent;
-            }; return {
-                top: t,
-                left: l
-            };
-        }
+     //获取元素相对于屏幕绝对位置
+        function getAbsPosition(element){
+           var abs={x:0,y:0}
+           //如果浏览器兼容此方法
+           if (document.documentElement.getBoundingClientRect){
+               //如果不用jQuery对象，可以使用else分支。
+               abs.x = element.getBoundingClientRect().left;
+               abs.y = element.getBoundingClientRect().top;
+
+               <!-- abs.x += window.screenLeft +
+                           document.documentElement.scrollLeft -
+                           document.documentElement.clientLeft; -->
+               <!--带滚动条的情况-->
+               abs.x += window.screenLeft +
+                document.body.clientLeft - document.body.scrollLeft;
+               abs.y += window.screenTop +
+                document.body.clientTop - document.body.scrollTop;
+             }
+           //如果浏览器不兼容此方法
+           else{
+               while(element!=document.body){
+                   abs.x+=element.offsetLeft;
+                   abs.y+=element.offsetTop;
+                   element=element.offsetParent;
+               }
+            //计算想对位置
+                abs.x += window.screenLeft +
+                       document.body.clientLeft - document.body.scrollLeft;
+                abs.y += window.screenTop +
+                       document.body.clientTop - document.body.scrollTop;
+              }
+              return abs;
+          }
 ```
 #### 网页拖拽
 ```

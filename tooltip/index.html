@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tooltip实现</title>
+    <link href="tooltip.css" rel="stylesheet"/>
+    <style type="text/css">
+      html,body,div{
+          margin:0;
+          padding:0;
+      }
+      .wrap{
+          width:120vw;
+          height:120vh;
+          border:1px solid #333;
+          text-align: center;
+          margin:200px auto;
+          padding-top: 100px;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <span class="tooltip">tooltip1</span>
+        <span class="tooltip">tooltip2</span>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.tooltip.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $('.tooltip').tooltip({
+              content:'tooltip',
+              placement:'top'
+          })
+      })
+    </script>    
+</body>
+</html>
