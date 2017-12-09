@@ -138,6 +138,23 @@ add(1)(2)(3)(4)(5) // 15
 [参考文献](https://www.cnblogs.com/coco1s/p/6509141.html)
 #### js获取url参数
 ```
-   
+function UrlSearch() 
+{
+   var name,value; 
+   var str=location.href; //取得整个地址栏
+   var num=str.indexOf("?") 
+   str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+
+   var arr=str.split("&"); //各个参数放到数组里
+   for(var i=0;i < arr.length;i++){ 
+    num=arr[i].indexOf("="); 
+    if(num>0){ 
+     name=arr[i].substring(0,num);
+     value=arr[i].substr(num+1);
+     this[name]=value;
+     } 
+    } 
+} 
+var Request=new UrlSearch(); //实例化
 ```
 #### ==与===区别
