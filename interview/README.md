@@ -56,7 +56,7 @@ var y = $.extend({}, x),          //shallow copy
 #### typeof 返回值
 >
 ```
-   undefined boolean string number object(object,null) function
+   undefined boolean string object(object,null,Array) function
 ```
 >
 #### 闭包，面向对象(ES6的写法)
@@ -71,6 +71,16 @@ var y = $.extend({}, x),          //shallow copy
    var join = new People('join')
    join.name
    join.say()
+```
+```
+   class People{
+       constructor(name){
+           this.name = name;
+       }
+       say(){
+           console.log(this.name)
+       }
+   }
 ```  
 >
 #### event bus
