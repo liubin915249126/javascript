@@ -149,8 +149,8 @@ function UrlSearch()
    for(var i=0;i < arr.length;i++){ 
     num=arr[i].indexOf("="); 
     if(num>0){ 
-     name=arr[i].substring(0,num);
-     value=arr[i].substr(num+1);
+     name=arr[i].substring(0,num);//第二个参数表示截取到多少位
+     value=arr[i].substr(num+1);//第二个参数表示截取多少位
      this[name]=value;
      } 
     } 
@@ -158,3 +158,15 @@ function UrlSearch()
 var Request=new UrlSearch(); //实例化
 ```
 #### ==与===区别
+>
+  涉及到数据类型的转换
+>
+#### HTML5,css3新增的特性
+#### 浏览器缓存
+>
+ Etag
+>   
+#### 计算机基础知识
+>
+  操作系统，数据结构，算法，通讯协议
+>
