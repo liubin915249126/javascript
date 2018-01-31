@@ -1,6 +1,7 @@
 # 常见js函数收集
 
 #### js获取url中的参数
+
 #### 判断数据类型
 ```
        //判断数据类型    
@@ -34,6 +35,31 @@
       }
       return true;
   }
+```
+#### deep clone
+```
+   //deepclone with date
+    export function deepCloneWithDate(source) {
+        if (!source && typeof source !== 'object') {
+            throw new Error('error arguments', 'shallowClone');
+        }
+        const targetObj = source.constructor === Array ? [] : {};
+        for (const keys in source) {
+            if (source.hasOwnProperty(keys)) {
+                if (source[keys] && typeof source[keys] === 'object') {
+                    targetObj[keys] = source[keys].constructor === Array ? [] : {};
+                    if(source[keys].constructor === Date){
+                        targetObj[keys] = new Date(source[keys]);
+                        continue;
+                    }
+                    targetObj[keys] = deepClone(source[keys]);
+                } else {
+                    targetObj[keys] = source[keys];
+                }
+            }
+        }
+        return targetObj;
+    }
 ```
 #### 获取一个DIV的绝对坐标的功能函数,即使是非绝对定位,一样能获取到
 ```
@@ -127,14 +153,16 @@
     }
 ```
 #### 网页滚动到顶部
-function scrollTo(element, to, duration) {
-    if (duration <= 0) return;
-    const difference = to - element.scrollTop;
-    const perTick = difference / duration * 10;
-    setTimeout(() => {
-        console.log(new Date())
-        element.scrollTop = element.scrollTop + perTick;
-        if (element.scrollTop === to) return;
-        scrollTo(element, to, duration - 10);
-    }, 10);
-}
+```
+   function scrollTo(element, to, duration) {
+        if (duration <= 0) return;
+        const difference = to - element.scrollTop;
+        const perTick = difference / duration * 10;
+        setTimeout(() => {
+            console.log(new Date())
+            element.scrollTop = element.scrollTop + perTick;
+            if (element.scrollTop === to) return;
+            scrollTo(element, to, duration - 10);
+        }, 10);
+    } 
+```
