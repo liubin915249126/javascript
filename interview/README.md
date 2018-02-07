@@ -162,6 +162,8 @@ var Request=new UrlSearch(); //实例化
   涉及到数据类型的转换
 >
 #### HTML5,css3新增的特性
+#### js实现继承
+
 #### 浏览器缓存
 >
  Etag
