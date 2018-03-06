@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>   
+<head>
+  <meta charset="UTF-8" />
+  <title>Flappy Bird</title>
+  <style>
+    #game_div {
+      width: 400px;
+      margin: auto;
+      margin-top: 50px;
+    }
+	body{
+		background-image:url(assets/birdbg.png);
+	}
+	.style1{
+		text-align:center;
+		color:#FFFFFF;
+		font-size:24pt;
+		font-weight:bold;
+	}
+  </style>
+  <script type="text/javascript" src="phaser.min.js"></script>
+  <script type="text/javascript" src="load.js"></script>
+  <script type="text/javascript" src="menu.js"></script>
+  <script type="text/javascript" src="ready.js"></script>
+  <script type="text/javascript" src="play.js"></script>
+  <script type="text/javascript" src="gameover.js"></script>
+  <script type="text/javascript" src="game.js"></script> 
+</head>
+<body>
+  <div align="center" class="style1">Flappy Bird</div>
+<table width="100%" border="0" align="center">
+    <tr>
+    	<td width="40%">
+        </td>
+      	<td width="400"><div id="game_div"></div></td>
+        <td width="40%"></td>
+	</tr>
+</table>
+</body>
+</html>
