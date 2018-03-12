@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>colorpicker</title>
+    <script src="./colorpicker.js"></script>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .picker {
+            width:20px;
+            height:20px;
+            background:#000;
+            cursor:pointer;
+        }
+        #picker {
+          position: absolute;
+          left:100px;
+          top:200px;
+        }
+        .abc {
+          height:2000px;
+        }
+    </style>
+</head>
+<body>
+  <div class="abc">
+    <div class="picker" id="picker"></div>
+    <div class="picker" id="picker2"></div>
+  </div>
+</body>
+<script>
+    var obj = document.getElementById("picker");
+    Colorpicker.create({
+        bindClass:'picker',
+        change: function(elem,hex){
+          // console.log(elem,hex)
+          elem.style.backgroundColor = hex;
+        }
+    })
+</script>
+</html>
