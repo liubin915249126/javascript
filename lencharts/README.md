@@ -47,4 +47,5 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
         ...
     }
  })(jQuery,window,document) 
- ```     
+ ```
+ 代码托关于[github](https://github.com/liubin915249126/javascript/tree/master/lencharts#jquery%E6%8F%92%E4%BB%B6)欢迎star   
