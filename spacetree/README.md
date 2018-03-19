@@ -14,7 +14,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
 [官网](http://philogb.github.io/jit/static/v20/Docs/files/Core/Core-js.html)
 或是[example1.js](https://github.com/liubin915249126/javascript/blob/master/spacetree/js/example1.js)
 #### 数据格式
-```
+```js
      var data = {
          id:01,      //每个节点有一个唯一的标示
          data:{},    //存放每个节点数据
@@ -31,7 +31,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
          }
          ]
      }
-```     
+```
 #### 开发中的痛点问题
      插件默认加载全部数据，当后台数据量太大，一次返回时，
      会造成页面卡死，用户体验相当不好。且在开发中，用户希
@@ -40,7 +40,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
      对于第一个问题：每次只返回两层的数据,(注意，所有的数据必须要有一个不重复的id)
      剩下的数据可以通过异步加载的方式给架构图添加子节点
      在官网上找到一个办法,当通过ajax请求回来的数据后通过：     
-```
+```js
         st.addSubtree(data, type, {   //st指的是创建的树对象，可以将其设为全局变量，
                                         以便外面拿到
                                       //data即ajax获取的值
@@ -52,7 +52,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
         });
 ```
      同时还有另外一个api,用于删除子节点
-```
+```js
      st.removeSubtree(id, true, 'animate', {   //id:想要删除子节点的节点的id标识
                             hideLabels: false, //动画执行过程中是否隐藏节点
                             onComplete: function() {
@@ -66,7 +66,7 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
      onCreateLabel:里面有两个参数label,node:label指的是容器
      div,node指的是每块对应的数据，这里用jquery的方式根据数据
      动态生成内容。
-```
+```js
      onCreateLabel: function (label, node) { //
             label.id = node.id;
             var level = ['第一层','第二层','第三层','第四层','第五层','第六层'];
@@ -80,4 +80,4 @@ jquery插件皆可用于react,使用方法:[react中使用jquery插件](https://
             $wrap.find('.level').text(level[node._depth])            
             $(label).append($wrap);
         } 
-```      
+```
