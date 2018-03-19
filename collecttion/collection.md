@@ -1,9 +1,109 @@
 # 常见js函数收集
 
-#### js获取url中的参数
+## 数组
 
-#### 判断数据类型
+####
+洗牌算法
+```javascript
+   function shuffle(a) {
+    var length = a.length;
+    var shuffled = Array(length);
+
+    for (var index = 0, rand; index < length; index++) {
+        rand = ~~(Math.random() * (index + 1));
+        if (rand !== index) 
+        shuffled[index] = shuffled[rand];
+        shuffled[rand] = a[index];
+    }
+    return shuffled;
+    }
 ```
+## 函数
+#### 函数防抖
+```js
+   function(func, wait, immediate) {
+    var timeout, args, context, timestamp, result;
+
+    var later = function() {
+        // 定时器设置的回调 later 方法的触发时间，和连续事件触发的最后一次时间戳的间隔
+        // 如果间隔为 wait（或者刚好大于 wait），则触发事件
+        var last = _.now() - timestamp;
+
+        // 时间间隔 last 在 [0, wait) 中
+        // 还没到触发的点，则继续设置定时器
+        // last 值应该不会小于 0 吧？
+        if (last < wait && last >= 0) {
+        timeout = setTimeout(later, wait - last);
+        } else {
+        // 到了可以触发的时间点
+        timeout = null;
+        // 可以触发了
+        // 并且不是设置为立即触发的
+        // 因为如果是立即触发（callNow），也会进入这个回调中
+        // 主要是为了将 timeout 值置为空，使之不影响下次连续事件的触发
+        // 如果不是立即执行，随即执行 func 方法
+        if (!immediate) {
+            // 执行 func 函数
+            result = func.apply(context, args);
+            // 这里的 timeout 一定是 null 了吧
+            // 感觉这个判断多余了
+            if (!timeout)
+            context = args = null;
+        }
+        }
+    };
+
+    // 嗯，闭包返回的函数，是可以传入参数的
+    return function() {
+        // 可以指定 this 指向
+        context = this;
+        args = arguments;
+
+        // 每次触发函数，更新时间戳
+        // later 方法中取 last 值时用到该变量
+        // 判断距离上次触发事件是否已经过了 wait seconds 了
+        // 即我们需要距离最后一次触发事件 wait seconds 后触发这个回调方法
+        timestamp = _.now();
+
+        // 立即触发需要满足两个条件
+        // immediate 参数为 true，并且 timeout 还没设置
+        // immediate 参数为 true 是显而易见的
+        // 如果去掉 !timeout 的条件，就会一直触发，而不是触发一次
+        // 因为第一次触发后已经设置了 timeout，所以根据 timeout 是否为空可以判断是否是首次触发
+        var callNow = immediate && !timeout;
+
+        // 设置 wait seconds 后触发 later 方法
+        // 无论是否 callNow（如果是 callNow，也进入 later 方法，去 later 方法中判断是否执行相应回调函数）
+        // 在某一段的连续触发中，只会在第一次触发时进入这个 if 分支中
+        if (!timeout)
+        // 设置了 timeout，所以以后不会进入这个 if 分支了
+        timeout = setTimeout(later, wait);
+
+        // 如果是立即触发
+        if (callNow) {
+        // func 可能是有返回值的
+        result = func.apply(context, args);
+        // 解除引用
+        context = args = null;
+        }
+
+        return result;
+    };
+    }; 
+``` 
+#### js获取url中的参数
+```js
+   function getParam (name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r=window.location.search.substr(1).replace(new RegExp(/(amp;)/g),'').match(reg);
+        if (r != null) {
+            return r[2];
+        }
+        return null;
+    };
+```
+#### 判断数据类型
+```js
        //判断数据类型    
        function type(elem){
            var reg = /^\[object\s(.*)\]$/
@@ -12,7 +112,7 @@
        }
 ```
 #### 判断两个对象是否相等
-```
+```js
    function isObjectValueEqual(a, b) {
       if(typeof a == 'number' && typeof b == 'number'){
           return a == b
@@ -37,7 +137,7 @@
   }
 ```
 #### deep clone
-```
+```js
    //deepclone with date
     export function deepCloneWithDate(source) {
         if (!source && typeof source !== 'object') {
@@ -62,11 +162,11 @@
     }
 ```
 #### 手机号校验规则
-```
+```js
    reg=/^[1][3,4,5,7,8][0-9]{9}$/;  // 
 ```
 #### 获取一个DIV的绝对坐标的功能函数,即使是非绝对定位,一样能获取到
-```
+```js
      //获取元素相对于屏幕绝对位置
         function getAbsPosition(element){
            var abs={x:0,y:0}
@@ -102,7 +202,7 @@
           }
 ```
 #### 网页拖拽
-```
+```js
     function drag(obj) {
         var dragEle = obj;
         var _move = false;//移动标记
@@ -128,7 +228,7 @@
     }
 ```
 #### 将#XXXXXX颜色格式转换为RGB格式，并附加上透明度
-```
+```js
         function brgba(hex, opacity) {
             if( ! /#?\d+/g.test(hex) ) return hex; //如果是“red”格式的颜色值，则不转换。//正则错误，参考后面的PS内容
             var h = hex.charAt(0) == "#" ? hex.substring(1) : hex,
@@ -139,9 +239,8 @@
             return "rgba(" + r + "," + g + "," + b + "," + a + ")";
         }
 ```
-
 #### 前端生成UUID：
-```
+```js
    function uuid() {
         var s = [];
         var hexDigits = "0123456789abcdef";
@@ -157,7 +256,7 @@
     }
 ```
 #### 网页滚动到顶部
-```
+```js
    function scrollTo(element, to, duration) {
         if (duration <= 0) return;
         const difference = to - element.scrollTop;
