@@ -166,7 +166,7 @@ var Request=new UrlSearch(); //实例化
 
 #### 浏览器缓存
 >
- Etag
+ etag，last-modified，cache-control
 >   
 #### 计算机基础知识
 >
