@@ -269,3 +269,33 @@
         }, 10);
     } 
 ```
+#### 驼峰转下划线
+```js
+   let humpToUnderline = str => str.match(/^[a-z][a-z0-9]+|[A-Z][a-z0-9]*/g).join('_').toLowerCase();
+   humpToUnderline('helloWorld');  //hello_world
+```
+#### 统计文字个数
+```js
+   //统计文字个数
+    function wordCount(data) {
+    var pattern = /[a-zA-Z0-9_\u0392-\u03c9]+|[\u4E00-\u9FFF\u3400-\u4dbf\uf900-\ufaff\u3040-\u309f\uac00-\ud7af]+/g;
+    var m = data.match(pattern);
+    var count = 0;
+    if( m === null ) return count;
+    for (var i = 0; i < m.length; i++) {
+        if (m[i].charCodeAt(0) >= 0x4E00) {
+        count += m[i].length;
+        } else {
+        count += 1;
+        }
+    }
+    return count;
+    }
+
+    var text = '统计文字个数';
+    // console.log(wordCount(text)); // 6
+```
+#### 评级
+```js
+   "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
+```
