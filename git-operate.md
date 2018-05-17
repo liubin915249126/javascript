@@ -21,3 +21,22 @@
 
   git push origin :test
 >
+
+### nginx commend
+```bash
+   /usr/local/etc/nginx/
+   sudo apachectl stop
+   sudo nginx -c /usr/local/etc/nginx/nginx.conf
+   sudo nginx -s reload
+   查询nginx主进程号：ps -ef|grep nginx
+   正常停止   sudo kill -QUIT 主进程号
+   快速停止   sudo kill -TERM 主进程号  
+   sudo lsof -i :8080
+```
+sudo vim /etc/hosts
+修改host: 127.0.0.1       testadmin.portal.com
+访问/api/下的请求全部转到http://127.0.0.1:9099/下面,
+访问根目录转到服务器
+
+
+

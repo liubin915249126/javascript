@@ -93,14 +93,15 @@
 ``` 
 #### js获取url中的参数
 ```js
-   function getParam (name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-        var r=window.location.search.substr(1).replace(new RegExp(/(amp;)/g),'').match(reg);
-        if (r != null) {
-            return r[2];
-        }
-        return null;
-    };
+  function getParam(name, url) {
+    // var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    const reg = new RegExp(`\\u003F${name}=(.+)(&|$)|&${name}=(.+)(&|$)`, 'i');
+    const r = url.replace(new RegExp(/(amp;)/g), '').match(reg);
+    if (r != null) {
+        return r[2];
+    }
+    return null;
+    }
 ```
 #### 判断数据类型
 ```js
