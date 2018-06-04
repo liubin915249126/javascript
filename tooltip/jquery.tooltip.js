@@ -7,6 +7,7 @@
 
         var options = $.extend({}, defaultOpts, opts);
         this.on('click',function(e){
+            debugger;
             if (!e) e = window.event;
             var tooltip ='<div class="len-tooltip">'+
                            '<div class="tooltip-content"></div>'+ 
@@ -30,7 +31,8 @@
     //设置tooptip位置
     function setTooltipPos($toolTip,e) {
         var pos = getAbsPosition(e.target);
-        $toolTip.css({ left: pos.x, top: pos.y, position: 'fixed' })
+        // $toolTip.css({ left: pos.x, top: pos.y, position: 'fixed' })
+        $toolTip.css({ left: e.pageX, top: e.pageY, position: 'fixed' })
     }
     //获取一个元素坐标
     //获取元素相对于屏幕绝对位置
