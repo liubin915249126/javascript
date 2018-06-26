@@ -192,6 +192,40 @@
                                             ]
                                         },
                                     ]
+                                },
+                                {
+                                    id: 001,
+                                    data: {
+                                        name: '特区建发',
+                                        plait: 20,
+                                        onduty: 10,
+                                        type: "organization"
+                                    },
+                                    children: [
+                                       {
+                                            id: 001,
+                                            data: {
+                                                name: '特区建发',
+                                                plait: 20,
+                                                onduty: 10,
+                                                type: "organization"
+                                            },
+                                            children: [
+
+                                            ]
+                                        }, {
+                                            id: 001,
+                                            data: {
+                                                name: '特区建发',
+                                                plait: 20,
+                                                onduty: 10,
+                                                type: "organization"
+                                            },
+                                            children: [
+
+                                            ]
+                                        },
+                                    ]
                                 }
                         ]
                     },
@@ -218,12 +252,25 @@
                                 },
                             ]
                         },
+                        {
+                            id: 001,
+                            data: {
+                                name: '特区建发',
+                                plait: 20,
+                                onduty: 10,
+                                type: "organization"
+                            },
+                            children: [
+                                
+                            ]
+                        },
                 ]
             }
             
             $('.orgWrap').lenChart({
                 data:obj,
                 drag:true,
+                hlevel:3, //水平放置的层级>2
                 renderdata:function(data,$dom){
                     var value = data.data;
                     if (value && Object.keys(value).length) {

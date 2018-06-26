@@ -4,13 +4,16 @@
         var defaults = {};
         var opts = $.extend({}, defaults, options);
         var obj = opts.data;
-        self = this; 
+        self = this;
+        if(opts.hlevel&&opts.hlevel>=3){
+            self.addClass('hashorizonal')
+        }
         if(obj&&Object.keys(obj).length>0){
-            var level1s = '<div class="level1s"><div class="level1"><div class="content"></div></div></div>';
+            var level1s = '<div class="level1s" data-level="1"><div class="level1"><div class="content"></div></div></div>';
             var $level1s = $(level1s);
             var devider = '<div class="divider"></div>';
             var $devider = $(devider);
-            var level2s = '<ul class="level2s"></ul>';
+            var level2s = '<ul class="level2s" data-level="2"></ul>';
             var $level2s = $(level2s);
             this.attr('id', '')
             if (obj.data && opts.renderdata) {
@@ -23,6 +26,9 @@
                 }else{
                     addIcon($level1s, false, 1);
                 }
+            }
+            if(opts.hlevel&&opts.hlevel>=3){
+                $level2s.addClass('horizonal')
             }
             this.append($level1s);
             this.append($devider);
@@ -61,7 +67,7 @@
                 var levels = 'level' + loopIndex + 's';
                 var level = 'level' + loopIndex;
 
-                var level3s = '<ul class="level' + loopIndex + 's"></ul>';
+                var level3s = '<ul class="level' + loopIndex + 's" data-level="'+loopIndex+'"></ul>';
                 var level3 = '<li class="level' + loopIndex + '"  data-level=""><div class="content"></div></li>';
                 var $level3s = $(level3s);
                 var $level3 = $(level3);
@@ -69,7 +75,25 @@
                 if (loopIndex == 3) {
                     $level3s.addClass('tree')
                 }
+                //水平放置
+                if(opts.hlevel&&opts.hlevel>=loopIndex){
+                    $level3s.addClass('horizonal');
+                    $level3s.append($devider.clone());
+                }else{
+                    $level3s.addClass('vertical');
+                }
+                // if(opts.hlevel&&opts.hlevel>=(loopIndex + 1)){
+                //     $level3.addClass('horizonalwrap');
+                // }else{
+                //     $level3.addClass('verticalwrap');
+                // }
                 if (obj.children.length) {
+                    if(obj.children.length===1){
+                        $level3s.addClass('onChild');
+                    }
+                    if(obj.children.length===2){
+                        $level3s.addClass('twoChild');
+                    }
                     $.each(obj.children, function (item, value) {
                         var $level3 = $(level3);/*错*/
                         if (value.data && opts.renderdata) {
@@ -94,6 +118,8 @@
                         renderLevel3(value, $level3, $level3s, loopIndex + 1);
                     });
 
+                }else{
+                    $level3s.addClass('noneChild');
                 }
 
                 $level.append($level3s);
@@ -126,12 +152,15 @@
                 }else{
                     $icon.on('click', function (e) {
                         var children = $(this).closest('li.parent_li').find(' > ul > li');
+                        $(this).closest('li.parent_li').addClass('oneChild1');
+
                         if (children.is(":visible")) {
                             children.hide('fast', function () {
                                 avoid();
                             });
                             $(this).attr('title', 'Expand this branch').addClass('glyphicon-plus-sign').removeClass('glyphicon-minus-sign');
                         } else {
+                            $(this).closest('li.parent_li').removeClass('oneChild1');
                             children.show('fast', function () {
                                 avoid();
                             });
@@ -145,7 +174,9 @@
             }
             // 加减按钮点击事件
             $('.orgWrap li:has(ul>li)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+            
             avoid();
+            
             if (opts.drag) {
                 drag(this)
             }
@@ -156,8 +187,8 @@
     }//$.fn结束
 
     /*防止第二层折行*/
-    function avoid() {
-        var $level2 = $('.level2s').children('.level2');
+    function avoidinner($wrap,flag,level) {
+        var $level2 = $wrap.children('li');
         var _width = parseInt($level2.width());
         var maxHeight = $level2.height();
         var allWidth = 0;/*累加第二层宽度*/
@@ -171,7 +202,7 @@
         }
 
         $level2.each(function () {
-            if (!$(this).find('li.level3').size()) {
+            if (!$(this).children('ul').children('li').size()) {
                 $(this).addClass('noneChild')
             }
 
@@ -191,15 +222,31 @@
         /*为没有子节点的第二层添加右padding*/
 
         /**/
-        var lastlevel2 = $('.level2:last-child');
+        var classname = ".level"+level;
+        var lastlevel2 = $wrap.children(classname).eq($wrap.children(classname).length-1);
+        var firstlevel2 = $wrap.children(classname).eq(0);
         var lastWidth = parseInt(lastlevel2.css('width'));
+        var firstWidth = parseInt(firstlevel2.css('width'));
 
-        $('.divider').css('width', allWidth - lastWidth);
-        $('.divider').css('left', parseInt($level2.find('.content').css('width')) / 2);
+        var $devider = null;
+        if(flag) {
+            $devider = $wrap.parent().children('.divider');
+            self.css('width', allWidth + 200);
+            self.css('margin-left', -allWidth / 2 - 100);
+        }else{
+            $devider = $wrap.children('.divider');  
+        }
+        $devider.css('width', allWidth - lastWidth/2 - firstWidth/2);
+        $devider.css('left', parseInt($level2.css('width')) / 2);
         /*防止第二层折行*/
-        $('.level2s').css('width', allWidth + 200);
-        self.css('width', allWidth + 200);
-        self.css('margin-left', -allWidth / 2 - 100);
+        // $('.level2s').css('width', allWidth + 200);
+        
+    }
+    function avoid(){
+        avoidinner($('.level2s'),true,2)
+        $('.horizonal').each(function(index,horizonal){
+            avoidinner($(horizonal),false,$(horizonal).attr('data-level'));
+        })
     }
     //拖拽
     /*网页拖拽*/
