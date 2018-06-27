@@ -9,4 +9,6 @@
   日历插件
 >
 
-[输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
+rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
+
+[粒子动画](https://github.com/VincentGarreau/particles.js)
