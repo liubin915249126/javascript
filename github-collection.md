@@ -8,3 +8,5 @@
 >
   日历插件
 >
+
+[输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
