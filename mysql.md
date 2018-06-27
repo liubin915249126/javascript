@@ -13,7 +13,12 @@ CREATE TABLE IF NOT EXISTS `runoob_tbl`(
     source  ~/.bash_profile
 ```
 
+/usr/local/mysql/bin/mysql -u root -p
+
 update user set Password=OLD_PASSWORD('password') WHERE User='username';
 update user set authentication_string=OLD_PASSWORD('password') WHERE User='username';
 update user set authentication_string=password(''), plugin='mysql_native_password' where user='root';
 https://dev.mysql.com/doc/refman/5.5/en/old-client.html
+
+jfinal运行
+http://www.cnblogs.com/chanchifeng/p/6537063.html
