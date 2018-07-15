@@ -22,7 +22,7 @@
 
   git branch -r -d origin/test
 
-  git push origin :test
+  git push origin :test 
 >
 
 ### nginx commend
