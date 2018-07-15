@@ -8,3 +8,6 @@ https://gitlore.com/subject/28/ch2.md
 #### 17f634ccdb36084b11557c6ce12d036047a1aa15
 
 wireshark
+
+permission denied
+chmod -R 777 /Users/Jo/Documents/Shopins/Pods/Target\ Support\ Files/Pods-Shopins/
