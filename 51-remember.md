@@ -4,6 +4,10 @@
 [test](http://10.36.2.119:3000/buyerOrderPage)
 [svn] (svn://10.36.2.115/fr_dev_dept)
 [svn-pro](svn://10.36.2.115/pro_des_dept/)
+
+[swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
+
+
 #### 
 >
 商城
