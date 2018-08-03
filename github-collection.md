@@ -20,3 +20,4 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [sketchui](https://github.com/pshihn/rough)
 [md-editor](https://github.com/jxnblk/ok-mdx)
 [react+d3](https://github.com/hshoff/vx)
+[js算法](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
