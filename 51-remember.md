@@ -1,4 +1,4 @@
-[gitlab](http://10.36.2.115)
+[gitlab](http://10.36.2.115) liubin@51youse.com
 [readmine](http://10.36.2.115:81/redmine/)
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
@@ -7,6 +7,10 @@
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
+
+http://123.150.252.54:2000/users/sign_in
+http://123.150.252.54:2000/root/operate_manager/merge_requests/new
+http://123.150.252.54:81/redmine/my/page
 
 #### 
 >
@@ -19,6 +23,9 @@
 后台管理
 youseadmin4           123456
 
+
+const youse = "http://123.150.252.54:8090/api/"
+const youseqz = "http://123.150.252.54:8001/api/"
 
 
 GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互联电子商务有限公司
