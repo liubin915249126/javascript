@@ -10,6 +10,7 @@
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2000/root/operate_manager/merge_requests/new
+
 http://123.150.252.54:81/redmine/my/page
 
 #### 
