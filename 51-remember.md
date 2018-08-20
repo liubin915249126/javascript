@@ -38,6 +38,13 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 /v1/dict/manager/list
 字典表通用查询
 
+```js
+   legalPersonName
+   legalPersonCertificateType
+   legalPersonCertificateNumber
+   legalPersonMobile
+```
+
 
 ```js 
   replace(new RegExp("_","gm"),"  ")

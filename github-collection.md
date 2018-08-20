@@ -14,6 +14,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [粒子动画](https://github.com/VincentGarreau/particles.js)
 
 [新手导引](https://github.com/kamranahmedse/driver.js)
+[Popmotion](https://github.com/Popmotion/popmotion)
 
 [cms](https://github.com/Canner/canner)
 [ssr](https://github.com/alidcastano/rogue)
