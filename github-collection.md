@@ -29,3 +29,4 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [轮播](https://segmentfault.com/a/1190000015976690)
 [react-move](https://github.com/react-tools/react-move)
 [code-surfer](https://github.com/pomber/code-surfer)
+[vue-admin](https://github.com/PanJiaChen/vue-element-admin)

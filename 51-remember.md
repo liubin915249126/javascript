@@ -2,7 +2,7 @@
 [readmine](http://10.36.2.115:81/redmine/) liub （http://123.150.252.54:81/redmine/my/page）
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
-[svn] (svn://10.36.2.115/fr_dev_dept)
+[svn](svn://10.36.2.115/fr_dev_dept)
 [svn-pro](svn://10.36.2.115/pro_des_dept/)
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)

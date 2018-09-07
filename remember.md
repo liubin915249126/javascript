@@ -11,3 +11,6 @@ wireshark
 
 permission denied
 chmod -R 777 /Users/Jo/Documents/Shopins/Pods/Target\ Support\ Files/Pods-Shopins/
+
+#### 友链
+http://web.coder666.cn:18080/
