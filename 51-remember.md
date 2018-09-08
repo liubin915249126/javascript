@@ -24,6 +24,7 @@ http://123.150.252.54:81/redmine/my/page
 >
 后台管理
 youseadmin4           123456
+xadmin51              123456
 
 
 const youse = "http://123.150.252.54:8090/api/"
