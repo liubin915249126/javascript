@@ -29,13 +29,16 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [轮播](https://segmentfault.com/a/1190000015976690)
 [react-move](https://github.com/react-tools/react-move)
 [code-surfer](https://github.com/pomber/code-surfer)
+[edit](https://github.com/Canner/canner-slate-editor)
+[emoji](https://github.com/zeeshanu/emoji-awesome)
+[email-md](https://markdown-here.com/)
 
 [vue-admin](https://github.com/PanJiaChen/vue-element-admin)
 [antd-pro](https://github.com/ant-design/ant-design-pro)
 
 
 #### react-native
-[ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
+[awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
 [ui](https://github.com/callstack/react-native-paper)
 
 #### chart&&flow
