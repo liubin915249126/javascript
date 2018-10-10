@@ -29,9 +29,19 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [轮播](https://segmentfault.com/a/1190000015976690)
 [react-move](https://github.com/react-tools/react-move)
 [code-surfer](https://github.com/pomber/code-surfer)
+[代码高亮](https://github.com/highlightjs/highlight.js)
+[image-editor](https://github.com/nhnent/tui.image-editor)
+
+
 [edit](https://github.com/Canner/canner-slate-editor)
 [emoji](https://github.com/zeeshanu/emoji-awesome)
 [email-md](https://markdown-here.com/)
+[rich-txt](https://github.com/ianstormtaylor/slate)
+
+
+[html-md](https://github.com/domchristie/turndown)
+[md-html](https://github.com/showdownjs/showdown)
+
 
 [vue-admin](https://github.com/PanJiaChen/vue-element-admin)
 [antd-pro](https://github.com/ant-design/ant-design-pro)
@@ -50,6 +60,10 @@ https://github.com/dawnlabs/carbon
 #### react
 [animation](https://github.com/drcmda/react-spring)
 [map](https://github.com/mariusandra/pigeon-maps)
+[react-head](https://github.com/nfl/react-helmet)
+[router-keeper](https://github.com/vifird/react-keeper)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
+
+[git-hook](https://github.com/typicode/husky)

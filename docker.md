@@ -33,3 +33,6 @@ EditorConfig for VS Code
       "plugin": ["html"]
     },
     "standard.autoFixOnSave": true,
+
+    45696104@qq.com
+    secret123
