@@ -53,17 +53,28 @@ https://github.com/dawnlabs/carbon
 
 #### chart&&flow
 [react&&G6](https://github.com/gaoli/gg-editor)
+[D3V4](https://github.com/naver/billboard.js)
 
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
+[rich-text](https://github.com/heyscrumpy/tiptap)
+[mobile-ui](https://github.com/youzan/vant)
 
 #### react
 [animation](https://github.com/drcmda/react-spring)
 [map](https://github.com/mariusandra/pigeon-maps)
 [react-head](https://github.com/nfl/react-helmet)
 [router-keeper](https://github.com/vifird/react-keeper)
+[immer](https://github.com/mweststrate/immer)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
+[colletion](https://github.com/30-seconds/30-seconds-of-code)
+[rich-text](https://github.com/basecamp/trix)
 
+#### git
 [git-hook](https://github.com/typicode/husky)
+
+#### 幻灯片
+[impress](https://github.com/impress/impress.js)
+[reveal](https://github.com/hakimel/reveal.js)

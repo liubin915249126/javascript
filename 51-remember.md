@@ -63,10 +63,31 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 ``` 
 ```js
    // 订货状态
-   const goodsOrderStatus = {
+   const  = {
      130: '未订货',
      131: '订货中',
      132: '订货成功',
      133: '订单取消'
  }
+```
+```js
+        SELECT("select", "下拉可选项"),
+  
+        METERAGE_SELECT("meterage_select", "计量单位下拉可选项"),
+        
+        TEXT("text", "文本输入框"),
+        
+        SELECT_TEXT("select_text", "下拉可选项文本输入框"),
+        
+        METERAGE_TEXT("meterage_text", "计量度量单位文本输入框"),
+        
+        CUBAGE_METERAGE_TEXT("cubage_meterage_text", "体积(长宽高[厚、深])计量度量单位文本输入框"),
+        
+        CHECKBOX("checkbox", "多选项"),
+        
+        SELECTMORE("select_more", "下拉可选项多级联动"),
+        
+        TEXTMORE("text_more", "文本框可选项多级联动"),
+        
+        RADIO("radio", "单选项");
 ```
