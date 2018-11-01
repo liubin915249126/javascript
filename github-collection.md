@@ -50,10 +50,16 @@ https://github.com/dawnlabs/carbon
 #### react-native
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
 [ui](https://github.com/callstack/react-native-paper)
+[hooks](https://github.com/react-native-community/react-native-hooks)
 
 #### chart&&flow
 [react&&G6](https://github.com/gaoli/gg-editor)
 [D3V4](https://github.com/naver/billboard.js)
+[react-d3](https://github.com/hshoff/vx)
+[flow](https://github.com/adrai/flowchart.js)
+[code-flow](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart)
+
+
 
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
@@ -66,11 +72,20 @@ https://github.com/dawnlabs/carbon
 [react-head](https://github.com/nfl/react-helmet)
 [router-keeper](https://github.com/vifird/react-keeper)
 [immer](https://github.com/mweststrate/immer)
+[骨架屏](https://github.com/danilowoz/react-content-loader)
+[react-hooks](https://github.com/kitze/react-hanger)
+[hooks](https://github.com/matthewp/haunted)
+[react-use](https://github.com/streamich/react-use)
+
+[translate](https://github.com/i18next/react-i18next)
+
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
 [colletion](https://github.com/30-seconds/30-seconds-of-code)
 [rich-text](https://github.com/basecamp/trix)
+[components](https://github.com/palmerhq/the-platform)
+
 
 #### git
 [git-hook](https://github.com/typicode/husky)
@@ -78,3 +93,15 @@ https://github.com/dawnlabs/carbon
 #### 幻灯片
 [impress](https://github.com/impress/impress.js)
 [reveal](https://github.com/hakimel/reveal.js)
+
+#### 源码学习
+[underscore](https://github.com/mqyqingfeng/Blog)
+[concepts](https://github.com/stephentian/33-js-concepts)
+
+#### miniprogram
+[截图工具](https://github.com/tomfriwel/welCropper)
+
+
+
+#### website
+[bestofjs](https://bestofjs.org/)

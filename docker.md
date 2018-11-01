@@ -10,6 +10,7 @@ pecl channel-update pecl.php.net替换的
 pecl channel-update  https://pecl.php.net/channel.xml
 
 45696104@qq.com secret
+
 47.74.47.190  broker.dev.capstoneglobal.com
 
 [ui](http://test.capstoneglobal.com/trader/login.html)(http://test.capstoneglobal.com/en/trader/login.html)
