@@ -42,4 +42,4 @@ sudo vim /etc/hosts
 访问根目录转到服务器
 
 
-
+find  . "(" -name "*.js" -or -name "*.jsx" ")" -print | xargs wc -l

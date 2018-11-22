@@ -19,11 +19,15 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [cms](https://github.com/Canner/canner)
 [ssr](https://github.com/alidcastano/rogue)
 [sketchui](https://github.com/pshihn/rough)
+[sketch](https://github.com/kenperlin/chalktalk)
 [md-editor](https://github.com/jxnblk/ok-mdx)
 [react+d3](https://github.com/hshoff/vx)
 [js算法](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 [color-picker](https://github.com/casesandberg/react-color)
+
 [code-share](https://github.com/dawnlabs/carbon)
+[](https://github.com/glorious-codes/glorious-demo)
+
 [canlendar](https://github.com/zhouatie/plugin)
 [algorithm](https://github.com/JesseZhao1990/algorithm)
 [轮播](https://segmentfault.com/a/1190000015976690)
@@ -41,7 +45,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 
 [html-md](https://github.com/domchristie/turndown)
 [md-html](https://github.com/showdownjs/showdown)
-
+[md-html](https://github.com/oscarmorrison/md-page)
 
 [vue-admin](https://github.com/PanJiaChen/vue-element-admin)
 [antd-pro](https://github.com/ant-design/ant-design-pro)
@@ -65,6 +69,7 @@ https://github.com/dawnlabs/carbon
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
 [mobile-ui](https://github.com/youzan/vant)
+[vux](https://github.com/airyland/vux)
 
 #### react
 [animation](https://github.com/drcmda/react-spring)
@@ -85,6 +90,9 @@ https://github.com/dawnlabs/carbon
 [colletion](https://github.com/30-seconds/30-seconds-of-code)
 [rich-text](https://github.com/basecamp/trix)
 [components](https://github.com/palmerhq/the-platform)
+[text-mask](https://github.com/text-mask/text-mask)
+[autoCpmplete](https://github.com/TarekRaafat/autoComplete.js)
+[json](https://github.com/antonmedv/fx)
 
 
 #### git
