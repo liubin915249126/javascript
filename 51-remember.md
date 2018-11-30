@@ -2,12 +2,13 @@
 [readmine](http://10.36.2.115:81/redmine/) liub （http://123.150.252.54:81/redmine/my/page）
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
+[51](http://operate.51youse.com/)
 [svn](svn://10.36.2.115/fr_dev_dept)
 [svn-pro](svn://10.36.2.115/pro_des_dept/)
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
-[119](http://123.150.252.54:8000)
+[119](http://123.150.252.54:8000)91
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2000/root/operate_manager/merge_requests/new
@@ -97,3 +98,7 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 ```
 
 svn://10.36.2.115/pro_des_dept/trunk/doc/03_产品设计/04.CRM/V1.3/02.功能设计/TP-CRM-代客下单V1.2/TP-CRM-代客下单V1.2.rp 
+
+
+https://lanhuapp.com
+developer1@gloudtek.com 123456

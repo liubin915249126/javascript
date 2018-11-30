@@ -41,7 +41,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [emoji](https://github.com/zeeshanu/emoji-awesome)
 [email-md](https://markdown-here.com/)
 [rich-txt](https://github.com/ianstormtaylor/slate)
-
+[md-editor](https://github.com/marktext/marktext)
 
 [html-md](https://github.com/domchristie/turndown)
 [md-html](https://github.com/showdownjs/showdown)
@@ -60,9 +60,10 @@ https://github.com/dawnlabs/carbon
 [react&&G6](https://github.com/gaoli/gg-editor)
 [D3V4](https://github.com/naver/billboard.js)
 [react-d3](https://github.com/hshoff/vx)
+[react-d3](https://github.com/plouc/nivo)
 [flow](https://github.com/adrai/flowchart.js)
 [code-flow](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart)
-
+[layout](https://github.com/cytoscape/cytoscape.js)
 
 
 #### vue
@@ -113,3 +114,6 @@ https://github.com/dawnlabs/carbon
 
 #### website
 [bestofjs](https://bestofjs.org/)
+[nginxconfig](https://github.com/valentinxxx/nginxconfig.io)
+[二维码](https://github.com/davidshimjs/qrcodejs)
+[git](https://github.com/pcottle/learnGitBranching)
