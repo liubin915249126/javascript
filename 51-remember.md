@@ -107,3 +107,7 @@ developer1@gloudtek.com 123456
 
 /stationHandOver-index/cstationHandOver-index
 ssh://xxxx@www.gloudtek.com:29418/external/envision/om/web-frontend.git xxx88
+liubin@www.gloudtek.com
+liubin@gloudtek.com
+http://www.gloudtek.com:8080
+PORT=8005 HOST=localhost  npm run dev
