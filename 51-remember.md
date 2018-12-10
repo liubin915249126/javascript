@@ -114,3 +114,4 @@ liubin@gloudtek.com liubin88
 
 http://www.gloudtek.com:8080
 PORT=8005 HOST=localhost  npm run dev
+set PORT=8005 && set HOST=localhost && npm run dev
