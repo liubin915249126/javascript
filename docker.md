@@ -11,10 +11,14 @@ pecl channel-update  https://pecl.php.net/channel.xml
 
 45696104@qq.com secret123  Authorization
 
+host 127.0.0.1 broker.local
 47.74.47.190  broker.dev.capstoneglobal.com
+47.74.47.190  trader.dev.capstoneglobal.com
 
 [ui](http://test.capstoneglobal.com/trader/login.html)(http://test.capstoneglobal.com/en/trader/login.html)
+
 http://secure.fxcg.com/login 
+18205556911
 
 EditorConfig for VS Code
 GraphQL for VSCode
