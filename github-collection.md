@@ -1,5 +1,6 @@
 ## github优秀库收集
 1.[mdx](https://github.com/mdx-js/mdx);
+[jsPDF](https://github.com/MrRio/jsPDF)
 >
   转换markdown 语法
 >
@@ -110,7 +111,8 @@ https://github.com/dawnlabs/carbon
 #### miniprogram
 [截图工具](https://github.com/tomfriwel/welCropper)
 
-
+#### algorithm
+[algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
 
 #### website
 [bestofjs](https://bestofjs.org/)
