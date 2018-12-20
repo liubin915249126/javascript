@@ -110,6 +110,7 @@ https://github.com/dawnlabs/carbon
 
 #### miniprogram
 [截图工具](https://github.com/tomfriwel/welCropper)
+[share-image](https://github.com/jasondu/wxa-plugin-canvas)
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
