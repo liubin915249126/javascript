@@ -13,6 +13,9 @@
   git push -u origin mastegit
   
   git config --global user.name ""
+   
+  git config --global push.default upstream
+  git config --global push.default simple 
 
 >
 

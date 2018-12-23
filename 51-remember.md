@@ -15,6 +15,8 @@ http://123.150.252.54:2000/root/operate_manager/merge_requests/new
 
 http://123.150.252.54:81/redmine/my/page
 
+http://10.36.2.118 liubin 12345678 
+
 #### 
 >
 商城
@@ -58,9 +60,7 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
    function commafy(num){
       return num && num
           .toString()
-          .replace(/(\d)(?=(\d{3})+\.)/g, function($1, $2){
-              return $2 + ',';
-          });
+          .replace(/\d{1,3}(?=(\d{3})+(\.\d*)?$)/g, '$&,')
   }
 ``` 
 ```js
