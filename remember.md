@@ -14,3 +14,6 @@ chmod -R 777 /Users/Jo/Documents/Shopins/Pods/Target\ Support\ Files/Pods-Shopin
 
 #### 友链
 http://web.coder666.cn:18080/
+
+
+table-layout:fixed
