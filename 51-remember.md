@@ -98,30 +98,3 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 ```
 
 svn://10.36.2.115/pro_des_dept/trunk/doc/03_产品设计/04.CRM/V1.3/02.功能设计/TP-CRM-代客下单V1.2/TP-CRM-代客下单V1.2.rp 
-
-
-https://lanhuapp.com
-developer1@gloudtek.com 123456
-登录账号:15868789482 密码:345678
-
-
-/stationHandOver-index/cstationHandOver-index
-ssh://xxxx@www.gloudtek.com:29418/external/envision/om/web-frontend.git xxx88
-liubin@www.gloudtek.com
-
-doc
-liubin@gloudtek.com liubin88
-
-http://www.gloudtek.com:8080
-PORT=8005 HOST=localhost  npm run dev
-set PORT=8005 && set HOST=localhost && npm run dev
-
-http://www.gloudtek.com/zentao/index.php?m=bug&f=browse&productID=34
-liubin liubin88
-
-
-uvolhr，szuvol123
-
-
-https://mn8v9v.axshare.com/#g=1&p=%E6%A6%82%E5%86%B5 2018
-abo 111111
