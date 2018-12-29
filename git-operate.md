@@ -12,7 +12,8 @@
   git remote add origin https://github.com/liubin915249126/Test.git
   git push -u origin mastegit
   
-  git config --global user.name ""
+  git config --global user.name "liubin"
+  git config --global user.email "915249126@qq.com"
    
   git config --global push.default upstream
   git config --global push.default simple 
