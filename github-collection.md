@@ -60,6 +60,7 @@ https://github.com/dawnlabs/carbon
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
 [ui](https://github.com/callstack/react-native-paper)
 [hooks](https://github.com/react-native-community/react-native-hooks)
+[magic-move](https://github.com/IjzerenHein/react-native-magic-move)
 
 #### chart&&flow
 [react&&G6](https://github.com/gaoli/gg-editor)
@@ -115,6 +116,7 @@ https://github.com/dawnlabs/carbon
 #### miniprogram
 [截图工具](https://github.com/tomfriwel/welCropper)
 [share-image](https://github.com/jasondu/wxa-plugin-canvas)
+[pay](https://payjs.cn/)
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
@@ -124,3 +126,6 @@ https://github.com/dawnlabs/carbon
 [nginxconfig](https://github.com/valentinxxx/nginxconfig.io)
 [二维码](https://github.com/davidshimjs/qrcodejs)
 [git](https://github.com/pcottle/learnGitBranching)
+
+#### node 
+[mock](https://github.com/typicode/json-server)
