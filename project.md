@@ -19,14 +19,22 @@ http://www.gloudtek.com/zentao/index.php?m=bug&f=browse&productID=34
 liubin liubin88
 
 #### payroll
-uvolhr，szuvol123 
+uvolhr,szuvol123 
+
+371hot@sina.com 371hotHR
+
 wx4ed72792078fa0d6
 https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&redirect_uri=http://xz.jinriqiuzhi.cn&response_type=code&scope=snsapi_userinfo&state=park#wechat_redirect
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&redirect_uri=http://m.jinriqiuzhi.cn:8085/channel/index.html&response_type=code&scope=snsapi_userinfo&state=park#wechat_redirect
+
 http://121.41.53.68:8085/index.html#/user/login
 
 
 http://ss.jinriqiuzhi.cn/Index.aspx
 http://xz.jinriqiuzhi.cn
+
+http://172.16.7.176:8085/api/
 
 https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
 
