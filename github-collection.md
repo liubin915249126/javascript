@@ -129,3 +129,4 @@ https://github.com/dawnlabs/carbon
 
 #### node 
 [mock](https://github.com/typicode/json-server)
+[string-similar](https://github.com/aceakash/string-similarity)
