@@ -70,7 +70,7 @@ https://github.com/dawnlabs/carbon
 [flow](https://github.com/adrai/flowchart.js)
 [code-flow](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart)
 [layout](https://github.com/cytoscape/cytoscape.js)
-
+[xstate](https://github.com/davidkpiano/xstate)
 
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
@@ -100,7 +100,7 @@ https://github.com/dawnlabs/carbon
 [text-mask](https://github.com/text-mask/text-mask)
 [autoCpmplete](https://github.com/TarekRaafat/autoComplete.js)
 [json](https://github.com/antonmedv/fx)
-
+[animate](https://github.com/juliangarnier/anime)
 
 #### git
 [git-hook](https://github.com/typicode/husky)

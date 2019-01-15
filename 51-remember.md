@@ -107,3 +107,65 @@ orderType   value  market  seller  buyer  SELLER  BUYER
 自营销售订单  53     20      20      10             -
 自营采购订单  55     0       10      20     _
 撮合订单     54     10      10       10    
+
+queryOrderingList
+v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
+
+
+
+#### url --> page
+```js
+   api/v1/order/pagelist -> /ordering/api/list ->  queryOrdering -> ordering/queryOrderingList
+   -> /v1/order/crm/pagelist
+```
+```js
+   /ordering/orderList/info -> 自营销售订单 -> Ordering/orderManagement.js -> ./OrderingManagementList
+   /ordered/orderList/info
+
+   /orderacc/customeracc/info  //废弃 
+   
+   /crmManager/customerOrder/info ->客户订单 -> Ordering/crmCustomerOrder.jsx -> ./OrderingManagementList
+   
+   /ordering/matchOrderList/info -> 撮合订单 -> Ordering/orderManagement1.js -> ./OrderingManagementList
+   /ordered/matchOrderList/info
+
+   /ordering/companyOrderList/info -> 亨通订单 -> Ordering/orderManagement2.js -> ./OrderingManagementList
+
+   /orderacc/customeracc/info //废弃
+
+   /ordering/riskacc/info ->订单审核 -> Risk/orderManagement2.js -> ./OrderingManagementList
+   
+   /orderacc/riskacc/info //废弃
+
+   /orderacc/bdacc/info  //废弃
+
+   /orderacc/merchacc/info //废弃 
+```
+
+#### /v1/order/crm/logisticsinfo
+```js 
+   /v1/order/crm/logisticsinfo -> /v1/order/logisticsinfo
+```
+#### /v1/order/updatecontract
+```js 
+   /v1/order/updatecontract -> /v1/econtract/attachment/upload
+   ordering/contractUpdate
+```
+#### v1/item/batch/price/updates
+```js
+   v1/item/batch/price/updates 
+   RESTINGPRICEUPDATES-> /lan360/pending/price/update
+   /lan360/pending/list
+```
+#### /v1/item/spotresource/get/
+```js
+   ITEMDETAIL -> /item/spotresource/getItem
+```
+#### 订单关闭
+```js
+   /v1/order/close -> /order/api/close -> closeOrder -> ordering/closeOrderList ->/OrderCloseModule
+```
+#### /v1/order/batchupdate 批量更新客户经理
+```js
+   BATCHUPDATE->/order/api/manager/update
+```
