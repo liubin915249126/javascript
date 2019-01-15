@@ -169,3 +169,11 @@ v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
 ```js
    BATCHUPDATE->/order/api/manager/update
 ```
+#### api/v1/order/list
+```js
+   -> /ordering/api/oneList -> queryOrderingOneList
+```
+#### /v1/order/logistics/addupdate
+```js
+   ->/order/logist/infoupdate
+```
