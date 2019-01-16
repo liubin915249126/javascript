@@ -9,7 +9,7 @@
 		"purchasePrice": 13640,
 		"purchaseQuantity": 64,
 		"goodsOrderId": "2294823193454552129",
-		"additionalRemarks": "说明",
+		"additionalRemarks": "11",
 		"version": "1",
 		"cid": "16",
 		"purchaserCompanyName": "江苏五一互联电子商务有限公司",
@@ -17,37 +17,37 @@
 		"orderLogisticsId": "2294809368632849825",
 		"purchaseOrderPaymentInfoInDTO": {
 			"settlementTypeSec": 152,
-			"avgPriceBeginTime": "2019-01-14T11:27:48.092Z",
-			"avgPriceEndTime": "2019-01-18T11:27:48.092Z",
-			"extraCharge": "44",
+			"avgPriceBeginTime": "2019-01-14T01:14:41.040Z",
+			"avgPriceEndTime": "2019-01-18T01:14:41.041Z",
+			"extraCharge": "2122",
 			"paymentType": "1201",
-			"paymentRemark": "11",
+			"paymentRemark": "备注",
 			"invoiceType": "1301",
-			"invoiceRemark": "22",
+			"invoiceRemark": "111",
 			"settlementType": "1104",
-			"settlementRemark": "33",
+			"settlementRemark": "11",
 			"settlementGroup": "145:80;146:20;",
 			"settlementId": "1895948321020184985",
-			"guaranteeCharge": "10"
+			"guaranteeCharge": "11"
 		},
 		"tradeOrderDetailInDTO": {
 			"contractPrice": 13640,
-			"contractPriceRemark": "说明",
+			"contractPriceRemark": "销售单价说明",
 			"weight": 64
 		},
 		"tradeOrderPaymentInfoInDTO": {
-			"guaranteeCharge": "10"
+			"guaranteeCharge": "11"
 		},
-		"purchaseContractPriceRemark": "说明",
+		"purchaseContractPriceRemark": "采购单价说明",
 		"updateOperationId": "90",
 		"tradeOrderId": "2294809368553722857",
 		"tradeOrderLogisticeInfoInDTO": {
 			"orderId": "2294809368553722857",
 			"orderCode": "XCLG0020190114135029482",
 			"orderLogisticsId": "2294809368632849825",
-			"freightPrice": 110,
-			"freightPriceRemarks": "说明",
-			"logisticsCompany": "韵达",
+			"freightPrice": 11,
+			"freightPriceRemarks": "11",
+			"logisticsCompany": "11",
 			"buyerReceivedAddressNm": "山东省-德州市-市辖区",
 			"buyerReceivedAddressDetail": "市辖区"
 		}
