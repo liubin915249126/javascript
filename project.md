@@ -53,3 +53,6 @@ https://lanhuapp.com/url/6enS5
 https://github.com/wangzianan/business-admin
 
 goodsStockDetails
+#### 
+商品分类 增删改查
+供应商 增删改查
