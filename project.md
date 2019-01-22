@@ -34,6 +34,8 @@ https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&red
 
 http://121.41.53.68:8085/index.html#/user/login
 
+http://localhost:9001/#/payroll_detail/2018-12/341226199403051588
+
 oPgmSjuFeAduKrIJvsuJCuugbJNI
 oGjAs1m3FhYoEADEzvo_0dR5MwF4
 
@@ -51,6 +53,7 @@ https://mn8v9v.axshare.com/#g=1&p=%E6%A6%82%E5%86%B5 2018
 abo 111111
 https://lanhuapp.com/url/6enS5
 https://github.com/wangzianan/business-admin
+https://www.fysc.top/clientadmin/#/overview
 
 goodsStockDetails
 #### 

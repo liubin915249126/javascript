@@ -11,7 +11,9 @@
   本地文件夹关联github
   git remote add origin https://github.com/liubin915249126/Test.git
   git push -u origin mastegit
-  
+
+  git push origin HEAD:feature/5/forestV2.0
+
   git config --global user.name "liubin"
   git config --global user.email "915249126@qq.com"
    

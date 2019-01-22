@@ -101,6 +101,7 @@ https://github.com/dawnlabs/carbon
 [autoCpmplete](https://github.com/TarekRaafat/autoComplete.js)
 [json](https://github.com/antonmedv/fx)
 [animate](https://github.com/juliangarnier/anime)
+[Internationalization](https://github.com/facebookincubator/fbt)
 
 #### git
 [git-hook](https://github.com/typicode/husky)

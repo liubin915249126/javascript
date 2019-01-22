@@ -11,7 +11,8 @@
 [119](http://123.150.252.54:8000)91
 
 http://123.150.252.54:2000/users/sign_in
-http://123.150.252.54:2000/root/operate_manager/merge_requests/new
+http://123.150.252.54:2018/root/operate_manager/merge_requests/new
+http://123.150.252.54:2018/51hl/operate_manager/merge_requests/new
 
 http://123.150.252.54:81/redmine/my/page
 
@@ -179,4 +180,24 @@ v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
 #### /v1/order/logistics/addupdate
 ```js
    ->/order/logist/infoupdate
+```
+
+#### vscode node
+```js
+   {
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name":"启动",
+            "type": "node",
+            "request": "launch", 
+            "protocol": "inspector",
+            "program": "${workspaceFolder}\\server.js"
+        }
+    ]
+}
 ```
