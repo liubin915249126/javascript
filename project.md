@@ -18,7 +18,6 @@ set PORT=8005 && set HOST=localhost && npm run dev
 http://www.gloudtek.com/zentao/index.php?m=bug&f=browse&productID=34
 liubin liubin88
 
-https://pro.modao.cc/app/YunPRa5cJDOTRTVL7zUDcSbECqQCE7A
 
 #### payroll
 uvolhr,szuvol123 
@@ -66,4 +65,5 @@ goodsStockDetails
 供应商 增删改查
 
 #### 汉深
+https://pro.modao.cc/app/YunPRa5cJDOTRTVL7zUDcSbECqQCE7A
 ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
