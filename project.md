@@ -59,3 +59,6 @@ goodsStockDetails
 #### 
 商品分类 增删改查
 供应商 增删改查
+
+#### 汉深
+ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
