@@ -25,4 +25,4 @@ module.exports = {
 /*找到上一步生成的`manifest.json`文件配置到`plugins`里面*/
 new webpack.DllReferencePlugin({
     manifest: require(path.join(__dirname, '..', 'dist', 'manifest.json')),
-}),
+})

@@ -51,6 +51,7 @@ http://xz.jinriqiuzhi.cn/?code=061lQbzJ1m6nV20nNVvJ1dfczJ1lQbze&state=park#/payr
 ie兼容，
 身份证空过滤
 查询端ui
+http://manager.jinriqiuzhi.cn
 
 #### 收银商城
 https://mn8v9v.axshare.com/#g=1&p=%E6%A6%82%E5%86%B5 2018
@@ -66,4 +67,5 @@ goodsStockDetails
 
 #### 汉深
 https://pro.modao.cc/app/YunPRa5cJDOTRTVL7zUDcSbECqQCE7A
+https://lanhuapp.com/url/M6ceT
 ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
