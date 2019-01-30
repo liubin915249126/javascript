@@ -141,3 +141,6 @@ https://github.com/dawnlabs/carbon
 
 #### graphql
 [appllo](https://github.com/apollographql/react-apollo)
+
+#### animate
+[lottie](https://github.com/airbnb/lottie-web)
