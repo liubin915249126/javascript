@@ -78,6 +78,8 @@ https://github.com/dawnlabs/carbon
 [rich-text](https://github.com/heyscrumpy/tiptap)
 [mobile-ui](https://github.com/youzan/vant)
 [vux](https://github.com/airyland/vux)
+[rem](https://github.com/songsiqi/px2rem-postcss)
+[flexible](https://github.com/amfe/lib-flexible)
 
 #### react
 [animation](https://github.com/drcmda/react-spring)
