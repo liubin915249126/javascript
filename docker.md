@@ -19,6 +19,8 @@ host 127.0.0.1 broker.local
 
 http://secure.fxcg.com/login 
 18205556911
+flywindspeed@gmail.com
+a1381913A
 
 EditorConfig for VS Code
 GraphQL for VSCode

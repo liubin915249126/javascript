@@ -75,3 +75,6 @@ ssh://xxxxx@www.gloudtek.com:29418/external/martec/health/h5-vue.git
 https://gitee.com/capstone/broker
 
 "45696104@qq.com"  "secret"
+
+http://broker.dev.capstoneglobal.com/graphql
+http://broker.dev.capstoneglobal.com/graphql/auth
