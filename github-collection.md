@@ -121,6 +121,7 @@ https://github.com/dawnlabs/carbon
 [截图工具](https://github.com/tomfriwel/welCropper)
 [share-image](https://github.com/jasondu/wxa-plugin-canvas)
 [pay](https://payjs.cn/)
+[collection](https://github.com/justjavac/awesome-wechat-weapp)
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
