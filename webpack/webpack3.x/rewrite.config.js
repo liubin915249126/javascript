@@ -17,7 +17,11 @@ module.exports = (config, env) => {
         // minify: { collapseWhitespace: true },
         production: true,
       }),
-      new WebpackMd5Hash()
+      new WebpackMd5Hash(),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
+      }),
+      new webpack.optimize.UglifyJsPlugin()
     )
   } else {
     config.plugins.push(

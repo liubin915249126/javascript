@@ -91,7 +91,7 @@ https://github.com/dawnlabs/carbon
 [react-hooks](https://github.com/kitze/react-hanger)
 [hooks](https://github.com/matthewp/haunted)
 [react-use](https://github.com/streamich/react-use)
-
+[react-D3](https://github.com/nelsonkuang/ant-admin)
 [translate](https://github.com/i18next/react-i18next)
 
 
@@ -105,6 +105,7 @@ https://github.com/dawnlabs/carbon
 [json](https://github.com/antonmedv/fx)
 [animate](https://github.com/juliangarnier/anime)
 [Internationalization](https://github.com/facebookincubator/fbt)
+[input-type](https://github.com/nosir/cleave.js)
 
 #### git
 [git-hook](https://github.com/typicode/husky)

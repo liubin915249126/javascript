@@ -71,6 +71,23 @@ https://lanhuapp.com/url/M6ceT
 ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
 ssh://xxxxx@www.gloudtek.com:29418/external/martec/health/h5-vue.git
 
+接口文档 http://180.168.10.18:8007/index.aspx
+
+orderStatus
+0是全部， 2是未付款 3是已付款
+couponState
+1.可兑换 2 已过期 3 已兑换
+
+礼品
+sortType
+0 默认排序
+1兑换量倒序
+2参考价升序
+3参考价降序
+
+0:男
+1:女
+
 #### broker
 https://gitee.com/capstone/broker
 

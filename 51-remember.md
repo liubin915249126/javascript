@@ -1,4 +1,4 @@
-[gitlab](http://10.36.2.115)(http://123.150.252.54:2000/) liubin@51youse.com
+[gitlab](http://10.36.2.115)(http://123.150.252.54:2018/) liubin@51youse.com
 [readmine](http://10.36.2.115:81/redmine/) liub （http://123.150.252.54:81/redmine/my/page）
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
@@ -201,3 +201,5 @@ v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
     ]
 }
 ```
+
+valuePropName:"checked"
