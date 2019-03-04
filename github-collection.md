@@ -72,6 +72,7 @@ https://github.com/dawnlabs/carbon
 [layout](https://github.com/cytoscape/cytoscape.js)
 [xstate](https://github.com/davidkpiano/xstate)
 [topo](http://www.hightopo.com/demos/index.html)
+[](https://github.com/jgraph/mxgraph)
 
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
@@ -109,6 +110,7 @@ https://github.com/dawnlabs/carbon
 
 #### git
 [git-hook](https://github.com/typicode/husky)
+[git-history](github.githistory.xyz)
 
 #### 幻灯片
 [impress](https://github.com/impress/impress.js)
