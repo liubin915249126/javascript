@@ -8,7 +8,7 @@
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
-[119](http://123.150.252.54:8000)91
+[119](http://123.150.252.54:91)8000
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new
@@ -62,7 +62,8 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
   /^0\.\d{1,4}$|^[1-9]\d{0,7}(\.\d{1,4})?$/
   
   /^[A-Za-z0-9]+$/ //字母数字
-  
+  /[\u4e00-\u9fa5]/ //中文字符
+
   pattern:/^0\d{2,3}-\d{7,8}$/, message:'座机号格式错误'
   pattern:/^[1][3,4,5,7,8][0-9]{9}$/, message:'手机号格式错误'  
    function commafy(num){
@@ -70,6 +71,8 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
           .toString()
           .replace(/\d{1,3}(?=(\d{3})+(\.\d*)?$)/g, '$&,')
   }
+  var u = navigator.userAgent, app = navigator.appVersion;
+  var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 ``` 
 ```js
    // 订货状态
@@ -207,3 +210,4 @@ v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
 ```
 
 valuePropName:"checked"
+@blur.native.capture="checkPwd"

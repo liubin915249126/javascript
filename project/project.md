@@ -92,6 +92,19 @@ sortType
 卡包：
 1可使用 3是已使用 2是已过期
 
+couponID 礼券ID
+gProductID 礼品ID
+comment 备注
+detailAddress 邮寄地址
+consigne 收件人
+phoneNum 联系电话
+deliveryType 想要的收件时间（工作日 周末）
+txtInfo 刻字信息 （限礼品可刻字礼品）
+
+customization 1.可定制化，2不可定制化
+
+173168
+
 https://health.utools.club/#/login
 
 #### broker

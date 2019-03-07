@@ -300,3 +300,39 @@
 ```js
    "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
 ```
+#### 获取元素宽高
+```js
+    getStyle(elem, style) {
+      if ("getComputedStyle" in window) {
+        var val = getComputedStyle(elem, null)[style];
+        style = style.replace(/\-(\w)/g, function($, $1) {
+          return $1.toUpperCase();
+        });
+        if (val === "auto" && (style === "width" || style === "height")) {
+          var rect = elem.getBoundingClientRect();
+          if (style === "width") {
+            return rect.right - rect.left + "px";
+          } else {
+            return rect.bottom - rect.top + "px";
+          }
+        }
+        return val;
+      } else {
+        style = style.replace(/\-(\w)/g, function($, $1) {
+          return $1.toUpperCase();
+        });
+
+        var val = elem.currentStyle[style];
+
+        if (val === "auto" && (style === "width" || style === "height")) {
+          var rect = elem.getBoundingClientRect();
+          if (style === "width") {
+            return rect.right - rect.left + "px";
+          } else {
+            return rect.bottom - rect.top + "px";
+          }
+        }
+        return val;
+      }
+    }
+```

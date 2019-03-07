@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html2Canvas</title>
+    <style type="text/css">
+      div{
+          width: 200px;
+          height: 200px;
+      }
+      .hidden{
+          background: #333;
+          color:#fff;
+          position: fixed;
+          top: -100vh;
+          /* visibility: hidden; */
+      }
+    </style>
+</head>
+<body>
+    <div class="hidden" id="capture">
+        53543
+    </div>
+    <div>
+        34444
+    </div>
+    <script type="text/javascript" src="./html2Canvas.js"></script>
+    <script type="text/javascript">
+      html2canvas(document.querySelector("#capture")).then(canvas => {
+        document.body.appendChild(canvas)
+      });
+    </script>
+</body>
+</html>
