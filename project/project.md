@@ -107,6 +107,14 @@ customization 1.可定制化，2不可定制化
 
 https://health.utools.club/#/login
 
+this.$indicator.open({
+    text: this.$t('msg.loading'),
+    spinnerType: 'fading-circle'
+});
+.finally(()=>{
+    this.$indicator.close();
+})
+
 #### broker
 https://gitee.com/capstone/broker
 

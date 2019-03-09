@@ -7,3 +7,8 @@
 #### 函数节流与防抖
 
 #### redux的引入
+
+#### book
+[book](http://lucida.me/blog/developer-reading-list/)
+深入理解计算机系统
+重构 改善既有代码设计
