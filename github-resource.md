@@ -17,3 +17,5 @@
 #### blog
 (mtonhuang)[https://github.com/mtonhuang/blog] 
 (proxy)[https://github.com/EtherDream/jsproxy]
+(drag echarts)[https://segmentfault.com/a/1190000018471200]
+(next-doc)(https://github.com/accforgit/DayLearnNote/blob/master/React/Next.js-README.md)

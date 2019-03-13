@@ -105,6 +105,8 @@ customization 1.可定制化，2不可定制化
 
 173168
 
+礼券兑换订单详情 typeID 1为礼券订单 2为卡券订单
+
 https://health.utools.club/#/login
 
 this.$indicator.open({
