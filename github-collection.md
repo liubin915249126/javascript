@@ -96,6 +96,7 @@ https://github.com/dawnlabs/carbon
 [translate](https://github.com/i18next/react-i18next)
 [scroll](https://github.com/diogomoretti/react-snakke)`
 [visible](https://github.com/brigade/react-waypoint)
+[react+D3](https://github.com/jask-oss/reaviz)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
