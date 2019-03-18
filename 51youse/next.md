@@ -42,3 +42,5 @@
   行内样式则可以通过js控制，react通常是将样式与state绑定(这种尽量少出现)，在react中Dom节点或是组件作为
   一种数据结构，可以采用卸载挂载的方式切换。
 >
+#### 开发
+可由express 的 http-proxy-middleware,做到路由转发
