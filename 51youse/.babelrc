@@ -1,0 +1,24 @@
+{
+    "presets": [
+        "@babel/env",
+        "@babel/react",
+        // "stage-0"
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            },
+            "syntax-dynamic-import"
+        ],
+        [
+          "@babel/plugin-proposal-decorators",
+          {
+            "legacy": true
+          }
+        ],
+        ["@babel/plugin-proposal-class-properties"],
+    ]
+}

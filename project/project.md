@@ -72,6 +72,7 @@ https://lanhuapp.com/url/M6ceT
 ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
 ssh://xxxxx@www.gloudtek.com:29418/external/martec/health/h5-vue.git
 
+https://shimo.im/sheets/6OS4vVhS5h0v5311/ 
 接口文档 http://180.168.10.18:8007/index.aspx
 
 orderStatus
@@ -103,7 +104,7 @@ txtInfo 刻字信息 （限礼品可刻字礼品）
 
 customization 1.可定制化，2不可定制化
 
-173168
+173168 173245
 
 礼券兑换订单详情 typeID 1为礼券订单 2为卡券订单
 
