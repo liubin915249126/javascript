@@ -191,12 +191,6 @@ const config = {
     new webpack.ProvidePlugin({
       React: "react"
     }),
-    new TerserPlugin({
-      parallel: true,
-      terserOptions: {
-        ecma: 6
-      }
-    }),
     new HappyPack({
       //用id来标识 happypack处理那里类文件
       id: "happyBabel",
@@ -219,4 +213,15 @@ const config = {
     // 'react': 'React'
   }
 };
+if(isProd){
+  config.plugins.push(
+    new TerserPlugin({
+      parallel: true,
+      terserOptions: {
+        ecma: 6
+      }
+    }),
+  )
+}
+
 module.exports = config;

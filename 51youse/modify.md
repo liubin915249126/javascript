@@ -50,6 +50,12 @@ const TerserPlugin = require('terser-webpack-plugin')
     },
   }),
 
+#### 样式失效 package .babelrc冲突
+#### babel-runtime 
+
+"plugins": ["transform-runtime"]
+
+
   #### HappyPack 
 yarn add -D happypack
   const HappyPack = require('happypack');

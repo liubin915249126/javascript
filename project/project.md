@@ -75,6 +75,8 @@ ssh://xxxxx@www.gloudtek.com:29418/external/martec/health/h5-vue.git
 https://shimo.im/sheets/6OS4vVhS5h0v5311/ 
 接口文档 http://180.168.10.18:8007/index.aspx
 
+http://wechat.ehnasia.com/index.html#/my
+
 orderStatus
 0是全部， 2是未付款 3是已付款
 couponState
