@@ -49,3 +49,5 @@ sudo vim /etc/hosts
 
 
 find  . "(" -name "*.js" -or -name "*.jsx" ")" -print | xargs wc -l
+
+c:\windows\system32\drivers\etc
