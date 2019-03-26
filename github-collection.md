@@ -61,6 +61,7 @@ https://github.com/dawnlabs/carbon
 [ui](https://github.com/callstack/react-native-paper)
 [hooks](https://github.com/react-native-community/react-native-hooks)
 [magic-move](https://github.com/IjzerenHein/react-native-magic-move)
+[svg](https://github.com/react-native-community/react-native-svg)
 
 #### chart&&flow
 [react&&G6](https://github.com/gaoli/gg-editor)
@@ -94,7 +95,10 @@ https://github.com/dawnlabs/carbon
 [react-use](https://github.com/streamich/react-use)
 [react-D3](https://github.com/nelsonkuang/ant-admin)
 [translate](https://github.com/i18next/react-i18next)
-[scroll](https://github.com/diogomoretti/react-snakke)
+[scroll](https://github.com/diogomoretti/react-snakke)`
+[visible](https://github.com/brigade/react-waypoint)
+[react+D3](https://github.com/jask-oss/reaviz)
+[pre-render](https://github.com/chrisvfritz/prerender-spa-plugin)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
@@ -138,6 +142,7 @@ https://github.com/dawnlabs/carbon
 #### node 
 [mock](https://github.com/typicode/json-server)
 [string-similar](https://github.com/aceakash/string-similarity)
+[office](https://github.com/Ziv-Barber/officegen)
 
 #### vscode
 [debugger](https://github.com/auchenberg/vscode-browser-preview)1
