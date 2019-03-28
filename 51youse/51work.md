@@ -7,7 +7,15 @@ pro_des_dept⁩ ▸ ⁨trunk⁩ ▸ ⁨doc⁩ ▸ ⁨03_产品设计⁩ ▸ ⁨0
 
 #### 订货v1.1
 svn://10.36.2.115/pro_des_dept/trunk/doc/03_产品设计/11.订货/V1.1/TP-订货管理V1.1-功能说明.rp
-
+订货成功
+  取消订货()
+    this.cancelOrder(record)
+订货中
+  关闭订单（）
+    confirmCancle(record)
+接口测试文档路径：/bk_dev_dept/trunk/doc/07_系统检证/01.单体测试/09.订货管理/接口测试/*
+接口说明文档路径：/bk_dev_dept/trunk/doc/03_概要设计/10.订货管理/V1.1/01.接口设计/订货V1.1接口说明.xlsx    
+    
 
 分支操作依赖
 @刘翼超 @迟诚 

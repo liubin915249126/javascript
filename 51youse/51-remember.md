@@ -67,7 +67,7 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 
   /^[1-9][0-9]{5}([1][9][0-9]{2}|[2][0][0|1][0-9])([0][1-9]|[1][0|1|2])([0][1-9]|[1|2][0-9]|[3][0|1])[0-9]{3}([0-9]|[X])$/; //身份证
   time.replace(/\-/g, "/")
-  
+  table-layout: fixed;
 
   myImage.replace(/^data:image\/\w+;base64,/, "");
   new Buffer(params.img, 'base64')
@@ -96,6 +96,7 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
     7: '交易关闭',
 }
 ```
+order/api/img/delete
 ```js
         SELECT("select", "下拉可选项"),
   
@@ -279,3 +280,4 @@ valuePropName:"checked"
 								imgNewArr.push(bucketManger.privateDownloadUrl(config.origin, index, config.timeout))
 							}
 ```
+(node:26318) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
