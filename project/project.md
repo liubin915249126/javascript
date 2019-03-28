@@ -130,3 +130,5 @@ https://gitee.com/capstone/broker
 
 http://broker.dev.capstoneglobal.com/graphql
 http://broker.dev.capstoneglobal.com/graphql/auth
+
+http://broker.dev.capstoneglobal.com/message
