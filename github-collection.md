@@ -97,10 +97,11 @@ https://github.com/dawnlabs/carbon
 [react-use](https://github.com/streamich/react-use)
 [react-D3](https://github.com/nelsonkuang/ant-admin)
 [translate](https://github.com/i18next/react-i18next)
-[scroll](https://github.com/diogomoretti/react-snakke)`
+[scroll](https://github.com/diogomoretti/react-snakke)
 [visible](https://github.com/brigade/react-waypoint)
 [react+D3](https://github.com/jask-oss/reaviz)
 [pre-render](https://github.com/chrisvfritz/prerender-spa-plugin)
+[react-win95](https://github.com/React95/React95)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)

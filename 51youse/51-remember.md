@@ -71,6 +71,13 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
 
   myImage.replace(/^data:image\/\w+;base64,/, "");
   new Buffer(params.img, 'base64')
+  
+  const {
+      $route: {
+        params: { orderID }
+      }
+    } = this;
+
 
   pattern:/^0\d{2,3}-\d{7,8}$/, message:'座机号格式错误'
   pattern:/^[1][3,4,5,7,8][0-9]{9}$/, message:'手机号格式错误'  

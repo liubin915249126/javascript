@@ -69,6 +69,7 @@ goodsStockDetails
 #### 汉深
 https://pro.modao.cc/app/YunPRa5cJDOTRTVL7zUDcSbECqQCE7A
 https://lanhuapp.com/url/M6ceT
+https://lanhuapp.com//web/#/item/project/board?pid=394a1336-3106-417f-b021-dc59d5227d90
 ssh://liubin@www.gloudtek.com:29418/external/martec/health/h5.git
 ssh://xxxxx@www.gloudtek.com:29418/external/martec/health/h5-vue.git
 
@@ -132,3 +133,9 @@ http://broker.dev.capstoneglobal.com/graphql
 http://broker.dev.capstoneglobal.com/graphql/auth
 
 http://broker.dev.capstoneglobal.com/message
+
+#### 电站二期
+ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git
+secondStage
+https://lanhuapp.com/web/#/user/login developer2@gloudtek.com   developer2
+http://www.gloudtek.com:8080/login.html liubin@www.gloudtek.com liubin88
