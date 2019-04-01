@@ -133,6 +133,7 @@ http://broker.dev.capstoneglobal.com/graphql
 http://broker.dev.capstoneglobal.com/graphql/auth
 
 http://broker.dev.capstoneglobal.com/message
+http://broker.dev.capstoneglobal.com/accountDetails?id=4
 
 #### 电站二期
 ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git

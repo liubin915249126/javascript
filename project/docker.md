@@ -23,6 +23,10 @@ http://secure.fxcg.com/login
 flywindspeed@gmail.com
 a1381913A
 
+Altair GraphQL Client
+
+18205556911 Qwe123456
+
 EditorConfig for VS Code
 GraphQL for VSCode
 StandardJS - JavaScript Standard Style
