@@ -112,6 +112,7 @@ customization 1.可定制化，2不可定制化
 礼券兑换订单详情 typeID 1为礼券订单 2为卡券订单
 
 https://health.utools.club/#/login
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc4328159e00d7f46&redirect_uri=http%3a%2f%2fwechat.ehnasia.com%2flogin&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect
 
 this.$indicator.open({
     text: this.$t('msg.loading'),
@@ -123,6 +124,8 @@ this.$indicator.open({
 987600000487 
 34279290
 /gift/dlist/270482/25637/0
+ <!-- <a :href="`http://www.kuaidi100.com/kuaidiresult?id=${gift.waybillNo}`" target="_blank" v-if="gift.waybillNo">查看物流详细信息</a> -->
+          <a :href="`https://m.ickd.cn/result.html#no=${gift.waybillNo}&com=auto`" target="_blank" v-if="gift.waybillNo">{{$t('gift.check')}}</a>
 
 #### broker
 https://gitee.com/capstone/broker
@@ -134,6 +137,8 @@ http://broker.dev.capstoneglobal.com/graphql/auth
 
 http://broker.dev.capstoneglobal.com/message
 http://broker.dev.capstoneglobal.com/accountDetails?id=4
+
+database/seeds/RoleAndPermissionSeeder.php
 
 #### 电站二期
 ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git
