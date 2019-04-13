@@ -140,8 +140,12 @@ http://broker.dev.capstoneglobal.com/accountDetails?id=4
 
 database/seeds/RoleAndPermissionSeeder.php
 
+47.74.59.111
+
 #### 电站二期
 ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git
 secondStage
 https://lanhuapp.com/web/#/user/login developer2@gloudtek.com   developer2
 http://www.gloudtek.com:8080/login.html liubin@www.gloudtek.com liubin88
+
+http://127.0.0.1:8001/operationsManagement-index/spare-part
