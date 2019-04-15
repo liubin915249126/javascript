@@ -106,6 +106,8 @@ https://github.com/dawnlabs/carbon
 [react+D3](https://github.com/jask-oss/reaviz)
 [pre-render](https://github.com/chrisvfritz/prerender-spa-plugin)
 [react-win95](https://github.com/React95/React95)
+[react-player](https://github.com/CookPete/react-player)
+
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)

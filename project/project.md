@@ -149,3 +149,4 @@ https://lanhuapp.com/web/#/user/login developer2@gloudtek.com   developer2
 http://www.gloudtek.com:8080/login.html liubin@www.gloudtek.com liubin88
 
 http://127.0.0.1:8001/operationsManagement-index/spare-part
+http://127.0.0.1:8001/operationsManagement/spareparts/index
