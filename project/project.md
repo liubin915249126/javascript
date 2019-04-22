@@ -124,8 +124,12 @@ this.$indicator.open({
 987600000487 
 34279290
 /gift/dlist/270482/25637/0
+
+http://101.37.84.120:8222/login
+
  <!-- <a :href="`http://www.kuaidi100.com/kuaidiresult?id=${gift.waybillNo}`" target="_blank" v-if="gift.waybillNo">查看物流详细信息</a> -->
           <a :href="`https://m.ickd.cn/result.html#no=${gift.waybillNo}&com=auto`" target="_blank" v-if="gift.waybillNo">{{$t('gift.check')}}</a>
+https://blog.csdn.net/qq_37952101/article/details/83619479
 
 #### broker
 https://gitee.com/capstone/broker
@@ -141,6 +145,7 @@ http://broker.dev.capstoneglobal.com/accountDetails?id=4
 database/seeds/RoleAndPermissionSeeder.php
 
 47.74.59.111
+creditType creditMoney expireDate creditRemark
 
 #### 电站二期
 ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git
@@ -149,4 +154,6 @@ https://lanhuapp.com/web/#/user/login developer2@gloudtek.com   developer2
 http://www.gloudtek.com:8080/login.html liubin@www.gloudtek.com liubin88
 
 http://127.0.0.1:8001/operationsManagement-index/spare-part
-http://127.0.0.1:8001/operationsManagement/spareparts/index
+http://127.0.0.1:8001/operationsManagement-index/operationsManagement-spareparts-index
+
+powerStationId

@@ -19,7 +19,7 @@ host 127.0.0.1 broker.local
 [ui](http://test.capstoneglobal.com/trader/login.html)(http://test.capstoneglobal.com/en/trader/login.html)
 
 http://secure.fxcg.com/login 
-18205556911
+18205556911 Qwe12345678
 flywindspeed@gmail.com
 a1381913A
 
