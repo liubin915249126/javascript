@@ -1,13 +1,14 @@
+
 {
 	"purchaseInfo": {
 		"supplierCompanyName": "天津六一互联有限公司",
 		"supplierCompanyId": "1548734714564441609",
-		"supplierManagerId": 95,
+		"supplierManagerId": "95",
 		"supplierManagerName": "孙丽丽",
 		"purchasePrice": 12,
 		"purchaseQuantity": 12,
 		"goodsOrderId": "1588835197095853025",
-		"version": "1",
+		"version": "2",
 		"cid": "15",
 		"purchaserCompanyName": "江苏五一互联电子商务有限公司",
 		"purchaserCompanyId": "1606026249208216737",
@@ -35,12 +36,15 @@
 			"freightPrice": 0,
 			"buyerReceivedAddressNm": "安徽省-合肥市-市辖区",
 			"buyerReceivedAddressDetail": "22",
+			"purchaseOrderId": "1619998156213407129",
+			"purchaseOrderCode": "BCDJT020190419155622737",
 			"logistics": ";89:28;",
 			"logisticsName": "物流方式:仓库自提;",
 			"stocks": ";93:3;",
-			"stocksName": "仓库:南京仙林仓库;",
-			"geographic": ";92:32-320100000000-unlimit;",
-			"geographicName": "所在地:江苏省-南京市-不限;"
+			"stocksName": "仓库:undefined;",
+			"geographic": "",
+			"geographicName": "",
+			"version": 4
 		},
 		"purchaseOrderLogisticsInfoDTO": {
 			"logistics": ";89:2116;",
@@ -57,13 +61,9 @@
 	},
 	"officeInfo": {
 		"tradeOrderId": "1578908722700318569",
-		"tradeOrderCode": "XCDJT020190404191537938"
-	}
+		"tradeOrderCode": "XCDJT020190404191537938",
+		"orderOfficeId": "1578912529752523689",
+		"updateOperationId": "90"
+	},
+	"modifyFlag": true
 }
-
-
-
-XCDJT020190404191537938
-purchaseOrderLogisInfo
-setDynamicValue
-BCDJT020190419155622737
