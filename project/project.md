@@ -157,3 +157,6 @@ http://127.0.0.1:8001/operationsManagement-index/spare-part
 http://127.0.0.1:8001/operationsManagement-index/operationsManagement-spareparts-index
 
 powerStationId
+ready 2616 2617 2618 2619 2620 2623 2624 
+not 2622 2628 2642 2647 2650
+http://www.gloudtek.com/zentao/index.php

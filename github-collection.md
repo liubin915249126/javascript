@@ -120,7 +120,7 @@ https://github.com/dawnlabs/carbon
 [animate](https://github.com/juliangarnier/anime)
 [Internationalization](https://github.com/facebookincubator/fbt)
 [input-type](https://github.com/nosir/cleave.js)
-
+[wired-elements](https://github.com/wiredjs/wired-elements)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)
