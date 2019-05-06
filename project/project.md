@@ -147,6 +147,9 @@ database/seeds/RoleAndPermissionSeeder.php
 47.74.59.111
 creditType creditMoney expireDate creditRemark
 
+editTraderMtUser
+
+
 #### 电站二期
 ssh://liubin@www.gloudtek.com:29418/external/envision/om/web-frontend.git
 secondStage
