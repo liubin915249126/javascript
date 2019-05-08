@@ -5,6 +5,7 @@ https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
 
 https://www.maohz.com/mhzpage/admin/index.html#/home
 https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
+daily/0.0.1
 
 tcb-admin-node
 

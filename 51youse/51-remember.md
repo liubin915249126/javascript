@@ -292,3 +292,4 @@ modifyVars
 https://github.com/getlantern/lantern
 https://github.com/EtherDream/jsproxy/
 https://zjcqoo.github.io/
+https://github.com/v2ray/v2ray-core
