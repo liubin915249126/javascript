@@ -287,3 +287,8 @@ valuePropName:"checked"
 
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 modifyVars
+
+[google]
+https://github.com/getlantern/lantern
+https://github.com/EtherDream/jsproxy/
+https://zjcqoo.github.io/
