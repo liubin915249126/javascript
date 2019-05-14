@@ -79,7 +79,7 @@ https://github.com/dawnlabs/carbon
 [xstate](https://github.com/davidkpiano/xstate)
 [topo](http://www.hightopo.com/demos/index.html)
 [](https://github.com/jgraph/mxgraph)
-
+[GGEditor](https://github.com/gaoli/GGEditor)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
@@ -122,6 +122,9 @@ https://github.com/dawnlabs/carbon
 [Internationalization](https://github.com/facebookincubator/fbt)
 [input-type](https://github.com/nosir/cleave.js)
 [wired-elements](https://github.com/wiredjs/wired-elements)
+[tooltip](https://github.com/atomiks/tippyjs)
+[OCR](https://github.com/naptha/tesseract.js)
+
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)
@@ -140,6 +143,7 @@ https://github.com/dawnlabs/carbon
 [pay](https://payjs.cn/)
 [collection](https://github.com/justjavac/awesome-wechat-weapp)
 [ui](https://github.com/fuxingkai/frankui-weapp)
+[ui](https://github.com/youzan/vant-weapp)
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
@@ -160,7 +164,7 @@ https://github.com/dawnlabs/carbon
 
 #### css
 [css](https://github.com/QiShaoXuan/css_tricks)
-
+[collection](https://github.com/jolaleye/cssfx)
 #### graphql
 [appllo](https://github.com/apollographql/react-apollo)
 

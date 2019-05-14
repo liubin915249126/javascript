@@ -288,6 +288,10 @@ valuePropName:"checked"
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 modifyVars
 
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'dist','index.html'));
+});
+
 [google]
 https://github.com/getlantern/lantern
 https://github.com/EtherDream/jsproxy/

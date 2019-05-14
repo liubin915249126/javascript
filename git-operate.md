@@ -51,3 +51,10 @@ sudo vim /etc/hosts
 find  . "(" -name "*.js" -or -name "*.jsx" ")" -print | xargs wc -l
 
 c:\windows\system32\drivers\etc
+
+
+http://IPAddress.com
+github.com
+assets-cdn.github.com1
+github.global.ssl.fastly.net
+ipconfig /flushdns
