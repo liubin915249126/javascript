@@ -16,3 +16,5 @@ https://shimo.im/docs/JxVwZgRBJrA0fZQx/
 
 https://manage.maohz.com
 '/mhzpage/admin'
+
+https://webtest.maohz.com:8444
