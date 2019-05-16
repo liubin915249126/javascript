@@ -292,8 +292,12 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'dist','index.html'));
 });
 
+extraBabelIncludes:['./node_modules/hxtrip-backstage-common'],
+
 [google]
 https://github.com/getlantern/lantern
 https://github.com/EtherDream/jsproxy/
 https://zjcqoo.github.io/
 https://github.com/v2ray/v2ray-core
+
+使用verdaccio搭建npm仓库

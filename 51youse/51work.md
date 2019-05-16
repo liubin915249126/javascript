@@ -28,3 +28,7 @@ svn://10.36.2.115/pro_des_dept/trunk/doc/03_产品设计/11.订货/V1.1/TP-订�
 分支操作依赖：
 操作对象：运营管理端
 新建：feature/5/permissionv1.0
+
+dictGetPayInfo
+
+initPayinfo
