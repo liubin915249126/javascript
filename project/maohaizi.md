@@ -2,6 +2,7 @@ https://derek@git.maohz.com/r/mhz.miniapps.git
 mhz_dev   mhzgit
 
 https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
+special
 
 https://www.maohz.com/mhzpage/admin/index.html#/home
 
