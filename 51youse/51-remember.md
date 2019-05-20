@@ -1,4 +1,4 @@
-[gitlab](http://10.36.2.115)(http://123.150.252.54:2018/) liubin@51youse.com
+[gitlab](http://10.36.2.115)(http://123.150.252.54:2018/) liubin@51youse.com liubin
 [readmine](http://10.36.2.115:81/redmine/) liub （http://123.150.252.54:81/redmine/my/page）
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
@@ -301,3 +301,16 @@ https://zjcqoo.github.io/
 https://github.com/v2ray/v2ray-core
 
 使用verdaccio搭建npm仓库
+
+https://vintage.myetherwallet.com/
+
+#### google
+```js
+  liubin18205556911@gmail.com
+  len.liu53@gmail.com
+```
+#### github
+```js
+    915249126@qq.com
+    18205556911@163.com
+```
