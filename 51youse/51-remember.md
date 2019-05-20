@@ -1,10 +1,10 @@
-[gitlab](http://10.36.2.115)(http://123.150.252.54:2018/) liubin@51youse.com liubin
+[gitlab](http://10.36.2.115)(http://123.150.252.54:2018/) liubin@51youse.com liubin (http://10.36.2.118)
 [readmine](http://10.36.2.115:81/redmine/) liub （http://123.150.252.54:81/redmine/my/page）
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
 [51](http://operate.51youse.com/)
 [svn](svn://10.36.2.115/fr_dev_dept)
-[svn-pro](svn://10.36.2.115/pro_des_dept/)
+[svn-pro](svn://10.36.2.115/pro_des_dept/) liubin
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
@@ -314,3 +314,23 @@ https://vintage.myetherwallet.com/
     915249126@qq.com
     18205556911@163.com
 ```
+
+npm audit fix --force
+
+Cannot read property 'thisCompilation' of undefined webpack4.x->3.x
+extract-text-webpack-plugin:^3.0.2
+umi:^2.5.6
+
+var reader= new FileReader();
+			reader.readAsDataURL(file);
+			 // 当文件读取成功时执行的函数
+			reader.onload=function(e){
+        console.log(this)
+      }
+window.URL.createObjectURL(file)   
+   
+        // const cropperImg = new Image();
+        // cropperImg.src = src;
+        // cropperImg.onload=function(){
+        //   that.copperImg();
+        // }

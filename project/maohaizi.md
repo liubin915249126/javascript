@@ -2,12 +2,13 @@ https://derek@git.maohz.com/r/mhz.miniapps.git
 mhz_dev   mhzgit
 
 https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
-special
+daily/0.0.1
 
 https://www.maohz.com/mhzpage/admin/index.html#/home
 
 https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
-daily/0.0.1
+special
+
 
 tcb-admin-node
 

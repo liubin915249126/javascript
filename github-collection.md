@@ -124,6 +124,7 @@ https://github.com/dawnlabs/carbon
 [wired-elements](https://github.com/wiredjs/wired-elements)
 [tooltip](https://github.com/atomiks/tippyjs)
 [OCR](https://github.com/naptha/tesseract.js)
+[cropper](https://github.com/fengyuanchen/cropperjs)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
