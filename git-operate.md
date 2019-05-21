@@ -4,6 +4,7 @@
   
   git push --set-upstream origin test // 当前分支与远程分支关联
 
+  
   git checkout -b cash origin/cash
   
   //git branch --set-upstream-to=origin/test test
