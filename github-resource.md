@@ -32,6 +32,7 @@
 (promise)[https://github.com/neroneroffy/neroht]
 (dva-ssr)[https://github.com/skyFi/dva-starter]
 (webpack-isomorphic-tools)[https://github.com/catamphetamine/webapp]
+(ssr)[https://github.com/GoogleChrome/rendertron]
 #### 整理
 (uni)[https://github.com/lib-pku/libpku]
 (interview)[https://github.com/qianguyihao/Web]
