@@ -3,7 +3,7 @@
 [swagger](http://10.36.2.114:8888/api/swagger/index.html#!/v1%2Forder/listAll)
 [test](http://10.36.2.119:3000/buyerOrderPage)
 [51](http://operate.51youse.com/)
-[svn](svn://10.36.2.115/fr_dev_dept)
+[svn](svn://10.36.2.115/fr_dev_dept) \trunk\doc\01_项目管理\03.进度管理\01.进度计划表
 [svn-pro](svn://10.36.2.115/pro_des_dept/) liubin
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
@@ -334,3 +334,5 @@ window.URL.createObjectURL(file)
         // cropperImg.onload=function(){
         //   that.copperImg();
         // }
+
+'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'        

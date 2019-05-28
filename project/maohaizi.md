@@ -23,6 +23,12 @@ https://manage.maohz.com
 
 https://webtest.maohz.com:8444
 
+http://mhz.mzd1893.com/mhz/swagger-ui.html
+http://mhz.mzd1893.com/mhz/open/dict/mainlist
+
+admin4
+123456
+
 ```js 
     $('#tailoringImg').cropper({  
         aspectRatio : 1 / 1,// 默认比例  
