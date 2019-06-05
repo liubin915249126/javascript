@@ -8,7 +8,7 @@
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
-[119](http://123.150.252.54:91)8000
+[119](http://123.150.252.54:91) http://10.36.2.119:8000
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new
