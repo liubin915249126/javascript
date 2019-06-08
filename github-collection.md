@@ -126,7 +126,7 @@ https://github.com/dawnlabs/carbon
 [tooltip](https://github.com/atomiks/tippyjs)
 [OCR](https://github.com/naptha/tesseract.js)
 [cropper](https://github.com/fengyuanchen/cropperjs)
-
+[doc](https://github.com/pedronauck/docz)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)

@@ -15,6 +15,7 @@
 
 #### interview
 [daliy](https://github.com/Advanced-Frontend/Daily-Interview-Question)
+[daily](https://github.com/haizlin/fe-interview)
 
 #### ML
 (TS)[https://github.com/infinitered/nsfwjs]
@@ -37,6 +38,7 @@
 #### 整理
 (uni)[https://github.com/lib-pku/libpku]
 (interview)[https://github.com/qianguyihao/Web]
+(interview)[https://github.com/xd-tayde/blog]
 #### HTML
 (temp)[https://github.com/xiangyuecn/BuildHTML]
 

@@ -59,3 +59,12 @@ github.com
 assets-cdn.github.com1
 github.global.ssl.fastly.net
 ipconfig /flushdns
+```js
+  git tag -a 1.0 -m "note" //创建 tag
+  git push origin --tags    //推送所有 tag
+  git tag -d version //  删除tag
+  git push origin :refs/tags/version //删除远程标签
+```
+
+HTTP 413 curl 22 The requested URL returned error: 413 Request Entity Too Large
+git config --global http.postBuffer 52428800

@@ -48,3 +48,10 @@ EditorConfig for VS Code
 
     45696104@qq.com
     secret123
+    
+"emmet.includeLanguages": {
+        "wxml": "html",
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "plaintext": "jade",
+    },    

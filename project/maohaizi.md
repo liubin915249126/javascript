@@ -77,3 +77,9 @@ superadmin  123
       image.src = url;
     },
 ```    
+
+
+优惠券：已用 beautyCount
+余额：以扣 balanceAmount
+spa：已用 showerCount
+会员：vipLevel,vipDiscount
