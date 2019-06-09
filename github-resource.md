@@ -7,6 +7,7 @@
 [ssr](https://github.com/wujiabk/zhaopinApp)(https://www.jianshu.com/p/47c8e364d0bc?appinstall=1&mType=Group)
 [ssr](https://github.com/meibin08/NeteaseCloudMusic-SSR)
 [ssr](https://github.com/manuelbieh/react-ssr-setup)
+[ssr](https://github.com/cereallarceny/cra-ssr)
 #### 移动端
 [vw](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
 
