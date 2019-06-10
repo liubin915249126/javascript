@@ -64,6 +64,7 @@ https://github.com/dawnlabs/carbon
 #### react-native
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
 [ui](https://github.com/callstack/react-native-paper)
+[ui](https://github.com/akveo/react-native-ui-kitten/)
 [hooks](https://github.com/react-native-community/react-native-hooks)
 [magic-move](https://github.com/IjzerenHein/react-native-magic-move)
 [svg](https://github.com/react-native-community/react-native-svg)
@@ -127,6 +128,7 @@ https://github.com/dawnlabs/carbon
 [OCR](https://github.com/naptha/tesseract.js)
 [cropper](https://github.com/fengyuanchen/cropperjs)
 [doc](https://github.com/pedronauck/docz)
+[upload](https://github.com/pqina/filepond)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)

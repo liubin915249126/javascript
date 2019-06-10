@@ -8,7 +8,8 @@
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)
 
-[119](http://123.150.252.54:91) http://10.36.2.119:8000
+[119](http://123.150.252.54:91)
+[lan360](http://10.36.2.123:8080/api/)
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new
@@ -335,3 +336,36 @@ window.URL.createObjectURL(file)
         // }
 
 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'        
+
+showTime={{
+  defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('23:59:59', 'HH:mm:ss')],
+}} format="YYYY-MM-DD"
+
+```js
+   export function listToTree(data, options) {
+      options = options || {};
+      const ID_KEY = options.idKey || 'id';
+      const PARENT_KEY = options.parentKey || 'parentCid';
+      const CHILDREN_KEY = options.childrenKey || 'children';
+      let tree = [],
+      childrenOf = {};
+      let item,
+            id,
+            parentId;
+      for (let i = 0, length = data.length; i < length; i++) {
+            item = data[i];
+            id = item[ID_KEY];
+            parentId = item[PARENT_KEY] || 0;
+            childrenOf[id] = childrenOf[id] || [];
+            item[CHILDREN_KEY] = childrenOf[id];
+            if (parentId != 0) {
+               childrenOf[parentId] = childrenOf[parentId] || [];
+               childrenOf[parentId].push(item);
+            } else {
+            tree.push(item);
+            }
+         }
+
+      return tree;
+   }
+```

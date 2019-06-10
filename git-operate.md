@@ -68,3 +68,33 @@ ipconfig /flushdns
 
 HTTP 413 curl 22 The requested URL returned error: 413 Request Entity Too Large
 git config --global http.postBuffer 52428800
+
+
+[](https://blog.csdn.net/ligang2585116/article/details/51816372#t7)
+
+工作区：即自己当前分支所修改的代码，git add xx 之前的！不包括 git add xx 和 git commit xxx 之后的。 git checkout -- a.txt 
+暂存区：已经 git add xxx 进去，且未 git commit xxx 的。 git reset HEAD a.txt //取消暂存  git checkout fileName //撤销修改
+本地分支：已经git commit -m xxx 提交到本地分支的。
+
+git reset
+–hard：重设index和working directory，从<commit>以来在working directory中的任何改变都被丢弃，并把HEAD指向<commit>
+–soft：index和working directory中的内容不作任何改变，仅仅把HEAD指向<commit>
+–mixed：仅重设index，但是不重设working directory。
+
+将本地的状态回退到和远程一样  $ git reset --hard origin/devlop
+要想在develop分支，但错误地提交到了maser分支
+```js
+    git checkout master
+    git add .
+    git commit -m"..."
+    git reset --mixed HEAD~1
+    git stash
+    git checkout develop
+    git stash pop
+```
+
+撤销合并 
+```js
+   $ git reset --hard HEAD~1 //这个方法的缺点是它会重写历史，在一个共享的仓库中这会造成问题的。如果其他人已经有你将要重写的提交，你应当避免使用 reset。 如果有任何其他提交在合并之后创建了，那么这个方法也会无效；移动引用实际上会丢失那些改动。
+   $ git revert -m 1 HEAD //-m 1 标记指出 “mainline” 需要被保留下来的父结点。上述示例为以上次提交的结点为当前主线父节点。同理：$ git revert -m 1 HEAD~3 表示最近3次的提交会被干掉。
+```

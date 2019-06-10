@@ -6,8 +6,11 @@
 [ssr](https://github.com/code-mcx/react-ssr)
 [ssr](https://github.com/wujiabk/zhaopinApp)(https://www.jianshu.com/p/47c8e364d0bc?appinstall=1&mType=Group)
 [ssr](https://github.com/meibin08/NeteaseCloudMusic-SSR)
-[ssr](https://github.com/manuelbieh/react-ssr-setup)
+
+[ssr](https://github.com/manuelbieh/react-ssr-setup)cd 
 [ssr](https://github.com/cereallarceny/cra-ssr)
+[ssr](https://github.com/kriasoft/react-starter-kit)
+
 #### 移动端
 [vw](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
 
@@ -40,12 +43,16 @@
 (uni)[https://github.com/lib-pku/libpku]
 (interview)[https://github.com/qianguyihao/Web]
 (interview)[https://github.com/xd-tayde/blog]
+(book)[https://github.com/0voice/from_coder_to_expert]
+(weekliy)[https://github.com/lydiahallie/javascript-questions]
 #### HTML
 (temp)[https://github.com/xiangyuecn/BuildHTML]
 
 #### 数据结构与算法
 ()[https://mp.weixin.qq.com/s/R9YrdH0QyGrYvqarCnPhvA]
 
-
+#### webpack
+(mpa)[https://github.com/Blubiubiu/webpack4_mpa_demo]
+(nginx)[https://mp.weixin.qq.com/s/1Vgcngv8-dUb3blvDk35zQ]
 #### 本地下载图片
 https://www.jianshu.com/p/454b288d4aa5
