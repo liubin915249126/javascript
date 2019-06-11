@@ -335,3 +335,7 @@ window.URL.createObjectURL(file)
         // }
 
 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'        
+
+showTime={{
+  defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('23:59:59', 'HH:mm:ss')],
+}} format="YYYY-MM-DD"
