@@ -36,3 +36,4 @@ vueEdior: {
   test: /[\\/]node_modules[\\/]vue2-editor[\\/]/,
   priority: 10  // 优先级要大于 vendors 不然会被打包进 vendors
 },
+
