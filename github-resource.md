@@ -43,6 +43,8 @@
 (uni)[https://github.com/lib-pku/libpku]
 (interview)[https://github.com/qianguyihao/Web]
 (interview)[https://github.com/xd-tayde/blog]
+(book)[https://github.com/0voice/from_coder_to_expert]
+(weekliy)[https://github.com/lydiahallie/javascript-questions]
 #### HTML
 (temp)[https://github.com/xiangyuecn/BuildHTML]
 
@@ -51,6 +53,6 @@
 
 #### webpack
 (mpa)[https://github.com/Blubiubiu/webpack4_mpa_demo]
-
+(nginx)[https://mp.weixin.qq.com/s/1Vgcngv8-dUb3blvDk35zQ]
 #### 本地下载图片
 https://www.jianshu.com/p/454b288d4aa5
