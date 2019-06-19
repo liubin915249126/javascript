@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scope</title>
+</head>
+<body>
+    <script>
+       console.log(111,a)
+       a()
+       var a = function(){
+           console.log('a2')
+       }
+       console.log(222,a)
+       function a(){
+           console.log('a1')
+       }
+       console.log(333,a)
+    </script>
+</body>
+</html>
