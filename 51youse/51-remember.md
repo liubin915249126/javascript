@@ -10,6 +10,7 @@
 
 [119](http://123.150.252.54:91)
 [lan360](http://10.36.2.123:8080/api/)
+[v2.0](http://123.150.252.54:9080/api/)(http://10.36.2.122:9080/api/)
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new

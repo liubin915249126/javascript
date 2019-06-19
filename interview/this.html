@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>this</title>
+</head>
+<body>
+    <script>
+      var a = '1'  
+      var obj = {
+        a:'2',
+        b:()=>{
+          console.log('b',this.a)
+        },
+        c:setTimeout(()=>{console.log('c',this)},1),
+        d(){
+            console.log('d',this.a)
+        }
+      }
+      obj.b()
+      obj.d()
+      setTimeout(()=>console.log('c',this),1)
+    </script>
+</body>
+</html>
