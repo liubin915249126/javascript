@@ -33,6 +33,7 @@
 (react-interview)[https://github.com/semlinker/reactjs-interview-questions]
 (chart)[https://www.7moor.com/]
 (interview)[https://github.com/ljianshu/Blog][https://github.com/Advanced-Frontend/Daily-Interview-Question]
+(blog)[https://github.com/qq449245884/xiaozhi]
 #### ssr
 (react-ssr)[https://github.com/alexnm/react-ssr]
 (promise)[https://github.com/neroneroffy/neroht]
