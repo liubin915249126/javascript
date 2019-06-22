@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>scope</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-       console.log(111,a)
-       a()
-       var a = function(){
-           console.log('a2')
-       }
-       console.log(222,a)
-       function a(){
-           console.log('a1')
-       }
-       console.log(333,a)
+      //    console.log(111,a)
+      //    a()
+      //    var a = function(){
+      //        console.log('a2')
+      //    }
+      //    console.log(222,a)
+      //    function a(){
+      //        console.log('a1')
+      //    }
+      //    console.log(333,a)
+
+      var outVariable = "我是最外层变量"; //最外层变量
+      function outFun() {
+        //最外层函数
+        var inVariable = "内层变量";
+        function innerFun() {
+          //内层函数
+          console.log(inVariable);
+        }
+        innerFun();
+      }
+      console.log(outVariable); //我是最外层变量
+      outFun(); //内层变量
+      console.log(inVariable); //inVariable is not defined
+      innerFun(); //innerFun is not defined
     </script>
-</body>
+  </body>
 </html>

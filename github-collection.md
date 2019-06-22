@@ -129,6 +129,8 @@ https://github.com/dawnlabs/carbon
 [cropper](https://github.com/fengyuanchen/cropperjs)
 [doc](https://github.com/pedronauck/docz)
 [upload](https://github.com/pqina/filepond)
+[excel](https://github.com/paulhodel/jexcel)
+[sortable](https://github.com/SortableJS/Sortable)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)

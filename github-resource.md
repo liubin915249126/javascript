@@ -32,7 +32,7 @@
 (next-server)[https://blog.godotdotdot.com/2018/05/25/%E4%BD%BF%E7%94%A8next.js%E5%AE%8C%E6%88%90%E4%BB%8E%E5%BC%80%E5%8F%91%E5%88%B0%E9%83%A8%E7%BD%B2/]
 (react-interview)[https://github.com/semlinker/reactjs-interview-questions]
 (chart)[https://www.7moor.com/]
-(interview)[https://github.com/ljianshu/Blog][https://github.com/Advanced-Frontend/Daily-Interview-Question]
+(interview|this)[https://github.com/ljianshu/Blog][https://github.com/Advanced-Frontend/Daily-Interview-Question]
 (blog)[https://github.com/qq449245884/xiaozhi]
 #### ssr
 (react-ssr)[https://github.com/alexnm/react-ssr]

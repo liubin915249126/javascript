@@ -63,5 +63,7 @@ initPayinfo
 5 接口路径统一 （/platform/）
 >
 
+权限和资源分别绑到角色上
+
 
 purchase/logist/update order/seller/logist/update
