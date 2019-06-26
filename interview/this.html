@@ -22,6 +22,32 @@
       obj.b()
       obj.d()
       setTimeout(()=>console.log('c',this),1)
+
+      var obj = {
+        hi: function(){
+            console.log(this);
+            return ()=>{
+                console.log(this);
+            }
+        },
+        sayHi: function(){
+            return function() {
+                console.log(this);
+                return ()=>{
+                    console.log(this);
+                }
+            }
+        },
+        say: ()=>{
+            console.log(this);
+        }
+    }
+    let hi = obj.hi();  //输出obj对象
+    hi();               //输出obj对象
+    let sayHi = obj.sayHi();
+    let fun1 = sayHi(); //输出window
+    fun1();             //输出window
+    obj.say();          //输出window
     </script>
 </body>
 </html>

@@ -65,5 +65,7 @@ initPayinfo
 
 权限和资源分别绑到角色上
 
+http://123.150.252.54:9090/
+
 
 purchase/logist/update order/seller/logist/update
