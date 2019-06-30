@@ -400,3 +400,20 @@
     
     //猎人们发布(发布者)或订阅(观察者/订阅者)任务都是通过猎人工会(调度中心)关联起来的，他们没有直接的交流。
 ```
+#### 大小写切换
+```js
+   function caseConvert(str){
+        return str.replace(/([a-z]*)([A-Z]*)/g, (m, s1, s2)=>{
+        return `${s1.toUpperCase()}${s2.toLowerCase()}`
+        })
+    }
+```
+#### 判断数据类型
+```js
+    function myType(v){
+      return Object.prototype.toString.call(v).replace(/^.{8}(.+)]$/,(m,$1)=> $1.toLowerCase());
+    }
+    function type (obj) {
+	  return Object.prototype.toString.call(obj).replace(/\[object\s|\]/g,'');
+    }
+```
