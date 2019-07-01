@@ -373,3 +373,6 @@ showTime={{
 location / {
         try_files $uri $uri/ /index.html;
 }
+
+res1.text.encode("iso-8859-1").decode('utf-8', 'ignore')
+new String(excelName.getBytes("gb2312"), "ISO8859-1") //中文字符，一定要转换成ISO8859-1格式
