@@ -9,6 +9,7 @@ https://www.maohz.com/mhzpage/admin/index.html#/home
 https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
 special
 
+欧尚星巴克
 
 tcb-admin-node
 
@@ -29,6 +30,13 @@ http://mhz.mzd1893.com/mhz/open/dict/mainlist
 admin4
 123
 superadmin  123
+
+#### 小程序
+1、用户访问多家店的兼容
+  https://shimo.im/docs/n4TXiyMY3NA13zJU/ 
+2、 商品详情页链接规则，shopid改为从接口获取，不从链接里截取了
+3、 商品图片太大了，很有可能加载不出来
+
 
 ```js 
     $('#tailoringImg').cropper({  

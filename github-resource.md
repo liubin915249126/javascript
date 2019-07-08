@@ -34,7 +34,7 @@
 (chart)[https://www.7moor.com/]
 (interview|this)[https://github.com/ljianshu/Blog][https://github.com/Advanced-Frontend/Daily-Interview-Question]
 (前端宇宙)[https://github.com/YvetteLau/Blog]
-(blog)[https://github.com/qq449245884/xiaozhi]
+(blog)[https://github.com/qq449245884/xiaozhi] [https://github.com/mqyqingfeng/Blog] 5
 #### ssr
 (react-ssr)[https://github.com/alexnm/react-ssr]
 (promise)[https://github.com/neroneroffy/neroht]
