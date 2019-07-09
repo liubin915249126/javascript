@@ -130,7 +130,7 @@ https://github.com/dawnlabs/carbon
 [OCR](https://github.com/naptha/tesseract.js)
 [cropper](https://github.com/fengyuanchen/cropperjs)
 [doc](https://github.com/pedronauck/docz)
-[upload](https://github.com/pqina/filepond)
+[upload](https://github.com/pqina/filepond)(https://github.com/transloadit/uppy)
 [excel](https://github.com/paulhodel/jexcel)
 [sortable](https://github.com/SortableJS/Sortable)
 [md](https://github.com/nhn/tui.editor)
