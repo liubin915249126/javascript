@@ -83,6 +83,7 @@ https://github.com/dawnlabs/carbon
 [GGEditor](https://github.com/gaoli/GGEditor)
 [3D](https://github.com/metafizzy/zdog)
 [react-chart](https://github.com/projectstorm/react-diagrams)
+[md](https://github.com/knsv/mermaid)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)

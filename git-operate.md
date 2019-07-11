@@ -23,6 +23,8 @@
 
 >
 
+npm cache clean --force
+
 #### 删除本地与远程分支
 >
   git branch -d test
