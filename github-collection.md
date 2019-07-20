@@ -1,11 +1,11 @@
 ## github优秀库收集
-1.[mdx](https://github.com/mdx-js/mdx);
+1.[mdx](https://github.com/mdx-js/mdx)(https://github.com/jxnblk/mdx-deck)
 [jsPDF](https://github.com/MrRio/jsPDF)
 >
   转换markdown 语法
 >
 2.[firbase](https://github.com/invertase/react-native-firebase)
-3.[calendar](https://github.com/nhnent/tui.calendar)
+3.[calendar](https://github.com/nhnent/tui.calendar)(https://github.com/flatpickr/flatpickr)
 >
   日历插件
 >
@@ -185,3 +185,6 @@ https://github.com/dawnlabs/carbon
 #### animate
 [lottie](https://github.com/airbnb/lottie-web)
 [water](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation)
+
+#### ML 
+[face-api](https://github.com/justadudewhohacks/face-api.js)
