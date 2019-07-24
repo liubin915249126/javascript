@@ -40,8 +40,14 @@ https://mhzxcx.mzd1893.com/mhz/swagger-ui.html
 2、 商品详情页链接规则，shopid改为从接口获取，不从链接里截取了
 3、 商品图片太大了，很有可能加载不出来
 
+#### 老接口
+https://www.maohz.com/mhzapi/api/UserApi/GetUserId getOpenIdbywxlogin
 
-
+https://www.maohz.com/mhzapi/api/UserApi/UserPhoneLogin CommongetPhoneNumber1
+加入购物车
+app.globalData.WebUrl + '/cart/getItems'
+商品详情
+https://www.maohz.com/mhzapi/api/ShopApi/GetGoodsSpecDetailInfo /open/goods/view/{id}
 
 ```js 
     $('#tailoringImg').cropper({  

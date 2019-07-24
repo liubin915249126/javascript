@@ -1,6 +1,7 @@
 #### extensions
 ```js
     Remote VSCode
+    TabNine
 ```
 #### debugger
 ```js

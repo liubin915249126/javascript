@@ -90,6 +90,7 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
   
   postcss-px-to-viewport
   
+  pm2 start npm --name "51shop" -- run build --watch
 ``` 
 ```js
    // 订货状态
@@ -226,7 +227,7 @@ v1/order/crm/logisticsinfo -> v1/order/logisticsinfo
             "type": "node",
             "request": "launch", 
             "protocol": "inspector",
-            "program": "${workspaceFolder}\\server.js"
+            "program": "${workspaceFolder}/operate_manager/server.js"
         }
     ]
 }
