@@ -85,6 +85,7 @@ https://github.com/dawnlabs/carbon
 [react-chart](https://github.com/projectstorm/react-diagrams)
 [md](https://github.com/knsv/mermaid)
 [edit](https://github.com/givanz/VvvebJs)
+[net](https://github.com/visjs/vis-network)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)

@@ -7,3 +7,8 @@ Sam 后端开发
 相武，前端
 张磊，技术
 婷婷是我们的新成员，她主要负责我们的UI
+
+https://org.modao.cc/app/panel/p2a21c8b4da424189eacf8f4c
+墨刀账户：1063930291@qq.com     密码：shilu123
+
+https://lanhuapp.com/url/fw6E0-5GNSu

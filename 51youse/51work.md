@@ -79,4 +79,7 @@ http://123.150.252.54:9090/
 5. 加超级管理员入口（免维护）
 6. 调查管理员资源接口问题
 
+角色增删改查接口 都增加了mainbodyId
+
+
 purchase/logist/update order/seller/logist/update

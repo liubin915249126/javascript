@@ -31,9 +31,10 @@ admin4
 123
 superadmin  123
 
-#### 小程序
-
-https://mhzxcx.mzd1893.com/mhz/swagger-ui.html
+#### 小程序 1.8.9
+1518080054@qq.com 910407F
+https://mhzxcx.mzd1893.com/mhz/swagger-ui.html1
+https://shimo.im/docs/ffjyMZY9xrMaUqAb/read
 
 1、用户访问多家店的兼容
   https://shimo.im/docs/n4TXiyMY3NA13zJU/ 
@@ -43,11 +44,13 @@ https://mhzxcx.mzd1893.com/mhz/swagger-ui.html
 #### 老接口
 https://www.maohz.com/mhzapi/api/UserApi/GetUserId getOpenIdbywxlogin
 
-https://www.maohz.com/mhzapi/api/UserApi/UserPhoneLogin CommongetPhoneNumber1
+https://www.maohz.com/mhzapi/api/UserApi/UserPhoneLogin CommongetPhoneNumber1 https://mhzxcx.mzd1893.com/mhz/open/member/phoneLogin 
 加入购物车
 app.globalData.WebUrl + '/cart/getItems'
 商品详情
-https://www.maohz.com/mhzapi/api/ShopApi/GetGoodsSpecDetailInfo /open/goods/view/{id}
+https://www.maohz.com/mhzapi/api/ShopApi/GetGoodsSpecDetailInfo 
+
+https://www.maohz.com/mhzapi/api/ShopApi/GetShopDetailInfo?goodsId=` + goodsId + `&userId=` + userId, /open/goods/view/{id}
 
 ```js 
     $('#tailoringImg').cropper({  
@@ -111,3 +114,47 @@ order:"desc",
 2.工作台 待办列表 memberId 没返回
 
 充值扣款 	散客消费
+
+商品详情接口
+realAmount,saleAmount,promotionRatio,stock,priceDesc,address
+goodsSpecList  goodsSpecData
+
+#### object.defineProperty
+```js
+    modifyRequest(){
+      const originRequest = wx.request;
+      Object.defineProperty(wx, 'request', {
+      configurable: true,
+      enumerable: true,
+      // writable: true,
+      get(){
+        return (option = {}) => {
+          const {success} = option;
+          Object.defineProperty(option,'success',{
+            configurable: true,
+            enumerable: true,
+            writable: true,
+            // get(){
+            //   return (option = {})=>{
+            //    console.log(222,option)  
+            //   }
+            // },
+            value: function() {
+              const config = arguments[0] || {};
+              return success(config) 
+            }
+          })
+          return originRequest(option)
+        }
+      },
+      // value: function() {
+      //   const config = arguments[0] || {};
+      //   const url = config.url;
+      //   config.success=res=>{
+      //     console.log(111,res)
+      //   }
+      //   return originRequest.apply(this, arguments);
+      // }
+    });
+  },
+```
