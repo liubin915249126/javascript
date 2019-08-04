@@ -60,6 +60,8 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 https://github.com/dawnlabs/carbon
 [unusedcss](https://github.com/leeoniya/dropcss)
 [swc](https://github.com/swc-project/swc)
+[ppt](https://github.com/ksky521/nodeppt)
+[mpeditor](https://github.com/ksky521/mpeditor)
 
 #### react-native
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)

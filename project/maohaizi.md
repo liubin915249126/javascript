@@ -49,8 +49,13 @@ https://www.maohz.com/mhzapi/api/UserApi/UserPhoneLogin CommongetPhoneNumber1 ht
 app.globalData.WebUrl + '/cart/getItems'
 商品详情
 https://www.maohz.com/mhzapi/api/ShopApi/GetGoodsSpecDetailInfo 
-
 https://www.maohz.com/mhzapi/api/ShopApi/GetShopDetailInfo?goodsId=` + goodsId + `&userId=` + userId, /open/goods/view/{id}
+个人详情
+https://www.maohz.com/mhzapi/api/UserApi/GetUserBaseInfo    /member/getMemberInfo
+https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId= 
+用户余额 https://www.maohz.com/mhzapi/api/UserApi/GetAmount
+购物车购买  https://www.maohz.com/mhzapi/api/UserApi/GoodsSecShopping /order/cartBuy
+
 
 ```js 
     $('#tailoringImg').cropper({  
