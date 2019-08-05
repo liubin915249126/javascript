@@ -91,6 +91,8 @@ GDLG0020180530113811177	2018-05-30 11:38:11	2018-07-16 15:40:07	江苏五一互�
   postcss-px-to-viewport vw
   
   pm2 start npm --name "51shop" -- run build --watch
+
+  @babel/plugin-proposal-optional-chaining
 ``` 
 ```js
    // 订货状态

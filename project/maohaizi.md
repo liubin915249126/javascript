@@ -54,7 +54,7 @@ https://www.maohz.com/mhzapi/api/ShopApi/GetShopDetailInfo?goodsId=` + goodsId +
 https://www.maohz.com/mhzapi/api/UserApi/GetUserBaseInfo    /member/getMemberInfo
 https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId= 
 用户余额 https://www.maohz.com/mhzapi/api/UserApi/GetAmount
-购物车购买  https://www.maohz.com/mhzapi/api/UserApi/GoodsSecShopping /order/cartBuy
+购物车购买  https://www.maohz.com/mhzapi/api/UserApi/GoodsSecShopping /order/cartBuy  /order/directBuy
 
 
 ```js 
