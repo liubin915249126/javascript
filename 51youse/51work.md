@@ -82,4 +82,8 @@ http://123.150.252.54:9090/
 角色增删改查接口 都增加了mainbodyId
 
 
-purchase/logist/update order/seller/logist/update
+purchase/logist/update order/seller/logist/update1
+
+加权限控制
+规则类型,应用管理,资源类型管理,模版管理
+规则管理,菜单资源
