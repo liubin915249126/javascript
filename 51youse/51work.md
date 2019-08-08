@@ -81,6 +81,7 @@ http://123.150.252.54:9090/
 
 角色增删改查接口 都增加了mainbodyId
 
+https://mp.weixin.qq.com/s/fdqUXKtXCmcgOwsLONFfeA
 
 purchase/logist/update order/seller/logist/update1
 
