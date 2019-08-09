@@ -16,7 +16,7 @@ http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new
 http://123.150.252.54:2018/51hl/operate_manager/merge_requests/new
 
-http://123.150.252.54:81/redmine/my/page
+http://123.150.252.54:81//redmine/my/page
 
 http://10.36.2.118 liubin 12345678 
 

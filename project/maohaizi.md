@@ -32,6 +32,7 @@ admin4
 superadmin  123
 
 #### 小程序 1.8.9
+https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN&token=908282692
 1518080054@qq.com 910407F
 https://mhzxcx.mzd1893.com/mhz/swagger-ui.html1
 https://shimo.im/docs/ffjyMZY9xrMaUqAb/read
