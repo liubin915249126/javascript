@@ -9,4 +9,8 @@ https://demo.xls.kuaidiantong.cn/admin/
 后台用户：YOUSHU
 后台密码：123456
 
+// 配置后台
 http://gitlab.maomaoai.cn/root/mma-original-sourcecode/tree/master/%E4%BB%A3%E7%A0%81/src/HiShop.OmniChannel/src/Himall.Web/Areas/mpTempSet
+
+// 微商城
+http://gitlab.maomaoai.cn/root/mma-original-sourcecode/tree/master/%E4%BB%A3%E7%A0%81/src/HiShop.OmniChannel/src/Himall.Web/Areas/Mobile/wxshop
