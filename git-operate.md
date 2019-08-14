@@ -6,7 +6,8 @@
 
   
   git checkout -b cash origin/cash
-  
+  git push --set-upstream origin liubin
+
   //git branch --set-upstream-to=origin/test test
   
   本地文件夹关联github

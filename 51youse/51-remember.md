@@ -333,6 +333,7 @@ umi:^2.5.6
 
 var reader= new FileReader();
 			reader.readAsDataURL(file);
+         reader.readAsDataURL(new Blob(filePath));
 			 // 当文件读取成功时执行的函数
 			reader.onload=function(e){
         console.log(this)
