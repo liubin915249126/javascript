@@ -101,3 +101,15 @@ git reset
    $ git reset --hard HEAD~1 //这个方法的缺点是它会重写历史，在一个共享的仓库中这会造成问题的。如果其他人已经有你将要重写的提交，你应当避免使用 reset。 如果有任何其他提交在合并之后创建了，那么这个方法也会无效；移动引用实际上会丢失那些改动。
    $ git revert -m 1 HEAD //-m 1 标记指出 “mainline” 需要被保留下来的父结点。上述示例为以上次提交的结点为当前主线父节点。同理：$ git   -m 1 HEAD~3 表示最近3次的提交会被干掉。
 ```
+
+#### 403
+清除缓存
+git config --local --unset credential.helper
+git config --global --unset credential.helper
+git config --system --unset credential.helper
+
+git config --global credential.helper store
+
+#### 切换源
+git remote remove origin # 删掉原来git源
+git remote add origin [YOUR NEW .GIT URL] # 将新源地址写入本地版本库配置文件
