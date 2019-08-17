@@ -82,7 +82,7 @@ https://github.com/dawnlabs/carbon
 [xstate](https://github.com/davidkpiano/xstate)
 [topo](http://www.hightopo.com/demos/index.html)
 [](https://github.com/jgraph/mxgraph)
-[GGEditor](https://github.com/gaoli/GGEditor)
+[GGEditor](https://github.com/gaoli/GGEditor)(https://github.com/hizzgdev/jsmind)
 [3D](https://github.com/metafizzy/zdog)
 [react-chart](https://github.com/projectstorm/react-diagrams)
 [md](https://github.com/knsv/mermaid)
@@ -196,3 +196,6 @@ https://github.com/dawnlabs/carbon
 
 #### ML 
 [face-api](https://github.com/justadudewhohacks/face-api.js)
+
+#### debugger
+[mobile](https://github.com/facebook/flipper)

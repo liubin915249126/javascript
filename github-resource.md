@@ -49,6 +49,7 @@
 (interview)[https://github.com/xd-tayde/blog]
 (book)[https://github.com/0voice/from_coder_to_expert]
 (weekliy)[https://github.com/lydiahallie/javascript-questions]
+(56)[https://segmentfault.com/a/1190000020082089][https://segmentfault.com/a/1190000020028294]
 #### HTML
 (temp)[https://github.com/xiangyuecn/BuildHTML]
 
@@ -69,5 +70,10 @@ https://www.jianshu.com/p/454b288d4aa5
 [npm](https://github.com/verdaccio/verdaccio)
 [google](https://github.com/haotian-wang/google-access-helper)(https://github.com/bannedbook/fanqiang)
 [md](https://github.com/nicejade/markdown-online-editor)
+[搜索](https://github.com/dengyuhan/magnetW)
+
 #### flutter
 [MXFlutter](https://github.com/TGIF-iMatrix/MXFlutter)
+
+#### node cli
+[jdf](https://github.com/jdf2e/jdf)

@@ -386,3 +386,6 @@ location / {
 
 res1.text.encode("iso-8859-1").decode('utf-8', 'ignore')
 new String(excelName.getBytes("gb2312"), "ISO8859-1") //中文字符，一定要转换成ISO8859-1格式
+
+mac/linux PORT=4000 
+windows set PORT=4000
