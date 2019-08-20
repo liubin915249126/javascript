@@ -60,7 +60,8 @@ https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId=
 套餐列表 https://www.maohz.com/mhzapi/api/ShopApi/GetShopPackageList?shopId=' + shopId  /member/listPackage
 充值流水 `https://www.maohz.com/mhzapi/api/UserApi/GetCapitalFlowList?userId=`+wx.getStorageSync("userId") /member/listBill
 订单详情 https://www.maohz.com/mhzapi/api/UserApi/GetOrderDetailInfo  /order/view/{orderId}
- 
+购物车数量 app.globalData.WebUrl + '/cart/getItemSize'  
+
 goodsId,goodsName,goodsImage
 
 ```js 
