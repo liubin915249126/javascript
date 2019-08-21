@@ -145,6 +145,7 @@ https://github.com/dawnlabs/carbon
 [md](https://github.com/nhn/tui.editor)
 [calendar](https://github.com/nhn/tui.calendar)
 [audio](https://github.com/Tonejs/Tone.js)
+[slide](https://github.com/kenwheeler/slick)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)

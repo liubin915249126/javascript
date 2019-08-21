@@ -77,3 +77,4 @@ https://www.jianshu.com/p/454b288d4aa5
 
 #### node cli
 [jdf](https://github.com/jdf2e/jdf)
+[cloud](https://github.com/nondanee/UnblockNeteaseMusic)

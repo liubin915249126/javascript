@@ -61,6 +61,9 @@ https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId=
 充值流水 `https://www.maohz.com/mhzapi/api/UserApi/GetCapitalFlowList?userId=`+wx.getStorageSync("userId") /member/listBill
 订单详情 https://www.maohz.com/mhzapi/api/UserApi/GetOrderDetailInfo  /order/view/{orderId}
 购物车数量 app.globalData.WebUrl + '/cart/getItemSize'  
+签到分享 app.globalData.WebUrl + "/signIn/addShare", /member/signinShare
+
+isDiscount
 
 goodsId,goodsName,goodsImage
 
