@@ -92,6 +92,7 @@ https://github.com/dawnlabs/carbon
 [naotu](https://github.com/NaoTu/DesktopNaotu)
 [arrow](https://github.com/pierpo/react-archer)
 [bpmn](https://github.com/bpmn-io/bpmn-js)
+[](https://github.com/timqian/chart.xkcd)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
