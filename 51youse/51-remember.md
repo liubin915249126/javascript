@@ -11,10 +11,12 @@
 [119](http://123.150.252.54:91)
 [lan360](http://10.36.2.123:8080/api/)
 [v2.0](http://123.150.252.54:9080/api/)(http://10.36.2.122:9080/api/)(10.36.2.119:8080)
+[大屏](http://47.100.244.173:9080/)
 
 http://123.150.252.54:2000/users/sign_in
 http://123.150.252.54:2018/root/operate_manager/merge_requests/new
 http://123.150.252.54:2018/51hl/operate_manager/merge_requests/new
+http://123.150.252.54:2018/51hl/51youse_web/merge_requests/new
 
 http://123.150.252.54:81//redmine/my/page
 

@@ -62,6 +62,8 @@ https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId=
 订单详情 https://www.maohz.com/mhzapi/api/UserApi/GetOrderDetailInfo  /order/view/{orderId}
 购物车数量 app.globalData.WebUrl + '/cart/getItemSize'  
 签到分享 app.globalData.WebUrl + "/signIn/addShare", /member/signinShare
+手机号验证么登录 https://www.maohz.com/mhzapi/api/UserApi/UserLogin /open/mobileCodeLogin/{mobile}/{code}
+
 
 isDiscount
 

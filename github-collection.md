@@ -5,7 +5,7 @@
   转换markdown 语法
 >
 2.[firbase](https://github.com/invertase/react-native-firebase)
-3.[calendar](https://github.com/nhnent/tui.calendar)(https://github.com/flatpickr/flatpickr)
+3.[calendar](https://github.com/nhnent/tui.calendar)(https://github.com/flatpickr/flatpickr)(https://github.com/intljusticemission/react-big-calendar)
 >
   日历插件
 >
