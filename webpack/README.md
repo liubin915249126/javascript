@@ -37,3 +37,7 @@ vueEdior: {
   priority: 10  // 优先级要大于 vendors 不然会被打包进 vendors
 },
 
+
+
+"build": "node --max-old-space-size=10240 node_modules/roadhog/lib/build.js",
+"build": "node --max-old-space-size=10240 ./node_modules/.bin/roadhog build",
