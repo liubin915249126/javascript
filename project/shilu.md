@@ -11,4 +11,5 @@ https://lanhuapp.com/url/fw6E0-5GNSu
 
 https://www.showdoc.cc/448726113899735?page_id=2617222537302903
 
-sentry
+sentry shiluwaimai
+"start": "ng serve --proxy-config ./proxy.conf.json --host 0.0.0.0 --port 4300 --disableHostCheck",

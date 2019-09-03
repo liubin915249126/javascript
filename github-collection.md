@@ -106,8 +106,8 @@ https://github.com/dawnlabs/carbon
 [animation](https://github.com/drcmda/react-spring)
 [map](https://github.com/mariusandra/pigeon-maps)
 [react-head](https://github.com/nfl/react-helmet)
-[router-keeper](https://github.com/vifird/react-keeper)
-[react-live-route](https://github.com/fi3ework/react-live-route)
+[router-keeper](https://github.com/vifird/react-keeper)(https://github.com/CJY0208/react-router-cache-route)
+[react-live-route](https://github.com/fi3ework/react-live-route)(https://github.com/StructureBuilder/react-keep-alive)
 [immer](https://github.com/mweststrate/immer)
 [骨架屏](https://github.com/danilowoz/react-content-loader)
 [react-hooks](https://github.com/kitze/react-hanger)
@@ -147,6 +147,7 @@ https://github.com/dawnlabs/carbon
 [calendar](https://github.com/nhn/tui.calendar)
 [audio](https://github.com/Tonejs/Tone.js)
 [slide](https://github.com/kenwheeler/slick)
+[scroll](https://github.com/michalsnik/aos)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)
@@ -167,6 +168,7 @@ https://github.com/dawnlabs/carbon
 [ui](https://github.com/fuxingkai/frankui-weapp)
 [ui](https://github.com/youzan/vant-weapp)
 [dva](https://github.com/Tuisku-L/TaroDva.Demo)(https://github.com/EasyTuan/taro-msparis)
+[wxss][https://github.com/Tencent/weui-wxss]
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)

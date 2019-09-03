@@ -391,3 +391,11 @@ new String(excelName.getBytes("gb2312"), "ISO8859-1") //中文字符，一定要
 
 mac/linux PORT=4000 
 windows set PORT=4000
+
+#### git fatal: unable to start editor 'xx'
+~/.zshrc git config --global core.editor "code"
+git config --global core.editor "code"
+vim ~/.gitconfig
+# add in
+[core]
+    editor = code
