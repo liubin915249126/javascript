@@ -37,7 +37,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [轮播](https://segmentfault.com/a/1190000015976690)
 [react-move](https://github.com/react-tools/react-move)
 [code-surfer](https://github.com/pomber/code-surfer)
-[代码高亮](https://github.com/highlightjs/highlight.js)
+[代码高亮](https://github.com/highlightjs/highlight.js)(https://github.com/FormidableLabs/prism-react-renderer)
 [image-editor](https://github.com/nhnent/tui.image-editor)
 
 
@@ -92,7 +92,7 @@ https://github.com/dawnlabs/carbon
 [naotu](https://github.com/NaoTu/DesktopNaotu)
 [arrow](https://github.com/pierpo/react-archer)
 [bpmn](https://github.com/bpmn-io/bpmn-js)
-[](https://github.com/timqian/chart.xkcd)
+[rough-chart](https://github.com/timqian/chart.xkcd)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
@@ -193,7 +193,8 @@ https://github.com/dawnlabs/carbon
 [collection](https://github.com/jolaleye/cssfx)
 #### graphql
 [appllo](https://github.com/apollographql/react-apollo)
-
+[relay](https://github.com/facebook/relay)
+[react-admin](https://github.com/marmelab/react-admin)
 #### animate
 [lottie](https://github.com/airbnb/lottie-web)
 [water](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation)

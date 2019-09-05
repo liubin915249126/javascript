@@ -13,3 +13,4 @@ https://www.showdoc.cc/448726113899735?page_id=2617222537302903
 
 sentry shiluwaimai
 "start": "ng serve --proxy-config ./proxy.conf.json --host 0.0.0.0 --port 4300 --disableHostCheck",
+http://47.104.233.5/sign/login

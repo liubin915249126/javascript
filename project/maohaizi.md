@@ -46,6 +46,7 @@ https://shimo.im/docs/ffjyMZY9xrMaUqAb/read
 https://www.maohz.com/mhzapi/api/UserApi/GetUserId getOpenIdbywxlogin
 
 https://www.maohz.com/mhzapi/api/UserApi/UserPhoneLogin CommongetPhoneNumber1 https://mhzxcx.mzd1893.com/mhz/open/member/phoneLogin 
+open/wx/unshop/phoneLogin
 加入购物车
 app.globalData.WebUrl + '/cart/getItems'
 商品详情
