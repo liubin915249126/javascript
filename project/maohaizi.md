@@ -31,7 +31,11 @@ admin4
 123
 superadmin  123
 
+/project/alipay
+/project/mhzpage/admin 
+
 alipay https://git.maohz.com/summary/mhz-alipay.git https://liubin@git.maohz.com/r/mhz-alipay.git 
+https://m.maohz.com/alipay/
 
 #### 小程序 1.8.9
 https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN&token=908282692
@@ -71,6 +75,14 @@ https://www.maohz.com/mhzapi/api/UserApi/GetUserInfo?userId=
 isDiscount
 
 goodsId,goodsName,goodsImage
+
+## 支付宝
+#### 老接口
+/mhzapi/api/ShopApi/GetShopPackageList  open/shop/getPackageList
+/mhzapi/api/ShopApi/GetShopBaseInfo /open/shop/view/
+/alipay/getBargainAmount  /open/unshop/alipay/cutAmount
+/mhzapi/api/Common/SendSms /open/unshop/sms/sendVerifyCode/{mobile}
+/alipay/doOrder /open/unshop/alipay/pay
 
 ```js 
     $('#tailoringImg').cropper({  
