@@ -31,6 +31,8 @@ admin4
 123
 superadmin  123
 
+alipay https://git.maohz.com/summary/mhz-alipay.git https://liubin@git.maohz.com/r/mhz-alipay.git 
+
 #### 小程序 1.8.9
 https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN&token=908282692
 1518080054@qq.com 910407F
