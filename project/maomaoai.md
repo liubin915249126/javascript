@@ -39,3 +39,6 @@ wx6d311e6c3211b031 -> wxf8b3fe89807131c3
 #### 友数商城，模版后台
 修改 1.搜索
 新建
+
+http://localhost:9090/?id=1&type=1
+http://localhost:9090/?commonTemplateSetting=1

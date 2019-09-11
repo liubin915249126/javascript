@@ -184,6 +184,8 @@ https://github.com/dawnlabs/carbon
 [mock](https://github.com/typicode/json-server)
 [string-similar](https://github.com/aceakash/string-similarity)
 [office](https://github.com/Ziv-Barber/officegen)
+[img](https://github.com/oliver-moran/jimp)
+
 
 #### vscode
 [debugger](https://github.com/auchenberg/vscode-browser-preview)1

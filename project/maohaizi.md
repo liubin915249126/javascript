@@ -4,7 +4,7 @@ mhz_dev   mhzgit
 https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
 daily/0.0.1
 
-https://www.maohz.com/mhzpage/admin/index.html#/home
+https://www.maohz.com/mhzpage/admin/index.html#/home  https://web.maohz.com
 
 https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
 special
@@ -34,8 +34,12 @@ superadmin  123
 /project/alipay
 /project/mhzpage/admin 
 
+15298865207
+
+#### 支付宝
 alipay https://git.maohz.com/summary/mhz-alipay.git https://liubin@git.maohz.com/r/mhz-alipay.git 
 https://m.maohz.com/alipay/
+https://m.maohz.com/malipay/pay?state=2
 
 #### 小程序 1.8.9
 https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN&token=908282692
@@ -78,6 +82,7 @@ goodsId,goodsName,goodsImage
 
 ## 支付宝
 #### 老接口
+
 /mhzapi/api/ShopApi/GetShopPackageList  open/shop/getPackageList
 /mhzapi/api/ShopApi/GetShopBaseInfo /open/shop/view/
 /alipay/getBargainAmount  /open/unshop/alipay/cutAmount
