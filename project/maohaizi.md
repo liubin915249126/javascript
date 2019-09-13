@@ -1,12 +1,12 @@
 https://derek@git.maohz.com/r/mhz.miniapps.git
 mhz_dev mhzgit
 
-https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
+https://liubin@git.maohz.com/r/mhz.web.admin.git
 daily/0.0.1
 
 https://www.maohz.com/mhzpage/admin/index.html#/home https://web.maohz.com
 
-https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
+https://liubin@git.maohz.com/r/mhz.miniapps.git
 special
 
 欧尚星巴克
