@@ -1,17 +1,29 @@
 #### extensions
+
 ```js
+    Chinese (Simplified) Language Pack for Visual Studio Code
+    GitLens — Git supercharged
+    GraphQL for VSCode
+    Prettier - Code formatter
+    Remote VSCode
+    StandardJS - JavaScript Standard Style
+    Dart
+    Flutter
     Remote VSCode
     TabNine
+    Debugger for Chrome
 ```
+
 #### debugger
+
 ```js
    {
-    // 使用 IntelliSense 了解相关属性。 
+    // 使用 IntelliSense 了解相关属性。
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations":[
-        
+
 
         {
             "name":"启动",
@@ -20,5 +32,31 @@
             "program": "${workspaceFolder}/operate_manager/server.js"
         }
     ]
-} 
+}
+```
+
+#### Debugger for Chrome
+
+```js
+   {
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch", //launch / attach 两种方式；这里使用launch
+            "name": "Launch Chrome against localhost",//开心的设置个名字
+            "url": "http://localhost:9000",//项目地址
+            "webRoot": "${workspaceFolder}/react-demo/"
+            //这一块设置时要注意！webRoot指定网络服务器根目录的工作区绝对路径。
+            ${workspaceFolder}应该时表示编辑器里的根目录，我的项目是react-demo，
+            所以选择webRoot修改如上，具体路径还跟webpack配置的资源根目录也有关系
+
+        }
+        //还有很多可以配置的属性，可以通过上面文档查看
+    ]
+}
 ```

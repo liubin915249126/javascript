@@ -113,3 +113,7 @@ git config --global credential.helper store
 #### 切换源
 git remote remove origin # 删掉原来git源
 git remote add origin [YOUR NEW .GIT URL] # 将新源地址写入本地版本库配置文件
+
+#### 杀死进程
+sudo lsof -i:3000
+sudo kill -9 7748   (PID)

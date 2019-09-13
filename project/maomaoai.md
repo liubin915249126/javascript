@@ -23,6 +23,11 @@ http://gitlab.maomaoai.cn/root/mma-original-sourcecode/tree/master/%E4%BB%A3%E7%
 #### 礼品卡小程序
 wx6d311e6c3211b031 -> wxf8b3fe89807131c3
 
+#### youshu商城
+https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN
+mma_babylove@163.com 1q2w3e4r!@
+
+wxe1d124248e60fc96
 
 平台管理地址：https://demo.xls.kuaidiantong.cn/admin
 后台用户：YOUSHU
