@@ -41,6 +41,7 @@ superadmin 123
 alipay https://git.maohz.com/summary/mhz-alipay.git https://liubin@git.maohz.com/r/mhz-alipay.git
 https://m.maohz.com/alipay/
 https://m.maohz.com/malipay/pay?state=2
+http://localhost:8081/malipay/pay?auth_code=123&state=2
 
 #### 小程序 1.8.9
 
