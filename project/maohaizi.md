@@ -1,12 +1,12 @@
 https://derek@git.maohz.com/r/mhz.miniapps.git
 mhz_dev mhzgit
 
-https://mhz_dev@git.maohz.com/r/mhz.web.admin.git
+https://liubin@git.maohz.com/r/mhz.web.admin.git
 daily/0.0.1
 
 https://www.maohz.com/mhzpage/admin/index.html#/home https://web.maohz.com
 
-https://mhz_dev@git.maohz.com/r/mhz.miniapps.git
+https://liubin@git.maohz.com/r/mhz.miniapps.git
 special
 
 欧尚星巴克
@@ -14,6 +14,9 @@ special
 tcb-admin-node
 
 https://shimo.im/docs/JxVwZgRBJrA0fZQx/
+
+<!-- 需求池 -->
+https://shimo.im/sheets/QCJc9QJTc63C6CcP/MODOC
 
 主机地址：maohz.com 端口：21 加密：选择 只使用普通 ftp
 登录类型：选择 正常 用户名:mhzpage 密码：ftppage0827
