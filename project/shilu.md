@@ -16,3 +16,9 @@ sentry shiluwaimai
 http://47.104.233.5/sign/login
 
 http://localhost:4200/sign/login
+
+#### 参考文档
+https://angular.cn/
+https://cn.rx.js.org/
+https://nestjs.com/
+https://github.com/typeorm/typeorm

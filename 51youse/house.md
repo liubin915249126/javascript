@@ -22,7 +22,7 @@
   https://m.gusuwang.com/xuequ/index.php
   
   (房价查询)[http://www.szfcweb.com/]
-
+  http://www.szwz.gov.cn/gzjl/interact.html
   602564680
   https://mp.weixin.qq.com/s/Yv8PJFaHeSvdEhIMM1cW3A
 

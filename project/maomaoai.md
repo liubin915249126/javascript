@@ -47,3 +47,6 @@ wxe1d124248e60fc96
 
 http://localhost:9090/?id=1&type=1
 http://localhost:9090/?commonTemplateSetting=1
+
+#### wxShop 
+http://localhost:8081/?id=1&shopId=0

@@ -1,0 +1,54 @@
+{
+	"topNav": {
+		"background": "#FFFFFF",
+		"color": "#333333",
+		"position": 1
+	},
+	"footNav": {
+		"selColor": "",
+		"color": "#999999",
+		"navList": [{
+			"name": "首页",
+			"imgUrl": {
+				"url": "icon_shouye",
+				"isSystemIcon": true
+			},
+			"link": {
+				"typeName": "home"
+			},
+			"del": false
+		}, {
+			"name": "分类",
+			"imgUrl": {
+				"url": "icon_dingdan",
+				"isSystemIcon": true
+			},
+			"link": {
+				"typeName": "classification",
+				"label": "分类",
+				"isUseInWeb": true
+			},
+			"del": true
+		}, {
+			"name": "购物车",
+			"imgUrl": {
+				"url": "icon_gouwuche1",
+				"isSystemIcon": true
+			},
+			"link": {
+				"typeName": "shopCart"
+			},
+			"del": false
+		}, {
+			"name": "我的",
+			"imgUrl": {
+				"url": "icon_wode",
+				"isSystemIcon": true
+			},
+			"link": {
+				"typeName": "personal"
+			},
+			"del": false
+		}]
+	}
+}

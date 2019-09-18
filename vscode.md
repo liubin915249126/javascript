@@ -13,7 +13,14 @@
     TabNine
     Debugger for Chrome
 ```
-
+#### remote development
+[](https://zhuanlan.zhihu.com/p/82568294)
+1.安装 SSH Client： 
+   Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
+   Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+2.配置 SSH key
+   cd %USERPROFILE%/.ssh
+   ssh-keygen -t rsa -b 4096
 #### debugger
 
 ```js
