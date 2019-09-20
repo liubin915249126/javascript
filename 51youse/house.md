@@ -22,7 +22,10 @@
   https://m.gusuwang.com/xuequ/index.php
   
   (房价查询)[http://www.szfcweb.com/]
-  http://www.szwz.gov.cn/gzjl/interact.html
+  http://www.szwz.gov.cn/gzjl/interact.html  201909180004
+
+  书记您好，我是来自外地想在苏州定居的普通市民，姓名刘宾，身份证号码(340621199002073339)。我于2019年7月23号购于吴中区太湖度假区北辰观澜府的一套商品房，并与7月27号交齐首付，8月初完成面审通过，但一直到现在2019年9月18号还没能完成正式合同的签订，希望有关部门能加快审核速度，完一个定居苏州的梦。
+
   602564680
   https://mp.weixin.qq.com/s/Yv8PJFaHeSvdEhIMM1cW3A
 
