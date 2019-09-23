@@ -27,7 +27,6 @@ uvolhr,szuvol123
 wx4ed72792078fa0d6
 https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&redirect_uri=http://xz.jinriqiuzhi.cn&response_type=code&scope=snsapi_userinfo&state=park#wechat_redirect
 
-https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&redirect_uri=http://xz.jinriqiuzhi.cn&response_type=code&scope=snsapi_userinfo&state=park#wechat_redirect
 
 https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4ed72792078fa0d6&redirect_uri=http://m.jinriqiuzhi.cn:8085/channel/index.html&response_type=code&scope=snsapi_userinfo&state=park#wechat_redirect
 
@@ -35,7 +34,7 @@ http://121.41.53.68:8085/index.html#/user/login
 
 http://localhost:9001/#/payroll_detail/2018-12/341226199403051588
 
-oPgmSjuFeAduKrIJvsuJCuugbJNI
+oPgmSjuFeAduKrIJvsuJCuugbJNI 
 341226199403051588
 oGjAs1m3FhYoEADEzvo_0dR5MwF4
 

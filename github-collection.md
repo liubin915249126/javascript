@@ -171,7 +171,7 @@ https://github.com/dawnlabs/carbon
 [ui](https://github.com/youzan/vant-weapp)
 [dva](https://github.com/Tuisku-L/TaroDva.Demo)(https://github.com/EasyTuan/taro-msparis)
 [wxss][https://github.com/Tencent/weui-wxss]
-
+[echart](https://github.com/ecomfe/echarts-for-weixin)
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
 

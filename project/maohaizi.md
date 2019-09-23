@@ -51,7 +51,7 @@ http://localhost:8081/malipay/pay?auth_code=123&state=2
 
 https://mp.weixin.qq.com/wxamp/index/index?lang=zh_CN&token=908282692
 1518080054@qq.com 910407F
-https://mhzxcx.mzd1893.com/mhz/swagger-ui.html1
+https://mhzxcx.mzd1893.com/swagger-ui.html
 https://shimo.im/docs/ffjyMZY9xrMaUqAb/read
 
 1、用户访问多家店的兼容
@@ -91,6 +91,9 @@ goodsId,goodsName,goodsImage
 
 ServiceTime
 3.4.2
+goods,service
+
+
 
 ## 支付宝
 
