@@ -11,6 +11,8 @@
 babel-plugin-lodash
 new webpack.optimize.ModuleConcatenationPlugin()  scope hoisting
 
+hard-source-webpack-plugin
+
 preload-webpack-plugin 让静态资源支持 DNS 预解析和预加载
 ```js
    plugins: [
