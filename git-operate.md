@@ -12,7 +12,9 @@
   
   本地文件夹关联github
   git remote add origin https://github.com/liubin915249126/Test.git
-  git push -u origin mastegit
+  git push -u origin master
+
+  ssh-keygen -t rsa -C "1050794513@qq.com"
 
   git push origin HEAD:feature/5/forestV2.0
 
