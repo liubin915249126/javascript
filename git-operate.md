@@ -19,6 +19,8 @@
   git config --global user.name "liubin"
   git config --global user.email "915249126@qq.com"
    
+  git config -e --global  
+
   git config --global push.default upstream
   git config --global push.default simple 
 
