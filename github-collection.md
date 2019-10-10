@@ -126,6 +126,7 @@ https://github.com/dawnlabs/carbon
 [ui](https://github.com/palantir/blueprint)
 [micro-frontends](https://github.com/CanopyTax/single-spa)(https://github.com/umijs/qiankun) //微应用
 [nevr](https://github.com/NervJS/nerv)
+[animation-icon](https://github.com/useAnimations/react-useanimations)
 
 
 #### native-js
