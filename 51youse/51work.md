@@ -88,3 +88,7 @@ purchase/logist/update order/seller/logist/update1
 加权限控制
 规则类型,应用管理,资源类型管理,模版管理
 规则管理,菜单资源
+
+#### 运营管理端
+现在是3.8.4的语义版本
+"version": "3.23.6"
