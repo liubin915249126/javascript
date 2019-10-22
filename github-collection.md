@@ -95,6 +95,7 @@ https://github.com/dawnlabs/carbon
 [bpmn](https://github.com/bpmn-io/bpmn-js)
 [rough-chart](https://github.com/timqian/chart.xkcd)
 [map](https://github.com/huiyan-fe/mapv)
+[flow](https://github.com/guozhaolong/wfd)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)

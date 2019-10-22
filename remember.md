@@ -15,5 +15,10 @@ chmod -R 777 /Users/Jo/Documents/Shopins/Pods/Target\ Support\ Files/Pods-Shopin
 #### 友链
 http://web.coder666.cn:18080/
 
-
 table-layout:fixed
+
+#### Package libffi was not found in the pkg-config search path
+vim ~/.bash_profile
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+export LDFLAGS="-L/usr/local/opt/libffi/lib" 
+source ~/.bash_profile
