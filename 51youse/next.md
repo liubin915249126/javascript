@@ -58,4 +58,23 @@
   请求报错的提示及跳转(已解决)
   组件的通讯(已有解决方案)
   
-    
+#### nextjs开发模式切换页面样式丢失  
+```js
+// 在Layout组件中  
+<Head>
+  <title>{title}</title>
+  {process.env.NODE_ENV !== 'production' && (<link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Router.route} />)}
+</Head>    
+```
+```js
+   // 在_app.js中
+  import Router from 'next/router';
+  
+  Router.events.on('routeChangeComplete', () => {
+  if (process.env.NODE_ENV !== 'production') {
+    const els = document.querySelectorAll('link[href*="/_next/static/css/styles.chunk.css"]');
+    const timestamp = new Date().valueOf();
+    els[0].href = '/_next/static/css/styles.chunk.css?v=' + timestamp;
+  }
+  });
+```

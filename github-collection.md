@@ -96,6 +96,7 @@ https://github.com/dawnlabs/carbon
 [rough-chart](https://github.com/timqian/chart.xkcd)
 [map](https://github.com/huiyan-fe/mapv)
 [flow](https://github.com/guozhaolong/wfd)
+[physics](https://github.com/liabru/matter-js)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
@@ -212,6 +213,7 @@ https://github.com/dawnlabs/carbon
 [lottie](https://github.com/airbnb/lottie-web)
 [water](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation)
 [animate on scoll](https://github.com/michalsnik/aos)
+[velocity](https://github.com/julianshapiro/velocity)
 #### ML 
 [face-api](https://github.com/justadudewhohacks/face-api.js)
 [quantify the world](https://github.com/opendatacam/opendatacam)
