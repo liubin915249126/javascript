@@ -155,7 +155,9 @@ https://github.com/dawnlabs/carbon
 [audio](https://github.com/Tonejs/Tone.js)
 [slide](https://github.com/kenwheeler/slick)
 [scroll](https://github.com/michalsnik/aos)
+<!-- 处理精度 -->
 [math](https://github.com/josdejong/mathjs)
+[decimal](http://mikemcl.github.io/decimal.js)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
