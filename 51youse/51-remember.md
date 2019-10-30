@@ -6,7 +6,8 @@
 [svn](svn://10.36.2.115/fr_dev_dept) svn://liubin@123.150.252.54/fr_dev_dept \trunk\doc\01_项目管理\03.进度管理\01.进度计划表
 [svn-pro](svn://10.36.2.115/pro_des_dept/) liubin
 
-git clone git@10.36.2.118:51hl/operate_manager.git  
+git clone git@10.36.2.118:51hl/operate_manager.git
+
 htjt888888
 
 [swagger](http://10.36.2.115:9081/api/swagger/index.html#/)

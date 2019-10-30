@@ -192,7 +192,7 @@ https://github.com/dawnlabs/carbon
 [nginxconfig](https://github.com/valentinxxx/nginxconfig.io)
 [二维码](https://github.com/davidshimjs/qrcodejs)
 [git](https://github.com/pcottle/learnGitBranching)
-
+[svgedit](https://github.com/SVG-Edit/svgedit)
 
 #### node 
 [mock](https://github.com/typicode/json-server)
