@@ -158,6 +158,7 @@ https://github.com/dawnlabs/carbon
 <!-- 处理精度 -->
 [math](https://github.com/josdejong/mathjs)
 [decimal](http://mikemcl.github.io/decimal.js)
+[functional](https://github.com/ramda/ramda)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
