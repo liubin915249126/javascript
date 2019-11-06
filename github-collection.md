@@ -97,6 +97,8 @@ https://github.com/dawnlabs/carbon
 [map](https://github.com/huiyan-fe/mapv)
 [flow](https://github.com/guozhaolong/wfd)
 [physics](https://github.com/liabru/matter-js)
+[chart](https://github.com/amcharts/amcharts4)
+[drap-drop](https://github.com/taye/interact.js)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
@@ -159,6 +161,7 @@ https://github.com/dawnlabs/carbon
 [math](https://github.com/josdejong/mathjs)
 [decimal](http://mikemcl.github.io/decimal.js)
 [functional](https://github.com/ramda/ramda)
+[DOC](https://github.com/slatedocs/slate)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
@@ -229,3 +232,5 @@ https://github.com/dawnlabs/carbon
 [collection](https://github.com/iampawan/FlutterExampleApps)
 [chart](https://github.com/imaNNeoFighT/fl_chart)
 [plugins](https://github.com/flutter/plugins)
+[charts](https://github.com/google/charts)
+[flutter_screenutil](https://github.com/OpenFlutter/flutter_screenutil)
