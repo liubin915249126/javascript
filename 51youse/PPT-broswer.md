@@ -35,14 +35,16 @@
   JavaScript 单线程中的任务分为同步任务和异步任务。同步任务会在调用栈中按照顺序排队等待主线程执行，
   异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行
 ```
- ![image](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
+
+![image](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
 
 ```js
   Macro Task(宏任务) setTimeout函数的回调、DOM事件处理函数，网络事件，Html解析
   Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调
   正在执行的任务衍生出来的所有的Micro Task会在执行下一个Macro Task之前被放入执行栈执行
 ```
- ![image](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
+
+![image](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
 
 ## js 异步发展史
 
@@ -71,28 +73,61 @@ ajax(url, () => {
 ```
 
 ```js
-  Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就是then可用链式调用的原因)
-    .then(x => x + 1)
-    .then(x => {
-      throw new Error("My Error"); //如果then中出现异常,会走下一个then的失败回调
-    })
-    .catch(() => 1) //return -> 包装成 Promise.resolve(1)
-    .then(x => x + 1)
-    .then() //参数穿透
-    .then(x => console.log(x)) //2
-    .catch(console.error); //catch 会捕获到没有捕获的异常
+Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就是then可用链式调用的原因)
+  .then(x => x + 1)
+  .then(x => {
+    throw new Error("My Error"); //如果then中出现异常,会走下一个then的失败回调
+  })
+  .catch(() => 1) //return -> 包装成 Promise.resolve(1)
+  .then(x => x + 1)
+  .then() //参数穿透
+  .then(x => console.log(x)) //2
+  .catch(console.error); //catch 会捕获到没有捕获的异常
 ```
 
 #### 生成器 Generators/ yield
 
 ```js
-  function* foo(x) {
-    let y = 2 * (yield x + 1);  //yield可暂停，next方法可启动，每次返回的是yield后的表达式结果
-    let z = yield y / 3; //yield表达式本身没有返回值，或者说总是返回undefined。next方法可以带一个参数，该参数就会被当作上一个yield表达式的返回值
-    return x + y + z;
-  }
-  let it = foo(5);
-  console.log(it.next()); // => {value: 6, done: false}
-  console.log(it.next(12)); // => {value: 8, done: false}
-  console.log(it.next(13)); // => {value: 42, done: true}
+function* foo(x) {
+  let y = 2 * (yield x + 1); //yield可暂停，next方法可启动，每次返回的是yield后的表达式结果
+  let z = yield y / 3; //yield表达式本身没有返回值，或者说总是返回undefined。next方法可以带一个参数，该参数就会被当作上一个yield表达式的返回值
+  return x + y + z;
+}
+let it = foo(5);
+console.log(it.next()); // => {value: 6, done: false}
+console.log(it.next(12)); // => {value: 8, done: false}
+console.log(it.next(13)); // => {value: 42, done: true}
 ```
+
+```js
+  var fetch = require("node-fetch");
+
+  function* gen() {
+    var r1 = yield fetch("https://api.github.com/users/github");
+    var json1 = yield r1.json();
+    var r2 = yield fetch("https://api.github.com/users/github/followers");
+    var json2 = yield r2.json();
+    var r3 = yield fetch("https://api.github.com/users/github/repos");
+    var json3 = yield r3.json();
+
+    console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
+  }
+
+  function run(gen) {
+    var g = gen();
+    function next(data) {
+      var result = g.next(data);
+      if (result.done) return;
+      result.value.then(function(data) {
+        next(data);
+      });
+    }
+
+    next();
+  }
+
+  run(gen);
+  // co(gen)
+```
+[Generators](https://github.com/mqyqingfeng/Blog/issues/99)
+#### async await

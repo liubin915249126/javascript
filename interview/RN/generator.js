@@ -7,3 +7,5 @@ function* foo(x) {
   console.log(it.next()); // => {value: 6, done: false}
   console.log(it.next(12)); // => {value: 8, done: false}
   console.log(it.next(13)); // => {value: 42, done: true}
+
+  
