@@ -35,12 +35,14 @@
   JavaScript 单线程中的任务分为同步任务和异步任务。同步任务会在调用栈中按照顺序排队等待主线程执行，
   异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行
 ```
+ ![image](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
 
 ```js
   Macro Task(宏任务) setTimeout函数的回调、DOM事件处理函数，网络事件，Html解析
   Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调
   正在执行的任务衍生出来的所有的Micro Task会在执行下一个Macro Task之前被放入执行栈执行
 ```
+ ![image](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
 
 ## js 异步发展史
 
