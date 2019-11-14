@@ -31,9 +31,15 @@
    同步任务会在调用栈中按照顺序排队等待主线程执行，
    异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行,
 ```
+
 ![queue](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
 
 #### 事件循环
+
+```js
+  当执行栈空的时候,js引擎就会查看任务队列有没有等待执行的任务，形成一个事件循环
+```
+
 ![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
 
 ```js
@@ -43,6 +49,22 @@
 ```
 
 ![task](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
+
+```js
+    async function test() {
+      await console.log(1);
+      setTimeout(() => console.log(2), 0);
+      new Promise(resolve => {
+        console.log(3);
+        // resolve()
+        setTimeout(() => resolve(), 0);
+      }).then(() => {
+        console.log(4);
+      });
+      console.log(5);
+    }
+    test();
+```
 
 ## js 异步发展史
 
@@ -98,34 +120,59 @@ console.log(it.next(13)); // => {value: 42, done: true}
 ```
 
 ```js
-  var fetch = require("node-fetch");
+var fetch = require("node-fetch");
 
-  function* gen() {
-    var r1 = yield fetch("https://api.github.com/users/github");
-    var json1 = yield r1.json();
-    var r2 = yield fetch("https://api.github.com/users/github/followers");
-    var json2 = yield r2.json();
-    var r3 = yield fetch("https://api.github.com/users/github/repos");
-    var json3 = yield r3.json();
+function* gen() {
+  var r1 = yield fetch("https://api.github.com/users/github");
+  var json1 = yield r1.json();
+  var r2 = yield fetch("https://api.github.com/users/github/followers");
+  var json2 = yield r2.json();
+  var r3 = yield fetch("https://api.github.com/users/github/repos");
+  var json3 = yield r3.json();
 
-    console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
+  console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
+}
+
+function run(gen) {
+  var g = gen();
+  function next(data) {
+    var result = g.next(data);
+    if (result.done) return;
+    result.value.then(function(data) {
+      next(data);
+    });
   }
 
-  function run(gen) {
-    var g = gen();
-    function next(data) {
-      var result = g.next(data);
-      if (result.done) return;
-      result.value.then(function(data) {
-        next(data);
-      });
-    }
+  next();
+}
 
-    next();
-  }
-
-  run(gen);
-  // co(gen)
+run(gen);
+// co(gen)
 ```
+
 [Generators](https://github.com/mqyqingfeng/Blog/issues/99)
+
 #### async await
+
+```js
+  async //返回一个Promise
+  await //后面跟一个Promise
+```
+
+```js
+function fetch() {
+  return fetchData()
+    .then(value1 => {
+      return fetchMoreData(value1);
+    })
+    .then(value2 => {
+      return fetchMoreData2(value2);
+    });
+}
+
+async function fetch() {
+  const value1 = await fetchData();
+  const value2 = await fetchMoreData(value1);
+  return fetchMoreData2(value2);
+}
+```
