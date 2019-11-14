@@ -16,7 +16,8 @@
 // console.log(555)
 async function test() {
     console.log(1)
-    await Promise.resolve(console.log(2));
+    // await Promise.resolve(console.log(2));
+    await console.log(2);
     console.log(3)
 }
 test()
