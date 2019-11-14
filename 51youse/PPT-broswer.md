@@ -26,18 +26,16 @@
 ```js
    为了保证DOM渲染不发生冲突.
    如果所有的操作都是同步的，毫无疑问会造成浏览器的阻塞，对于及时响应处理用户点击等操作是不利的。
-   因此在浏览器环境中需要引入异步的处理机制，也就是事件循环.
+   因此在浏览器环境中需要引入异步的处理机制。
+   JavaScript 单线程中的任务分为同步任务和异步任务。
+   同步任务会在调用栈中按照顺序排队等待主线程执行，
+   异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行,
 ```
+![queue](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
+
+#### 事件循环
 ![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
 
-#### js 任务
-
-```js
-  JavaScript 单线程中的任务分为同步任务和异步任务。同步任务会在调用栈中按照顺序排队等待主线程执行，
-  异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行
-```
-
-![queue](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
 ```js
   Macro Task(宏任务) setTimeout函数的回调、DOM事件处理函数，网络事件，Html解析
   Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调
