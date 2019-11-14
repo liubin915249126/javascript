@@ -28,6 +28,7 @@
    如果所有的操作都是同步的，毫无疑问会造成浏览器的阻塞，对于及时响应处理用户点击等操作是不利的。
    因此在浏览器环境中需要引入异步的处理机制，也就是事件循环.
 ```
+![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
 
 #### js 任务
 
@@ -37,7 +38,6 @@
 ```
 
 ![queue](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
-![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
 ```js
   Macro Task(宏任务) setTimeout函数的回调、DOM事件处理函数，网络事件，Html解析
   Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调
