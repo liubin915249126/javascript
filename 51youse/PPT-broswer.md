@@ -121,6 +121,29 @@ console.log(it.next()); // => {value: 6, done: false}
 console.log(it.next(12)); // => {value: 8, done: false}
 console.log(it.next(13)); // => {value: 42, done: true}
 ```
+```js
+    var g = gen();
+    var result1 = g.next();
+
+    result1.value.then(function(data){
+        return data.json();
+    })
+    .then(function(data){
+        return g.next(data).value;
+    })
+    .then(function(data){
+        return data.json();
+    })
+    .then(function(data){
+        return g.next(data).value
+    })
+    .then(function(data){
+        return data.json();
+    })
+    .then(function(data){
+        g.next(data)
+    });
+```
 
 ```js
 var fetch = require("node-fetch");
