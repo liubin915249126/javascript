@@ -108,6 +108,8 @@ Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就
 
 #### 生成器 Generators/ yield
 
+[迭代器](https://github.com/liubin915249126/javascript/blob/master/interview/RN/iterator.js)
+
 ```js
 function* foo(x) {
   let y = 2 * (yield x + 1); //yield可暂停，next方法可启动，每次返回的是yield后的表达式结果

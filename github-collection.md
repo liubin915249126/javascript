@@ -234,3 +234,6 @@ https://github.com/dawnlabs/carbon
 [plugins](https://github.com/flutter/plugins)
 [charts](https://github.com/google/charts)
 [flutter_screenutil](https://github.com/OpenFlutter/flutter_screenutil)
+
+#### study
+[You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1ed-zh-CN)
