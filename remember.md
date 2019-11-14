@@ -23,4 +23,5 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 export LDFLAGS="-L/usr/local/opt/libffi/lib" 
 source ~/.bash_profile
 
-#### http-server
+#### http-server jsrsasign(签名)
+#### package-lock.json
