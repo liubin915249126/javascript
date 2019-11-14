@@ -50,6 +50,7 @@
 
 ![task](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
 
+测试题1
 ```js
     async function test() {
       await console.log(1);
@@ -175,4 +176,23 @@ async function fetch() {
   const value2 = await fetchMoreData(value1);
   return fetchMoreData2(value2);
 }
+```
+
+测试题2
+```js
+    async function test() {
+      await new Promise(resolve=>{
+        setTimeout(()=>resolve(),0)
+      })
+      setTimeout(() => console.log(2), 0);
+      new Promise(resolve => {
+        console.log(3);
+        resolve()
+      }).then(() => {
+        console.log(4);
+      });
+      console.log(5);
+    }
+    test();
+    console.log(6)
 ```
