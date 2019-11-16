@@ -23,3 +23,22 @@ Object.getPrototypeOf(person1) === Person.prototype
 将构造函数的作用域赋给新对象（this 指向新对象）
 执行构造函数中的代码（为之添加属性）
 返回新对象
+
+若 A 通过 new 创建了 B,则 B.__proto__ = A.prototype
+
+#### Instanceof
+```js
+   function myInstanceof(left,right){
+      let rightProto = right.prototype;
+      let leftValue = left.__proto__;
+      while(true){
+          if(leftValue === null){
+              return false;
+          }
+          if(leftValue === rightProto){
+              return true;
+          }
+          leftValue = leftValue.__proto__;
+      }
+  }
+```
