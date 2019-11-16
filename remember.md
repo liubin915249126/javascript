@@ -24,4 +24,4 @@ export LDFLAGS="-L/usr/local/opt/libffi/lib"
 source ~/.bash_profile
 
 #### http-server jsrsasign(签名)
-#### package-lock.json
+#### package-lock.json encodeURIComponent
