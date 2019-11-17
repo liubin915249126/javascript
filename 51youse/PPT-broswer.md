@@ -43,8 +43,9 @@
 ![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
 
 ```js
-  Macro Task(宏任务) setTimeout函数的回调、DOM事件处理函数，网络事件，Html解析
-  Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调
+  Macro Task(宏任务) setTimeout，setInterval函数的回调、DOM事件处理函数，网络事件，Html解析,
+  requestAnimationFrame,I/O操作,setImmediate(node)
+  Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调,process.nextTick 
   正在执行的任务衍生出来的所有的Micro Task会在执行下一个Macro Task之前被放入执行栈执行
 ```
 
@@ -86,6 +87,7 @@ ajax(url, () => {
 ```
 
 #### promise
+asap(浏览器 Promise 事件调度走的是 MutationObserver，node 走的是 process.nextTick )
 
 ```js
     Pending----Promise对象实例创建时候的初始状态
