@@ -14,4 +14,6 @@ React使用了事务的机制，React的每个生命周期和合成事件都处�
 改变数据地址
 immutable.js
 
+React.memo(FunctionalComponent,equal)
+
 #### memoize-one

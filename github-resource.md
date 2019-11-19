@@ -85,3 +85,6 @@ https://www.jianshu.com/p/454b288d4aa5
 #### mac
 [collection](https://github.com/qianguyihao/Mac)
 [download](https://github.com/b3log/baidu-netdisk-downloaderx)
+
+#### study
+[fullstack](https://github.com/TrillCyborg/fullstack)
