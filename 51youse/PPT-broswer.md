@@ -45,27 +45,29 @@
 ```js
   Macro Task(宏任务) setTimeout，setInterval函数的回调、DOM事件处理函数，网络事件，Html解析,
   requestAnimationFrame,I/O操作,setImmediate(node)
-  Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调,process.nextTick 
+  Micro Task(微任务) Promise对象的resolve或reject回调、MutationObserver对象的回调,process.nextTick
   正在执行的任务衍生出来的所有的Micro Task会在执行下一个Macro Task之前被放入执行栈执行
 ```
 
 ![task](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
 
-测试题1
+测试题 1
+
 ```js
-    async function test() {
-      await console.log(1);
-      setTimeout(() => console.log(2), 0);
-      new Promise(resolve => {
-        console.log(3);
-        // resolve()
-        setTimeout(() => resolve(), 0);
-      }).then(() => {
-        console.log(4);
-      });
-      console.log(5);
-    }
-    test();
+async function test() {
+  await console.log(1);
+  setTimeout(() => console.log(2), 0);
+  new Promise(resolve => {
+    console.log(3);
+    // resolve()
+    setTimeout(() => resolve(), 0);
+  }).then(() => {
+    console.log(4);
+  });
+  console.log(5);
+}
+test();
+// 13524
 ```
 
 ## js 异步发展史
@@ -87,6 +89,7 @@ ajax(url, () => {
 ```
 
 #### promise
+
 asap(浏览器 Promise 事件调度走的是 MutationObserver，node 走的是 process.nextTick )
 
 ```js
@@ -123,47 +126,48 @@ console.log(it.next()); // => {value: 6, done: false}
 console.log(it.next(12)); // => {value: 8, done: false}
 console.log(it.next(13)); // => {value: 42, done: true}
 ```
-```js
-  var fetch = require("node-fetch");
-  function* gen() {
-    var r1 = yield fetch("https://api.github.com/users/github");
-    var json1 = yield r1.json();
-    var r2 = yield fetch("https://api.github.com/users/github/followers");
-    var json2 = yield r2.json();
-    var r3 = yield fetch("https://api.github.com/users/github/repos");
-    var json3 = yield r3.json();
 
-    console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
-  }
+```js
+var fetch = require("node-fetch");
+function* gen() {
+  var r1 = yield fetch("https://api.github.com/users/github");
+  var json1 = yield r1.json();
+  var r2 = yield fetch("https://api.github.com/users/github/followers");
+  var json2 = yield r2.json();
+  var r3 = yield fetch("https://api.github.com/users/github/repos");
+  var json3 = yield r3.json();
+
+  console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
+}
 ```
 
-
-
 ```js
-    var g = gen();
-    var result1 = g.next();
+var g = gen();
+var result1 = g.next();
 
-    result1.value.then(function(data){
-        return data.json();
-    })
-    .then(function(data){
-        return g.next(data).value;
-    })
-    .then(function(data){
-        return data.json();
-    })
-    .then(function(data){
-        return g.next(data).value
-    })
-    .then(function(data){
-        return data.json();
-    })
-    .then(function(data){
-        g.next(data)
-    });
+result1.value
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(data) {
+    return g.next(data).value;
+  })
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(data) {
+    return g.next(data).value;
+  })
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(data) {
+    g.next(data);
+  });
 ```
 
 ##### 递归
+
 ```js
 function run(gen) {
   var g = gen();
@@ -208,33 +212,40 @@ async function fetch() {
   return fetchMoreData2(value2);
 }
 ```
+
 ```js
-  const fetchData = (data) => new Promise((resolve) => setTimeout(resolve, 1000, data + 1))
-  const fetchValue = async function () {
-    var value1 = await fetchData(1);
-    var value2 = await fetchData(value1);
-    var value3 = await fetchData(value2);
-    console.log(value3)
-  };
-  fetchValue();
+const fetchData = data =>
+  new Promise(resolve => setTimeout(resolve, 1000, data + 1));
+const fetchValue = async function() {
+  var value1 = await fetchData(1);
+  var value2 = await fetchData(value1);
+  var value3 = await fetchData(value2);
+  console.log(value3);
+};
+fetchValue();
 ```
+
 [babel](https://github.com/liubin915249126/javascript/blob/master/interview/RN/babel.js)
 
-测试题2
+测试题 2
+
 ```js
-    async function test() {
-      await new Promise(resolve=>{
-        setTimeout(()=>resolve(),0)
-      })
-      setTimeout(() => console.log(2), 0);
-      new Promise(resolve => {
-        console.log(3);
-        resolve()
-      }).then(() => {
-        console.log(4);
-      });
-      console.log(5);
-    }
-    test();
-    console.log(6)
+  async function test1() {
+    await new Promise(resolve => {
+      setTimeout(() => resolve(), 0);
+    }).then(() => console.log(1));
+    setTimeout(() => console.log(2), 0);
+    new Promise(resolve => {
+      console.log(3);
+      resolve();
+    }).then(() => {
+      console.log(4);
+    });
+    console.log(5);
+  }
+  test1().then(() => {
+    console.log(7);
+  });
+  console.log(6);
+  // 6135472
 ```
