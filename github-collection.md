@@ -162,7 +162,7 @@ https://github.com/dawnlabs/carbon
 [decimal](http://mikemcl.github.io/decimal.js)
 [functional](https://github.com/ramda/ramda)
 [DOC](https://github.com/slatedocs/slate)
-
+[height](https://github.com/PrismJS/prism)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)
