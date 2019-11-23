@@ -23,6 +23,8 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 export LDFLAGS="-L/usr/local/opt/libffi/lib" 
 source ~/.bash_profile
 
+rm -rf ~/.node-gyp
+
 #### no member named 'Handle' in namespace 'v8' . node-gyp rebuild
 
 #### http-server jsrsasign(签名)
