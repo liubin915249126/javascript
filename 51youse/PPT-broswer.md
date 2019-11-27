@@ -90,7 +90,7 @@ ajax(url, () => {
 
 #### promise
 
-asap(浏览器 Promise 事件调度走的是 MutationObserver，node 走的是 process.nextTick )
+asap(浏览器 Promise 事件调度走的是 MutationObserver,node 走的是 process.nextTick )
 
 ```js
     Pending----Promise对象实例创建时候的初始状态

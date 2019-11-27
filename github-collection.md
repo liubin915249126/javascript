@@ -129,6 +129,7 @@ https://github.com/dawnlabs/carbon
 [react-player](https://github.com/CookPete/react-player)
 [ui](https://github.com/palantir/blueprint)
 [micro-frontends](https://github.com/CanopyTax/single-spa)(https://github.com/umijs/qiankun) //微应用
+[micro-frontends](https://github.com/ice-lab/icestark)
 [nevr](https://github.com/NervJS/nerv)
 [animation-icon](https://github.com/useAnimations/react-useanimations)
 
@@ -238,3 +239,4 @@ https://github.com/dawnlabs/carbon
 
 #### study
 [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1ed-zh-CN)
+[aliyun](https://developer.aliyun.com/learning?utm_content=g_1000089754)
