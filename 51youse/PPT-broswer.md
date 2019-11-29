@@ -169,10 +169,13 @@ function run(gen) {
   var g = gen();
   function next(data) {
     var result = g.next(data);
-    if (result.done) return;
-    result.value.then(function(data) {
-      next(data);
-    });
+    result.value
+      .then(function(data) {
+        return data.json();
+      })
+      .then(function(data) {
+        next(data);
+      });
   }
 
   next();
@@ -221,7 +224,6 @@ const fetchValue = async function() {
 fetchValue();
 ```
 
-
 ```js
   setStateAsync(state){
    return new Promise (resolve =>{
@@ -230,30 +232,27 @@ fetchValue();
   }
 ```
 
-
-
-
 [babel](https://github.com/liubin915249126/javascript/blob/master/interview/RN/babel.js)
 
 测试题 2
 
 ```js
-  async function test1() {
-    await new Promise(resolve => {
-      setTimeout(() => resolve(), 0);
-    }).then(() => console.log(1));
-    setTimeout(() => console.log(2), 0);
-    new Promise(resolve => {
-      console.log(3);
-      resolve();
-    }).then(() => {
-      console.log(4);
-    });
-    console.log(5);
-  }
-  test1().then(() => {
-    console.log(7);
+async function test1() {
+  await new Promise(resolve => {
+    setTimeout(() => resolve(), 0);
+  }).then(() => console.log(1));
+  setTimeout(() => console.log(2), 0);
+  new Promise(resolve => {
+    console.log(3);
+    resolve();
+  }).then(() => {
+    console.log(4);
   });
-  console.log(6);
-  // 6135472
+  console.log(5);
+}
+test1().then(() => {
+  console.log(7);
+});
+console.log(6);
+// 6135472
 ```
