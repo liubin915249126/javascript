@@ -55,7 +55,6 @@
 
 ```js
 async function test() {
-  await console.log(1);
   setTimeout(() => console.log(2), 0);
   new Promise(resolve => {
     console.log(3);
@@ -67,7 +66,7 @@ async function test() {
   console.log(5);
 }
 test();
-// 13524
+// 3524
 ```
 
 ## js 异步发展史
