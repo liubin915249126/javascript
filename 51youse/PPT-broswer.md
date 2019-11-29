@@ -225,6 +225,18 @@ const fetchValue = async function() {
 fetchValue();
 ```
 
+
+```js
+  setStateAsync(state){
+   return new Promise (resolve =>{
+      this.setState(state,resolve)
+    })
+  }
+```
+
+
+
+
 [babel](https://github.com/liubin915249126/javascript/blob/master/interview/RN/babel.js)
 
 测试题 2
