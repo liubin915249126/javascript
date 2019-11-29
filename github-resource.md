@@ -35,7 +35,7 @@
 (chart)[https://www.7moor.com/]
 (interview|this)[https://github.com/ljianshu/Blog][https://github.com/Advanced-Frontend/Daily-Interview-Question]
 (前端宇宙)[https://github.com/YvetteLau/Blog]
-(blog)[https://github.com/qq449245884/xiaozhi] [https://github.com/mqyqingfeng/Blog] 5
+(blog)[https://github.com/qq449245884/xiaozhi] [https://github.com/mqyqingfeng/Blog] [https://github.com/wangfupeng1988/js-async-tutorial] 5
 (https://mp.weixin.qq.com/s?__biz=MzU3NjczNDk2MA==&mid=2247484353&idx=1&sn=587121c605a73c418f00925a2acf0844&chksm=fd0e105eca7999480bf8584c3b92e832ecb03723b4503d57aafa0ba58c4fcdef6989859e0214&mpshare=1&scene=1&srcid=#rd)
 (https://github.com/qq449245884/xiaozhi)
 [面试题](https://juejin.im/post/5dcbb828f265da4cf85d84b4)(https://juejin.im/post/5daeefc8e51d4524f007fb15#heading-8)
