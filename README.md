@@ -7,15 +7,20 @@
 
 
 ## ES6 基础系列学习
-[Ilterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
 
+#### Iterator 迭代器与 for of
+[Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
+[参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
 
 
 ## 算法学习系列
 
+#### 冒泡排序
+[冒泡排序](./interview/algorithm/bubble-sort.md)
+[参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
 
-
-
+#### 选择排序
+[选择排序](./interview/algorithm/selection-sort.md)
 
 ## javascript,jquery相关
 <!-- 说明 -->
