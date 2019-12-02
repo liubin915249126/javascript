@@ -1,5 +1,6 @@
 ## 迭代器
 
+#### 生成迭代器
 ```js
 function createIterator(items) {
   var i = 0;
