@@ -4,6 +4,17 @@
 ## javascript 基础系列学习
 
 
+## 手写源码系列
+
+#### Promise
+
+[手写Promise](./interview/function/promise.js)
+
+>
+  参考文献
+  [Promise](https://github.com/then/promise)
+  [asap](https://github.com/kriskowal/asap)
+>
 
 
 ## ES6 基础系列学习

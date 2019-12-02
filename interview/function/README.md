@@ -1,3 +1,13 @@
+## 手写源码系列
+
 #### Promise
-[Promise](https://github.com/then/promise)
-[asap](https://github.com/kriskowal/asap)
+
+[手写Promise](./promise.js)
+
+>
+  参考文献
+  [Promise](https://github.com/then/promise)
+  [asap](https://github.com/kriskowal/asap)
+>
+
+#### 
