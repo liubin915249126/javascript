@@ -19,6 +19,11 @@
 
 ## ES6 基础系列学习
 
+#### Set、Map、WeakSet 和 WeakMap的区别
+[SetMap](./interview/ES6/SetMap.md)
+
+
+
 #### Iterator 迭代器与 for of
 [Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
 [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
