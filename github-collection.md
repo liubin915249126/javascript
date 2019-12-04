@@ -50,6 +50,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [md-editor](https://github.com/marktext/marktext)
 [md2pdf](https://github.com/realdennis/md2pdf)
 [notable](https://github.com/fabiospampinato/notable)
+[word-html](https://github.com/mwilliamson/mammoth.js)
 
 [html-md](https://github.com/domchristie/turndown)
 [md-html](https://github.com/showdownjs/showdown)
