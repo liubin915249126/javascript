@@ -81,5 +81,6 @@ require(["module1", "module2"], function(m1, m2) {
 #### ES6
 >
   跟 require.js 的执行结果是一致的，也就是将需要使用的模块先加载完再执行代码
+  原始值变了，import 加载的值也会跟着变。因此，ES6 模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块。
   Babel 将 ES6 模块转为 CommonJS 后
 >

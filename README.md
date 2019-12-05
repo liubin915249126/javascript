@@ -2,6 +2,7 @@
 
 
 ## javascript 基础系列学习
+[多种继承方式](./interview/prototype/extends.md)
 
 
 ## 手写源码系列
