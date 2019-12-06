@@ -17,6 +17,11 @@
   [asap](https://github.com/kriskowal/asap)
 >
 
+#### debounce，throttle
+[debounce](./interview/debounce.md)
+[throttle](./interview/debounce.md)
+
+
 
 ## ES6 基础系列学习
 
@@ -42,6 +47,11 @@
 >
 #### 选择排序
 [选择排序](./interview/algorithm/selection-sort.md)
+
+
+
+
+
 
 ## javascript,jquery相关
 <!-- 说明 -->

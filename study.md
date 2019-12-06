@@ -1,7 +1,7 @@
 ## 需要学习的
 
 #### ES6 Iterator for of
-#### ES6 Promise
+#### ES6 Promise thunk
 #### 函数式编程
 #### ES6 Symbol class 私有属性 AST
 [](https://juejin.im/post/5c64d15d6fb9a049d37f9c20)
