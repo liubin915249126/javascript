@@ -2,6 +2,10 @@
 
 
 ## javascript 基础系列学习
+[作用域](./interview/ES5/scope.md)
+[执行上下文与变量对象](./interview/ES5/execution-context.md)
+
+[原型链](./interview/prototype/prototype.md)
 [多种继承方式](./interview/prototype/extends.md)
 
 
@@ -10,7 +14,7 @@
 #### Promise
 
 [手写Promise](./interview/function/promise.js)
-
+[curry柯理化](./interview/functional/curry.md)
 >
   参考文献
   [Promise](https://github.com/then/promise)
