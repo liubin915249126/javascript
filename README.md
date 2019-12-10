@@ -8,6 +8,8 @@
 
 [原型链](./interview/prototype/prototype.md)
 
+[new的模拟实现](./interview/ES5/new.md)
+
 [多种继承方式](./interview/prototype/extends.md)
 
 ## 手写源码系列

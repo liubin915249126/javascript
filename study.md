@@ -8,3 +8,14 @@
 [100](https://juejin.im/post/5d23e750f265da1b855c7bbe)
 (https://juejin.im/post/5b94d8965188255c5a0cdc02)
 [collection](https://juejin.im/post/5aae076d6fb9a028cc6100a9)
+
+
+
+
+## question
+
+#### package.json 与 package.lock.json
+#### nodejs 最佳实践
+#### 手写ssr
+#### react component 与 class
+#### graphql
