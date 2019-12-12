@@ -222,6 +222,7 @@ https://github.com/dawnlabs/carbon
 [water](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation)
 [animate on scoll](https://github.com/michalsnik/aos)
 [velocity](https://github.com/julianshapiro/velocity)
+[animate](https://github.com/juliangarnier/anime)
 #### ML 
 [face-api](https://github.com/justadudewhohacks/face-api.js)
 [quantify the world](https://github.com/opendatacam/opendatacam)
