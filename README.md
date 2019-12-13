@@ -2,49 +2,49 @@
 
 ## javascript 基础系列学习
 
-[作用域](./interview/ES5/scope.md)
+- [作用域](./interview/ES5/scope.md)
 
-[执行上下文与变量对象](./interview/ES5/execution-context.md)
+- [执行上下文与变量对象](./interview/ES5/execution-context.md)
 
-[原型链](./interview/prototype/prototype.md)
+- [原型链](./interview/prototype/prototype.md)
 
-[new的模拟实现](./interview/ES5/new.md)
+- [new的模拟实现](./interview/ES5/new.md)
 
-[多种继承方式](./interview/prototype/extends.md)
+- [多种继承方式](./interview/prototype/extends.md)
 
 ## 手写源码系列
 
 #### Promise
 
-[手写 Promise](./interview/function/promise.js)
+- [手写 Promise](./interview/function/promise.js)
 
-[curry 柯理化](./interview/functional/curry.md)
+- [curry 柯理化](./interview/functional/curry.md)
 
 > 参考文献
-> [Promise](https://github.com/then/promise)
+  - [Promise](https://github.com/then/promise)
 
-[asap](https://github.com/kriskowal/asap)
+  - [asap](https://github.com/kriskowal/asap)
 
 >
 
 #### debounce，throttle
 
-[debounce](./interview/debounce.md)
+- [debounce](./interview/debounce.md)
 
-[throttle](./interview/debounce.md)
+- [throttle](./interview/debounce.md)
 
 ## ES6 基础系列学习
 
 #### Set、Map、WeakSet 和 WeakMap 的区别
 
-[SetMap](./interview/ES6/SetMap.md)
+- [SetMap](./interview/ES6/SetMap.md)
 
 #### Iterator 迭代器与 for of
 
-[Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
-
-[参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
-
+- [Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
+> 
+ [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
+>
 ## 算法学习系列
 
 ### 排序算法
@@ -53,12 +53,13 @@
 
 #### 冒泡排序
 
-> [冒泡排序](./interview/algorithm/bubble-sort.md)
-> [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
-
+- [冒泡排序](./interview/algorithm/bubble-sort.md)
+>
+ [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
+>
 #### 选择排序
 
-[选择排序](./interview/algorithm/selection-sort.md)
+- [选择排序](./interview/algorithm/selection-sort.md)
 
 ## javascript,jquery 相关
 
