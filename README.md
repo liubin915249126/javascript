@@ -47,7 +47,7 @@
 >
 
 ## 浏览器相关
-- [Js事件循环|js异步发展史](./51youse/PPT-broswer.md)
+- [Js事件循环、js异步发展史](./51youse/PPT-broswer.md)
 - [浏览器缓存](./interview/browser/cache.md)
 - [浏览器安全](./interview/browser/XSS.md)
 - [浏览器回流与重绘](./interview/browser/repaint.md)
