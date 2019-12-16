@@ -45,6 +45,13 @@
 > 
  [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
 >
+
+## 浏览器相关
+- [浏览器缓存](./interview/browser/cache.md)
+- [浏览器安全](./interview/browser/XSS.md)
+- [浏览器回流与重绘](./interview/browser/repaint.md)
+- [图片懒加载](./interview/browser/img-lazy.md) 
+
 ## 算法学习系列
 
 ### 排序算法
