@@ -70,11 +70,14 @@ test();
 ```
 
 ## js 异步发展史
+
 发展历程:
-callback -> promise -> generator -> async + await
+callback -> pub-sub -> promise -> generator -> async + await
 
 #### callback
+
 >
+
 ```js
 ajax(url, () => {
   // 处理逻辑
@@ -86,13 +89,54 @@ ajax(url, () => {
   });
 });
 ```
+
 回调地狱，代码难以维护
+
 >
+
+#### pub-sub 发布订阅
+
+```js
+export default class PubSub {
+  constructor() {
+    // events里存放的是所有的具名事件
+    this.events = {};
+  }
+
+  //  提供订阅功能
+  subscribe(event, callback) {
+    let self = this;
+
+    if (!self.events.hasOwnProperty(event)) {
+      self.events[event] = [];
+    }
+    // 没有做去重
+    return self.events[event].push(callback);
+  }
+
+  // 提供发布功能
+  publish(event, data) {
+    let self = this;
+
+    if (!self.events.hasOwnProperty(event)) {
+      return [];
+    }
+
+    return self.events[event].map(callback => callback(data));
+  }
+}
+```
+参考另一个工程：
+[pub-sub](https://github.com/liubin915249126/react-study/tree/dva/src/pub-sub)
 
 #### promise
 
-由[asap]()源码可以看出
-浏览器 Promise 事件调度走的是 MutationObserver,node 走的是 process.nextTick
+>
+
+- 由[asap](https://github.com/kriskowal/asap)源码可以看出
+  浏览器 Promise 事件调度走的是 MutationObserver,node 走的是 process.nextTick
+- Promise 存在三种状态:
+  由 Pending 可以变为 Fulfilled 或者 Rejected，切一旦变化就不会再更改
 
 ```js
     Pending----Promise对象实例创建时候的初始状态
@@ -112,10 +156,14 @@ Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就
   .then(x => console.log(x)) //2
   .catch(console.error); //catch 会捕获到没有捕获的异常
 ```
+手写 [Promise](https://github.com/liubin915249126/javascript/blob/master/interview/function/promise.js)
+>
 
 #### 生成器 Generators/ yield
 
 [迭代器](https://github.com/liubin915249126/javascript/blob/master/interview/RN/iterator.js)
+
+Generator 可以中断函数的执行，这就为我们用同步方式写异步提供了可能
 
 ```js
 function* foo(x) {
@@ -139,6 +187,8 @@ function* gen() {
   console.log([json1.bio, json2[0].login, json3[0].full_name].join("\n"));
 }
 ```
+
+对于上面三个请求我们可以这样写
 
 ```js
 var g = gen();
@@ -165,6 +215,8 @@ result1.value
   });
 ```
 
+更好的办法是使用递归
+
 ##### 递归
 
 ```js
@@ -185,12 +237,16 @@ function run(gen) {
 }
 
 run(gen);
-// co(gen)
 ```
 
-[Generators](https://github.com/mqyqingfeng/Blog/issues/99)
+[co](https://github.com/tj/co)这个库所做的事情
+co(gen)即自执行 generator
+
+参考文献 [Generators](https://github.com/mqyqingfeng/Blog/issues/99)
 
 #### async await
+
+自带 generator 执行器
 
 ```js
   async //返回一个Promise
@@ -226,6 +282,8 @@ const fetchValue = async function() {
 };
 fetchValue();
 ```
+
+实际应用
 
 ```js
   setStateAsync(state){
