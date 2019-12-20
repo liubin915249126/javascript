@@ -70,11 +70,11 @@ test();
 ```
 
 ## js 异步发展史
-
+发展历程:
 callback -> promise -> generator -> async + await
 
 #### callback
-
+>
 ```js
 ajax(url, () => {
   // 处理逻辑
@@ -86,10 +86,13 @@ ajax(url, () => {
   });
 });
 ```
+回调地狱，代码难以维护
+>
 
 #### promise
 
-asap(浏览器 Promise 事件调度走的是 MutationObserver,node 走的是 process.nextTick )
+由[asap]()源码可以看出
+浏览器 Promise 事件调度走的是 MutationObserver,node 走的是 process.nextTick
 
 ```js
     Pending----Promise对象实例创建时候的初始状态
