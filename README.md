@@ -47,6 +47,7 @@
 
 - [webpack性能优化](./webpack/optimization.md)
 - [webpack输出质量优化](./webpack/output-optimization.md)
+- [webpack加载动态图片](https://github.com/liubin915249126/javascript/blob/master/webpack/dynamic-import-image.md)
 
 ## 算法学习系列
 
