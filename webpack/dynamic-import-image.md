@@ -69,3 +69,7 @@
   keys会返回 image 里面已存在的图片路径的数组，我们只要判断接口返回的图片地址在本地图片里面再去加载
   从而避免模块找不到的问题。
   >
+  
+  - 原文地址 [dynamic-import-image](https://github.com/liubin915249126/javascript/blob/master/webpack/dynamic-import-image.md)
+
+  - 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
