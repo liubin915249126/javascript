@@ -100,6 +100,6 @@ Object.defineProperty(window, "fetch", {
 另外在小程序里面 request 方法是挂在 wx 下面，同样是可以实现，
 具体实现 [wx.request](https://github.com/liubin915249126/javascript/blob/master/interview/defineProperty.md)
 
-- 原文地址 [dynamic-import-image](https://github.com/liubin915249126/javascript/blob/master/webpack/dynamic-import-image.md)
+- 原文地址 [fetch](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/fetch.md)
 
 - 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
