@@ -20,6 +20,8 @@
 #### 函数式编程
 #### ES6 Symbol class 私有属性 AST
 #### webpack import require require.ensure require.context 
+#### 装饰器 中间件
+
 
 [](https://juejin.im/post/5c64d15d6fb9a049d37f9c20)
 [100](https://juejin.im/post/5d23e750f265da1b855c7bbe)(https://github.com/mqyqingfeng/Blog)
