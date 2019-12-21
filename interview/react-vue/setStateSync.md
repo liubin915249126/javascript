@@ -25,11 +25,11 @@
         this.setState({})
     }) 
   ```
-- setState 接收一个函数
+<!-- - setState 接收一个函数
   函数的首个参数就是上一次的state
   ```js 
     this.setState(prevState => {count: prevState.count + 1});
-  ```
+  ``` -->
 - setState 第二个参数回调函数
   在第二参数回调函数里面可以拿到更新后的state
   ```js
@@ -56,7 +56,7 @@
     同步方式书写异步，避免回调地狱
   >
 - 总结
-  - 前面两种会影响性能
+  - 第一种会影响性能
   - 推荐最后一种方法，不改变 setState 原本机制基础上，避免回调地狱 
 #### setState 怎么区分同步异步
 >
