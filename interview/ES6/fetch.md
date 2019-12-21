@@ -92,8 +92,9 @@ Object.defineProperty(window, "fetch", {
     .then(response =>response.json())
   }
 });
-
 ```
+只要将上述代码贴到程序入口文件即可
+
 #### 扩展
 此文是基于 defineProperty , Proxy 同样可以实现。
 另外在小程序里面 request 方法是挂在 wx 下面，同样是可以实现，
