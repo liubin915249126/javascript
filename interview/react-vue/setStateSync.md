@@ -58,10 +58,11 @@
 - 总结
   - 前面两种会影响性能
   - 推荐最后一种方法，不改变 setState 原本机制基础上，避免回调地狱 
-#### setState 真的是异步的吗
+#### setState 怎么区分同步异步
 >
-  React使用了事务的机制，React的每个生命周期和合成事件都处在一个大的事务当中。在事务的前置钩子中调用batchedUpdates方法修改isBatchingUpdates变量为true，在后置钩子中将变量置为false。原生绑定事件和setTimeout异步的函数没有进入到React的事务当中，或者当他们执行时，刚刚的事务已近结束了，后置钩子触发了，所以此时的setState会直接进入非批量更新模式，表现在我们看来成为了同步SetState 
+  React使用了事务的机制，React的每个生命周期和合成事件都处在一个大的事务当中。在事务的前置钩子中调用batchedUpdates方法修改isBatchingUpdates变量为true，在后置钩子中将变量置为false。isBatchingUpdates默认为false，batchedUpdates将其变为true后，变现为异步更新。  原生绑定事件和setTimeout异步的函数没有进入到React的事务当中，或者当他们执行时，刚刚的事务已近结束了，后置钩子触发了，所以此时的setState会直接进入非批量更新模式，表现在我们看来成为了同步SetState 
 >
+[参考文献](https://segmentfault.com/a/1190000015463599)
 
 - 原文地址 [setStateSync](https://github.com/liubin915249126/javascript/blob/master/interview/react-vue/setStateSync.md) “异步的” setState 如何同步获取 state
 - 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
