@@ -10,30 +10,23 @@
 
 ## 手写源码系列
 
-#### Promise
-
 - [手写 Promise](./interview/function/promise.js)
-- [curry 柯理化](./interview/functional/curry.md)
-  > 参考文献
-- [Promise](https://github.com/then/promise)
-- [asap](https://github.com/kriskowal/asap)
-  >
+  - [Promise](https://github.com/then/promise)
+  - [asap](https://github.com/kriskowal/asap)
 
-#### debounce，throttle
+- [curry 柯理化](./interview/functional/curry.md)
 
 - [debounce](./interview/debounce.md)
 - [throttle](./interview/debounce.md)
 
 ## ES6 基础系列学习
 
-#### Set、Map、WeakSet 和 WeakMap 的区别
+- Set、Map、WeakSet 和 WeakMap 的区别
+  - [SetMap](./interview/ES6/SetMap.md)
 
-- [SetMap](./interview/ES6/SetMap.md)
-
-#### Iterator 迭代器与 for of
-
-- [Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
-  > [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
+- Iterator 迭代器与 for of
+  - [Iterator](https://github.com/liubin915249126/javascript/blob/master/interview/ES6/Iterator.md)
+  - [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
 
 ## 浏览器相关
 
@@ -44,10 +37,15 @@
 - [图片懒加载](./interview/browser/img-lazy.md)
 
 ## 工具类
+- webpack
+  - [webpack性能优化](./webpack/optimization.md)
+  - [webpack输出质量优化](./webpack/output-optimization.md)
+  - [webpack加载动态图片](https://github.com/liubin915249126/javascript/blob/master/webpack/dynamic-import-image.md)
 
-- [webpack性能优化](./webpack/optimization.md)
-- [webpack输出质量优化](./webpack/output-optimization.md)
-- [webpack加载动态图片](https://github.com/liubin915249126/javascript/blob/master/webpack/dynamic-import-image.md)
+- nginx 
+  - [nginx基本配置](./tools/nginx/study.md)
+  - [前后端分离通过nginx配置二级域名](./tools/nginx/secondary.md) 
+
 
 ## 算法学习系列
 
@@ -55,12 +53,8 @@
 
 ![排序算法](./image/sort.webp)
 
-#### 冒泡排序
-
 - [冒泡排序](./interview/algorithm/bubble-sort.md)
-  > [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
-
-#### 选择排序
+  - [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
 
 - [选择排序](./interview/algorithm/selection-sort.md)
 
