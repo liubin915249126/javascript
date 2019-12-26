@@ -20,7 +20,9 @@
 #### 函数式编程
 #### ES6 Symbol class 私有属性 AST
 #### webpack import require require.ensure require.context 
-#### 装饰器 中间件
+#### 装饰器 redux中间件
+#### 广度深度搜索，回溯
+#### 
 
 
 [](https://juejin.im/post/5c64d15d6fb9a049d37f9c20)
@@ -34,6 +36,9 @@
 #### 浏览器缓存与HTTP协议
 [缓存](https://segmentfault.com/a/1190000021248694)
 [浏览器相关](https://juejin.im/post/5df5bcea6fb9a016091def69)
+
+[collection](https://juejin.im/post/5dfef50751882512444027eb#heading-12)
+
 
 #### 数据结构与算法
 [javascript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
