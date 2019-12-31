@@ -69,6 +69,9 @@ test();
 // 3524
 ```
 
+- [原文地址](https://github.com/liubin915249126/javascript/blob/master/51youse/ PPT-broswer.md#%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF)浏览器事件循环
+- 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
+
 ## js 异步发展史
 
 发展历程:
@@ -113,7 +116,6 @@ export default class PubSub {
     // 没有做去重
     return self.events[event].push(callback);
   }
-
   // 提供发布功能
   publish(event, data) {
     let self = this;
@@ -126,6 +128,7 @@ export default class PubSub {
   }
 }
 ```
+
 参考另一个工程：
 [pub-sub](https://github.com/liubin915249126/react-study/tree/dva/src/pub-sub)
 
@@ -156,7 +159,12 @@ Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就
   .then(x => console.log(x)) //2
   .catch(console.error); //catch 会捕获到没有捕获的异常
 ```
+
 手写 [Promise](https://github.com/liubin915249126/javascript/blob/master/interview/function/promise.js)
+缺点：
+  - 无法取消 Promise
+  - 当处于pending状态时，无法得知目前进展到哪一个阶段
+  - 错误不能被 try catch 
 >
 
 #### 生成器 Generators/ yield
@@ -284,6 +292,8 @@ fetchValue();
 ```
 
 实际应用
+[“异步的” setState 如何同步获取 state](https://github.com/liubin915249126/javascript/blob/master/interview/react-vue/setStateSync.md)
+这篇文章有详细的说明
 
 ```js
   setStateAsync(state){
@@ -317,3 +327,6 @@ test1().then(() => {
 console.log(6);
 // 6135472
 ```
+
+- [原文地址](https://github.com/liubin915249126/javascript/blob/master/51youse/PPT-broswer.md#js-%E5%BC%82%E6%AD%A5%E5%8F%91%E5%B1%95%E5%8F%B2) js 异步发展史
+- 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
