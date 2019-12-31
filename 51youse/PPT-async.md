@@ -217,7 +217,7 @@ const fetchValue = async function() {
 fetchValue();
 ```
 
-实际应用
+实际应用:
 [“异步的” setState 如何同步获取 state](https://github.com/liubin915249126/javascript/blob/master/interview/react-vue/setStateSync.md)
 这篇文章有详细的说明
 
@@ -229,7 +229,7 @@ fetchValue();
   }
 ```
 
-[babel](https://github.com/liubin915249126/javascript/blob/master/interview/RN/babel.js)
+[babel](https://github.com/liubin915249126/javascript/blob/master/interview/RN/babel.js)编译的结果
 
 测试题 2
 
