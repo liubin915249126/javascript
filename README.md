@@ -9,7 +9,7 @@
 - [多种继承方式](./interview/prototype/extends.md)
 - [“异步的” setState 如何同步获取 state](./interview/react-vue/setStateSync.md)
 - [fetch拦截器的实现](./interview/ES6/fetch.md)
-
+- [js 异步发展史](./51youse/PPT-async.md)
 ## 手写源码系列
 
 - [手写 Promise](./interview/function/promise.js)
@@ -32,7 +32,7 @@
 
 ## 浏览器相关
 
-- [Js 事件循环、js 异步发展史](./51youse/PPT-broswer.md)
+- [浏览器事件循环](./51youse/PPT-broswer.md)
 - [浏览器缓存](./interview/browser/cache.md)
 - [浏览器安全](./interview/browser/XSS.md)
 - [浏览器回流与重绘](./interview/browser/repaint.md)
