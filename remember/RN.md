@@ -53,4 +53,4 @@ flutter.versionCode=1
 #### Failed to connect to development server using "adb reverse": spawnSync adb ENOENT
 adb reverse tcp:8081 tcp:8081
 #### command not found: adb
-source ~/.bash_profil
+source ~/.bash_profile
