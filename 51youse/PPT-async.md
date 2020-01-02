@@ -87,6 +87,7 @@ Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就
 ```
 
 手写 [Promise](https://github.com/liubin915249126/javascript/blob/master/interview/function/promise.js)
+
 缺点：
   - 无法取消 Promise
   - 当处于pending状态时，无法得知目前进展到哪一个阶段
@@ -216,6 +217,7 @@ const fetchValue = async function() {
 };
 fetchValue();
 ```
+[手写async函数](https://github.com/liubin915249126/javascript/blob/master/interview/function/Promise.md)
 
 实际应用:
 [“异步的” setState 如何同步获取 state](https://github.com/liubin915249126/javascript/blob/master/interview/react-vue/setStateSync.md)
