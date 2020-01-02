@@ -1,5 +1,6 @@
 ## 浏览器事件循环
 
+
 #### 浏览器多进程
 
 ```js
@@ -32,7 +33,7 @@
    异步任务则会在异步有了结果后将注册的回调函数添加到任务队列(消息队列)中等待执行,
 ```
 
-![queue](https://github.com/liubin915249126/javascript/blob/master/image/queue.webp)
+![queue](https://raw.githubusercontent.com/liubin915249126/javascript/master/image/queue.webp)
 
 #### 事件循环
 
@@ -40,7 +41,7 @@
   当执行栈空的时候,js引擎就会查看任务队列有没有等待执行的任务，形成一个事件循环
 ```
 
-![loop](https://github.com/liubin915249126/javascript/blob/master/image/loop.png)
+![loop](https://raw.githubusercontent.com/liubin915249126/javascript/master/image/loop.png)
 
 ```js
   Macro Task(宏任务) setTimeout，setInterval函数的回调、DOM事件处理函数，网络事件，Html解析,
@@ -49,7 +50,7 @@
   正在执行的任务衍生出来的所有的Micro Task会在执行下一个Macro Task之前被放入执行栈执行
 ```
 
-![task](https://github.com/liubin915249126/javascript/blob/master/image/task.webp)
+![task](https://raw.githubusercontent.com/liubin915249126/javascript/master/image/task.webp)
 
 测试题 1
 
