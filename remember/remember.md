@@ -29,3 +29,7 @@ rm -rf ~/.node-gyp
 
 #### http-server jsrsasign(签名)
 #### package-lock.json encodeURIComponent
+"@babel/plugin-proposal-optional-chaining"
+
+#### eruda vconsole
+
