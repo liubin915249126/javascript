@@ -1,4 +1,4 @@
-## js 异步发展史
+## js 异步发展简史
 
 发展历程:
 callback -> pub-sub -> promise -> generator -> async + await
@@ -256,5 +256,5 @@ console.log(6);
 // 6135472
 ```
 
-- [原文地址](https://github.com/liubin915249126/javascript/blob/master/51youse/PPT-async.md) js 异步发展史
+- [原文地址](https://github.com/liubin915249126/javascript/blob/master/51youse/PPT-async.md) js 异步发展简史
 - 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案

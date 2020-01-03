@@ -36,6 +36,7 @@
 #### 浏览器缓存与HTTP协议
 [缓存](https://segmentfault.com/a/1190000021248694)
 [浏览器相关](https://juejin.im/post/5df5bcea6fb9a016091def69)
+[综合](https://segmentfault.com/a/1190000021319127)(https://segmentfault.com/u/we452366)
 
 [collection](https://juejin.im/post/5dfef50751882512444027eb#heading-12)
 
