@@ -165,6 +165,8 @@ https://github.com/dawnlabs/carbon
 [functional](https://github.com/ramda/ramda)
 [DOC](https://github.com/slatedocs/slate)
 [height](https://github.com/PrismJS/prism)
+[cookie](https://github.com/js-cookie/js-cookie)
+
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](github.githistory.xyz)

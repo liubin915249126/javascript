@@ -54,3 +54,13 @@ flutter.versionCode=1
 adb reverse tcp:8081 tcp:8081
 #### command not found: adb
 source ~/.bash_profile
+
+#### Make sure you have an Android emulator running or a device connected and have set up your Android...
+1、手机（虚拟机）没有连上电脑，用adb devices查看是否列出设备。
+2、local.properties中没有配置本地SDK的路径。
+3、修改android/gradlew的权限。在项目根路径下运行chmod 755 android/gradlew
+4、除去能查到的常规原因，还可能是手机内存不足安装失败导致的（这就是我遇到的原因）。
+
+#### Could not find method implementation() for arguments [com.facebook.react:react-native:+] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
+react-native link react-native-image-crop-picker
+"react-native-image-crop-picker": "git+https://github.com/ivpusic/react-native-image-crop-picker",
