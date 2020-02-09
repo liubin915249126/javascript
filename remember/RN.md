@@ -64,3 +64,37 @@ source ~/.bash_profile
 #### Could not find method implementation() for arguments [com.facebook.react:react-native:+] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
 react-native link react-native-image-crop-picker
 "react-native-image-crop-picker": "git+https://github.com/ivpusic/react-native-image-crop-picker",
+
+####  SDK location not found. Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.
+Android
+local.properties
+sdk.dir = /Users/jerry/Library/Android/sdk
+
+#### Execution failed for task ':pickerview:processReleaseResources'
+buildToolsVersion '23.0.1'
+####  Execution failed for task ':react-native-device-info:processReleaseResources'
+./gradlew app:assembleRelease
+./gradlew assembleRelease --stacktrace --info
+
+#### Execution failed for task ':app:validateSigningDebug'. > Keystore file /Users/jerry/51youse-app-0102/android/keystore not found for signing config 'debug'.
+/Android/
+keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000
+
+chenws20191132
+123456.a
+
+watchman watch-del-all
+rm -rf node_modules && npm install
+npm start -- --reset-cache
+
+#### Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=release, filters=[]}} of type com.android.build.gradle.internal.api.ApkVariantOutputImpl.
+
+#### 
+https://developer.android.com/studio/releases/gradle-plugin.html
+https://gradle.org/releases/
+
+#### Activity class {com.youse.app/com.youse.app.MainActivity} does not exist.
+#### com.android.builder.testing.api.DeviceException: com.android.ddmlib.InstallException: INSTALL_FAI...
+安装版本低于设备上已安装版本
+需卸载已存在版本
+#### Failure [DELETE_FAILED_INTERNAL_ERROR]

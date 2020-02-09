@@ -39,6 +39,11 @@ npm cache clean --force
   git push origin :test 
 >
 
+#### git 切换源 
+git remote remove origin # 删掉原来git源
+git remote add origin [YOUR NEW .GIT URL] # 将新源地址写入本地版本库配置文件
+
+
 ### nginx commend
 ```bash
    /usr/local/etc/nginx/

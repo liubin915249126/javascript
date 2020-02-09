@@ -12,6 +12,7 @@
     Remote VSCode
     TabNine
     Debugger for Chrome
+    REST Client
 ```
 #### remote development
 [](https://zhuanlan.zhihu.com/p/82568294)
