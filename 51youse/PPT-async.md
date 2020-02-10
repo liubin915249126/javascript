@@ -91,7 +91,7 @@ Promise.resolve(1) //每次调用返回的都是一个新的Promise实例(这就
 缺点：
   - 无法取消 Promise
   - 当处于pending状态时，无法得知目前进展到哪一个阶段
-  - 错误不能被 try catch 
+  - 错误不能被 try catch
 >
 
 #### 生成器 Generators/ yield
