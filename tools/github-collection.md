@@ -64,7 +64,7 @@ https://github.com/dawnlabs/carbon
 [swc](https://github.com/swc-project/swc)
 [ppt](https://github.com/ksky521/nodeppt)
 [mpeditor](https://github.com/ksky521/mpeditor)
-
+[puppetter](https://github.com/microsoft/playwright)
 #### react-native
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
 [ui](https://github.com/callstack/react-native-paper)

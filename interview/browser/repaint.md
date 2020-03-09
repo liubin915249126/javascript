@@ -20,3 +20,4 @@
 - 使用createDocumentFragment进行批量的 DOM 操作。
 - 对于 resize、scroll 等进行防抖/节流处理。
 - 添加 will-change: tranform ，让渲染引擎为其单独实现一个图层，当这些变换发生时，仅仅只是利用合成线程去处理这些变换，而不牵扯到主线程，大大提高渲染效率。当然这个变化不限于tranform, 任何可以实现合成效果的 CSS 属性都能用will-change来声明
+
