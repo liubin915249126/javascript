@@ -5,3 +5,7 @@ git config --global --unset http.proxy
 $ chsh -s /bin/zsh
 $ chsh -s /bin/bash
 
+
+http://tool.chinaz.com/dns 
+修改host
+sudo vim /etc/hosts
