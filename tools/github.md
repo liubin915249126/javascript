@@ -4,3 +4,4 @@ git config --global --unset http.proxy
 
 $ chsh -s /bin/zsh
 $ chsh -s /bin/bash
+
