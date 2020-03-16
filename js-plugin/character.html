@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字符下落特效</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas style="background:#000"></canvas>
+    <script type="text/javascript">
+      var cv = document.querySelector("canvas");
+      var width = (cv.width = window.innerWidth);
+      var height = (cv.height = window.innerHeight);
+      var ctx = cv.getContext("2d");
+      ctx.font = "25px Arial";
+      ctx.textAlign = "center";
+      var all_chars = [];
+      for (let i = 0; i < 10; i++) {
+        all_chars.push(i.toString());
+      }
+      for (let i = 0; i < 26; i++) {
+        all_chars.push(String.fromCharCode(65 + i));
+      }
+      for (let i = 0; i < 26; i++) {
+        all_chars.push(String.fromCharCode(97 + i));
+      }
+      const dots = [];
+      const w = 25;
+      const rows = (height / 25) >> 0;
+      const cols = (width / 25) >> 0;
+      for (let i = 0; i < cols; i++) {
+        let chars = [];
+        dots.push({
+          // t: Date.now(),
+          y: ((Math.random() * 20) >> 0) * -1,
+          x: i,
+          chars
+        });
+        for (let j = 0; j < 10; j++) {
+          chars.push(all_chars[(Math.random() * all_chars.length) >> 0]);
+        }
+      }
+      function update() {
+        ctx.clearRect(0, 0, width, height);
+        ctx.save();
+        ctx.fillStyle = `rgba(0, 255, 0, 0.5)`;
+        // var now = Date.now();
+        for (let item of dots) {
+          let len = item.chars.length;
+          for (let i = 0; i < len - 1; i++) {
+            ctx.fillStyle = `rgba(0, 255, 0, ${(i + 1) / (len + 1)})`;
+            ctx.fillText(item.chars[i], w * item.x, w * (item.y + i));
+          }
+          ctx.fillStyle = "rgb(255,255,255)";
+          ctx.fillText(item.chars[len - 1], w * item.x, w * (item.y + len - 1));
+          item.chars.splice(0, 1);
+          item.chars.push(all_chars[(Math.random() * all_chars.length) >> 0]);
+          if (item.y > rows) {
+            item.y = ((Math.random() * 20) >> 0) * -1;
+          } else {
+            item.y++;
+          }
+        }
+        ctx.restore();
+        setTimeout(update, 30);
+      }
+
+      update();
+    </script>
+  </body>
+</html>
