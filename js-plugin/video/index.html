@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>视频播放</title>
+    <style type="text/css">
+       body,html,div{
+           margin: 0;
+           padding: 0;
+       }
+       .video-wrap{
+           width: 500px;
+           height: 400px;
+           top:0;
+           left:0;
+           position: relative;
+           transition:all 0.5s ease-in-out;
+       }
+       .video-wrap video{
+         width:100%;
+         background: #000;
+       }
+       .video-wrap.active{
+          position: fixed;
+          top:30px;
+          left: 50%;
+          transform: translate(-50%,0);
+          width: 600px;
+       }  
+    </style>
 </head>
 <body>
-    <div id="app" style="width: 500px;height: 400px" align="center">
-        <video ontimeupdate>
+    <div id="app" class="video-wrap">
+        <video ontimeupdate >
           <source src="http://oss2.lanlanlife.com/2%E9%82%80%E8%AF%B7%E5%A5%BD%E5%8F%8B.mp4" type="video/mp4"></source>
         </video>
   </div>
   <script type="text/javascript">
     // ontimeupdate
+    // let largeVisible = false
+    const videoWrap = document.querySelector("#app")
+    videoWrap.addEventListener('click',(e)=>{
+        videoWrap.classList.toggle('active')
+    },false)
   </script>
 </body>
 </html>
