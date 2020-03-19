@@ -100,6 +100,7 @@ https://github.com/dawnlabs/carbon
 [physics](https://github.com/liabru/matter-js)
 [chart](https://github.com/amcharts/amcharts4)
 [drap-drop](https://github.com/taye/interact.js)
+[trending-chart](https://www.tradingview.com/?utm_source=https://testnet.bybit.com&utm_medium=library&utm_campaign=library)
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
