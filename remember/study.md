@@ -56,3 +56,6 @@
 #### graphql
 #### 前端测试
 #### BFF
+
+#### redux
+https://juejin.im/post/5def4831e51d45584b585000

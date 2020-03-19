@@ -166,6 +166,8 @@ https://github.com/dawnlabs/carbon
 [DOC](https://github.com/slatedocs/slate)
 [height](https://github.com/PrismJS/prism)
 [cookie](https://github.com/js-cookie/js-cookie)
+[image](https://github.com/exif-js/exif-js)
+
 
 #### git
 [git-hook](https://github.com/typicode/husky)
