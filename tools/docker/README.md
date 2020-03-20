@@ -69,3 +69,6 @@ docker container stop
 docker exec -it 69d1 bash 进入容器
 docker container rm 来删除一个处于终止状态的容器
 docker container prune 删除所有处于终止状态的容器
+
+#### 参考文献
+[docker](https://yeasy.gitbooks.io/docker_practice/content/)
