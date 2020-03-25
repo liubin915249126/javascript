@@ -13,7 +13,8 @@ dayjs(date).isBefore(date)
 dayjs(date).isAfter(date)
 dayjs(date).isBetween(date,date)
 
-Electron 1920*1080
+Electron 
+1920*1080 2560 x 1600
 
 #### node 自动部署
 shelljs node-ssh
