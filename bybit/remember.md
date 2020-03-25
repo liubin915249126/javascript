@@ -6,3 +6,11 @@ https://confluence.bybit.com/pages/viewpage.action?pageId=1212894
 
 #### confluence
 https://confluence.bybit.com/display/FE/Frontend
+
+const exec = require('child_process').exec
+
+dayjs(date).isBefore(date)
+dayjs(date).isAfter(date)
+dayjs(date).isBetween(date,date)
+
+Electron
