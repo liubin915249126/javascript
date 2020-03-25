@@ -33,6 +33,9 @@
 [手写](https://segmentfault.com/a/1190000020703426)
 [daily](https://github.com/Advanced-Frontend/Daily-Interview-Question)
 [blog](https://github.com/ljianshu/Blog)
+[前端精读](https://github.com/dt-fe/weekly)
+
+
 #### 浏览器缓存与HTTP协议
 [缓存](https://segmentfault.com/a/1190000021248694)
 [浏览器相关](https://juejin.im/post/5df5bcea6fb9a016091def69)

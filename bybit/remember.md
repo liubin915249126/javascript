@@ -13,4 +13,4 @@ dayjs(date).isBefore(date)
 dayjs(date).isAfter(date)
 dayjs(date).isBetween(date,date)
 
-Electron
+Electron 1920*1080
