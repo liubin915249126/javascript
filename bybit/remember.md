@@ -18,6 +18,14 @@ Electron
 
 #### node 自动部署
 shelljs node-ssh
+#### hosts
+3.0.70.134   api2.polo.bybit.com 
+
+
+
+
+
+
 
 ```js
 var u = navigator.userAgent, app = navigator.appVersion;
