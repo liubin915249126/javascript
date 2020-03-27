@@ -17,10 +17,15 @@ Electron
 1920*1080 2560 x 1600
 
 #### node 自动部署
-shelljs node-ssh
-#### hosts
-3.0.70.134   api2.polo.bybit.com 
+shelljs node-ssh ssh2 archiver
+precommit postbuild
 
+lru-cache
+#### hosts
+/etc/hosts
+3.0.70.134   api2.polo.bybit.com
+API2_HOST = "//api2.test-2.bybit.com"
+API2_HOST = "//api2.polo.bybit.com"
 
 
 
