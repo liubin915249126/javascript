@@ -19,3 +19,7 @@ window.open(`https://www.facebook.com/sharer.php?u=${encodeURIComponent(shareUrl
 ```      
 
 el.contains(node)
+#### node 发送邮件
+ejs nodemailer
+#### 验证码
+svg-captcha
