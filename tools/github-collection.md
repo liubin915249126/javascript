@@ -101,6 +101,8 @@ https://github.com/dawnlabs/carbon
 [chart](https://github.com/amcharts/amcharts4)
 [drap-drop](https://github.com/taye/interact.js)
 [trending-chart](https://www.tradingview.com/?utm_source=https://testnet.bybit.com&utm_medium=library&utm_campaign=library)
+[gant](https://github.com/DHTMLX/gantt)
+
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
 [rich-text](https://github.com/heyscrumpy/tiptap)
@@ -210,7 +212,7 @@ https://github.com/dawnlabs/carbon
 [string-similar](https://github.com/aceakash/string-similarity)
 [office](https://github.com/Ziv-Barber/officegen)
 [img](https://github.com/oliver-moran/jimp)
-
+[wechart](https://github.com/wechaty/wechaty)
 
 #### vscode
 [debugger](https://github.com/auchenberg/vscode-browser-preview)1

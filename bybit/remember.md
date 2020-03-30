@@ -17,10 +17,17 @@ Electron
 1920*1080 2560 x 1600
 
 #### node 自动部署
-shelljs node-ssh ssh2 archiver
-precommit postbuild
+webhook
+shelljs js中执行shell命令 
+node-ssh ssh2 连接服务器
+archiver 压缩代码
 
+precommit postbuild
 lru-cache
+
+#### node 部署到服务器
+ssh root@公网IP 
+ftp(filezilla)
 #### hosts
 /etc/hosts
 3.0.70.134   api2.polo.bybit.com
