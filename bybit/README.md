@@ -1,4 +1,10 @@
 ### bybit
+#### 性能优化
+[前端性能优化实践 之 百度App个人主页优化](https://segmentfault.com/a/1190000022194498)
+[掘金前端性能优化](https://juejin.im/search?query=%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96&type=all)
+
+
+
 #### 分享
 encodeURIComponent 转译字符
 ```js
