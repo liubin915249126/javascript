@@ -170,11 +170,11 @@ https://github.com/dawnlabs/carbon
 [height](https://github.com/PrismJS/prism)
 [cookie](https://github.com/js-cookie/js-cookie)
 [image](https://github.com/exif-js/exif-js)
-
+[hendler](https://github.com/hammerjs/hammer.js/)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
-[git-history](github.githistory.xyz)
+[git-history](https://github.githistory.xyz)
 
 #### 幻灯片
 [impress](https://github.com/impress/impress.js)
@@ -206,6 +206,7 @@ https://github.com/dawnlabs/carbon
 [二维码](https://github.com/davidshimjs/qrcodejs)
 [git](https://github.com/pcottle/learnGitBranching)
 [svgedit](https://github.com/SVG-Edit/svgedit)
+[regexr](https://regexr.com/)
 
 #### node 
 [mock](https://github.com/typicode/json-server)
