@@ -249,6 +249,7 @@ https://github.com/dawnlabs/carbon
 #### study
 [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1ed-zh-CN)
 [aliyun](https://developer.aliyun.com/learning?utm_content=g_1000089754)
+[浏览器插件](https://github.com/Selection-Translator/crx-selection-translate)
 
 #### collection
 [collection](https://juejin.im/post/5ba7d5dd5188255c6140cc9d#heading-35)
