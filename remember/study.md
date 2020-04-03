@@ -31,7 +31,7 @@
 (https://juejin.im/post/5b94d8965188255c5a0cdc02)
 [collection](https://juejin.im/post/5aae076d6fb9a028cc6100a9)
 [手写](https://segmentfault.com/a/1190000020703426)
-[daily](https://github.com/Advanced-Frontend/Daily-Interview-Question)
+[daily](https://github.com/Advanced-Frontend/Daily-Interview-Question)(https://github.com/shfshanyue/Daily-Question)
 [blog](https://github.com/ljianshu/Blog)
 [前端精读](https://github.com/dt-fe/weekly)
 [前端进阶](https://juejin.im/post/5e7c08bde51d455c4c66ddad)

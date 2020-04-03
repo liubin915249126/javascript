@@ -30,6 +30,10 @@ lru-cache
 #### node 部署到服务器
 ssh root@公网IP 
 ftp(filezilla)
+#### 开发组件库
+[](https://juejin.im/post/5e60a75e6fb9a07cdb467e02#heading-6)
+verdaccio
+
 #### hosts
 /etc/hosts
 3.0.70.134   api2.polo.bybit.com
