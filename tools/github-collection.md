@@ -102,6 +102,7 @@ https://github.com/dawnlabs/carbon
 [drap-drop](https://github.com/taye/interact.js)
 [trending-chart](https://www.tradingview.com/?utm_source=https://testnet.bybit.com&utm_medium=library&utm_campaign=library)
 [gant](https://github.com/DHTMLX/gantt)
+[python](https://github.com/mingrammer/diagrams)
 
 #### vue
 [mobile](https://github.com/ElemeFE/mint-ui)
