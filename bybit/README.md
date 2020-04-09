@@ -23,6 +23,8 @@ window.open(
 // shareFB
 window.open(`https://www.facebook.com/sharer.php?u=${encodeURIComponent(shareUrl)}`);           
 ```      
+monit restart nodejs.www.home 
+
 
 el.contains(node)
 #### node 发送邮件
