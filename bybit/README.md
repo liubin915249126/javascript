@@ -31,3 +31,5 @@ el.contains(node)
 ejs nodemailer
 #### 验证码
 svg-captcha
+#### emmet
+"emmet.triggerExpansionOnTab": true,
