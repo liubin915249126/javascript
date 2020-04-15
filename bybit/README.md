@@ -33,3 +33,5 @@ ejs nodemailer
 svg-captcha
 #### emmet
 "emmet.triggerExpansionOnTab": true,
+#### webpack5
+Module Federation 
