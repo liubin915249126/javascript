@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>share</title>
+</head>
+
+<body>
+    <div class="shareBox">
+        <span class="">分享到：</span>
+        <span onclick="shareDo('qzone','MVC前端网(menVScode)','http://www.menvscode.com/upload/41464238946737386.png')">
+            <img src="http://zixuephp.net/static/images/qqzoneshare.png" width="30">
+        </span>
+        <span onclick="shareDo('qq','MVC前端网(menVScode)','http://www.menvscode.com/upload/41464238946737386.png')">
+            <img src="http://zixuephp.net/static/images/qqshare.png" width="32">
+        </span>
+        <span onclick="shareDo('sina','MVC前端网(menVScode)','http://www.menvscode.com/upload/41464238946737386.png')">
+            <img src="http://zixuephp.net/static/images/sinaweiboshare.png" width="36">
+        </span>
+        <span onclick="shareDo('wechat','MVC前端网(menVScode)','http://www.menvscode.com/upload/41464238946737386.png')">
+            <img src="http://zixuephp.net/static/images/wechatshare.png" width="32">
+        </span>
+    </div>
+    <script type="text/javascript">
+        function shareDo(stype, title, url) {
+            let shareTitle = title //标题
+            let imgUrl = url //图片
+
+            //qq空间接口的传参
+            if (stype == 'qzone') {
+                window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + document.location.href + '?sharesource=qzone&title=' + shareTitle + '&pics=' + imgUrl + '&summary=' + document.querySelector('meta[name="description"]').getAttribute('content'));
+            }
+            //新浪微博接口的传参
+            if (stype == 'sina') {
+                window.open('http://service.weibo.com/share/share.php?url=' + document.location.href + '?sharesource=weibo&title=' + shareTitle + '&pic=' + `${imgUrl}||https://www.baidu.com/img/dongdiqiu_e991bad6a2fe51ffcdaf1db6d5cb0e36.gif` + '&appkey=70876773');
+            }
+            //qq好友接口的传参
+            if (stype == 'qq') {
+                window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + document.location.href + '?sharesource=qzone&title=' + shareTitle + '&pics=' + imgUrl + '&summary=' + document.querySelector('meta[name="description"]').getAttribute('content') + '&desc=' + shareTitle);
+            }
+            //生成二维码给微信扫描分享，php生成，也可以用jquery.qrcode.js插件实现二维码生成
+            if (stype == 'wechat') {
+                window.open('http://zixuephp.net/inc/qrcode_img.php?url=http://zixuephp.net/article-1.html');
+            }
+        }
+    </script>
+</body>
+
+</html>
