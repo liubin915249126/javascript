@@ -172,6 +172,7 @@ https://github.com/dawnlabs/carbon
 [cookie](https://github.com/js-cookie/js-cookie)
 [image](https://github.com/exif-js/exif-js)
 [hendler](https://github.com/hammerjs/hammer.js/)
+[intro](https://github.com/usablica/intro.js/)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
