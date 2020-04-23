@@ -33,3 +33,4 @@ rm -rf ~/.node-gyp
 
 #### eruda vconsole
 
+#### babel-plugin-transform-vue-jsx
