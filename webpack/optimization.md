@@ -1,5 +1,8 @@
 ## webpack 优化
 
+#### speed-measure-webpack-plugin 
+测量时间
+
 #### 优化 Loader 配置
 
 由于 Loader 对文件的转换操作很耗时，所以需要让尽可能少的文件被 Loader 处理。
