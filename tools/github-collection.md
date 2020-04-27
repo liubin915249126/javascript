@@ -257,3 +257,7 @@ https://github.com/dawnlabs/carbon
 
 #### collection
 [collection](https://juejin.im/post/5ba7d5dd5188255c6140cc9d#heading-35)
+
+
+#### 工具
+[unlock-music](https://github.com/ix64/unlock-music)

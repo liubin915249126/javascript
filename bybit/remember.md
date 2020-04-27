@@ -46,6 +46,10 @@ IntersectionObserver 检测元素是否可见
 MessageChannel
 
 
+顺序 kalel lucky sean talen king len mango vincent
+
+
+
 ```js
 var u = navigator.userAgent, app = navigator.appVersion;
   var type =  {// 移动终端浏览器版本信息
