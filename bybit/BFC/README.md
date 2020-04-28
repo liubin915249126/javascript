@@ -32,8 +32,8 @@
   - 根据BFC的规则浮动的元素不会重叠,从而形成浮动流，超过父元素宽度就会折行。
     - 栅格布局：float+百分比  
 - 清除浮动带来的影响:父元素高度塌陷
-![line](./line.png)
-[float](https://liubin915249126.github.io/BFC/float.html)
+- ![line](./line.png)
+- [float](https://liubin915249126.github.io/BFC/float.html)
 
 #### absolute,fixed
 - 脱离文档流使父元素高度塌陷，不可避免
@@ -41,7 +41,7 @@
 - transform 截断向上查找链
 - 应用:
   - 不定宽高元素垂直水平居中
-[absolute](https://liubin915249126.github.io/BFC/absolute.html)  
+- [absolute](https://liubin915249126.github.io/BFC/absolute.html)  
 
 #### inline-block
 
@@ -54,6 +54,6 @@
 一个inline-block元素，
 如果里面有inline内联元素，或者overflow是visible，其基线就是元素里面最后一行内联元素的基线
 否则该元素的基线就是其margin底边缘。
-![baseLine](./baseLine.jpg)
+- ![baseLine](./baseLine.jpg)
 
-[inline-block](https://liubin915249126.github.io/BFC/inline-block.html)
+- [inline-block](https://liubin915249126.github.io/BFC/inline-block.html)
