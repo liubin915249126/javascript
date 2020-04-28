@@ -10,8 +10,9 @@
   - Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠
     - 解决 margin 重叠
   - BFC的区域不会与float box重叠(absolute 与float会重叠)
+    [两栏布局](https://liubin915249126.github.io/BFC/bfc.html)
   - 计算BFC的高度时，浮动元素也参与计算
-    - 解决父元素高度塌陷
+    - 解决父元素高度塌陷 [float](https://liubin915249126.github.io/BFC/float.html)
 
 #### 3.怎样触发BFC
 - 根元素
@@ -32,7 +33,7 @@
     - 栅格布局：float+百分比  
 - 清除浮动带来的影响:父元素高度塌陷
 ![line](./line.png)
-[float](./float.html)
+[float](https://liubin915249126.github.io/BFC/float.html)
 
 #### absolute,fixed
 - 脱离文档流使父元素高度塌陷，不可避免
@@ -40,7 +41,7 @@
 - transform 截断向上查找链
 - 应用:
   - 不定宽高元素垂直水平居中
-[absolute](./absolute.html)  
+[absolute](https://liubin915249126.github.io/BFC/absolute.html)  
 
 #### inline-block
 
@@ -55,4 +56,4 @@
 否则该元素的基线就是其margin底边缘。
 ![baseLine](./baseLine.jpg)
 
-[inline-block](./inline-block.html)
+[inline-block](https://liubin915249126.github.io/BFC/inline-block.html)
