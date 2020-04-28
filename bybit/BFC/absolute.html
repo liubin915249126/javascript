@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style type="text/css">
+        .item {
+            width: 600px;
+            /* height: 200px; */
+        }
+        .center .item1{
+            height: 400px;
+            background:#333;
+            position: relative;
+        }
+        .center .item1 img{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%)
+        }
+        .transform .inner{
+            width: 400px;
+            height: 200px;
+            background:red;
+            transform:scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item item1" id="BFC1">
+        <div class="inner">
+            <img src="./img.jpeg" id="position1" />
+        </div>
+    </div>
+    <div class="item">
+        很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+        很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+        很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+        很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+    </div>
+    <div>
+        position:
+        <select id="position">
+            <option value="static">static</option>
+            <option value="relative">relative</option>
+            <option value="absolute">absolute</option>
+            <option value="fixed">fixed</option>
+        </select>
+    </div>
+    <div>
+        BFC <input type="checkbox" id="BFC" />
+    </div>
+    <div>
+        center <input type="checkbox" id="center" />
+    </div>
+    <div>
+        transform <input type="checkbox" id="transform" />
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            change();
+        };
+        function change() {
+            var display = document.getElementById('display');
+            var float = document.getElementById('float');
+            var position = document.getElementById('position');
+            var BFC = document.getElementById('BFC');
+            var display1 = document.getElementById('display1');
+            var float1 = document.getElementById('float1');
+            var position1 = document.getElementById('position1');
+            var BFC1 = document.getElementById('BFC1');
+            var center = document.getElementById('center');
+            var transform = document.getElementById('transform');
+
+            [display, float, position].forEach(function (select) {
+                select && select.addEventListener('change', function () {
+                    var display = this.getAttribute('id');
+                    var dom = document.getElementById(display + '1')
+                    dom.style[display] = select.value
+                }, false)
+            })
+            BFC.addEventListener('change', function (e){
+                var display = this.getAttribute('id');
+                var dom = document.getElementById(display + '1')
+               if(e.target.checked){
+                    dom.style.display = 'inline-block'
+               }else{
+                    dom.style.display = 'block'
+               }
+            })
+            center.addEventListener('change', function (e){
+                document.body.classList.toggle('center')
+            })
+            transform.addEventListener('change', function (e){
+                document.body.classList.toggle('transform')
+            })
+        }
+    </script>
+</body>
+
+</html>

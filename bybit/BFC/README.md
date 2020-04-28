@@ -31,5 +31,28 @@
   - 根据BFC的规则浮动的元素不会重叠,从而形成浮动流，超过父元素宽度就会折行。
     - 栅格布局：float+百分比  
 - 清除浮动带来的影响:父元素高度塌陷
-  
+![line](./line.png)
 [float](./float.html)
+
+#### absolute,fixed
+- 脱离文档流使父元素高度塌陷，不可避免
+- 相对于第一个非static定位的父元素，查找链
+- transform 截断向上查找链
+- 应用:
+  - 不定宽高元素垂直水平居中
+[absolute](./absolute.html)  
+
+#### inline-block
+
+- line-height 是行内元素占据的高度
+- 图片底部有空白
+  - 默认基线对齐
+  - line-height<height
+  - font-size==0
+
+一个inline-block元素，
+如果里面有inline内联元素，或者overflow是visible，其基线就是元素里面最后一行内联元素的基线
+否则该元素的基线就是其margin底边缘。
+![baseLine](./baseLine.jpg)
+
+[inline-block](./inline-block.html)
