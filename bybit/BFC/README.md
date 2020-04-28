@@ -30,7 +30,7 @@
   - 宽度收缩至最小，和absolute,inline-block表现一致
 - 现在的应用:
   - 根据BFC的规则浮动的元素不会重叠,从而形成浮动流，超过父元素宽度就会折行。
-    - 栅格布局：float+百分比  
+    - [栅格布局](https://liubin915249126.github.io/BFC/bfc.html)：float+百分比  
 - 清除浮动带来的影响:父元素高度塌陷
 - ![line](./line.png)
 - [float](https://liubin915249126.github.io/BFC/float.html)
