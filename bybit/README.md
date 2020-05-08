@@ -35,3 +35,8 @@ svg-captcha
 "emmet.triggerExpansionOnTab": true,
 #### webpack5
 Module Federation 
+#### cookie
+const results = document.cookie.match(`(^|;) ?${cookie_name}=([^;]*)(;|$)`);
+if (results) {
+  return (unescape(results[2]));
+}
