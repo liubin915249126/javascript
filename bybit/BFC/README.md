@@ -50,7 +50,7 @@
 - 应用:
   - 不定宽高元素垂直水平居中
     - 实现原理 top，left的百分比相对于定位父元素，此时是左上角居中，
-      tranform:translate(-50%,-50%)的百分比相对于自身，在拉回自身一半。
+    - tranform:translate(-50%,-50%)的百分比相对于自身，在拉回自身一半。
 - 例子  
   - [absolute](https://liubin915249126.github.io/BFC/absolute.html)  
 
@@ -58,8 +58,8 @@
 
 - line-height 是行内元素占据的高度
 - 图片底部有空白
-  - 原因 默认基线对齐
-  解决方案
+  - 原因 图片默认基线对齐，离底线尚有一定距离
+  - 解决方案
     - line-height<height
     - font-size==0
 
