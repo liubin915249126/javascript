@@ -1,5 +1,9 @@
 ## BFC及其背后的 float absolute inline-block
 
+### 此文为经验之谈，感谢张鑫旭大佬
+
+[张鑫旭的博客](https://www.zhangxinxu.com/wordpress/)
+
 #### BFC(Block formatting context)
 ```js
    BFC(Block formatting context)直译为"块级格式化上下文"。
@@ -40,7 +44,8 @@
   - 通常说的清除浮动其实是清除浮动带来的破坏，即父元素高度塌陷。
   - 根据BFC的定义，BFC会隔离内部元素，所以BFC内部的浮动不会影响外部。 
 - ![line](./line.png)
-- [float](https://liubin915249126.github.io/BFC/float.html)
+- 例子
+  - [float](https://liubin915249126.github.io/BFC/float.html)
 
 #### absolute,fixed
 - 脱离文档流使父元素高度塌陷，不可避免
