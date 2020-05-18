@@ -138,6 +138,10 @@ https://github.com/dawnlabs/carbon
 [nevr](https://github.com/NervJS/nerv)
 [animation-icon](https://github.com/useAnimations/react-useanimations)
 
+[lazy-load](https://github.com/Aljullu/react-lazy-load-image-component)
+[onclickoutside](https://github.com/Pomax/react-onclickoutside)
+[toastify](https://github.com/fkhadra/react-toastify)
+[contextmenu](https://github.com/vkbansal/react-contextmenu)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
