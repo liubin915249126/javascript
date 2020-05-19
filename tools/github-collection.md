@@ -202,6 +202,7 @@ https://github.com/dawnlabs/carbon
 [echart](https://github.com/ecomfe/echarts-for-weixin)
 [nine](https://github.com/sunnie1992/sol-weapp)
 [json-pic](https://github.com/Kujiale-Mobile/Painter)
+[ui](http://doc.mini.7yue.pro/)
 
 #### algorithm
 [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
