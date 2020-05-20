@@ -69,8 +69,8 @@
     - font-size==0
 
 一个inline-block元素，
-如果里面有inline内联元素，或者overflow是visible，其基线就是元素里面最后一行内联元素的基线
-否则该元素的基线就是其margin底边缘。
+<!-- 如果里面有inline内联元素，或者overflow是visible，其基线就是元素里面最后一行内联元素的基线
+否则该元素的基线就是其margin底边缘。 -->
 - ![baseLine](./baseLine.jpg)
 - 例子:
   - [inline-block](https://liubin915249126.github.io/BFC/inline-block.html)
