@@ -1,7 +1,7 @@
-## webpack 优化
+## webpack 优化清单
 
 #### speed-measure-webpack-plugin 
-测量时间
+测量打包时间
 
 #### 优化 Loader 配置
 
@@ -78,7 +78,7 @@ module.exports = {
 ```
 
 #### 优化 module.noParse 配置
-
+打包的时候不去解析，加快打包速度。
 ```js
 module.exports = {
   module: {
