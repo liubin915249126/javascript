@@ -1,12 +1,14 @@
-## webpack 优化清单
+## webpack 打包性能优化清单
 
 #### speed-measure-webpack-plugin 
-测量打包时间
+可以使用speed-measure-webpack-plugin测量打包时间
 
 #### 优化 Loader 配置
 
 由于 Loader 对文件的转换操作很耗时，所以需要让尽可能少的文件被 Loader 处理。
 可以通过 test/include/exclude 三个配置项来命中 Loader 要应用规则的文件。
+同时test/include/exclude还可以有其他的妙用，比如之前实现的一个项目兼容
+css-modules与不使用的方案
 
 #### 优化 resolve.modules 配置
 
