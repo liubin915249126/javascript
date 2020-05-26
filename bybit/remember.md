@@ -9,6 +9,9 @@ https://confluence.bybit.com/pages/viewpage.action?pageId=1212894
 #### confluence
 https://confluence.bybit.com/display/FE/Frontend
 
+#### 蓝湖
+https://lanhuapp.com/url/5O4Cq-g0BqY
+
 const exec = require('child_process').exec
 
 dayjs(date).isBefore(date)
