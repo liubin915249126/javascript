@@ -75,5 +75,5 @@
 - 例子:
   - [inline-block](https://liubin915249126.github.io/BFC/inline-block.html)
 
-- [原文地址](https://github.com/liubin915249126/javascript/blob/master/bybit/BFC/README.md) BFC及其背后的 float absolute inline-block
-- 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
+<!-- - [原文地址](https://github.com/liubin915249126/javascript/blob/master/bybit/BFC/README.md) BFC及其背后的 float absolute inline-block
+- 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案 -->
