@@ -138,12 +138,13 @@ https://github.com/dawnlabs/carbon
 [nevr](https://github.com/NervJS/nerv)
 [animation-icon](https://github.com/useAnimations/react-useanimations)
 
-//
+// 封装组件
 [lazy-load](https://github.com/Aljullu/react-lazy-load-image-component)
 [onclickoutside](https://github.com/Pomax/react-onclickoutside)
 [contextmenu](https://github.com/vkbansal/react-contextmenu)
 [popperjs](https://github.com/popperjs/popper-core)
 [react-toastify](https://github.com/fkhadra/react-toastify)
+[prop-types](https://github.com/facebook/prop-types)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
