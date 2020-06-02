@@ -145,6 +145,7 @@ https://github.com/dawnlabs/carbon
 [popperjs](https://github.com/popperjs/popper-core)
 [react-toastify](https://github.com/fkhadra/react-toastify)
 [prop-types](https://github.com/facebook/prop-types)
+[slider](https://github.com/react-component/slider/)
 
 #### native-js
 [you-dont-need](https://github.com/you-dont-need)
