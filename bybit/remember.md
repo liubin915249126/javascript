@@ -54,18 +54,20 @@ sanitized-a
 
 
 
-```js
-var u = navigator.userAgent, app = navigator.appVersion;
-  var type =  {// 移动终端浏览器版本信息
-    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-    iPad: u.indexOf('iPad') > -1, //是否iPad
-    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-    trident: u.indexOf('Trident') > -1, //IE内核
-    presto: u.indexOf('Presto') > -1, //opera内核
-    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-    mobile: !!u.match(/AppleWebKit.*Mobile/i) || !!u.match(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/), //是否为移动终端
-    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-  };
-```
+
+## Git 规范
+
+使用 [commitlint](https://github.com/conventional-changelog/commitlint) 工具，常用有以下几种类型：
+
+- feat ：新功能
+- fix ：修复 bug
+- chore ：对构建或者辅助工具的更改
+- refactor ：既不是修复 bug 也不是添加新功能的代码更改
+- style ：不影响代码含义的更改 (例如空格、格式化、少了分号)
+- docs ：只是文档的更改
+- perf ：提高性能的代码更改
+- revert ：撤回提交
+- test ：添加或修正测试
+
+举例
+git commit -m 'feat: add list'
