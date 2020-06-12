@@ -181,6 +181,7 @@ https://github.com/dawnlabs/carbon
 [image](https://github.com/exif-js/exif-js)
 [hendler](https://github.com/hammerjs/hammer.js/)
 [intro](https://github.com/usablica/intro.js/)
+[table](https://github.com/handsontable/handsontable)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
