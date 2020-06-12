@@ -12,6 +12,9 @@ https://confluence.bybit.com/display/FE/Frontend
 #### 蓝湖
 https://lanhuapp.com/url/5O4Cq-g0BqY
 
+#### jenkins
+https://jks.bybit.com/jenkins/login
+
 const exec = require('child_process').exec
 
 dayjs(date).isBefore(date)
