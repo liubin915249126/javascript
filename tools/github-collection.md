@@ -137,6 +137,7 @@ https://github.com/dawnlabs/carbon
 [micro-frontends](https://github.com/ice-lab/icestark)
 [nevr](https://github.com/NervJS/nerv)
 [animation-icon](https://github.com/useAnimations/react-useanimations)
+[react-table](https://github.com/tannerlinsley/react-table)
 
 // 封装组件
 [lazy-load](https://github.com/Aljullu/react-lazy-load-image-component)
