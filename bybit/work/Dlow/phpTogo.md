@@ -1,10 +1,10 @@
 #### 整理
 - home-v2
-  - login -> user/profile 
-  - register -> user/profile 
+  - login -> 1./login 2.user/profile 
 - bybit-pc
-  - login -> /login
-  - register -> /user/profile
+  - login -> 1./login 2./login
 - m-site
-  - login -> /login
-  - register -> /user/profile
+  - login -> 1./login 2./login
+
+第一次调用接口判断是否需要 google2fa
+第二步获取用户信息
