@@ -20,3 +20,27 @@ function shuffle(arr){
     return arr;
 }
 ```
+#### forEach Map
+```js
+    Array.prototype.myForEach=function (fn,obj) {
+        for(var i=0;i<this.length;i++){
+            if(typeof obj=="undefined"){
+                //obj没有传
+                fn(this[i],i,this);
+            }else {
+                fn.call(obj,this[i],i,this);
+            }
+        }
+    };
+    Array.prototype.myMap=function (fn,obj) {
+        var arr=[];
+        for(var i=0;i<this.length;i++){
+            if(typeof obj=="undefined"){
+                arr.push(fn(this[i],i,this));
+            }else {
+                arr.push(fn.call(obj,this[i],i,this));
+            }
+        }
+        return arr;
+    };
+```
