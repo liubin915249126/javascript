@@ -161,3 +161,66 @@ filter 不会改变原数组，它返回过滤后的新数组。
   ```
 
 #### every,some
+every 数组每一项都满足条件才会返回 true
+some 数组只要有满足条件的就会返回 true
+[MDN.js.array.every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+[MDN.js.array.some](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+- 用法
+  ```js
+    const flag = [1,2,3].every((item,index,arr)=>item>2) //false
+    const flag = [1,2,3].some((item,index,arr)=>item>2) //true
+  ```
+- 参数:  
+  - 参数一是一个函数，参数如下: 
+    - item: 数组的每一项
+    - index: 每一项所对应的的索引
+    - arr: 数组本身
+  - 参数二是一个对象
+    - 没传的话，参数一内的 this 指向 windows
+    - 否则指向参数二本身
+
+- 实现
+  ```js
+    Array.prototype.myEvery = function (fn,obj){
+        const len = this.length;
+        if(len===0){
+            return true;
+        }
+        let accLen = 0;
+        for(let i=0; i<len; i++){
+          if(typeof obj=="undefined"){
+            if(fn(this[i],i,this)){
+              accLen+=1
+            }
+          }else{
+            if(fn.call(obj,this[i],i,this)){
+              accLen+=1
+            }
+          }
+        }
+        if(accLen === len) return true;
+        return false
+    }
+
+    Array.prototype.mySome = function (fn,obj){
+        const len = this.length;
+        if(len===0){
+            return true;
+        }
+        let accLen = 0;
+        for(let i=0; i<len; i++){
+          if(typeof obj=="undefined"){
+            if(fn(this[i],i,this)){
+              accLen+=1
+            }
+          }else{
+            if(fn.call(obj,this[i],i,this)){
+              accLen+=1
+            }
+          }
+        }
+        if(accLen>0) return true;
+        return false
+    }
+  ```

@@ -20,6 +20,13 @@
 
 - [debounce](./interview/debounce.md)
 - [throttle](./interview/debounce.md)
+- [ES5 array api](./interview/ES5/array.md)
+  - forEach
+  - map
+  - filter
+  - reduce
+  - indexOf
+  - every,some
 
 ## ES6 基础系列学习
 
