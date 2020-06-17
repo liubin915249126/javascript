@@ -224,3 +224,6 @@ some 数组只要有满足条件的就会返回 true
         return false
     }
   ```
+  - 原文地址 [ES5 数组 api 使用与实现](https://github.com/liubin915249126/javascript/blob/master/interview/ES5/array.md)
+
+  - 另外我的博客地址 [blog](https://github.com/liubin915249126/javascript)会经常分享 最近的学习内容，项目中遇到的问题及解决方案
