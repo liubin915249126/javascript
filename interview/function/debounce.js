@@ -41,4 +41,4 @@ function throttle1(func, deley) {
       run = true; // 定时器到时间之后，会把开关打开，我们的函数就会被执行
     }, deley);
   };
-},
+}
