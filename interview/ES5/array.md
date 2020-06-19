@@ -2,6 +2,7 @@
 
 #### forEach
 用来循环一个数组,不会直接改变原数组。循环过程不能跳出。没有返回值。
+[关于forEach不能使用break,return false不能跳出循环](./forEach.md)
 forEach() 遍历的范围在第一次调用 callback 前就会确定。调用 forEach 后添加到数组中的项不会被 callback 访问到。如果已经存在的值被改变，则传递给 callback 的值是 forEach() 遍历到他们那一刻的值。已删除的项不会被遍历到。如果已访问的元素在迭代时被删除了（例如使用 shift()），之后的元素将被跳过
 [MDN.js.array.froEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
@@ -183,46 +184,42 @@ some 数组只要有满足条件的就会返回 true
 - 实现
   ```js
     Array.prototype.myEvery = function (fn,obj){
-        const len = this.length;
-        if(len===0){
-            return true;
-        }
-        let accLen = 0;
-        for(let i=0; i<len; i++){
-          if(typeof obj=="undefined"){
-            if(fn(this[i],i,this)){
-              accLen+=1
-            }
-          }else{
-            if(fn.call(obj,this[i],i,this)){
-              accLen+=1
-            }
+      const len = this.length;
+      if(len===0){
+          return true;
+      }
+      for(let i=0; i<len; i++){
+        if(typeof obj=="undefined"){
+          if(!fn(this[i],i,this)){
+              return false
+          }
+        }else{
+          if(fn.call(obj,this[i],i,this)){
+              return false
           }
         }
-        if(accLen === len) return true;
-        return false
-    }
+      }
+      return true
+  }
 
     Array.prototype.mySome = function (fn,obj){
-        const len = this.length;
-        if(len===0){
+      const len = this.length;
+      if(len===0){
+          return true;
+      }
+      for(let i=0; i<len; i++){
+        if(typeof obj=="undefined"){
+          if(fn(this[i],i,this)){
             return true;
-        }
-        let accLen = 0;
-        for(let i=0; i<len; i++){
-          if(typeof obj=="undefined"){
-            if(fn(this[i],i,this)){
-              accLen+=1
-            }
-          }else{
-            if(fn.call(obj,this[i],i,this)){
-              accLen+=1
-            }
+          }
+        }else{
+          if(fn.call(obj,this[i],i,this)){
+            return true;
           }
         }
-        if(accLen>0) return true;
-        return false
-    }
+      }
+      return false
+  }
   ```
   - 原文地址 [ES5 数组 api 使用与实现](https://github.com/liubin915249126/javascript/blob/master/interview/ES5/array.md)
 
