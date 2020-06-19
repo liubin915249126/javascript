@@ -15,6 +15,9 @@ https://lanhuapp.com/url/5O4Cq-g0BqY
 #### jenkins
 https://jks.bybit.com/jenkins/login
 
+#### 翻译工具
+https://confluence.bybit.com/pages/viewpage.action?pageId=3637477
+
 const exec = require('child_process').exec
 
 dayjs(date).isBefore(date)
