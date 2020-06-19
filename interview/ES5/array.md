@@ -2,7 +2,7 @@
 
 #### forEach
 用来循环一个数组,不会直接改变原数组。循环过程不能跳出。没有返回值。
-[关于forEach不能使用break,return false不能跳出循环](./forEach.md)
+[关于forEach不能使用break,return false不能跳出循环](https://github.com/liubin915249126/javascript/blob/master/interview/ES5/forEach.md)
 forEach() 遍历的范围在第一次调用 callback 前就会确定。调用 forEach 后添加到数组中的项不会被 callback 访问到。如果已经存在的值被改变，则传递给 callback 的值是 forEach() 遍历到他们那一刻的值。已删除的项不会被遍历到。如果已访问的元素在迭代时被删除了（例如使用 shift()），之后的元素将被跳过
 [MDN.js.array.froEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
