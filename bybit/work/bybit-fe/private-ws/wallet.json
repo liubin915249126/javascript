@@ -1,0 +1,23 @@
+{
+    "topic":"private.wallet",
+    "data":[
+        {
+            "userId":161018,
+            "coin":5,
+            "availableBalance":0,
+            "walletBalance":0,
+            "equity":0,
+            "usedMargin":0,
+            "orderMargin":0,
+            "positionMargin":0,
+            "occClosingFee":0,
+            "unRealisedPnlByMarkPrice":0,
+            "unRealisedPnlByLastPrice":0,
+            "unRealisedPnlByBestPrice":0,
+            "occFundingFee":0,
+            "unRealisedPnl":0,
+            "realisedPnl":0,
+            "cumRealisedPnl":0
+        }
+    ]
+}
