@@ -1,0 +1,21 @@
+{
+    "topic":"private.execution",
+    "data":[
+        {
+            "userId":161018,
+            "orderId":"9222a334-d7bf-4e39-96f1-86adf0cc736a",
+            "execId":"2a186dc2-dd8c-50ba-9e4d-1fbafb02113b",
+            "symbol":"BTCUSDT",
+            "price":9750,
+            "execPrice":9750,
+            "qty":1,
+            "execQty":1,
+            "leavesQty":0,
+            "side":"Buy",
+            "orderType":"Limit",
+            "execType":"Trade",
+            "execTime":"2020-06-28T04:04:52Z",
+            "reduceOnly":false
+        }
+    ]
+}

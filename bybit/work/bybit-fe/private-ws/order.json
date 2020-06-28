@@ -1,0 +1,43 @@
+{
+    "topic":"private.order",
+    "data":[
+        {
+            "orderId":"9222a334-d7bf-4e39-96f1-86adf0cc736a",
+            "userId":161018,
+            "symbol":"BTCUSDT",
+            "side":"Buy",
+            "orderType":"Limit",
+            "price":9750,
+            "qty":1,
+            "orderValue":"0.00010256",
+            "timeInForce":"GoodTillCancel",
+            "createType":"CreateByUser",
+            "cancelType":"",
+            "orderStatus":"Filled",
+            "leavesQty":0,
+            "createdAt":"2020-06-28T04:04:52Z",
+            "updatedAt":"",
+            "stopOrderType":"UNKNOWN",
+            "stopOrderStatus":"Filled",
+            "basePrice":9750,
+            "trailValue":0,
+            "triggerPrice":0,
+            "takeProfit":0,
+            "stopLoss":0,
+            "trailingStop":0,
+            "extFields":{
+
+            },
+            "origTriggerPrice":0,
+            "origPrice":0,
+            "origQty":0,
+            "lastExecPrice":9750,
+            "cumExecQty":1,
+            "cumExecValue":9750,
+            "rejectReason":"EC_NoError",
+            "reduceOnly":false,
+            "isActive":false,
+            "type":"activity"
+        }
+    ]
+}
