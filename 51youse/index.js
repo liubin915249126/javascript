@@ -10,7 +10,7 @@ import './index.less';
 
 // 1. Initialize
 const app = dva({
-   //history: browserHistory
+  //history: browserHistory
   history: createHistory(),
 });
 
@@ -27,7 +27,7 @@ function registerModel(app, model) {
 }
 // 3. Model move to router
 models.forEach((m) => {
-  registerModel(app,m)
+  registerModel(app, m)
 });
 
 // 4. Router
