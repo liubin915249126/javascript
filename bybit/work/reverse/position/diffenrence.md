@@ -35,15 +35,15 @@ effective_leverage
 #### 用到的 key
 side
 symbol
-isIsolated
+ - isIsolated
 leverage
-freeQty
-entryPrice
+ - freeQty
+ - entryPrice
 liqPrice
-positionBalance
+ - positionBalance
 unRealisedPnlByLp
 positionValue
-todayRealisedPnl
+todayRealisedPnl //
 takeProfit
 stopLoss
 trailingStop
