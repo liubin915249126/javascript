@@ -43,21 +43,21 @@ liqPrice
  - positionBalance
 unRealisedPnlByLp
 positionValue
-todayRealisedPnl //
+ - todayRealisedPnl
 takeProfit
 stopLoss
 trailingStop
 
 showTakeProfit()
    <PositionTakeProfit>
-    sellValueToCost
-    buyValueToCost
+     - sellValueToCost
+     - buyValueToCost
     <ByTakeProfit>
       slTriggerBy?
       tpTriggerBy?
 showModalFunc()
-  price
-  qty
+  - price
+  - qty
 
 <SetAutoMargin>
-  isAutoAddMargin
+   - isAutoAddMargin
