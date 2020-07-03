@@ -1,0 +1,39 @@
+{
+    "ret_code": 0,
+    "ret_msg": "OK",
+    "ext_code": "",
+    "ext_info": "",
+    "result": {
+        "list": [
+            {
+                "data": {
+                    "id": "2040",
+                    "userId": "160329",
+                    "symbol": "BTCUSD",
+                    "riskId": "1",
+                    "leverageE2": "10000",
+                    "isIsolated": true,
+                    "adlRankIndicator": 1,
+                    "side": "None",
+                    "sizeX": "0",
+                    "valueE8": "0",
+                    "entryPriceE8": "0",
+                    "unrealisedPnlE8": "0",
+                    "positionBalanceE8": "0",
+                    "positionMarginE8": "0",
+                    "occClosingFeeE8": "0",
+                    "liqPriceE4": "0",
+                    "bustPriceE4": "0",
+                    "todayRealisedPnlE8": "0",
+                    "takeProfitE4": "0",
+                    "stopLossE4": "0",
+                    "trailingStopE4": "0",
+                    "activationPriceE4": "0"
+                },
+                "isAvailable": false
+            }
+        ]
+    },
+    "time_now": "1593684183.619230",
+    "token": null
+}
