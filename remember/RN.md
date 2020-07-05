@@ -98,3 +98,6 @@ https://gradle.org/releases/
 安装版本低于设备上已安装版本
 需卸载已存在版本
 #### Failure [DELETE_FAILED_INTERNAL_ERROR]
+
+
+#### react-native-kk-refresh
