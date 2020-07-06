@@ -57,8 +57,8 @@ showTakeProfit()
       slTriggerBy?
       tpTriggerBy?
 showModalFunc()
-  - price
-  - qty
+  <!-- - price
+  - qty -->
 
 <SetAutoMargin>
    - isAutoAddMargin
