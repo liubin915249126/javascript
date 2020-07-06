@@ -9,6 +9,7 @@ liq_price -> liqPriceE4
 bust_price -> bustPriceE4
 entry_price -> entryPriceE8
 size -> sizeX
+unrealised_pnl -> unrealisedPnlE8
 
 position_value
 auto_add_margin
@@ -28,7 +29,6 @@ position_seq
 created_at
 updated_at
 ext_fields
-unrealised_pnl -> unrealisedPnlE8
 effective_leverage
 
 
