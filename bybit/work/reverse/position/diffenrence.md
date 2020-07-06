@@ -35,10 +35,11 @@ effective_leverage
 #### 用到的 key
 side
 symbol
- - isIsolated
+<!-- 前端生成 -->
+ - isIsolated 
 leverage
  - freeQty
- - entryPrice
+entryPrice
 liqPrice
  - positionBalance
 unRealisedPnlByLp
