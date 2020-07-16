@@ -183,6 +183,7 @@ https://github.com/dawnlabs/carbon
 [hendler](https://github.com/hammerjs/hammer.js/)
 [intro](https://github.com/usablica/intro.js/)
 [table](https://github.com/handsontable/handsontable)
+[abort-fetch](https://github.com/mo/abortcontroller-polyfill)
 
 #### git
 [git-hook](https://github.com/typicode/husky)
