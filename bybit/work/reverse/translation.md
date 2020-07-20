@@ -7,3 +7,4 @@ USDT本位保障金 USDTBasedMargin
 
 #### common
 合约名称 ContractName
+刷新  reverseRefresh
