@@ -7,7 +7,7 @@ const REJECTED = 'rejected';
 
 class MyPromise {
   // 构造函数，new 时触发
-  constructor(handle: Function) {
+  constructor(handle) {
     try {
       handle(this._resolve, this._reject);
     } catch (err) {
@@ -15,15 +15,15 @@ class MyPromise {
     }
   }
   // 状态 pending fulfilled rejected
-  private _status: string = PENDING;
+  _status = PENDING;
   // 储存 value，用于 then 返回
-  private _value: string | undefined = undefined;
+  _value = undefined;
   // 失败队列，在 then 时注入，resolve 时触发
-  private _rejectedQueues: any = [];
+  _rejectedQueues = [];
   // 成功队列，在 then 时注入，resolve 时触发
-  private _fulfilledQueues: any = [];
+  _fulfilledQueues = [];
   // resovle 时执行的函数
-  private _resolve = val => {
+  _resolve = val => {
     const run = () => {
       if (this._status !== PENDING) return;
       this._status = FULFILLED;
@@ -66,7 +66,7 @@ class MyPromise {
     setTimeout(run);
   };
   // reject 时执行的函数
-  private _reject = err => {
+  _reject = err => {
     if (this._status !== PENDING) return;
     // 依次执行失败队列中的函数，并清空队列
     const run = () => {
@@ -81,7 +81,7 @@ class MyPromise {
     setTimeout(run);
   };
   // then 方法
-  then(onFulfilled?, onRejected?) {
+  then(onFulfilled, onRejected) {
     const { _value, _status } = this;
     // 返回一个新的Promise对象
     return new MyPromise((onFulfilledNext, onRejectedNext) => {
