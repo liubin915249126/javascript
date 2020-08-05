@@ -1,0 +1,8 @@
+
+
+trade/common
+
+总成本  totalCost
+名称(点击查看详情) insuranceName
+剩余时间 timeRemaining
+当前可赔 currentCompensable

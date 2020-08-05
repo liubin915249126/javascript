@@ -46,3 +46,5 @@ open
 #### react 事件机制
 https://segmentfault.com/a/1190000022616537
 https://toutiao.io/posts/28of14w/preview
+
+pointer-events: none;
