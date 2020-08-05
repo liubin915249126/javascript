@@ -6,3 +6,8 @@ trade/common
 名称(点击查看详情) insuranceName
 剩余时间 timeRemaining
 当前可赔 currentCompensable
+自动续保 AutoRenewal(不全)
+保险结算 closeInsurance(不全)
+手动结算 manualSettlement(不全)
+购买 insuranceBuy
+获赔 insuranceCompensated
