@@ -11,3 +11,4 @@ trade/common
 手动结算 manualSettlement(不全)
 购买 insuranceBuy
 获赔 insuranceCompensated
+    positionInsuranceTip
