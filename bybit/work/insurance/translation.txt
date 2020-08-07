@@ -9,6 +9,10 @@ trade/common
 自动续保 AutoRenewal(不全)
 保险结算 closeInsurance(不全)
 手动结算 manualSettlement(不全)
+保险账户 insuranceAccount(不全)
 购买 insuranceBuy
 获赔 insuranceCompensated
     positionInsuranceTip
+已开通自动续保    openInsuranceAutoTip
+保险到期时系统将自动从您的保险账户中再次扣除保费，请确保保险账户资金充足。    openInsuranceAutoDesc
+立即购买 buyNow
