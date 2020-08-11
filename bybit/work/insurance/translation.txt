@@ -12,7 +12,7 @@ trade/common
 保险账户 insuranceAccount(不全)
 购买 insuranceBuy
 获赔 insuranceCompensated
-    positionInsuranceTip
+对当下的市场不确定？不如试试相互保！    positionInsuranceTip
 已开通自动续保    openInsuranceAutoTip
 保险到期时系统将自动从您的保险账户中再次扣除保费，请确保保险账户资金充足。    openInsuranceAutoDesc
 立即购买 buyNow
