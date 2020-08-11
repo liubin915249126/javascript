@@ -48,7 +48,7 @@ https://segmentfault.com/a/1190000022616537
 https://toutiao.io/posts/28of14w/preview
 
 pointer-events: none;
-#### dark
+#### dark mode
 @media (prefers-color-scheme: dark) {
   html {
     filter: invert(1) hue-rotate(180deg);
