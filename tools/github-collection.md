@@ -187,7 +187,7 @@ https://github.com/dawnlabs/carbon
 [abort-fetch](https://github.com/mo/abortcontroller-polyfill)
 
 [dragable](https://github.com/daybrush/moveable)
-
+[gpu](https://github.com/gpujs/gpu.js)
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](https://github.githistory.xyz)
