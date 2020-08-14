@@ -19,3 +19,5 @@ trade/common
 了解更多 knowMore
 持仓浮亏不惧怕，赔付填盈亏  positionLessTip1
 做趋势也要做波段，赚取更多收益 positionLessTip2
+保险结算：当前被保合约数为{{size}}，预计赔付金额为{{profit}} {{coin}}. 请确认是否需要结算? insuranceCloseInsuranceTips
+全部已保 insuranceFullyInsured(不全)
