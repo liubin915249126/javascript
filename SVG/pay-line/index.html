@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style type="text/css">
+      .container{
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <canvas id="target" width="200px" height="200px"></canvas>
+    </div>
+    <script type="text/javascript">
+      window.onload = function(){
+        drawLine();
+      }
+      function drawLine(){
+        const radio = 0.8;
+        const canvas = document.querySelector('#target');
+        const context = canvas.getContext('2d');
+        context.strokeStyle = 'red';
+        context.lineWidth = 2;
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.quadraticCurveTo(0*radio,100*radio,100,100);
+        context.stroke();
+      }
+    </script>
+</body>
+</html>
