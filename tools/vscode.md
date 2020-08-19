@@ -13,6 +13,8 @@
     TabNine
     Debugger for Chrome
     REST Client
+    CSS Peek
+    Auto Rename Tag
 ```
 #### remote development
 [](https://zhuanlan.zhihu.com/p/82568294)
