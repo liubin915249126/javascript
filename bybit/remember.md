@@ -81,3 +81,6 @@ git commit -m 'feat: add list'
 #### PWA,transition
 workbox-webpack-plugin
 i18next
+
+#### HR partnet
+https://app.ally.io/join/zlgO8sRse7 
