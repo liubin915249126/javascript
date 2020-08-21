@@ -1,3 +1,5 @@
 #### canvas 
 
 isPointInPath
+backingStorePixelRatio
+devicePixelRatio
