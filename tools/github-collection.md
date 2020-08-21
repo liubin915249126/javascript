@@ -192,6 +192,10 @@ https://github.com/dawnlabs/carbon
 
 [dragable](https://github.com/daybrush/moveable)
 [gpu](https://github.com/gpujs/gpu.js)
+[video](https://github.com/goldfire/howler.js)
+
+
+
 #### git
 [git-hook](https://github.com/typicode/husky)
 [git-history](https://github.githistory.xyz)
