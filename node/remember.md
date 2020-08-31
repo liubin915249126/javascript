@@ -9,6 +9,11 @@ https://www.jianshu.com/p/30cf8cb86ab3
 https://github.com/CavinHuang/node-cli-demo
 (create-react-app)[https://zhuanlan.zhihu.com/p/69633878]
 
+####  debugger 
+
+--inspect-brk
+chrome://inspect
+
 #### 
 >
    ~2.2.1 // 接受2.2.1，不接受2.3.0
