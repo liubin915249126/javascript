@@ -14,3 +14,4 @@
     "extension": ".min.wxss"
   }
 ]
+[miniprogram-cli](https://github.com/czero1995/miniprogram-cli)
