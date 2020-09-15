@@ -63,3 +63,13 @@ pointer-events: none;
 
 #### url
 new URLSearchParams(useLocation().search)
+#### propTypes
+Layout.defaultProps = {
+  children: null,
+};
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
