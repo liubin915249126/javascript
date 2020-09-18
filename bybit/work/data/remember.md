@@ -6,3 +6,5 @@ https://lanhuapp.com/web/#/item/project/board?pid=5dfea284-8ff6-47ca-941b-b97d72
 https://docs.qq.com/doc/DU012cm5mQmxyV1ZI?_t=1599124638916
 #### yapi
 https://yapi.bybit.com/project/18/interface/api/cat_340
+#### api
+https://bybit-exchange.github.io/docs/zh-cn/inverse/#t-querykline
