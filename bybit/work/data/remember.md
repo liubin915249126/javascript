@@ -8,3 +8,5 @@ https://docs.qq.com/doc/DU012cm5mQmxyV1ZI?_t=1599124638916
 https://yapi.bybit.com/project/18/interface/api/cat_340
 #### api
 https://bybit-exchange.github.io/docs/zh-cn/inverse/#t-querykline
+#### 翻译文档
+https://docs.google.com/spreadsheets/d/1iPNaYhBObmEVsamktlRezh_1XUW_apmrTsAVEjmHtCE/edit#gid=0
