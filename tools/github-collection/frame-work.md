@@ -7,6 +7,7 @@
 [imagemin-webp](https://github.com/imagemin/imagemin-webp#readme)
 [lazysizes](https://github.com/aFarkas/lazysizes)
 [延迟加载css](https://github.com/addyosmani/critical)
+[tradingview](https://github.com/tradingview/lightweight-charts)
 #### react
 [ui](https://github.com/arwes/arwes)
 [mobile-ui](https://github.com/ZhongAnTech/zarm)
