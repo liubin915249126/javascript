@@ -15,6 +15,7 @@
     REST Client
     CSS Peek
     Auto Rename Tag
+    i18n Ally
 ```
 #### remote development
 [](https://zhuanlan.zhihu.com/p/82568294)
