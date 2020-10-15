@@ -75,3 +75,5 @@ Layout.propTypes = {
 };
 
 @decorators/estimator
+
+patch-package
