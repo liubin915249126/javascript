@@ -68,6 +68,7 @@ https://github.com/dawnlabs/carbon
 <!-- 文档 -->
 [docz](https://github.com/doczjs/docz)
 [storybook](https://github.com/storybookjs/storybook)
+[mac 微信](https://github.com/MustangYM/WeChatExtension-ForMac)
 
 #### react-native
 [awesome-ui](https://github.com/madhavanmalolan/awesome-reactnative-ui)
