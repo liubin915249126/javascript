@@ -76,4 +76,7 @@ Layout.propTypes = {
 
 @decorators/estimator
 
+#### node_modules
 patch-package
+#### jss
+Linaria
