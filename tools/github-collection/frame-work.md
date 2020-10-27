@@ -16,3 +16,5 @@
 [ui](https://github.com/YanxinNet/uView) 
 #### tools
 [refined-github](https://github.com/sindresorhus/refined-github)
+#### webpack
+[hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin)
