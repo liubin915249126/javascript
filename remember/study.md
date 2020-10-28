@@ -66,3 +66,8 @@ https://juejin.im/post/5def4831e51d45584b585000
 
 #### js隐式转换 快狗打车
 https://juejin.im/post/5d1d60ccf265da1b6e65c036
+
+####  interview
+[现代js教程](https://zh.javascript.info/)
+<!--  -->
+[面经](https://segmentfault.com/a/1190000037598645)

@@ -16,7 +16,16 @@
     CSS Peek
     Auto Rename Tag
     i18n Ally
+    Git Graph
 ```
+#### code
+启动 VS Code
+打开命令面板 (shift + cmmand + P) ，输入 shell command’，找到: “Install ‘code’ command in PATH”，点击就可以了
+or
+vim ~/.bash_profile
+alias vscode="你的安装目录/vscode.app/Contents/Resources/app/bin/code"
+source ~/.bash_profile
+
 #### remote development
 [](https://zhuanlan.zhihu.com/p/82568294)
 1.安装 SSH Client： 
