@@ -8,6 +8,8 @@
 [lazysizes](https://github.com/aFarkas/lazysizes)
 [延迟加载css](https://github.com/addyosmani/critical)
 [tradingview](https://github.com/tradingview/lightweight-charts)
+[lazy-load](https://github.com/aFarkas/lazysizes)
+[lazy-load](https://github.com/ApoorvSaxena/lozad.js)
 #### react
 [ui](https://github.com/arwes/arwes)
 [mobile-ui](https://github.com/ZhongAnTech/zarm)
