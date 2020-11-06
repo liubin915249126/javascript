@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border: 0;
+    }
+
+    .all {
+      width: 500px;
+      height: 200px;
+      padding: 7px;
+      border: 1px solid #ccc;
+      margin: 100px auto;
+      position: relative;
+    }
+
+    .screen {
+      width: 500px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .screen li {
+      width: 500px;
+      height: 200px;
+      overflow: hidden;
+      float: left;
+    }
+
+    .screen ul {
+      /*  此处一定要用定位(子绝)  */
+      position: absolute;
+      left: 0;
+      top: 0;
+      /*要足够宽才放到一行里*/
+      width: 3000px;
+    }
+
+    .all ol {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .all ol li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .all ol li.current {
+      background: yellow;
+    }
+
+    #arr {
+      /* display: none; */
+    }
+
+    #arr span {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      margin-top: -20px;
+      background: #000;
+      cursor: pointer;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold;
+      font-family: '黑体';
+      font-size: 30px;
+      color: #fff;
+      /*透明度：这个是指全透明*/
+      opacity: 0.3;
+      border: 1px solid #fff;
+    }
+
+    #arr #right {
+      /*距离父元素右边5像素*/
+      right: 5px;
+      /*代表把left的值清空（设置为默认值）*/
+      left: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="all" id='box'>
+        <!-- 图片 -->
+        <div class="screen">
+          <ul>
+            <li><img src="./lunboimage/timg1.jpg" width="500" height="200"></li>
+            <li><img src="./lunboimage/timg2.jpg" width="500" height="200"></li>
+            <li><img src="./lunboimage/timg3.jpg" width="500" height="200"></li>
+            <li><img src="./lunboimage/timg4.jpg" width="500" height="200"></li>
+            <li><img src="./lunboimage/timg5.jpg" width="500" height="200"></li>
+            <li><img src="./lunboimage/timg1.jpg" width="500" height="200"></li>
+          </ul>
+          <ol>
+            <!-- 页码 -->
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+        </div>
+        <!-- 左右箭头 -->
+        <div id="arr">
+          <span id="left">&lt;</span>
+          <span id="right">&gt;</span>
+        </div>
+      </div>  
+    <script type="text/javascript">
+           //！！！！！！！！！！！！！！！首先 准备工作！！！！！！！！！！！！
+
+        //1 找到大盒子
+        var box = document.querySelector('#box');
+        //2 找到箭头
+        var arr = document.querySelector('#arr');
+        //3 找到ul
+        var ul = document.querySelector('ul');
+        //4 找到放图片的div的宽度
+        var screenW = document.querySelector('.screen').offsetWidth;
+        //5. 找到ol下面的所有li（也就是找到所有页码）
+        var pageList = document.querySelectorAll('ol>li');
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!!其次，功能实现函数!!!!!!!!!!!!!!!!!!!!!
+
+        //1 移动动画封装函数  参数1，移动的目标，参数2，移动的距离
+        function animate(obj, target) {
+            // 每次先停止上一个计时器
+            clearInterval(obj.timerID);
+            obj.timerID = setInterval(function() {
+                // 获得它当前位置 要求子元素和父级元素都要定位（切记）
+                var current = obj.offsetLeft;
+                // 移动距离减去当前距离，有多说明没到，每次前进10px，直到到达，到达后停止定时器
+                if (Math.abs(target - current) > 10) {
+                    // 走一步
+                    current += target > current ? 10 : -10;
+                    // 赋值给left
+                    obj.style.left = current + "px";
+                } else {
+                    obj.style.left = target + "px";
+                }
+                if (current == target) {
+                    clearInterval(obj.timerID);
+                }
+            }, 10);
+        };
+        //2 下一页的函数
+        function nextPage() {
+            // 在下一页点击事件里做个判断，如果是最后一张，就闪现到第一张下标0的那张
+            if (index == ul.children.length - 1) {
+                index = 0;
+                ul.style.left = 0;
+            }
+            // 让index++
+            index++;
+            // 用最新的-下标*宽度赋值给ul
+            // var current = -index * screenW;
+            // ul.style.left = current + "px";
+            // 参数1：移动哪个元素
+            // 参数2：目标位置
+            animate(ul, -index * screenW);
+            // 先让所有页码去掉高亮
+            for (var i = 0; i < pageList.length; i++) {
+                pageList[i].className = "";
+            }
+            // 如果是最后一张（看起来是第一张的那张图片）
+            if (index == ul.children.length - 1) {
+                //就让下标0的页码高亮
+                pageList[0].className = "current";
+            } else {
+                // 还要当前显示第几个图片，就让第几个页码高亮
+                pageList[index].className = "current";
+            }
+        }
+        //3 遍历所有页码给它们加点击事件
+        for (var i = 0; i < pageList.length; i++) {
+            // 先把下标存到每个页码身上
+            pageList[i].setAttribute('index', i);
+            pageList[i].onclick = function() {
+                // 一开始判断，如果当前图片是最后一页，就闪现到第一页
+                if (index == ul.children.length - 1) {
+                    index = 0;
+                    ul.style.left = 0;
+                }
+                //获取被点击的页码的下标
+                var idx = this.getAttribute('index');
+                // 如果你当前是第一页，并且点击的是最后一个页码
+                if (index == 0 && idx == pageList.length - 1) {
+                    //闪现到最后一页
+                    index = ul.children.length - 1;
+                    ul.style.left = -index * screenW + "px";
+                }
+                // 点哪个下标的页码就让对应的图片到对应的下标去
+                animate(ul, -idx * screenW);
+                // 还要让记录图片下标的index更新成对应的下标
+                index = idx;
+                //排他去掉高亮
+                for (var j = 0; j < pageList.length; j++) {
+                    pageList[j].className = "";
+                }
+                this.className = "current";
+            }
+        }
+
+        //！！！！！！！！！！！！！！效果调用功能！！！！！！！！！！！
+        var timerID = setInterval(nextPage, 2200);
+        //1 大盒子鼠标移入：停止计时器，页面停止运动
+        box.onmouseover = function() {
+                //左右点击按钮隐藏
+                arr.style.display = "block";
+                //停止计时器
+                clearInterval(timerID);
+            }
+            //2 大盒子鼠标移出：开始计时器，页面开始运动
+        box.onmouseout = function() {
+                arr.style.display = "none";
+                timerID = setInterval(nextPage, 2200);
+            }
+            // 准备一个变量index，默认从0开始，因为默认显示下标0的图片
+        var index = 0;
+        //3 下一页的点击事件：调用下一页事件
+        document.getElementById('right').onclick = function() {
+            nextPage();
+        };
+        //4  完成上一页点击事件
+        document.getElementById('left').onclick = function() {
+            // 在上一页点击事件里做个判断，如果是第一张，就闪现到最后一张，然后再上一张
+            if (index == 0) {
+                //闪现到最后一张（也就是看起来内容是第一张的图片,下标是长度-1）
+                index = ul.children.length - 1;
+                ul.style.left = -index * screenW + "px";
+            }
+            index--;
+            animate(ul, -index * screenW);
+            //排他，所有样式取消
+            for (var i = 0; i < pageList.length; i++) {
+                pageList[i].className = "";
+            }
+            // 图片是下标几，就取出下标几的页码
+            pageList[index].className = "current";
+        };
+
+    </script>
+</body>
+</html>
