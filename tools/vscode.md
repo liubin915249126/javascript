@@ -17,6 +17,7 @@
     Auto Rename Tag
     i18n Ally
     Git Graph
+    Easy LESS
 ```
 #### code
 启动 VS Code
