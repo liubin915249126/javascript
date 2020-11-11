@@ -18,6 +18,7 @@
     i18n Ally
     Git Graph
     Easy LESS
+    
 ```
 #### code
 启动 VS Code
@@ -35,6 +36,13 @@ source ~/.bash_profile
 2.配置 SSH key
    cd %USERPROFILE%/.ssh
    ssh-keygen -t rsa -b 4096
+
+#### Easy LESS
+    
+    "less.compile": {
+        "outExt": ".wxss"
+    }
+
 #### debugger
 
 ```js
