@@ -80,3 +80,5 @@ Layout.propTypes = {
 patch-package
 #### jss
 Linaria
+
+"extraBabelPresets":["es2015"],
