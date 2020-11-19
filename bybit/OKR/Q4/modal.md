@@ -8,7 +8,6 @@
   - 可以获取到 context  done
   - 可以手动关闭  done
   - destoryAll  done
-<!-- - 可创建多个 modal   -->
 - 新增 afterClose api
 
 
