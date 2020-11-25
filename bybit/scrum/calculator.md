@@ -15,5 +15,6 @@ qty * entryPrice  开仓价值
 
 
 #### 强平价格
-https://confluence-by.go.akamai-access.com/pages/viewpage.action?pageId=16777967
-https://confluence-by.go.akamai-access.com/pages/viewpage.action?pageId=1213073
+https://confluence.bybit.com/pages/viewpage.action?pageId=16777967
+
+https://confluence-by.go.akamai-access.com/pages/viewpage.action?pageId=1213\73
