@@ -1,5 +1,7 @@
 ##  正向计算器
 
+https://confluence.bybit.com/pages/viewpage.action?pageId=1213073
+
 qty 数量
 leverage 杠杆
 entryPrice  开仓价格
@@ -10,5 +12,8 @@ qty * entryPrice  开仓价值
 
 收益 与反向计算相反
 
+
+
 #### 强平价格
 https://confluence-by.go.akamai-access.com/pages/viewpage.action?pageId=16777967
+https://confluence-by.go.akamai-access.com/pages/viewpage.action?pageId=1213073
