@@ -71,3 +71,10 @@ https://juejin.im/post/5d1d60ccf265da1b6e65c036
 [现代js教程](https://zh.javascript.info/)
 <!--  -->
 [面经](https://segmentfault.com/a/1190000037598645)
+
+[我用了两个月的时间才理解 let](https://zhuanlan.zhihu.com/p/28140450)
+>
+  let 的「创建」过程被提升了，但是初始化没有提升。
+  var 的「创建」和「初始化」都被提升了。
+  function 的「创建」「初始化」和「赋值」都被提升了。
+>
