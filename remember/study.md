@@ -78,3 +78,5 @@ https://juejin.im/post/5d1d60ccf265da1b6e65c036
   var 的「创建」和「初始化」都被提升了。
   function 的「创建」「初始化」和「赋值」都被提升了。
 >
+
+[cli](https://juejin.cn/post/6892003555818143752#heading-1)
