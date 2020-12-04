@@ -12,7 +12,8 @@ qty * entryPrice  开仓价值
 
 收益 与反向计算相反
 
-
+做空
+liqValue <= 0  liqPrice = btc 1.98 * 10e4 * ticksize
 
 #### 强平价格
 https://confluence.bybit.com/pages/viewpage.action?pageId=16777967
