@@ -24,3 +24,6 @@
 
 #### Collection
 [icons](https://github.com/edent/SuperTinyIcons)
+
+#### cli
+[compare-versions]
