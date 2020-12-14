@@ -27,3 +27,16 @@
 
 #### cli
 [compare-versions]
+
+#### old-style css
+NES.css
+RPG UI
+98.css & XP.css
+Wired Elements
+BOOTSTRA.386
+Geo Bootstrap
+PSone.css
+PaperCSS
+Terminal CSS
+Isometric Sass
+[referer](https://juejin.cn/post/6905772706198159374)
