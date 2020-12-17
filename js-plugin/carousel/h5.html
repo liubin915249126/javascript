@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body{
+            margin: 0;
+            background: #fefefe;
+        }
+        .wrap{
+            width: 100vw;
+            overflow: hidden;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+            position: relative;
+            background: #000;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .list{
+            display: flex;
+            float: left;
+        }
+        .list .item{
+            width: 100vw;
+            height: 200px;
+        }
+        .list img{
+            width: 100vw;
+            vertical-align: top;
+            filter: saturate(2);
+        }
+
+        .dot{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 20px;
+        }
+        .dot li{
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: #fff;
+            margin: 0 5px;
+            transition: 0.2s;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+        }
+
+        .dot li.active{
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <ul class="list"><!--这里是图片列表-->
+        <li class="item"><img src="img/img01.png"></li>
+        <li class="item"><img src="img/img02.png"></li>
+        <li class="item"><img src="img/img03.png"></li>
+        <li class="item"><img src="img/img04.png"></li>
+    </ul>
+    <ul class="dot"><!--这里是下面的小点-->
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script>
+{
+    let wrap = document.querySelector('.wrap');//获取外框，以便设置图片滚动的宽度
+    let list = wrap.querySelector('.list');//图片列表
+    let dot = wrap.querySelectorAll('.dot li');//小点
+
+    let startpoint = {};//鼠标按下的起始点
+    let distaince = {};//距离
+    let startOffset = 0;//记录鼠标按下时图片列表的位置
+    let translatex = 0;//移动的距离
+    let now = 0;//当前在那一张
+    let imgW = wrap.offsetWidth;//获取一下外框的宽度
+    let proportion = 0.3;//当图片拖动超过整体宽度的比例时，跳转到下一张或者上一章
+    let isMove = false;
+    list.innerHTML += list.innerHTML;//复制图片列表
+
+    wrap.addEventListener('touchstart',(ev)=>{
+        let touch = ev.changedTouches[0];
+        startpoint = {
+            x:touch.pageX,
+            y:touch.pageY
+        }
+
+        if(now == 0){
+            now = dot.length;
+        }else if(now == dot.length*2 -1){
+            now = dot.length -1;
+        }
+
+        translatex = now * -imgW;
+        startOffset = translatex;
+        list.style.transition = 'none';
+        list.style.transform = `translateX(${translatex}px)`;
+    })
+
+    wrap.addEventListener('touchmove',(ev)=>{
+        let touch = ev.changedTouches[0];
+        distaince = {
+            x:touch.pageX - startpoint.x,
+            y:touch.pageY - startpoint.y
+        }
+
+        if(Math.abs(distaince.x) - Math.abs(distaince.y) > 5){
+            isMove = true;
+            ev.preventDefault();
+        }else if(Math.abs(distaince.x) - Math.abs(distaince.y) < 5){
+            isMove = false;
+        }
+
+        if(isMove){
+            translatex = startOffset + distaince.x;
+            list.style.transform = `translateX(${translatex}px)`;
+        }
+    })
+
+    wrap.addEventListener('touchend',()=>{
+        if(Math.abs(distaince.x) > imgW * proportion){
+            now -= distaince.x/Math.abs(distaince.x);
+        }
+        Array.from(dot).forEach((item,index)=>{
+            item.classList.remove('active');
+            if(index === (now%dot.length)){
+                item.classList.add('active');
+            }
+        });
+
+        if(isMove){
+            translatex = now * -imgW;
+            list.style.transition = '0.3s';
+            list.style.transform = `translateX(${translatex}px)`;
+        }
+    })
+}
+</script>
+
+</body>
+</html>
