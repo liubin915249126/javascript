@@ -40,3 +40,17 @@ PaperCSS
 Terminal CSS
 Isometric Sass
 [referer](https://juejin.cn/post/6905772706198159374)
+
+#### img effect
+[imagehover](https://github.com/ciar4n/imagehover.css)
+[ImageTiltEffect](https://github.com/codrops/ImageTiltEffect)
+[放大镜](https://github.com/mark-rolich/Magnifier.js)
+[StickyImageEffect](https://github.com/Anemolo/StickyImageEffect)
+[HeatDistortionEffect](https://github.com/lbebber/HeatDistortionEffect)
+[FullImageReveal](https://github.com/codrops/FullImageReveal)
+[FollowCursor](https://github.com/bersLucas/FollowCursor)
+
+
+
+#### collection
+[website](https://juejin.cn/post/6907378532167450632)
