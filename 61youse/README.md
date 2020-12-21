@@ -82,3 +82,5 @@ patch-package
 Linaria
 
 "extraBabelPresets":["es2015"],
+
+.env.localhost.local
