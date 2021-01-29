@@ -84,3 +84,6 @@ Linaria
 "extraBabelPresets":["es2015"],
 
 .env.localhost.local
+
+
+git rebase -i HEAD~2  
