@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+	    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+		<title>swiper插件</title>
+		<style media="screen">
+			*{ padding: 0; margin: 0; }
+			html,body{ color: #333; background: #fff; -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); -webkit-user-select:none; font-family: "Helvetica Neue", Helvetica, sans-serif; }
+			li{ list-style: none; }
+			span,img{ display: block; }
+			.page{ width: 100%; max-width: 600px; margin: auto; }
+			/* overflow: hidden; */
+			.swiper{ width: 100%; height: 200px; position: relative; background-color: #eee; overflow: hidden; }
+			.swiper .swiper_list{ overflow: hidden; position: relative; width: 100%; -webkit-transition: 0s all; transition: 0s all; }
+			.swiper .swiper_item{ float: left; width: 100%; height: 200px; text-align: center; line-height: 200px; color: #fff; }
+			.swiper img{ width: 100%; }
+			.swiper .swiper_pagination{ position: absolute; width: 100%; height: 10px; bottom: 14px; left: 0; text-align: center; }
+			.swiper .swiper_dot{ display: inline-block; margin-left: 8px; width: 8px; height: 8px; background-color: rgba(0,0,0,0.5); border-radius: 50%; }
+            .swiper .swiper_dot_active{ background-color: #fff; }
+
+            .swiper{ margin-bottom: 10px; }
+            .add-btn{ text-align: center; padding: 4px 10px; margin: 0 auto; display: block; font-size: 16px; }
+		</style>
+	</head>
+	<body>
+        <div class="page">
+            
+        </div>
+        <button onclick="addSwiper(this)" class="add-btn">add a swiper</button>
+
+        <script type="text/template">
+            <div class="swiper">
+                <div class="swiper_list">
+                    <div class="swiper_item"></div>
+                    <div class="swiper_item"></div>
+                    <div class="swiper_item"></div>
+                </div>
+                <!-- 可不写，自动生成 -->
+                <div class="swiper_pagination"></div>
+            </div>
+        </script>
+        
+		<script src="./swiper.js"></script>
+	</body>
+</html>
