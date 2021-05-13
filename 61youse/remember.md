@@ -64,3 +64,6 @@ i18next
 
 #### HR partnet
 https://app.ally.io/join/zlgO8sRse7 
+
+
+Prometheus+Grafana
