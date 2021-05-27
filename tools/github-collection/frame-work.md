@@ -26,6 +26,7 @@
 
 #### Collection
 [icons](https://github.com/edent/SuperTinyIcons)
+[ScrollMagic](https://github.com/janpaepke/ScrollMagic)
 
 #### cli
 [compare-versions]
