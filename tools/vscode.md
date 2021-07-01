@@ -18,7 +18,8 @@
     i18n Ally
     Git Graph
     Easy LESS
-    
+    Rainbow Brackets
+    Live Server
 ```
 #### code
 启动 VS Code
