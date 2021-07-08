@@ -55,6 +55,7 @@ function produce(state, producer) {
 
   const proxy = new Proxy(store, handler);
 
+
   // 执行我们传入的 producer 函数，我们实际操作的都是 proxy 实例，所有有副作用的操作都会在 proxy 内部进行判断，是否最终要对 store 进行改动
 
   producer(proxy);
@@ -66,4 +67,7 @@ function produce(state, producer) {
   if (newState.modified) return newState.copy;
 
   return newState.source;
+}
+module.exports = {
+  produce
 }

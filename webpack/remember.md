@@ -24,3 +24,4 @@ preload-webpack-plugin 让静态资源支持 DNS 预解析和预加载
     })
   ]
 ```
+download-git-repo

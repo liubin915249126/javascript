@@ -1,11 +1,11 @@
 ## 算法学习与数据结构
 
 #### 数据结构
-[Stack](./structer/stack.md)
-[queue](./structer/queue.md)
-[LinkedList](./structer/LinkedList.md)
-[tree](./structer/tree.md)
-[graph](./structer/graph.md)
+[Stack 栈](./structer/stack.md)
+[queue 队列](./structer/queue.md)
+[LinkedList 链表](./structer/LinkedList.md)
+[tree 树](./structer/tree.md)
+[graph 图](./structer/graph.md)
 ### 算法
 #### 排序算法
 [冒泡排序](./sort/bubble-sort.js)

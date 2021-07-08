@@ -88,11 +88,14 @@
 #### 算法
 
 <!-- ![排序算法](./image/sort.webp) -->
-
 - 排序算法
   - [冒泡排序](./interview/algorithm/sort/bubble-sort.js)
   - [选择排序](./interview/algorithm/sort/selection-sort.js)
   - [插入排序](./interview/algorithm/sort/insert-sort.js)
+- [洗牌算法](./interview/algorithm/shuffle/shuffle1.js)
+
+
+
 
 ## javascript,jquery 相关
 

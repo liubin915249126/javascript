@@ -8,5 +8,15 @@
 [https](./https.md)
 #### 在交互过程中如果数据传送完了，还不想断开连接怎么办，怎么维持？
 #### 你对 TCP 滑动窗口有了解嘛？
+#### HTTP 如何实现长连接？在什么时候会超时？
+[http](./http.md)
+#### TCP 是如何保证可靠性的
+[TCP](./TCP.md)
+#### TCP 和 UDP 的区别
+[TCP](./TCP.md)
+#### TCP报文首部有哪些字段，说说其作用
+[TCP](./TCP.md)
+
+#### TCP 流量控制/拥塞控制
 #### review
 [network-interview](https://juejin.cn/post/6988794419910541348)
