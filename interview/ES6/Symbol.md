@@ -21,3 +21,9 @@ alert(id1 == id2); // false
 #### 全局 symbol
 Symbol.for(key)
 如果有一个描述为 key 的 Symbol，则返回该 Symbol，否则将创建一个新 Symbol（Symbol(key)），并通过给定的 key 将其存储在注册表中
+
+#### symbol 有什么用处
+
+主要用来提供遍历接口，布置了 symbol.iterator 的对象才可以使用 for···of 循环，可以统一处理数据结构。调用之后回返回一个遍历器对象，包含有一个 next 方法，使用 next 方法后有两个返回值 value 和 done 分别表示函数当前执行位置的值和是否遍历完毕。
+
+Symbol.for() 可以在全局访问 symbol

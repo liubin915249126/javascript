@@ -90,3 +90,23 @@ source ~/.bash_profile
     ]
 }
 ```
+#### iterm2
+[iterm2](https://iterm2.com/)
+```bash
+ctrl + u 清除当前行输入
+ctrl + a 快速切换到当前输入的文本头部
+ctrl + e 快速切换到当前输入的文本尾部
+cmd + d 垂直分屏
+cmd + shift + d 水平分屏
+cmd + r 清屏
+cmd + t 打开一个新的 iterm2 Tab
+cmd + 左右方向键 左右切换 Tab
+cmd + n 打开一个新的 iterm2 窗口
+cmd + 回车 全屏切换
+cmd + w 关闭标签
+cmd + f 查找
+cmd + shift + h 查看剪贴板历史
+
+cd ./Desktop/github
+```
+

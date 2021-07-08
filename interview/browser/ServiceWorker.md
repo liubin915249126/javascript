@@ -107,3 +107,35 @@ self.addEventListener('fetch', function(event) {
 });
 ```
 [实例应用](./code/ServiceWorker-nerEasy.js)
+#### tips
+```js
+// 缓存图片
+self.addEventListener('fetch', function (evt) {
+    evt.respondWith(
+        caches.match(evt.request).then(function(response) {
+            if (response) {
+                return response;
+            }
+            var request = evt.request.clone();
+            return fetch(request).then(function (response) {
+                if (!response && response.status !== 200 && !response.headers.get('Content-type').match(/image/)) {
+                    return response;
+                }
+                var responseClone = response.clone();
+                caches.open('my-test-cache-v1').then(function (cache) {
+                    cache.put(evt.request, responseClone);
+                });
+                return response;
+            });
+        })
+    )
+});
+```
+通过监听fetch事件，service worker可以返回自己的响应。
+首先检缓存中是否已经缓存了这个请求，如果有，就直接返回响应，就减少了一次网络请求。否则由service workder发起请求，这时的service workder起到了一个中间代理的作用。
+
+service worker请求的过程通过fetch api完成，得到response对象以后进行过滤，查看是否是图片文件，如果不是，就直接返回请求，不会缓存。
+如果是图片，要先复制一份response，原因是request或者response对象属于stream，只能使用一次，之后一份存入缓存，另一份发送给页面。 这就是service worker的强大之处：拦截请求，伪造响应。fetch api在这里也起到了很大的作用。
+
+service worker的更新很简单，只要service-worker.js的文件内容有更新，就会使用新的脚本。但是有一点要注意：旧缓存文件的清除、新文件的缓存要在activate事件中进行，因为可能旧的页面还在使用之前的缓存文件，清除之后会失去作用。
+

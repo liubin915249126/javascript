@@ -1,0 +1,12 @@
+bin
+obj
+packages
+.vs
+Logs
+node_modules
+.idea
+bundle.js
+*.log
+.vscode
+/Scripts/dist
+dist

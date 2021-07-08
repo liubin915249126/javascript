@@ -1,8 +1,15 @@
-## 算法学习系列
+## 算法学习与数据结构
 
-#### 冒泡排序
-[冒泡排序](./bubble-sort.md)
-[参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
+#### 数据结构
+[Stack](./structer/stack.md)
+[queue](./structer/queue.md)
+[LinkedList](./structer/LinkedList.md)
+[tree](./structer/tree.md)
+[graph](./structer/graph.md)
+### 算法
+#### 排序算法
+[冒泡排序](./sort/bubble-sort.js)
+  [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
+[选择排序](./sort/selection-sort.js)
 
-#### 选择排序
-[选择排序](./selection-sort.md)
+#### [LRU](./LRU.js)

@@ -1,5 +1,8 @@
 ## 原型
 
+person.__proto__ = Person.prototype
+Person.prototype.constructor = Person
+
 #### prototype
 
 ```js

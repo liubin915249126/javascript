@@ -8,26 +8,18 @@
 - [new 的模拟实现](./interview/ES5/new.md)
 - [多种继承方式](./interview/prototype/extends.md)
 - [“异步的” setState 如何同步获取 state](./interview/react-vue/setStateSync.md)
-- [fetch拦截器的实现](./interview/ES6/fetch.md)
-- [js 异步发展史](./51youse/PPT-async.md)
+- [fetch 拦截器的实现](./interview/ES6/fetch.md)
+- [js 异步发展史](./house/51youse/PPT-async.md)
 - [js 错误处理](./interview/ES5/error.md)
+
 ## 手写源码系列
 
 - [手写 Promise](./interview/function/promise.js)
   - [Promise](https://github.com/then/promise)
   - [asap](https://github.com/kriskowal/asap)
-
-- [curry 柯理化](./interview/functional/curry.md)
-
 - [debounce](./interview/debounce.md)
 - [throttle](./interview/debounce.md)
-- [ES5 array api](./interview/ES5/array.md)
-  - forEach
-  - map
-  - filter
-  - reduce
-  - indexOf
-  - every,some
+- [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)
 
 ## ES6 基础系列学习
 
@@ -40,40 +32,67 @@
 
 ## 浏览器相关
 
-- [浏览器事件循环](./51youse/PPT-broswer.md)
+- [浏览器事件循环](./house/51youse/PPT-broswer.md)
 - 浏览器缓存
   - [浏览器文件缓存](./interview/browser/cache.md)
   - [ServiceWorker](./interview/browser/ServiceWorker.md)
-  - [Workbox](./interview/browser/Workbox.md) 
+  - [Workbox](./interview/browser/Workbox.md)
 - [浏览器安全](./interview/browser/XSS.md)
 - [浏览器回流与重绘](./interview/browser/repaint.md)
 - [图片懒加载](./interview/browser/img-lazy.md)
-## 工具类
-- webpack
-  - [webpack性能优化](./webpack/optimization.md)
-  - [webpack输出质量优化](./webpack/output-optimization.md)
-  - [webpack加载动态图片](./webpack/dynamic-import-image.md)
 
-- nginx 
-  - [nginx基本配置](./tools/nginx/study.md)
-  - [前后端分离通过nginx配置二级域名](./tools/nginx/secondary.md) 
+## 工具类
+
+- webpack
+
+  - [webpack 性能优化](./webpack/optimization.md)
+  - [webpack 输出质量优化](./webpack/output-optimization.md)
+  - [webpack 加载动态图片](./webpack/dynamic-import-image.md)
+
+- nginx
+  - [nginx 基本配置](./tools/nginx/study.md)
+  - [前后端分离通过 nginx 配置二级域名](./tools/nginx/secondary.md)
+
+#### 函数式编程
+
+- [partial](./interview/functional/partial.md)
+  - [curry 柯理化](./interview/functional/curry.md)
+- [compose](./interview/functional/compose.md)
+- [memoize](./interview/functional/memoize.md)
 
 ## 计算机基础系列
 
-#### 计算机网络
-- [TCP/IP 协议](./interview/computer/TCP-IP.md)
-- [TCP三次握手](./interview/computer/TCP.md)
+<!-- #### 计算机网络
+- [概述](./interview/computer/network.md)
+- [数据交换](./interview/computer/network/exchange.md)
+- [网络性能](./interview/computer/network/performance.md)
+- 计算机网络体系结构
+  - [OSI](./interview/computer/network/OSI.md)
+  - [TCP-IP](./interview/computer/network/TCP-IP.md)
+- [应用层:Web/Email/DNS](./interview/computer/network/appliction.md)
+- [传输层](./interview/computer/network/transport.md)
+-->
 
-## 算法学习系列
+## 算法与数据结构
 
-### 排序算法
+[algorithm](./interview/algorithm/README.md)
 
-![排序算法](./image/sort.webp)
+#### 数据结构
 
-- [冒泡排序](./interview/algorithm/bubble-sort.md)
-  - [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
+- [Stack](./interview/algorithm/structer/stack.md)
+- [queue](./interview/algorithm/structer/queue.md)
+- [LinkedList](./interview/algorithm/structer/LinkedList.md)
+<!-- - [tree](./interview/algorithm/structer/tree.md)
+- [graph](./interview/algorithm/structer/graph.md) -->
 
-- [选择排序](./interview/algorithm/selection-sort.md)
+#### 算法
+
+<!-- ![排序算法](./image/sort.webp) -->
+
+- 排序算法
+  - [冒泡排序](./interview/algorithm/sort/bubble-sort.js)
+  - [选择排序](./interview/algorithm/sort/selection-sort.js)
+  - [插入排序](./interview/algorithm/sort/insert-sort.js)
 
 ## javascript,jquery 相关
 
@@ -102,8 +121,8 @@ jquery 插件皆可用于 react,使用方法:[react 中使用 jquery 插件](htt
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/SVG/image/svgDrag.gif)
 
 <!--判断鼠标划入方向-->
-
-#### js 判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/mouseDirction.html)
+s
+#### js 判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/js-plugin/mouseDirction.html)
 
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/image/dirction.gif)
 

@@ -1,5 +1,6 @@
 ## fetch
 #### abort timeout
+```js
    var oldFetchfn = fetch;
     window.fetch = function(input, opts) {
         return new Promise(function(resolve, reject) {
