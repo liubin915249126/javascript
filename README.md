@@ -8,17 +8,15 @@
 - [new 的模拟实现](./interview/ES5/new.md)
 - [多种继承方式](./interview/prototype/extends.md)
 - [“异步的” setState 如何同步获取 state](./interview/react-vue/setStateSync.md)
-- [fetch拦截器的实现](./interview/ES6/fetch.md)
+- [fetch 拦截器的实现](./interview/ES6/fetch.md)
 - [js 异步发展史](./51youse/PPT-async.md)
 - [js 错误处理](./interview/ES5/error.md)
+
 ## 手写源码系列
 
 - [手写 Promise](./interview/function/promise.js)
   - [Promise](https://github.com/then/promise)
   - [asap](https://github.com/kriskowal/asap)
-
-- [curry 柯理化](./interview/functional/curry.md)
-
 - [debounce](./interview/debounce.md)
 - [throttle](./interview/debounce.md)
 - [ES5 array api](./interview/ES5/array.md)
@@ -44,36 +42,52 @@
 - 浏览器缓存
   - [浏览器文件缓存](./interview/browser/cache.md)
   - [ServiceWorker](./interview/browser/ServiceWorker.md)
-  - [Workbox](./interview/browser/Workbox.md) 
+  - [Workbox](./interview/browser/Workbox.md)
 - [浏览器安全](./interview/browser/XSS.md)
 - [浏览器回流与重绘](./interview/browser/repaint.md)
 - [图片懒加载](./interview/browser/img-lazy.md)
-## 工具类
-- webpack
-  - [webpack性能优化](./webpack/optimization.md)
-  - [webpack输出质量优化](./webpack/output-optimization.md)
-  - [webpack加载动态图片](./webpack/dynamic-import-image.md)
 
-- nginx 
-  - [nginx基本配置](./tools/nginx/study.md)
-  - [前后端分离通过nginx配置二级域名](./tools/nginx/secondary.md) 
+## 工具类
+
+- webpack
+
+  - [webpack 性能优化](./webpack/optimization.md)
+  - [webpack 输出质量优化](./webpack/output-optimization.md)
+  - [webpack 加载动态图片](./webpack/dynamic-import-image.md)
+
+- nginx
+  - [nginx 基本配置](./tools/nginx/study.md)
+  - [前后端分离通过 nginx 配置二级域名](./tools/nginx/secondary.md)
+
+#### 函数式编程
+
+- [partial](./interview/functional/partial.md)
+  - [curry 柯理化](./interview/functional/curry.md)
+- [compose](./interview/functional/compose.md)
+- [memoize](./interview/functional/memoize.md)
 
 ## 计算机基础系列
 
-#### 计算机网络
-- [TCP/IP 协议](./interview/computer/TCP-IP.md)
-- [TCP三次握手](./interview/computer/TCP.md)
+<!-- #### 计算机网络
+- [概述](./interview/computer/network.md)
+- [数据交换](./interview/computer/network/exchange.md)
+- [网络性能](./interview/computer/network/performance.md)
+- 计算机网络体系结构
+  - [OSI](./interview/computer/network/OSI.md)
+  - [TCP-IP](./interview/computer/network/TCP-IP.md)
+- [应用层:Web/Email/DNS](./interview/computer/network/appliction.md)
+- [传输层](./interview/computer/network/transport.md)
+-->
 
 ## 算法学习系列
 
 ### 排序算法
 
-![排序算法](./image/sort.webp)
+<!-- ![排序算法](./image/sort.webp) -->
 
-- [冒泡排序](./interview/algorithm/bubble-sort.md)
-  - [参考文献](https://www.jianshu.com/p/eb191e4b2bc1)
-
-- [选择排序](./interview/algorithm/selection-sort.md)
+- [冒泡排序](./interview/algorithm/bubble-sort.js)
+- [选择排序](./interview/algorithm/selection-sort.js)
+- [插入排序](./interview/algorithm/insert-sort.js)
 
 ## javascript,jquery 相关
 

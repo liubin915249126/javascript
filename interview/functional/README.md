@@ -14,53 +14,9 @@
 
 #### 高阶函数 
 #### 偏函数
-```js
-   // 第二版
-    var _ = {};
-
-    function partial(fn) {
-        var args = [].slice.call(arguments, 1);
-        return function() {
-            var position = 0, len = args.length;
-            for(var i = 0; i < len; i++) {
-                args[i] = args[i] === _ ? arguments[position++] : args[i]
-            }
-            while(position < arguments.length) args.push(arguments[position++]);
-            return fn.apply(this, args);
-        };
-    };
-var subtract = function(a, b) { return b - a; };
-subFrom20 = partial(subtract, _, 20);
-subFrom20(5);
-```
+[partial](./partial.md)
+[curry](./curry.md)
 #### 函数组合
+[compose](./compose.md)
 #### 函数记忆
-```js
-   // 第一版 (来自《JavaScript权威指南》)
-    function memoize(f) {
-        var cache = {};
-        return function(){
-            var key = arguments.length + Array.prototype.join.call(arguments, ",");
-            if (key in cache) {
-                return cache[key]
-            }
-            else {
-                return cache[key] = f.apply(this, arguments)
-            }
-        }
-```
-```js
-    // 第二版 (来自 underscore 的实现)
-    var memoize = function(func, hasher) {
-        var memoize = function(key) {
-            var cache = memoize.cache;
-            var address = '' + (hasher ? hasher.apply(this, arguments) : key);
-            if (!cache[address]) {
-                cache[address] = func.apply(this, arguments);
-            }
-            return cache[address];
-        };
-        memoize.cache = {};
-        return memoize;
-    };
-```
+[memoize](./memoize.md)

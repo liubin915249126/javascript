@@ -22,3 +22,20 @@ arr = null;
 - 被遗忘的计时器
 - 闭包
   - var = null
+- 遗忘的监听者模式  
+- 遗忘的Map、Set对象
+```js
+// 此例我们重写 obj 以后，{id: 1} 依然会存在于内存中，
+// 因为 user 对象以及后面的 set/map 都强引用了它，Set/Map、对象、数组对象等都是强引用，
+// 所以我们仍然可以获取到 {id: 1} ，我们想要清除那就只能重写所有引用将其置空了。
+let obj = {id: 1}
+let user = {info: obj}
+let set = new Set([obj])
+let map = new Map([[obj, 'hahaha']])
+// 重写obj
+obj = null 
+console.log(user.info) // {id: 1}
+console.log(set)
+console.log(map)
+
+```

@@ -5,7 +5,7 @@
 #### 工厂模式
 [factory](./factory.md)
 
-#### 单体模式
+#### 单例模式
 [Singleton](./singleton.md)
 
 ### 代理模式
