@@ -23,3 +23,4 @@ onload
 [gc](../../ES5/gc.md)
 
 #### WeakMap 、 WeakSet、 map、 set 的区别跟使用场景。
+#### redux 做状态管理和发布订阅模式有什么区别？

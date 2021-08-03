@@ -1,6 +1,6 @@
 ## 
 react 使用 shallowEqual state 判断是否更新
-setState shallow merge newState = {...state, ...{[key]: props}}
+setState shallow merge newState = {...state, [key]: props}
 ## 遇到的问题
 
 #### nested state update

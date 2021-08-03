@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carsousel</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      .carousel {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+      }
+
+      .carousel-board {
+        position: relative;
+        list-style: none;
+        width: 5000px;
+        height: 300px;
+        padding: 0;
+        left: 0;
+        /* transition: left 0.5s linear; */
+      }
+
+      .carousel-board-item {
+        float: left;
+        width: 400px;
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .carousel-btn {
+        position: absolute;
+        z-index: 100;
+        cursor: pointer;
+      }
+
+      .carousel-prev {
+        top: 50%;
+        left: 10px;
+      }
+
+      .carousel-next {
+        top: 50%;
+        right: 10px;
+      }
+
+      .carousel-dots {
+        padding: 0;
+        /* width: 100px; */
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -24px;
+        z-index: 100;
+      }
+
+      .carousel-dots li {
+        float: left;
+        width: 8px;
+        height: 8px;
+        background-color: #aaa;
+        margin-right: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <ul class="carousel-board">
+        <li class="carousel-board-item" style="background-color: green">4</li>
+        <li class="carousel-board-item" style="background-color: red">1</li>
+        <li class="carousel-board-item" style="background-color: yellow">2</li>
+        <li class="carousel-board-item" style="background-color: blue">3</li>
+        <li class="carousel-board-item" style="background-color: green">4</li>
+        <li class="carousel-board-item" style="background-color: red">1</li>
+      </ul>
+      <span class="carousel-btn carousel-prev"><</span>
+      <span class="carousel-btn carousel-next">></span>
+      <ul class="carousel-dots">
+        <li date-index="1"></li>
+        <li date-index="2"></li>
+        <li date-index="3"></li>
+        <li date-index="4"></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        let prev = document.getElementsByClassName("carousel-prev")[0];
+        let next = document.getElementsByClassName("carousel-next")[0];
+        let board = document.getElementsByClassName("carousel-board")[0];
+        let panels = Array.from(
+          document.getElementsByClassName("carousel-board-item")
+        );
+        board.style.left = "-400px";
+        let index = 1; //设置默认的index值
+        prev.addEventListener("click", function () {
+          index++;
+          console.log(index);
+          animate(-400);
+          //关键点 如果当前在 1fake 的位置
+          if (index === panels.length - 1) {
+            setTimeout(() => {
+              //去掉动画
+              board.style.transition = "0s";
+              let distance = 4 * 400;
+              //默默的左移board至 1
+              board.style.left = parseInt(board.style.left) + distance + "px";
+            }, 600);
+            index = 1;
+          }
+        });
+        next.addEventListener("click", () => {
+          index--;
+          console.log(index);
+          animate(400);
+          //关键点 如果当前在 4fake 的位置
+          if (index === 0) {
+            setTimeout(() => {
+              // 去掉动画
+              board.style.transition = "0s";
+              let distance = -4 * 400;
+              //默默的右移board 至 4
+              board.style.left = parseInt(board.style.left) + distance + "px";
+            }, 600);
+            index = 4;
+          }
+        });
+
+        function animate(width = 400) {
+          board.style.transition = "0.5s";
+          board.style.left || (board.style.left = 0);
+          board.style.left = parseInt(board.style.left) + width + "px";
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -70,3 +70,7 @@ https://app.ally.io/join/zlgO8sRse7
 Prometheus+Grafana
 
 #### Github Copilot
+
+付费版
+https://cn.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/?feature=charting-and-trading-platform
+live demo - https://trading-terminal.tradingview.com/
