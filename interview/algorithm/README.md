@@ -5,6 +5,7 @@
 [queue 队列](./structer/queue.md)
 [LinkedList 链表](./structer/LinkedList.md)
 [tree 树](./structer/tree.md)
+  - [findParents](./yiti/findParents.js)
 [graph 图](./structer/graph.md)
 ### 算法
 #### 排序算法
@@ -13,3 +14,9 @@
 [选择排序](./sort/selection-sort.js)
 
 #### [LRU](./LRU.js)
+
+#### 动态规划
+- [climStairs](./dynamic/climStairs.js)
+- [allPath](./dynamic/allPath.js)
+- [minPath](./dynamic/minPath.js)
+- [maxRect](./yiti/maxRect.js)

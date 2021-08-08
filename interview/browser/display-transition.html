@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-transition</title>
+    <style type="text/css">
+      .container{
+        padding: 20px;
+        border: 1px solid #333;
+      }
+      .node{
+        width: 200px;
+        height: 200px;
+        background: #db473c;
+        transition: all 0.3s linear;
+      }
+      .node.display{
+        display: none;
+      }
+      .node.opacity{
+        opacity: 0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="node">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+       const container = document.querySelector('.container')
+       const target = document.querySelector('.node')
+       container.addEventListener('click',function(e){
+          target.classList.toggle('display')
+        //   console.log(target.offsetWidth)
+            // Promise.resolve().then(()=>{
+            //     console.log(111)
+            //     target.classList.toggle('opacity')
+            // })
+          setTimeout(()=>{
+            console.log(111)
+            target.classList.toggle('opacity')
+          }, 16.67)
+        //   requestAnimationFrame(()=>{
+        //       console.log(11, 'requestAnimationFrame')
+        //   })
+          requestIdleCallback(()=>{
+              console.log(11, 'requestIdleCallback')
+          })
+        //   setTimeout(()=>{
+        //     console.log(222)
+        //     target.classList.toggle('opacity')
+        //   },0)
+       },false)
+    </script>
+</body>
+</html>

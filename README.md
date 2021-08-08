@@ -23,6 +23,7 @@
 
 ## ES6 基础系列学习
 
+- [class](./interview/ES6/class.md)
 - Set、Map、WeakSet 和 WeakMap 的区别
   - [SetMap](./interview/ES6/SetMap.md)
 - [Symbol](./interview/ES6/Symbol.md)
@@ -93,7 +94,11 @@
   - [选择排序](./interview/algorithm/sort/selection-sort.js)
   - [插入排序](./interview/algorithm/sort/insert-sort.js)
 - [洗牌算法](./interview/algorithm/shuffle/shuffle1.js)
-
+- 动态规划
+  - [climStairs 爬楼梯](./interview/algorithm/dynamic/climStairs.js)
+  - [allPath 所有路径](./interview/algorithm/dynamic/allPath.js)
+  - [minPath 最短路径](./interview/algorithm/dynamic/minPath.js)
+  - [maxRect 最大正方形](./interview/algorithm/yiti/maxRect.js)
 
 
 

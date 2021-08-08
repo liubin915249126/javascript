@@ -35,4 +35,15 @@ p1.__proto__ === p2.__proto__
 
 #### 私有属性
 
-#### 
+#### ES6一共有5种方法可以遍历对象的属性。
+（1）for...in循环遍历对象自身的和继承的可枚举属性（不含Symbol属性）。
+（2）Object.keys返回一个数组，包括对象自身的（不含继承的）所有可枚举属性（不含Symbol属性）。
+（3）Object.getOwnPropertyNames返回一个数组，包含对象自身的所有属性（不含Symbol属性，但是包括不可枚举属性）。
+（4）Object.getOwnPropertySymbols返回一个数组，包含对象自身的所有Symbol属性。
+（5）Reflect.ownKeys返回一个数组，包含对象自身的所有属性，不管是属性名是Symbol或字符串，也不管是否可枚举。、
+
+#### for...off
+for of支持遍历数组、类数组（例如DOM NodeList对象）、字符串、Map对象、Set对象；
+for of不支持遍历普通对象，可通过与Object.keys()搭配使用遍历
+for of遍历后的输出结果为数组元素的值；
+搭配实例方法entries()，同时输出数组内容和索引

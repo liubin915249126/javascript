@@ -14,3 +14,5 @@
 https://mp.weixin.qq.com/s/9HGOrwUMtpCRm5nnT2rwug
 [book](https://zh.javascript.info)
 [计算机自学](https://github.com/jwasham/coding-interview-university)
+[每日一题](https://q.shanyue.tech/)
+[常见算法题](https://mp.weixin.qq.com/s/YEGWsTRNhQVRnpJYiBTUbw)

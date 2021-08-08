@@ -1,6 +1,8 @@
 ## native-js
 
 #### new 一个构造函数，如果函数返回 return {} 、 return null ， return 1 ， return true 会发生什么情况？
+在JavaScript构造函数中：如果return值类型，那么对构造函数没有影响，实例化对象返回空对象；
+如果return引用类型（数组，函数，对象），那么实例化对象就会返回该引用类型；
 #### 如何判断一个对象是不是空对象？
 object.keys(obj).length === 0
 #### <script src=’xxx’ ’xxx’/>外部js文件先加载还是onload先执行，为什么？

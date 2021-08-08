@@ -84,3 +84,17 @@ require(["module1", "module2"], function(m1, m2) {
   原始值变了，import 加载的值也会跟着变。因此，ES6 模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块。
   编译时加载: ES6 模块不是对象，而是通过 export 命令显式指定输出的代码，import时采用静态命令的形式。即在import时可以指定加载某个输出值，而不是加载整个模块，这种加载称为“编译时加载”。
 >
+
+####  exports 和 module.exports 的区别
+module.exports 默认值为{}
+exports 是 module.exports 的引用
+exports 默认指向 module.exports 的内存空间
+require() 返回的是 module.exports 而不是 exports
+若对 exports 重新赋值，则断开了 exports 对 module.exports 的指向
+
+#### commonJs 和 esModule 的区别
+ES6 的模块自动采用严格模式，不管你有没有在模块头部加上"use strict";。
+commonJs是被加载的时候运行，esModule是编译的时候运行
+commonJs输出的是值的浅拷贝，esModule输出值的引用
+commentJs具有缓存。在第一次被加载时，会完整运行整个文件并输出一个对象，拷贝（浅拷贝）在内存中。下次加载文件时，直接从内存中取值
+
