@@ -88,6 +88,12 @@ idle('hello')
 
 可疑区域增加 try...catch
 全局监控JS异常： window.onerror
-全局监控静态资源异常： window.addEventListener
+全局监控静态资源异常： window.addEventListener('error',(e)=>{},false)
 全局捕获没有 catch 的 promise 异常：unhandledrejection
 iframe 异常：window.error
+
+#### window.onerror
+window.onerror是一个全局变量，默认值为null。当有js运行时错误触发时，window会触发error事件，并执行window.onerror()。onerror可以接受多个参数。
+若该函数返回true，则阻止执行默认事件处理函数，如异常信息不会在console中打印。没有返回值或者返回值为false的时候，异常信息会在console中打印
+#### addEventListener('error')
+监听js运行时错误事件，会比window.onerror先触发，与onerror的功能大体类似，不过事件回调函数传参只有一个保存所有错误信息的参数，不能阻止默认事件处理函数的执行，但可以全局捕获资源加载异常的错误.

@@ -106,7 +106,7 @@ setTimeout(fn, 0)多久才执行，Event Loop
 手写题：Promise 原理
 js脚本加载问题，async、defer问题
 如何判断一个对象是不是空对象？
-<script src=’xxx’ ’xxx’/>外部js文件先加载还是onload先执行，为什么？
+#### <script src=’xxx’/>外部js文件先加载还是onload先执行，为什么？
 怎么加事件监听
 事件传播机制（事件流）
 说一下原型链和原型链的继承吧

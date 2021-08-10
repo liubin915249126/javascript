@@ -42,7 +42,7 @@ p1.__proto__ === p2.__proto__
 （4）Object.getOwnPropertySymbols返回一个数组，包含对象自身的所有Symbol属性。
 （5）Reflect.ownKeys返回一个数组，包含对象自身的所有属性，不管是属性名是Symbol或字符串，也不管是否可枚举。、
 
-#### for...off
+#### for...of
 for of支持遍历数组、类数组（例如DOM NodeList对象）、字符串、Map对象、Set对象；
 for of不支持遍历普通对象，可通过与Object.keys()搭配使用遍历
 for of遍历后的输出结果为数组元素的值；
