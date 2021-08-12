@@ -11,7 +11,7 @@ Singleton.prototype.getName = function(){
     return this.name;
 }
 // 获取实例对象
-var getInstance = (function() {
+Singleton.getInstance = (function() {
     var instance = null;
     return function(name) {
         if(!instance) {

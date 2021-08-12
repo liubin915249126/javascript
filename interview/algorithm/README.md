@@ -20,3 +20,10 @@
 - [allPath](./dynamic/allPath.js)
 - [minPath](./dynamic/minPath.js)
 - [maxRect](./yiti/maxRect.js)
+
+#### 贪心算法
+贪心算法遵循一种近似解决问题的技术，期盼通过每个阶段的局部最优选择（当前最好的解），
+从而达到全局的最优（全局最优解）。
+贪心得到结果是一个可以接受的解，不一定总是得到最优的解
+[硬币找零](./greedy/coin.js)
+[饼干与小孩](./greedy/cookie.js)

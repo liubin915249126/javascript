@@ -98,3 +98,5 @@ commonJs是被加载的时候运行，esModule是编译的时候运行
 commonJs输出的是值的浅拷贝，esModule输出值的引用
 commentJs具有缓存。在第一次被加载时，会完整运行整个文件并输出一个对象，拷贝（浅拷贝）在内存中。下次加载文件时，直接从内存中取值
 
+
+[循环引用](https://mp.weixin.qq.com/s/NFNcwLZq97MNcyHqEfJs2Q)

@@ -35,15 +35,16 @@
        const target = document.querySelector('.node')
        container.addEventListener('click',function(e){
           target.classList.toggle('display')
-        //   console.log(target.offsetWidth)
+          console.log('offsetWidth', target.offsetWidth)
+          target.classList.toggle('opacity')
             // Promise.resolve().then(()=>{
             //     console.log(111)
             //     target.classList.toggle('opacity')
             // })
-          setTimeout(()=>{
-            console.log(111)
-            target.classList.toggle('opacity')
-          }, 16.67)
+          // setTimeout(()=>{
+          //   console.log(111)
+          //   target.classList.toggle('opacity')
+          // }, 16.67)
         //   requestAnimationFrame(()=>{
         //       console.log(11, 'requestAnimationFrame')
         //   })

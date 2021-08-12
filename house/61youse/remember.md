@@ -4,12 +4,13 @@ dayjs(date).isBefore(date)
 dayjs(date).isAfter(date)
 dayjs(date).isBetween(date,date)
 
-Electron 
-1920*1080 2560 x 1600
+Electron
+1920\*1080 2560 x 1600
 
 #### node 自动部署
+
 webhook
-shelljs js中执行shell命令 
+shelljs js 中执行 shell 命令
 node-ssh ssh2 连接服务器
 archiver 压缩代码
 
@@ -17,19 +18,24 @@ precommit postbuild
 lru-cache
 
 #### node 部署到服务器
-ssh root@公网IP 
+
+ssh root@公网 IP
 ftp(filezilla)
+
 #### 开发组件库
+
 [](https://juejin.im/post/5e60a75e6fb9a07cdb467e02#heading-6)
 verdaccio
 
 #### hosts
+
 /etc/hosts
-3.0.70.134   api2.polo.bybit.com
+3.0.70.134 api2.polo.bybit.com
 API2_HOST = "//api2.test-2.bybit.com"
 API2_HOST = "//api2.polo.bybit.com"
 
-#### 
+####
+
 IntersectionObserver 检测元素是否可见
 
 MessageChannel
@@ -37,9 +43,6 @@ MessageChannel
 sanitized-a
 
 顺序 kalel lucky sean talen king len mango vincent
-
-
-
 
 ## Git 规范
 
@@ -59,14 +62,16 @@ sanitized-a
 git commit -m 'feat: add list'
 
 #### PWA,transition
+
 workbox-webpack-plugin
 i18next
 
 #### HR partnet
-https://app.ally.io/join/zlgO8sRse7 
 
+https://app.ally.io/join/zlgO8sRse7
 
 #### 监控平台
+
 Prometheus+Grafana
 
 #### Github Copilot
@@ -76,4 +81,9 @@ https://cn.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/?feature=c
 live demo - https://trading-terminal.tradingview.com/
 
 #### 性能指标
+
 web-vitals
+
+use-global-hook
+
+commitizen

@@ -9,3 +9,6 @@ $ chsh -s /bin/bash
 http://tool.chinaz.com/dns 
 修改host
 sudo vim /etc/hosts
+
+#### ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "915249126@qq.com"
