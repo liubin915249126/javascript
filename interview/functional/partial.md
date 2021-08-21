@@ -102,3 +102,21 @@ function bindFirstArg(fn, a) {
   };
 }
 ```
+#### 偏函数是固定一个函数的一个或多个参数，然后返回一个新函数
+```js
+//入参函数
+function add(a,b){
+    return a + b;
+}
+//生产偏函数的工厂
+function partial(fn,a){
+    return function(b){
+        return fn(a,b);
+    }
+}
+var parAdd = partial(add,1);//变量parAdd接受返回的新函数
+console.log(parAdd(2));//在调用的时候传入剩余的参数
+console.log(parAdd(3));//在调用的时候传入剩余的参数
+console.log(parAdd(4));//在调用的时候传入剩余的参数
+console.log(parAdd(5));//在调用的时候传入剩余的参数
+```

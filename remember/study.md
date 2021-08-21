@@ -83,3 +83,11 @@ https://juejin.im/post/5d1d60ccf265da1b6e65c036
 >
 
 [cli](https://juejin.cn/post/6892003555818143752#heading-1)
+
+[抖音前端](https://juejin.cn/team/6947994054248366121/posts)
+[React 运行时优化方案的演进](https://juejin.cn/post/7010539227284766751#heading-1)
+[react技术揭秘](https://react.iamkasong.com/#%E5%AF%BC%E5%AD%A6%E8%A7%86%E9%A2%91)
+[图解react](https://github.com/7kms/react-illustration-series)
+[新一代 Web 性能体验和质量指标](https://juejin.cn/post/6844904168591736846)
+[understanding-ES6](https://github.com/jeyvie/understanding-ES6)
+[手写源码](https://juejin.cn/post/6991657729064452126)

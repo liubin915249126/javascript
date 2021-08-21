@@ -18,7 +18,8 @@ var maxProfit = function(prices, fee) {
             min = prices[i]
         } else if ((t = prices[i] - min - fee) > 0) {
             r += t
-            min = prices[i] - fee
+            // TODO
+            min = prices[i] - fee 
         }
         i++
     }

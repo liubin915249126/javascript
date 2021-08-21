@@ -27,3 +27,4 @@
 贪心得到结果是一个可以接受的解，不一定总是得到最优的解
 [硬币找零](./greedy/coin.js)
 [饼干与小孩](./greedy/cookie.js)
+[买卖股票的最佳时机](./greedy/shares.js)
