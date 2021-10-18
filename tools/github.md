@@ -12,3 +12,6 @@ sudo vim /etc/hosts
 
 #### ls -al ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "915249126@qq.com"
+
+
+https://github.com/521xueweihan/GitHub520

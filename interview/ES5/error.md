@@ -42,6 +42,7 @@ UserError.prototype.constructor = UserError;
 throw语句的作用是手动中断程序执行，抛出一个错误。
 
 #### try catch
+能捕捉到的异常必须是线程执行已经进入 try catch 但 try catch 未执行完的时候抛出来的
 - 只能捕获到同步的运行时错误
 - 不能捕获到语法错误
 - try代码块抛出错误（上例用的是throw语句），JavaScript 引擎就立即把代码的执行，转到catch代码块，或者说错误被catch代码块捕获了。

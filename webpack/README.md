@@ -41,3 +41,9 @@ vueEdior: {
 
 "build": "node --max-old-space-size=10240 node_modules/roadhog/lib/build.js",
 "build": "node --max-old-space-size=10240 ./node_modules/.bin/roadhog build",
+
+
+{
+  test: /\.js$/,
+  exclude: /node_modules\/(?!(MY-MODULE|ANOTHER-ONE)\/).*/,
+},

@@ -91,3 +91,4 @@ https://juejin.im/post/5d1d60ccf265da1b6e65c036
 [新一代 Web 性能体验和质量指标](https://juejin.cn/post/6844904168591736846)
 [understanding-ES6](https://github.com/jeyvie/understanding-ES6)
 [手写源码](https://juejin.cn/post/6991657729064452126)
+[手写源码](https://juejin.cn/post/7018337760687685669)
