@@ -7,6 +7,9 @@
 [algorithm](https://github.com/geekxh/hello-algorithm)
 [collection](https://juejin.im/post/5f081d496fb9a07eb90cb5cf)
 [工程化](https://juejin.im/post/6892003555818143752#heading-46)
+[牛客前端面试](https://juejin.cn/post/7028478428680552456) 
+  - [local](../interview/example/niuke1.md)
+[小蝌蚪](https://github.com/airuikun/technology-blog)  
 
 #### github
 [npm](https://github.com/Haixiang6123/one-day-one-npm-lib)

@@ -23,6 +23,7 @@
 [script](https://github.com/google/zx)
 #### webpack
 [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin)
+[nx](https://github.com/nrwl/nx)
 
 #### Collection
 [icons](https://github.com/edent/SuperTinyIcons)

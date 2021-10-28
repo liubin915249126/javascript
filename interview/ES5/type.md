@@ -63,3 +63,29 @@ String	返回与之相等的值
 
 
 [参考文献](https://github.com/mqyqingfeng/Blog/issues/164)
+
+1. typeof('abc')和 typeof 'abc'都是 string, 那么 typeof 是操作符还是函数？(2020.01.12)
+   > 分析：`typeof` 在以前学习时，老师就讲过 `typeof` 是操作符，但是问题在于它还能使用函数调用的方式进行使用，那到底是不是函数那？如果不是，为什么？
+
+- 解答：
+  1. `typeof` 的返回值之一为`'function'`，如果 `typeof` 为 `function`，那么 `typeof(typeof)` 会返回`'function'`，但是经测试，上述代码浏览器会抛出错误。因此可以证明 `typeof` 并非函数。
+  2. 既然 `typeof` 不是函数，那 `typeof` 后面的括号的作用是？
+     > 括号的作用是进行分组而非函数的调用。—— 《javascript 高级程序设计》
+  ```js
+  // 举个例子
+  typeof (((func))); // is equal to typeof func
+  ```
+
+  ## typeof为什么对null错误的显示
+
+这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象然而 null 表示为全零，所以将它错误的判断为 object
+
+## typeof 与 instanceof 的区别
+
+typeof与instanceof都是判断数据类型的方法，区别如下：
+
+1. typeof会返回一个变量的基本类型，instanceof返回的是一个布尔值
+2. instanceof 可以准确地判断复杂引用数据类型，但是不能正确判断基础数据类型
+3. 而 typeof 也存在弊端，它虽然可以判断基础数据类型（null 除外），但是引用数据类型中，除了 function 类型以外，其他的也无法判断
+
+> 通用检测数据类型，可以采用Object.prototype.toString，调用该方法，统一返回格式“[object Xxx]” 的字符串

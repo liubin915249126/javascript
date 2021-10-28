@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="start">start</span>
+    <span class="stop">stop</span>
+    <div class="error">error</div>
+    <script>
+        // 获取DOM元素，供下面操作：
+        var spans = document.querySelector('span');
+        var start = document.querySelector('.start');
+        var stops = document.querySelector('.stop');
+        var error = document.querySelector('.error');
+    
+        var workers; //3.声明全局变量，供后面接收worker对象；若声明为局部变量，后面stop事件中workers.terminate()将不能给undefined设置此方法
+    
+        // 4.定义一个执行创建worker对象并接收消息的函数：
+        function startSum() {
+            workers = new Worker('test.js'); // 创建一个web Worker对象，括号中传入web Worker文件的路径，注意实际开发中因做兼容处理，某些浏览器不支持此属性时，因返回相关提示
+            // 使用onmessage方法将发送的消息接收到此作用域：
+            workers.onmessage = function(event) {
+                var datas = event.data; // 将接收到的数据赋值给变量datas
+                spans.innerText = datas; // 将datas设置给spans元素
+            };
+        };
+    
+        // 5.定义一个关闭web worker的函数：
+        function stopSum() {
+            workers.terminate();//停止workers
+        };
+    
+        // 当点击stops时执行stopSum()函数停止workers：
+        stops.onclick = function() {
+            stopSum();
+        };
+    
+        // 当点击开始时执行startSum()函数开始workers：
+        start.onclick = function() {
+            startSum();
+        };
+        error.onclick = function() {
+            throw new Error('111')
+        };
+    </script>
+
+</body>
+</html>

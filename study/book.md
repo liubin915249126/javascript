@@ -18,6 +18,7 @@
 - [leetcode](https://leetcode-cn.com/problemset/all/)
 - [程序员面试宝典](https://leetcode-cn.com/problem-list/xb9lfcwi/)
 - [剑指offfer](https://leetcode-cn.com/problem-list/xb9nqhhg/)
+- [JavaScript 数据结构与算法](https://www.bilibili.com/video/BV1x7411L7Q7?p=1)(https://github.com/XPoet/js-data-structures-and-algorithms)
 
 #### TeachYourselfCS
 https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
