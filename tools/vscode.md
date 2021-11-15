@@ -20,6 +20,7 @@
     Easy LESS
     Rainbow Brackets
     Live Server
+    Copilot
 ```
 #### code
 启动 VS Code

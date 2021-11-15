@@ -10,12 +10,12 @@
 [牛客前端面试](https://juejin.cn/post/7028478428680552456) 
   - [local](../interview/example/niuke1.md)
 [小蝌蚪](https://github.com/airuikun/technology-blog)  
+[real](https://i-want-offer.github.io/FE-Essay)
 
 #### github
 [npm](https://github.com/Haixiang6123/one-day-one-npm-lib)
 [深入理解](https://github.com/mqyqingfeng/Blog)
 https://mp.weixin.qq.com/s/9HGOrwUMtpCRm5nnT2rwug
 [book](https://zh.javascript.info)
-[计算机自学](https://github.com/jwasham/coding-interview-university)
 [每日一题](https://q.shanyue.tech/)
-[常见算法题](https://mp.weixin.qq.com/s/YEGWsTRNhQVRnpJYiBTUbw)
+
