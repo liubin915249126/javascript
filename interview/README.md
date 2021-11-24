@@ -1,5 +1,7 @@
 ## study entry
-#### example
+
+
+#### interval collection
 - [niuke1](./example/niuke1.md)
 - [oneyear](./example/oneyear.md)
 - [zuixin](./example/zuixin.md)
@@ -8,7 +10,11 @@
 - [函数共享传参](./ES5/argues.md)
 - [Number](./ES5/number.md)
 - [regex](./ES5/regex.md)
+- [FP 函数式编程](./functional/README.md)
 #### ES6
 - about Promise
   - [串行执行 Pormise](./ES6/serialPromise.md)
   - [并发请求限制](./ES6/parallxPromise.md)
+
+#### frameWork
+  - [React.setState](./react-vue/react/setState.md)  
