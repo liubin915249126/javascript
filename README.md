@@ -11,15 +11,12 @@
 - [fetch 拦截器的实现](./interview/ES6/fetch.md)
 - [js 异步发展史](./house/51youse/PPT-async.md)
 - [js 错误处理](./interview/ES5/error.md)
-
-## 手写源码系列
-
-- [手写 Promise](./interview/function/promise.js)
-  - [Promise](https://github.com/then/promise)
-  - [asap](https://github.com/kriskowal/asap)
-- [debounce](./interview/debounce.md)
-- [throttle](./interview/debounce.md)
-- [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)
+- [js 判断相等](./interview/ES6/SameValue.md)
+- 函数式编程
+  - [partial](./interview/functional/partial.md)
+    - [curry 柯理化](./interview/functional/curry.md)
+  - [compose](./interview/functional/compose.md)
+  - [memoize](./interview/functional/memoize.md)
 
 ## ES6 基础系列学习
 
@@ -30,6 +27,15 @@
 - Iterator 迭代器与 for of
   - [Iterator](./interview/ES6/Iterator.md)
   - [参考文献](https://github.com/mqyqingfeng/Blog/issues/90)
+
+## 手写源码系列
+
+- [手写 Promise](./interview/function/promise.js)
+  - [Promise](https://github.com/then/promise)
+  - [asap](https://github.com/kriskowal/asap)
+- [debounce](./interview/debounce.md)
+- [throttle](./interview/debounce.md)
+- [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)  
 
 ## 浏览器相关
 
@@ -53,13 +59,6 @@
 - nginx
   - [nginx 基本配置](./tools/nginx/study.md)
   - [前后端分离通过 nginx 配置二级域名](./tools/nginx/secondary.md)
-
-#### 函数式编程
-
-- [partial](./interview/functional/partial.md)
-  - [curry 柯理化](./interview/functional/curry.md)
-- [compose](./interview/functional/compose.md)
-- [memoize](./interview/functional/memoize.md)
 
 ## 计算机基础系列
 
