@@ -1,8 +1,6 @@
 [js](https://github.com/yeyan1996/JavaScript)
 [colltion](https://juejin.im/post/5aae076d6fb9a028cc6100a9)
 [native-js](https://juejin.cn/user/430664257382462/posts)
-
-
 #### event loop
 1.一开始整段脚本作为第一个宏任务执行
 2.执行过程中同步代码直接执行，宏任务进入宏任务队列，微任务进入微任务队列

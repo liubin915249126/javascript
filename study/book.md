@@ -23,3 +23,9 @@
 #### TeachYourselfCS
 https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 https://github.com/imarvinle/awesome-cs-books
+
+
+#### book
+有层次的思考
+代码大全
+希腊棺材之谜

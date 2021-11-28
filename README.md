@@ -33,8 +33,7 @@
 - [手写 Promise](./interview/function/promise.js)
   - [Promise](https://github.com/then/promise)
   - [asap](https://github.com/kriskowal/asap)
-- [debounce](./interview/debounce.md)
-- [throttle](./interview/debounce.md)
+- [debounce](./interview/debounce.md) [throttle](./interview/debounce.md)
 - [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)  
 
 ## 浏览器相关
@@ -73,7 +72,7 @@
 - [传输层](./interview/computer/network/transport.md)
 -->
 
-## 算法与数据结构
+### 算法与数据结构
 
 [algorithm](./interview/algorithm/README.md)
 
@@ -87,7 +86,7 @@
 
 #### 算法
 
-<!-- ![排序算法](./image/sort.webp) -->
+<!-- ![排序算法](./assets/sort.webp) -->
 - 排序算法
   - [冒泡排序](./interview/algorithm/sort/bubble-sort.js)
   - [选择排序](./interview/algorithm/sort/selection-sort.js)
@@ -99,7 +98,7 @@
   - [minPath 最短路径](./interview/algorithm/dynamic/minPath.js)
   - [maxRect 最大正方形](./interview/algorithm/yiti/maxRect.js)
 
-#### interview
+## interview
 
 - [interview](./interview/README.md)
 
@@ -137,7 +136,7 @@ jquery 插件皆可用于 react,使用方法:[react 中使用 jquery 插件](htt
 s
 #### js 判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/js-plugin/mouseDirction.html)
 
-![效果图](https://github.com/liubin915249126/javascript/blob/master/image/dirction.gif)
+![效果图](https://github.com/liubin915249126/javascript/blob/master/assets/dirction.gif)
 
 <!-- jsplumb -->
 
