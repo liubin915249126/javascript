@@ -34,5 +34,7 @@ function convert(list) {
 
 const result = convert(list);
 
+console.log(111, result)
+
 
 
