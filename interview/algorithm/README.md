@@ -32,3 +32,4 @@
 #### collection
 - [最长子串](./collection/lengthOfLongestSubstring.md)
 - [大数相加](./collection/bigNum.md)
+- [农夫与牛](./collection/cow.js)
