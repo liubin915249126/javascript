@@ -34,8 +34,12 @@
   - [Promise](https://github.com/then/promise)
   - [asap](https://github.com/kriskowal/asap)
 - [debounce](./interview/debounce.md) [throttle](./interview/debounce.md)
-- [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)  
+- [ES5 Array: forEach/map/filter/reduce/indexOf/every,some](./interview/ES5/array.md)
 
+## 前端框架
+- [React.setState](./interview/react-vue/react/setState.md) 
+- [vite](./interview/tools/vite.md)
+- [immer.js](./interview/frame-work/immerjs.md)
 ## 浏览器相关
 
 - [浏览器事件循环](./house/51youse/PPT-broswer.md)
@@ -87,6 +91,7 @@
 #### 算法
 
 <!-- ![排序算法](./assets/sort.webp) -->
+
 - 排序算法
   - [冒泡排序](./interview/algorithm/sort/bubble-sort.js)
   - [选择排序](./interview/algorithm/sort/selection-sort.js)
@@ -101,10 +106,6 @@
 ## interview
 
 - [interview](./interview/README.md)
-
-
-
-
 
 ## javascript,jquery 相关
 
@@ -133,7 +134,9 @@ jquery 插件皆可用于 react,使用方法:[react 中使用 jquery 插件](htt
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/SVG/image/svgDrag.gif)
 
 <!--判断鼠标划入方向-->
+
 s
+
 #### js 判断鼠标划入方向[mousedirction](https://github.com/liubin915249126/javascript/blob/master/js-plugin/mouseDirction.html)
 
 ![效果图](https://github.com/liubin915249126/javascript/blob/master/assets/dirction.gif)
