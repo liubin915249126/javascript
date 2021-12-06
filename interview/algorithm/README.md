@@ -28,6 +28,7 @@
 [硬币找零](./greedy/coin.js)
 [饼干与小孩](./greedy/cookie.js)
 [买卖股票的最佳时机](./greedy/shares.js)
+[种花](./greedy/flowers.js)
 
 #### collection
 - [最长子串](./collection/lengthOfLongestSubstring.md)
