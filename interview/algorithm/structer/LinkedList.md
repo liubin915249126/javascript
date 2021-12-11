@@ -33,7 +33,7 @@ node2.next = node3;
 [链表中是否有环](./LinkedList/LinkedList1.js)
 [链表中是否相交](./LinkedList/LinkedList2.js)
 [回文链表](./LinkedList/LinkedList3.js)
-[反转链表](./LinkedList/LinkedList4.js)
+[反转链表](./LinkedList/LinkedList4.md)
 
 
 

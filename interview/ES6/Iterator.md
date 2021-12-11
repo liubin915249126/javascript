@@ -56,3 +56,11 @@ function forOf(obj, cb) {
 entries() 返回一个遍历器对象，用来遍历[键名, 键值]组成的数组。对于数组，键名就是索引值。
 keys() 返回一个遍历器对象，用来遍历所有的键名。
 values() 返回一个遍历器对象，用来遍历所有的键值。
+
+####
+其次，其它调用到遍历器的操作还有解构赋值、扩展操作符、其它任何接受数组作为参数的场合，如：
+for...of
+Array.from()
+Map(), Set(), WeakMap(), WeakSet()（比如）
+Promise.all()
+Promise.race()
