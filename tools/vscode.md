@@ -22,12 +22,14 @@
     Live Server
     Copilot
     code Runner
+    
     project-tree
     Lombok Annotations Support for VS Code
     Language Support for Java(TM) by Red Hat
     Debugger for Java
     Java Test Runner
     Maven for Java
+    Spring Boot Extension
 
 ```
 #### code

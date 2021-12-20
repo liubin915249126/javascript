@@ -298,3 +298,4 @@ https://github.com/dawnlabs/carbon
 [Log Rocket](https://logrocket.com/)
 [characters](https://aymkdn.github.io/characters/)
 [图床](https://liubin53.imgur.com/all)
+[star](https://star-history.com)

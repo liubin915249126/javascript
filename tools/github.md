@@ -16,4 +16,6 @@ ssh-keygen -t rsa -b 4096 -C "915249126@qq.com"
 #### github stats
 https://wrapped.run/
 
+solid/Svelte 
+
 https://github.com/521xueweihan/GitHub520
