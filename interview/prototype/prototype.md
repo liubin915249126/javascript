@@ -11,6 +11,8 @@
 
 Object.getPrototypeOf(person1) === Person.prototype
 
+[prototype](../ES5/prototype.md)
+
 #### 函数式编程
 纯函数
 闭包

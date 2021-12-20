@@ -41,6 +41,13 @@ Person.prototype.constructor = Person
 ## Function的_proto_指向什么
 `Function` 函数不通过任何东西创建，JS引擎启动时，添加到内存中。 `Function.__proto__ --> Function.prototype`
 
+```js
+// 一切皆对象
+// 函数是一等公民
+function t () {}
+t.__proto__ === Function.prototype  // true
+t.__proto__.__proto__ === Object.prototype // true
+```
 ## 原型链图
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eafcee00dc21445cb9a9315fee57cb91~tplv-k3u1fbpfcp-watermark.awebp?)

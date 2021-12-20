@@ -17,6 +17,7 @@
     - [curry 柯理化](./interview/functional/curry.md)
   - [compose](./interview/functional/compose.md)
   - [memoize](./interview/functional/memoize.md)
+  - [Pip](./interview/functional/pip.md)
 
 ## ES6 基础系列学习
 
@@ -106,6 +107,15 @@
 ## interview
 
 - [interview](./interview/README.md)
+
+
+
+
+
+
+
+
+
 
 ## javascript,jquery 相关
 

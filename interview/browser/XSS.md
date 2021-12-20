@@ -13,6 +13,16 @@ Cross Site Scripting
 实现方式:
 - 存储型
   脚本存储到了服务端的数据库，然后在客户端执行这些脚本，从而达到攻击的效果.
+  eg: 
+    - 存储了 <script>, 通过转译解决
+    - 直接给innerHTML赋值一段js，是无法被执行的
+      但是，jQuery的append可以做到，究其原因，就是因为jquery会在将append元素变为fragment的时候，找到其中的script标签，再使用eval执行一遍。jquery的append使用的方式也是innerHTML，而innerHTML是会将unicode码转换为字符实体的。
+      利用这两种知识结合，我们可以得出，网站使用append进行dom操作，如果是append我们可以决定的字段，那么我们可以将左右尖括号，使用unicode码伪装起来，就像这样--"\u003cscript\u003ealert('okok');"。接下来转义的时候，伪装成\u003的<会被漏掉，append的时候，则会被重新调用
+    - img标签的再次利用
+      img标签，在加载图片失败的时候，会调用该元素上的onerror事件。我们正可以利用这种方式来进行攻击 <script>, 通过转译解决
+    - innerHTML赋值的script标签，不会被执行，但是innerHTML赋值一个img标签是可以被识别的。我们把img标签的左右尖括号，使用unicode进行伪装，让转义方法认不出来，即使innerHTML也可以利用上了
+      我们将输出的字符串中的\反斜杠进行转义(json转义)。这样，\就不会被当做unicode码的开头来被处理了  
+    - url 参数含有 script   
 - 反射型
   通过作为网络请求的参数，经过服务器，然后再反射到HTML文档中，执行解析
 - 文档型
