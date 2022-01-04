@@ -10,6 +10,7 @@
 - [“异步的” setState 如何同步获取 state](./interview/react-vue/setStateSync.md)
 - [fetch 拦截器的实现](./interview/ES6/fetch.md)
 - [js 异步发展史](./house/51youse/PPT-async.md)
+- [js 模块化](./interview/ES6/module/module.md)
 - [js 错误处理](./interview/ES5/error.md)
 - [js 判断相等](./interview/ES6/SameValue.md)
 - 函数式编程
@@ -19,7 +20,7 @@
   - [memoize](./interview/functional/memoize.md)
   - [Pip](./interview/functional/pip.md)
 
-## ES6 基础系列学习
+## ES6+ 基础系列学习
 
 - [class](./interview/ES6/class.md)
 - Set、Map、WeakSet 和 WeakMap 的区别
@@ -42,7 +43,8 @@
 - [vite](./interview/tools/vite.md)
 - [immer.js](./interview/frame-work/immerjs.md)
 ## 浏览器相关
-
+- [http1.1](./interview/computer/network-review/http1.1.md)
+- [http2](./interview/computer/network-review/http2.md)
 - [浏览器事件循环](./house/51youse/PPT-broswer.md)
 - 浏览器缓存
   - [浏览器文件缓存](./interview/browser/cache.md)

@@ -2,6 +2,7 @@
 
 
 #### interval collection
+- [qqmusic](./example/qqmusic.md)
 - [niuke1](./example/niuke1.md)
 - [oneyear](./example/oneyear.md)
 - [one-year-half](./example/one-year-half.md)
@@ -19,6 +20,8 @@
 - about Promise
   - [串行执行 Pormise](./ES6/serialPromise.md)
   - [并发请求限制](./ES6/parallxPromise.md)
+  - [hands-write](./function/promise/step1.js)
+  - [hands-write](./ES6/Promise/Promise.md)
 - [Map, Set](./ES6/SetMap.md)
   - [hands write](./ES6/SetMap.js)
   - [SameValue](./ES6/SameValue.md)

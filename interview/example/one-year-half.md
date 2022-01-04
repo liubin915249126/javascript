@@ -255,6 +255,7 @@ Object.create(null)和直接创建一个{}有什么区别 [object](../ES5/object
 [cache](../browser/cache.md)
 <!-- todo -->
 http 都有哪些版本，1.1 有什么不好的地方么，队头阻塞是什么引起的，2.0 有没有完全解决了队头阻塞问题
+[http1.1](../computer/network-review/http1.1.md)
 babel 配置过么，preset 和 plugin 谁的优先级高
 
 ## 腾讯音乐
