@@ -18,6 +18,7 @@
 - [regex](./ES5/regex.md)
 - [FP 函数式编程](./functional/README.md)
 - [各种继承](./prototype/extends.md)
+- [compile](./ES5/compile.md)
 #### ES6
 - about Promise
   - [串行执行 Pormise](./ES6/serialPromise.md)
