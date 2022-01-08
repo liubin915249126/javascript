@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function a(){
+    console.log(111, this)
+    let obj = {
+        b:1,
+        c:()=> {
+            console.log(222, this)
+        }
+    }
+    obj.c()
+}
+
+a()
+    </script>
+</body>
+</html>
