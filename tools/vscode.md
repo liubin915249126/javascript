@@ -18,7 +18,6 @@
     i18n Ally
     Git Graph
     Easy LESS
-    Rainbow Brackets
     Live Server
     Copilot
     code Runner
@@ -30,6 +29,18 @@
     Java Test Runner
     Maven for Java
     Spring Boot Extension
+
+    Path Intellisense
+    Import Cost
+    Settings Sync
+    Rainbow Brackets
+    Indent Rainbow
+
+    WakaTime
+    npm-intellisense
+    ReactJS Code Snippets
+    AutoClose Tag
+
 
 ```
 #### code

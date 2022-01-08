@@ -15,6 +15,7 @@ rn [输入框scroll](https://github.com/APSL/react-native-keyboard-aware-scroll-
 [粒子动画](https://github.com/VincentGarreau/particles.js)
 
 [新手导引](https://github.com/kamranahmedse/driver.js)
+[新手导引](https://github.com/shipshapecode/shepherd)
 [guid](https://github.com/shipshapecode/shepherd)
 [Popmotion](https://github.com/Popmotion/popmotion)
 [input-format](https://github.com/nosir/cleave.js)

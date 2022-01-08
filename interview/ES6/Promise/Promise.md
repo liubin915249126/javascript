@@ -15,3 +15,5 @@ then方法里执行异步任务
 
 [referer](https://juejin.cn/post/6844903617619558408)
 
+[promiseV8](https://juejin.cn/post/7055202073511460895)
+
