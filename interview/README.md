@@ -2,6 +2,7 @@
 
 
 #### interval collection
+- [pdd](./example/pdd.md)
 - [qqmusic](./example/qqmusic.md)
 - [niuke1](./example/niuke1.md)
 - [oneyear](./example/oneyear.md)

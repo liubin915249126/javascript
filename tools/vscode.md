@@ -1,5 +1,6 @@
+#### setting
+editor.experimental.stickyScroll.enabled
 #### extensions
-
 ```js
     Chinese (Simplified) Language Pack for Visual Studio Code
     GitLens — Git supercharged
