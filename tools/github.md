@@ -19,3 +19,8 @@ https://wrapped.run/
 solid/Svelte 
 
 https://github.com/521xueweihan/GitHub520
+
+#### permission denied, open '/Users/sh00483ml/.config/yarn'
+https://stackoverflow.com/questions/49529696/yarn-error-eaccess-permission-denied-scandir-home-ubuntu-config-yarn-link
+sudo chown -R $USER:$GROUP ~/.npm
+sudo chown -R $USER:$GROUP ~/.config

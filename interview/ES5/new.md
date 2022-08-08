@@ -68,3 +68,35 @@ console.log(person.age) // undefined
 // 结果完全颠倒过来，这次尽管有返回值，但是相当于没有返回值进行处理。
 // 所以我们还需要判断返回的值是不是一个对象，如果是一个对象，我们就返回这个对象，如果没有，我们该返回什么就返回什么。
 ```
+```js
+function One(name, age) {
+    this.name = name;
+    this.age = age;
+}
+let a = new One();
+console.log(a);
+
+//Fun为构造函数, args表示传参
+function myNew(Fun, ...args) {
+    // 1.在内存中创建一个新对象
+    let obj = {};
+    
+    // 2.把新对象的原型指针指向构造函数的原型属性
+    obj.__proto__ = Fun.prototype;
+    
+    // 3.改变this指向，并且执行构造函数内部的代码（传参）
+    let res = Fun.apply(obj, args);
+    
+    // 4.判断函数执行结果的类型
+    if (res instanceof Object) {
+        return res;
+    } else {
+        return obj;
+    }
+}
+
+let obj = myNew(One, "XiaoMing", "18");
+console.log("newObj:", obj);
+
+
+```
