@@ -1,0 +1,290 @@
+{
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+        // For TSLint
+        "source.fixAll.tslint": true,
+        // For Stylelint
+        "source.fixAll.stylelint": true
+    },
+    // 添加 vue 支持
+    // "eslint.validate": [
+    //   "javascript",
+    //   "javascriptreact",
+    //   {
+    //     "language": "vue",
+    //     "autoFix": true
+    //   },
+    // ],
+    //  #让prettier使用eslint的代码格式进行校验 
+    // "prettier.eslintIntegration": false,
+    // //  #去掉代码结尾的分号 
+    // "prettier.semi": false,
+    // // //  #使用带引号替代双引号 
+    // "prettier.singleQuote": true,
+    //  #让函数(名)和后面的括号之间加个空格
+    // "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+    "emmet.triggerExpansionOnTab": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "tabnine.experimentalAutoImports": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renameOnType": true,
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "go.formatTool": "goimports",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,fontS
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.language.brackets": [
+    
+    ],
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true, // 定义函数的左大括号是否放置在新的一行。
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true, // 定义控制块的左括号是否放置在新的一行。
+    "editor.tabSize": 4, // 首行缩进4
+    // 默认为 true 使用单引号而不是双引号
+    "prettier.singleQuote": true,
+    // 默认是16px  如果使用 rem 的话 可以修改设置 设计稿 / 份数 = res  如果设计稿是750px / 10 份 1rem 就是75px
+    "cssrem.rootFontSize": 75,
+    // 控制编辑器在键入一行后是否自动格式化该行。
+    "editor.formatOnType": true,
+    // 每次保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // 控制是否在打开文件时，基于文件内容自动检测 #editor.tabSize# 和 
+    "editor.detectIndentation": false,
+    // 选择 vue 文件中 template 的格式化工具
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    // 显示 markdown 中英文切换时产生的特殊字符
+    "editor.renderControlCharacters": true,
+    // 是否在每行末尾添加分号
+    "prettier.semi": false,
+    // #让函数(名)和后面的括号之间加个空格
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // 路径显示扩展名 有关设置可以在扩展 Path Autocomplete 这个插件里面设置
+    "path-autocomplete.extensionOnImport": true,
+    // 新建文件默认 html
+    "files.defaultLanguage": "html",
+    // 这个是取消一些有下划线的变量名 比如 aaaaad
+    "cSpell.userWords": [],
+    // vetur 的自定义设置
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "singleQuote": true,
+            "semi": false
+        }
+    },
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html",
+        "javascript": "javascriptreact" // 使 js 可以编写html
+    },
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": true,
+    "breadcrumbs.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "update.enableWindowsBackgroundUpdates": true,
+    "git.ignoreMissingGitWarning": true,
+    "editor.fontFamily": "Consolas, mononoki,'Courier New', monospace",
+    "editor.renderLineHighlight": "none",
+    "editor.lineHeight": 18,
+    "editor.roundedSelection": false,
+    "workbench.colorCustomizations": {
+        "[Quiet Light]": {
+            "editor.foreground": "#201515",
+            "editor.selectionHighlightBorder": "#94767c00",
+            "editor.selectionHighlightBackground": "#ff000078",
+            "editorIndentGuide.activeBackground": "#81868d",
+            "editorBracketMatch.background": "#ca9fdb5e",
+            "editorBracketMatch.border": "#ff0000",
+            "tab.activeBackground": "#ad9cd4b2",
+            "textLink.foreground": "#d6561ac4",
+            "descriptionForeground": "#ff0000",
+            "selection.background": "#b98cd693",
+            "textBlockQuote.background": "#b89a9a",
+            "textSeparator.foreground": "#86c2df"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Quiet Light]": {
+            "comments": "#7e3648",
+            "strings": "#519657",
+            "functions": "#7e57c2",
+            "keywords": "#8e1da1",
+            "variables": "#e57373",
+            "numbers": "#e62020",
+            "textMateRules": [
+                {
+                    "name": "Comment",
+                    "scope": [
+                        "comment"
+                    ],
+                    "settings": {
+                        "foreground": "#a7cca8",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "[VSCODE-CUSTOM] PHP Punctuation Variable Definition",
+                    "scope": "punctuation.definition.variable.php",
+                    "settings": {
+                        "foreground": "#e57373"
+                    }
+                },
+                {
+                    "name": "String",
+                    "scope": [
+                        "string"
+                    ],
+                    "settings": {
+                        "foreground": "#32a504",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "HTML:Tags",
+                    "scope": [
+                        "meta.tag",
+                        "punctuation.definition.tag.html",
+                        "punctuation.definition.tag.begin.html",
+                        "punctuation.definition.tag.end.html"
+                    ],
+                    "settings": {
+                        "foreground": "#4b4444",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "HTML:Tag Names",
+                    "scope": "entity.name.tag",
+                    "settings": {
+                        "foreground": "#a617e9",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "HTML: Attribute Names",
+                    "scope": [
+                        "meta.tag entity.other.attribute-name",
+                        "entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#f31616"
+                    }
+                },
+                {
+                    "name": "Operator",
+                    "scope": "keyword.operator",
+                    "settings": {
+                        "foreground": "#e21d1d",
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        }
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "sync.gist": "8ed84ac2bb5c1d437893ab075d3cd9041865fcf8",
+    "settingsSync.ignoredSettings": [],
+    "git.rebaseWhenSync": true,
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+    "workbench.iconTheme": "vs-nomo-dark",
+    "files.exclude": {
+        "**/.git": false
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 14.5,
+    "workbench.startupEditor": "none",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.enableFiletypes": [
+        "javascriptreact"
+    ],
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        // 用的自己格式化方法 缩进四个空格  不是插件 pre 那个 "[html]"等用的都是那个插件  换回之前的 先把这块代码删了 alt + shift + f
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+}

@@ -1,6 +1,9 @@
 #### setting
+
 editor.experimental.stickyScroll.enabled
+
 #### extensions
+
 ```js
     Chinese (Simplified) Language Pack for Visual Studio Code
     GitLens — Git supercharged
@@ -22,7 +25,7 @@ editor.experimental.stickyScroll.enabled
     Live Server
     Copilot
     code Runner
-    
+
     project-tree
     Lombok Annotations Support for VS Code
     Language Support for Java(TM) by Red Hat
@@ -44,7 +47,9 @@ editor.experimental.stickyScroll.enabled
 
 
 ```
+
 #### code
+
 启动 VS Code
 打开命令面板 (shift + cmmand + P) ，输入 shell command’，找到: “Install ‘code’ command in PATH”，点击就可以了
 or
@@ -53,16 +58,15 @@ alias vscode="你的安装目录/vscode.app/Contents/Resources/app/bin/code"
 source ~/.bash_profile
 
 #### remote development
-[](https://zhuanlan.zhihu.com/p/82568294)
-1.安装 SSH Client： 
-   Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
-   Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
-2.配置 SSH key
-   cd %USERPROFILE%/.ssh
-   ssh-keygen -t rsa -b 4096
+
+[](https://zhuanlan.zhihu.com/p/82568294) 1.安装 SSH Client：
+Get-WindowsCapability -Online | ? Name -like 'OpenSSH\*'
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0 2.配置 SSH key
+cd %USERPROFILE%/.ssh
+ssh-keygen -t rsa -b 4096
 
 #### Easy LESS
-    
+
     "less.compile": {
         "outExt": ".wxss"
     }
@@ -113,8 +117,11 @@ source ~/.bash_profile
     ]
 }
 ```
+
 #### iterm2
+
 [iterm2](https://iterm2.com/)
+
 ```bash
 ctrl + u 清除当前行输入
 ctrl + a 快速切换到当前输入的文本头部
@@ -132,4 +139,3 @@ cmd + shift + h 查看剪贴板历史
 
 cd ./Desktop/github
 ```
-
