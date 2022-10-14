@@ -8,13 +8,17 @@
 axios 如何取消请求、原理
 react 如何 diff、细节
 hooks 使用情况
+
 <!-- todo   -->
+
 为什么 hooks 不能写在循环或者条件判断语句里
 useMemo、useCallback 使用场景
 useEffect、useLayoutEffect 区别
 拖拽原生实现方式
 聊聊 promise
+
 <!-- todo -->
+
 redux 的三个原则、如何写一个中间件
 dva 和 redux 的区别是什么
 TL 做哪些工作
@@ -77,7 +81,9 @@ HOC 使用场景、自定义 hooks 使用情况
 webpack 理解
 数组遍历方法 哪个快
 聊项目
+
 <!-- todo -->
+
 react 路由原理
 react-redux 原理
 d3 的理解
@@ -96,7 +102,9 @@ TL 做哪些事情
 二、三面 技术面
 
 聊项目
+
 <!-- todo -->
+
 react 生命周期 为什么新增了两个静态的 目的是什么
 hooks 优势是什么、使用情况
 react diff 算法
@@ -106,7 +114,7 @@ Object.keys() 和 for in 区别
 filter 、map 区别
 手写 bind 函数
 手写多维数组降纬 flat
-手写函数实现数组 。[12, 3, 24, 1, 932, 6423] 按照首位排序
+手写函数实现数组 [12, 3, 24, 1, 932, 6423] 按照首位排序
 手写快排 quickSort
 手写实现 add 函数 满足 add(1)(2)(3)() 返回 6
 手写简版 深拷贝
@@ -116,7 +124,9 @@ filter 、map 区别
 一面 6 月 7 日 技术面
 
 手写题：
+
 <!-- todo -->
+
 实现 sum(1)(2)(3) 输出 6
 手写防抖函数
 实现 sleep 函数 实现 sleep（1000）延迟执行 //三版 promise、generator、async await
@@ -154,7 +164,9 @@ TL 都做哪些事情、怎么给组内人员分配工作
 vw、vh、rem、em
 flex
 实现垂直居中布局
+
 <!-- todo -->
+
 link 标签 prefetch、preload 作用
 script 标签 async、defer 作用、区别
 事件模型、事件代理
@@ -162,9 +174,11 @@ e.target 和 e.currentTarget 区别
 0.1 + 0.2 !== 0.3 解决办法
 检测数据类型方法有哪些
 typeof String(1) 和 type new String（1） 返回值
+
 <!-- todo -->
+
 String(1)和 new String(1) 为啥都能调.substr() [string](../ES5/string.md)
-浏览器安全策略 跨域方法 CORS 怎么携带 cookie 。 cookie 的 samesite 作用
+浏览器安全策略 跨域方法 CORS 怎么携带 cookie cookie 的 samesite 作用
 如何理解事件循环
 
 ```
@@ -221,7 +235,9 @@ useCallback 和 useMemo 如何使用 作用
 二面
 
 promise 原理
+
 <!-- todo promise -->
+
 promise 先 catch 再 then 在 catch 里返回内容 then 里回调函数能不能接受到
 promise 错误如何捕获
 讲讲浏览器事件循环

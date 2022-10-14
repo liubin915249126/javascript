@@ -92,3 +92,5 @@ package.json
 ```
 
 链接：https://www.jianshu.com/p/15a6cff4087e
+
+./node_modules/.bin/eslint --init
