@@ -1,14 +1,15 @@
 ## webpack 打包性能优化清单
 
-#### speed-measure-webpack-plugin 
-可以使用speed-measure-webpack-plugin测量打包时间
+#### speed-measure-webpack-plugin
+
+可以使用 speed-measure-webpack-plugin 测量打包时间
 
 #### 优化 Loader 配置
 
 由于 Loader 对文件的转换操作很耗时，所以需要让尽可能少的文件被 Loader 处理。
 可以通过 test/include/exclude 三个配置项来命中 Loader 要应用规则的文件。
-同时test/include/exclude还可以有其他的妙用，比如之前实现的一个项目兼容
-css-modules与不使用的方案
+同时 test/include/exclude 还可以有其他的妙用，比如之前实现的一个项目兼容
+css-modules 与不使用的方案
 
 #### 优化 resolve.modules 配置
 
@@ -19,9 +20,9 @@ resolve.modules 的默认值是［'node_modules'］，
 ```js
 module.exports = {
   resolve: {
-    modules: [path.resolve(__dirname, "node modules")]
-  }
-};
+    modules: [path.resolve(__dirname, 'node modules')],
+  },
+}
 ```
 
 #### 优化 resolve.mainFields 配置
@@ -37,9 +38,9 @@ target 为其他情况时，值是［ 'module','main']。
 module.exports = {
   resolve: {
     //只采用 main 字段作为入口文件的描述字段，以减少搜索步骤
-    mainFields: ["main"]
-  }
-};
+    mainFields: ['main'],
+  },
+}
 ```
 
 #### 优化 resolve.alias 配置
@@ -56,10 +57,10 @@ module.exports = {
     //使用 alias 将导入 react 的语句换成直接使用单独、完整的 react.min.js 文件，
     //减少耗时的递归解析操作
     alias: {
-      react: path.resolve(__dirname, "./node_modules/react/dist/react.min.js")
-    }
-  }
-};
+      react: path.resolve(__dirname, './node_modules/react/dist/react.min.js'),
+    },
+  },
+}
 ```
 
 #### 优化 resolve.extensions 配置
@@ -74,19 +75,21 @@ module.exports = {
 module.exports = {
   resolve: {
     //尽可能减少后缀尝试的可能性
-    extensions: ["js"]
-  }
-};
+    extensions: ['js'],
+  },
+}
 ```
 
 #### 优化 module.noParse 配置
+
 打包的时候不去解析，加快打包速度。
+
 ```js
 module.exports = {
   module: {
-    noParse: /jquery/
-  }
-};
+    noParse: /jquery/,
+  },
+}
 ```
 
 #### 使用 DllPlugin
@@ -96,25 +99,27 @@ module.exports = {
   // mode: "development || "production",
   plugins: [
     new webpack.DllReferencePlugin({
-      context: path.join(__dirname, "..", "dll"),
-      manifest: require("../dll/dist/alpha-manifest.json") // eslint-disable-line
+      context: path.join(__dirname, '..', 'dll'),
+      manifest: require('../dll/dist/alpha-manifest.json'), // eslint-disable-line
     }),
     new webpack.DllReferencePlugin({
-      scope: "beta",
-      manifest: require("../dll/dist/beta-manifest.json"), // eslint-disable-line
-      extensions: [".js", ".jsx"]
-    })
-  ]
-};
+      scope: 'beta',
+      manifest: require('../dll/dist/beta-manifest.json'), // eslint-disable-line
+      extensions: ['.js', '.jsx'],
+    }),
+  ],
+}
 ```
 
 webpack5
 
 ```js
-const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
-const plugins = [new HardSourceWebpackPlugin()];
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
+const plugins = [new HardSourceWebpackPlugin()]
 ```
+
 #### 使用 HappyPack
+
 ```js
    const HappyPack = require('happypack')
     const os = require('os')
@@ -127,7 +132,7 @@ const plugins = [new HardSourceWebpackPlugin()];
         include: [resolve('src')],
         exclude: /node_modules/,
     }
-    
+
     plugins: [
         new HappyPack({
         id: 'happy-babel-js',
@@ -136,13 +141,16 @@ const plugins = [new HardSourceWebpackPlugin()];
         })
     ]
 ```
+
 #### 使用 ParallelUglifyPlugin
+
 #### 优化文件监听的性能
+
 ```js
-   module.export = {
-        watchOptions : {
-            //不监听的 node_modules 目录下的文件
-            ignored : /node_modules/,
-        }
-    }
+module.export = {
+  watchOptions: {
+    //不监听的 node_modules 目录下的文件
+    ignored: /node_modules/,
+  },
+}
 ```

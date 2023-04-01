@@ -2,26 +2,26 @@
 
 ```js
 // module.js文件
-(function (window, $) {
-  let data = "www.baidu.com";
+;(function (window, $) {
+  let data = 'www.baidu.com'
   //操作数据的函数
   function foo() {
     //用于暴露有函数
-    console.log(`foo() ${data}`);
-    $("body").css("background", "red");
+    console.log(`foo() ${data}`)
+    $('body').css('background', 'red')
   }
   function bar() {
     //用于暴露有函数
-    console.log(`bar() ${data}`);
-    otherFun(); //内部调用
+    console.log(`bar() ${data}`)
+    otherFun() //内部调用
   }
   function otherFun() {
     //内部私有的函数
-    console.log("otherFun()");
+    console.log('otherFun()')
   }
   //暴露行为
-  window.myModule = { foo, bar };
-})(window, jQuery);
+  window.myModule = { foo, bar }
+})(window, jQuery)
 ```
 
 #### 模块的好处
@@ -39,12 +39,12 @@
 
 ```js
 //定义有依赖的模块
-define(["module1", "module2"], function (m1, m2) {
-  return 模块;
-});
-require(["module1", "module2"], function (m1, m2) {
+define(['module1', 'module2'], function (m1, m2) {
+  return 模块
+})
+require(['module1', 'module2'], function (m1, m2) {
   // 使用m1/m2
-});
+})
 ```
 
 #### CMD sea.js
@@ -54,18 +54,18 @@ require(["module1", "module2"], function (m1, m2) {
 #### UMD
 
 ```js
-(function (global, factory) {
-  typeof exports === "object" && typeof module !== "undefined"
+;(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined'
     ? factory(exports) // CMD
-    : typeof define === "function" && define.amd
-    ? define(["exports"], factory) // AMD
-    : factory((global["module"] = {})); // Browser globals
+    : typeof define === 'function' && define.amd
+    ? define(['exports'], factory) // AMD
+    : factory((global['module'] = {})) // Browser globals
 })(this, function (exports) {
-  "use strict";
+  'use strict'
 
-  exports.x = x;
-  Object.defineProperty(exports, "__esModule", { value: true });
-});
+  exports.x = x
+  Object.defineProperty(exports, '__esModule', { value: true })
+})
 ```
 
 #### CommonJS(node)
@@ -97,68 +97,70 @@ commonJs 是被加载的时候运行，esModule 是编译的时候运行
 commonJs 输出的是值的浅拷贝，esModule 输出值的引用
 commentJs 具有缓存。在第一次被加载时，会完整运行整个文件并输出一个对象，拷贝（浅拷贝）在内存中。下次加载文件时，直接从内存中取值
 
->
-ES6 模块的运行机制与 CommonJS 不一样。JS 引擎对脚本静态分析的时候，遇到模块加载命令import，就会生成一个只读引用。等到脚本真正执行时，再根据这个只读引用，到被加载的那个模块里面去取值。
-换句话说，ES6 的import有点像 Unix 系统的“符号连接”，原始值变了，import加载的值也会跟着变。因此，ES6 模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块（动态绑定）。
-第二个差异是因为 CommonJS 加载的是一个对象（即module.exports属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。
->
+> ES6 模块的运行机制与 CommonJS 不一样。JS 引擎对脚本静态分析的时候，遇到模块加载命令 import，就会生成一个只读引用。等到脚本真正执行时，再根据这个只读引用，到被加载的那个模块里面去取值。
+> 换句话说，ES6 的 import 有点像 Unix 系统的“符号连接”，原始值变了，import 加载的值也会跟着变。因此，ES6 模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块（动态绑定）。
+> 第二个差异是因为 CommonJS 加载的是一个对象（即 module.exports 属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。
 
-- commonJs 输出值拷贝
+- commonJs 输出值拷贝(断开引用)
+
 ```js
 /*************** a.js**********************/
-let count = 0;
-exports.count = count; // 输出值的拷贝
+let count = 0
+exports.count = count // 输出值的拷贝
 exports.add = () => {
   //这里改变count值，并不会将module.exports对象的count属性值改变
-  count++;
-};
+  count++
+}
 
 /*************** b.js**********************/
-const { count, add } = require("./a.js");
+const { count, add } = require('./a.js')
 //在支持es6模块的环境下等同于
-import { count, add } from "./a.js";
+import { count, add } from './a.js'
 
-console.log(count); //0
-add();
-console.log(count); //0
+console.log(count) //0
+add()
+console.log(count) //0
 ```
+
 - esModule 输出值引用
+
 ```js
 /*************** a.js**********************/
-export let count = 0; //输出的是值的引用，指向同一块内存
+export let count = 0 //输出的是值的引用，指向同一块内存
 export const add = () => {
-  count++; //此时引用指向的内存值发生改变
-};
+  count++ //此时引用指向的内存值发生改变
+}
 
 /*************** b.js**********************/
-import { count, add } from "./a.js";
+import { count, add } from './a.js'
 
-console.log(count); //0
-add();
-console.log(count); //1
+console.log(count) //0
+add()
+console.log(count) //1
 ```
+
 - commonJs 输出的浅拷贝验证
+
 ```js
 /*************** a.js**********************/
 const foo = {
-	count: 0
+  count: 0,
 }
 //module.exports的foo属性为 foo 对象的浅拷贝，指向同一个内存中
-exports.foo=foo;
+exports.foo = foo
 
-window.setTimeout(()=>{
-	foo.count += 1
-	console.log('changed foo')
-},1000)
+window.setTimeout(() => {
+  foo.count += 1
+  console.log('changed foo')
+}, 1000)
 
 /*************** b.js**********************/
-const  { foo }  = require('./a.js')
+const { foo } = require('./a.js')
 
-console.log('foo', foo);//'foo',{count: 0}
-window.setTimeout(()=>{
-  console.log('after 2s foo', foo);//'after 2s foo ',{count: 1}
+console.log('foo', foo) //'foo',{count: 0}
+window.setTimeout(() => {
+  console.log('after 2s foo', foo) //'after 2s foo ',{count: 1}
 }, 2000)
-
 ```
 
 [循环引用](https://mp.weixin.qq.com/s/NFNcwLZq97MNcyHqEfJs2Q)
