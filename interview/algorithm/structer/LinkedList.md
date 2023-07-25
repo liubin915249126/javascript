@@ -14,28 +14,28 @@
 
 ```js
 const Node = function (data) {
-  this.data = data;
+  this.data = data
 
-  this.next = null;
-};
+  this.next = null
+}
 
-const node1 = new Node(1);
+const node1 = new Node(1)
 
-const node2 = new Node(2);
+const node2 = new Node(2)
 
-const node3 = new Node(3);
+const node3 = new Node(3)
 
-node1.next = node2;
+node1.next = node2
 
-node2.next = node3;
+node2.next = node3
 ```
+
 #### 应用
+
 [链表中是否有环](./LinkedList/LinkedList1.js)
 [链表中是否相交](./LinkedList/LinkedList2.js)
 [回文链表](./LinkedList/LinkedList3.js)
 [反转链表](./LinkedList/LinkedList4.md)
-
-
 
 原型链
 作用域链

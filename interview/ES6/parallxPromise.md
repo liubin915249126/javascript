@@ -7,48 +7,48 @@
 addTask 为往等待队列中添加任务，并执行 run
 
 ```js
-const startTime = new Date().getTime();
+const startTime = new Date().getTime()
 
 function taskPool() {
-  this.tasks = [];
-  this.pool = [];
-  this.max = 2;
+  this.tasks = []
+  this.pool = []
+  this.max = 2
 }
 
 taskPool.prototype.addTask = function (task) {
-  this.tasks.push(task);
-  this.run();
-};
+  this.tasks.push(task)
+  this.run()
+}
 
 taskPool.prototype.run = function () {
-  if (this.tasks.length === 0) return;
-  let min = Math.min(this.tasks.length, this.max - this.pool.length);
+  if (this.tasks.length === 0) return
+  let min = Math.min(this.tasks.length, this.max - this.pool.length)
   for (const i = 0; i < min; i++) {
-    const currTask = this.tasks.shift();
-    this.pool.push(currTask);
+    const currTask = this.tasks.shift()
+    this.pool.push(currTask)
     currTask()
       .then((res) => {
-        console.log(new Date().getTime() - startTime);
+        console.log(new Date().getTime() - startTime)
       })
       .catch((err) => {})
       .finally(() => {
-        this.pool.splice(this.pool.indexOf(currTask), 1);
-        this.run();
-      });
+        this.pool.splice(this.pool.indexOf(currTask), 1)
+        this.run()
+      })
   }
-};
+}
 
-const pool = new taskPool();
+const pool = new taskPool()
 for (let i = 0; i < 5; i++) {
   pool.addTask(function () {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(i);
-      }, 500);
+        resolve(i)
+      }, 500)
     }).then((res) => {
-      console.log("resolved", res);
-    });
-  });
+      console.log('resolved', res)
+    })
+  })
 }
 
 /**
@@ -71,57 +71,57 @@ resolved 4
 #### Promise.all
 
 ```js
-const startTime = new Date().getTime();
+const startTime = new Date().getTime()
 
 function asyncPool(array, limit) {
-  let index = 0;
-  let res = [];
-  let pool = [];
+  let index = 0
+  let res = []
+  let pool = []
 
   let run = function () {
     if (index === array.length) {
-      return Promise.resolve();
+      return Promise.resolve()
     }
 
-    let item = array[index++];
-    let promise = Promise.resolve(item());
+    let item = array[index++]
+    let promise = Promise.resolve(item())
 
-    res.push(promise);
+    res.push(promise)
     let e = promise.then(() => {
-      pool.splice(pool.indexOf(e), 1);
-    });
-    pool.push(e);
-    console.log(`pool size : ${pool.length}`, pool);
-    let r = Promise.resolve();
+      pool.splice(pool.indexOf(e), 1)
+    })
+    pool.push(e)
+    console.log(`pool size : ${pool.length}`, pool)
+    let r = Promise.resolve()
     if (pool.length >= limit) {
-      r = Promise.race(pool);
+      r = Promise.race(pool)
     }
-    return r.then(() => run());
-  };
+    return r.then(() => run())
+  }
   return run().then(() => {
-    console.log(res);
-    return Promise.all(res);
-  });
+    console.log(res)
+    return Promise.all(res)
+  })
 }
 
 const timeout = (i) => {
   return function () {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(i);
-      }, i);
-    });
-  };
-};
+        resolve(i)
+      }, i)
+    })
+  }
+}
 
 asyncPool(
   [timeout(600), timeout(300), timeout(700), timeout(400), timeout(500)],
   2,
   timeout
 ).then((res) => {
-  console.log(res);
-  console.log(new Date().getTime() - startTime);
-});
+  console.log(res)
+  console.log(new Date().getTime() - startTime)
+})
 
 /**
 输出
@@ -136,51 +136,51 @@ asyncPool(
 **/
 ```
 
-
-
 ####
-``` js
-class Schedule{
 
-    constructor(maxNum){
-        this.list = [];
-        this.maxNum = maxNum
-        this.workingNum = 0
-    }
-    
-    add(promiseCreator){
-        this.list.push(promiseCreator)
-    }
+```js
+class Schedule {
+  constructor(maxNum) {
+    this.list = []
+    this.maxNum = maxNum
+    this.workingNum = 0
+  }
 
-    start(){
-        for (let index = 0; index < this.maxNum; index++) {
-            this.doNext()
-        }
-    }
+  add(promiseCreator) {
+    this.list.push(promiseCreator)
+  }
 
-    doNext(){
-        if(this.list.length && this.workingNum < this.maxNum){
-            this.workingNum++;
-            const promise = this.list.shift();
-            promise().then(()=>{
-                this.workingNum--;
-                this.doNext();
-            })
-
-        }
+  start() {
+    for (let index = 0; index < this.maxNum; index++) {
+      this.doNext()
     }
+  }
+
+  doNext() {
+    if (this.list.length && this.workingNum < this.maxNum) {
+      this.workingNum++
+      const promise = this.list.shift()
+      promise().then(() => {
+        this.workingNum--
+        this.doNext()
+      })
+    }
+  }
 }
 
-const timeout = time => new Promise((resolve)=>{
+const timeout = (time) =>
+  new Promise((resolve) => {
     setTimeout(resolve, time)
-}) 
+  })
 
-const schedule = new Schedule(2);
+const schedule = new Schedule(2)
 
-const addTask = (time, order)=>{
-    schedule.add(()=>timeout(time).then(()=>{
-        console.log(order);
-    }))
+const addTask = (time, order) => {
+  schedule.add(() =>
+    timeout(time).then(() => {
+      console.log(order)
+    })
+  )
 }
 
 addTask(1000, 1)
@@ -190,4 +190,3 @@ addTask(400, 4)
 
 schedule.start()
 ```
-

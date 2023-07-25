@@ -1,7 +1,7 @@
 // 最长公共子序列问题是典型的二维动态规划问题。
 
 
-var longestCommonSubsequence = function(text1, text2) {
+const longestCommonSubsequence = (text1, text2) => {
     const m = text1.length, n = text2.length;
     const dp = new Array(m + 1).fill(0).map(() => new Array(n + 1).fill(0));
     for (let i = 1; i <= m; i++) {
