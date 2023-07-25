@@ -65,36 +65,36 @@ webpack 迁移 Vite 遇到过哪些问题，之前 webpack 慢是为什么，有
 ## 奇虎 360（安全卫士）
 
 ```js
-var a = { name: "Sam" };
-var b = { name: "Tom" };
-var o = {};
-o[a] = 1;
-o[b] = 2;
-console.log(o); // { '[object Object]': 2 }
-console.log(o[a]); // 2
+var a = { name: 'Sam' }
+var b = { name: 'Tom' }
+var o = {}
+o[a] = 1
+o[b] = 2
+console.log(o) // { '[object Object]': 2 }
+console.log(o[a]) // 2
 ```
 
 ```js
 async function async1() {
-  console.log("async1 start");
-  await async2();
-  console.log("async1 end");
+  console.log('async1 start')
+  await async2()
+  console.log('async1 end')
 }
 async function async2() {
-  console.log("async2");
+  console.log('async2')
 }
-console.log("script start");
+console.log('script start')
 setTimeout(() => {
-  console.log("setTimeout");
-}, 0);
-async1();
+  console.log('setTimeout')
+}, 0)
+async1()
 new Promise((resolve) => {
-  console.log("promise1");
-  resolve();
+  console.log('promise1')
+  resolve()
 }).then(() => {
-  console.log("promise2");
-});
-console.log("script end");
+  console.log('promise2')
+})
+console.log('script end')
 ```
 
 8.React 的合成事件和原生事件了解吗？
@@ -107,8 +107,8 @@ console.log("script end");
 [pip](../functional/pip.md)
 
 ```js
-const fn = pipe(addOne, addTwo, addThree, addFour); // 传入pipe的四个函数都是已实现的
-fn(1); // 1 + 1 + 2 + 3 + 4 = 11，输出11
+const fn = pipe(addOne, addTwo, addThree, addFour) // 传入pipe的四个函数都是已实现的
+fn(1) // 1 + 1 + 2 + 3 + 4 = 11，输出11
 ```
 
 了解过 Vue3 么，为什么还没有上 Vue3，了解 Proxy 么，它和 defineProperty 的区别是什么，性能上有什么区别么
@@ -126,13 +126,13 @@ class A {
 ```
 
 ```js
-type A = "   Hello world!   ";
-type B = LeftTrim<A>; //  'Hello world!   '
+type A = '   Hello world!   '
+type B = LeftTrim<A> //  'Hello world!   '
 ```
 
 ```js
-const data1 = { "a.b.c": 1, "a.b.d": 2 };
-const data2 = { "a.b.e": 3, "a.b.f": 4 };
+const data1 = { 'a.b.c': 1, 'a.b.d': 2 }
+const data2 = { 'a.b.e': 3, 'a.b.f': 4 }
 // 把如上两个对象合并成一个JSON，其中的.需要处理成对应的层级
 ```
 
@@ -150,21 +150,21 @@ Vue 和 React 的 Diff 算法有哪些区别
 编写一个方法，判断一个字符串是否是合法的 XML
 
 ```js
-const str1 = "<html><div>123</div></html>"; // true
-const str2 = "<div><div>123</div><div></div></div>"; // true
-const str2 = "<html><div>123</html></div>"; // false
+const str1 = '<html><div>123</div></html>' // true
+const str2 = '<div><div>123</div><div></div></div>' // true
+const str2 = '<html><div>123</html></div>' // false
 ```
 
 ```js
 // 矩阵中的路径 [hasStr](../algorithm/collection/hasStr.js)
 // 在一个矩阵中查找一个字符串，可以上下左右移动，但是不能回头，如果能找到这个字符串返回 true
-const str = "abcde";
+const str = 'abcde'
 const matrix = [
-  ["0", "0", "0", "0", "0", "0"],
-  ["0", "0", "a", "b", "0", "0"],
-  ["0", "0", "0", "c", "d", "0"],
-  ["0", "0", "0", "0", "e", "0"],
-];
+  ['0', '0', '0', '0', '0', '0'],
+  ['0', '0', 'a', 'b', '0', '0'],
+  ['0', '0', '0', 'c', 'd', '0'],
+  ['0', '0', '0', '0', 'e', '0'],
+]
 ```
 
 ## 美团(酒旅)
@@ -202,11 +202,11 @@ axios 内部如何把 xhr 的 callback 转换为 promise 的，如何处理请�
 ### 一面
 
 ```js
-const test1 = "a2[b]a2[b2[c]]";
+const test1 = 'a2[b]a2[b2[c]]'
 // abbabccbcc
-const test2 = "2[3[c]]a2a";
+const test2 = '2[3[c]]a2a'
 // cccccca2a
-const test3 = "[abc][d]3[e2]4";
+const test3 = '[abc][d]3[e2]4'
 // abcde2e2e24
 ```
 
@@ -229,13 +229,13 @@ computed 和 watch 是什么原理
 ## 美团买药
 
 ```js
-let a = 3;
+let a = 3
 function func(a) {
-  a = 10; // 函数参数传值
-  console.log(a); // 10
+  a = 10 // 函数参数传值
+  console.log(a) // 10
 }
-func();
-console.log(a); // 3
+func()
+console.log(a) // 3
 ```
 
 ```js
@@ -250,10 +250,13 @@ Object.create(null)和直接创建一个{}有什么区别 [object](../ES5/object
 离线存储是如何做的
 
 ## 360
+
 移动端有没有遇到过滑动穿透的问题
 强缓存和协商缓存谁的优先级谁高，区别是什么，强缓存和服务器有通讯么，没有通讯的话有状态码么，状态码是谁返回的，缓存是存到了哪里
 [cache](../browser/cache.md)
+
 <!-- todo -->
+
 http 都有哪些版本，1.1 有什么不好的地方么，队头阻塞是什么引起的，2.0 有没有完全解决了队头阻塞问题
 [http1.1](../computer/network-review/http1.1.md)
 babel 配置过么，preset 和 plugin 谁的优先级高
@@ -275,26 +278,28 @@ Vue 的插槽的实现原理是什么
 ```js
 // 解释一下函数调用栈和作用域链的关系
 function bar() {
-  console.log(project);
+  console.log(project)
 }
 
 function foo() {
-  var project = "foo";
-  bar();
+  var project = 'foo'
+  bar()
 }
 
-var project = "global";
-foo();
+var project = 'global'
+foo()
 ```
 
 判断一个对象是否是循环引用对象 [hasLoop](../ES5/hasLoop.js)
 幂等与非幂等的区别
-HTTP幂等方法，是指无论调用这个url多少次，都不会有不同的结果的HTTP方法
-  - HTTP GET方法，用于获取资源，不管调用多少次接口，结果都不会改变，所以是幂等的。
-  - HTTP POST方法是一个非幂等方法，因为调用多次，都将产生新的资源
-  - HTTP PUT方法 直接把实体部分的数据替换到服务器的资源，我们多次调用它，只会产生一次影响，但是有相同结果的 HTTP 方法，所以满足幂等性。
-  - HTTP PATCH方法是非幂等的 当调用一次方法，更新部分字段，将这条ticket记录的操作记录加一，这次，每次调用的资源是不是变了呢，所以它是有可能是非幂等的操作
-  - HTTP DELETE方法用于删除资源，会将资源删除。调用一次和多次对资源产生影响是相同的，所以也满足幂等性。
+HTTP 幂等方法，是指无论调用这个 url 多少次，都不会有不同的结果的 HTTP 方法
+
+- HTTP GET 方法，用于获取资源，不管调用多少次接口，结果都不会改变，所以是幂等的。
+- HTTP POST 方法是一个非幂等方法，因为调用多次，都将产生新的资源
+- HTTP PUT 方法 直接把实体部分的数据替换到服务器的资源，我们多次调用它，只会产生一次影响，但是有相同结果的 HTTP 方法，所以满足幂等性。
+- HTTP PATCH 方法是非幂等的 当调用一次方法，更新部分字段，将这条 ticket 记录的操作记录加一，这次，每次调用的资源是不是变了呢，所以它是有可能是非幂等的操作
+- HTTP DELETE 方法用于删除资源，会将资源删除。调用一次和多次对资源产生影响是相同的，所以也满足幂等性。
+
 ## 度小满
 
 怎么理解 vue 单向数据流的

@@ -1,10 +1,13 @@
 ## js 相等比较算法
 
 #### ==
+
 [](../ES5/==.md)
 
 #### ===
+
 严格相等
+
 ```js
 Boolean(NaN === NaN) // false
 Boolean(+0 === -0) // true
@@ -13,11 +16,11 @@ Boolean(+0 === -0) // true
 #### SameValueZero
 
 ```js
-const s = new Set();
-s.add(0);
-s.add(NaN);
-s.has(-0); // true
-s.has(NaN); // true
+const s = new Set()
+s.add(0)
+s.add(NaN)
+s.has(-0) // true
+s.has(NaN) // true
 ```
 
 new Set
@@ -26,8 +29,8 @@ new Set
 #### SameValue Object.is
 
 ```js
-Object.is(NaN, NaN); // true
-Object.is(0, -0); // false
+Object.is(NaN, NaN) // true
+Object.is(0, -0) // false
 ```
 
 Object.is() 方法判断两个值是否为同一个值。如果满足以下条件则两个值相等:
@@ -54,11 +57,11 @@ if (!Object.is) {
     if (x === y) {
       // Steps 1-5, 7-10
       // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
+      return x !== 0 || 1 / x === 1 / y
     } else {
       // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
+      return x !== x && y !== y
     }
-  };
+  }
 }
 ```
