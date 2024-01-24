@@ -1,6 +1,13 @@
 #### generic 范型
 
 ```ts
+// 范型
+type StringArray = Array<string>
+type NumberArray = Array<number>
+type ObjectWithNameArray = Array<{ name: string }>
+```
+
+```ts
 // T 作为占位符，使函数具有通用性
 function identity<T>(value: T): T {
   return value
