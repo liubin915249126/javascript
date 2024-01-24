@@ -30,6 +30,12 @@ LCP（Largest Contentful Paint） ：指浏览器渲染页面中最大可见元�
 
 可交互时间（TTI）：指从用户发起请求到页面可以正常响应用户操作所经过的时间。这个指标反映了用户等待页面可交互的时间，对用户体验有很大影响。
 
+```js
+从 FCP 指标后开始计算
+持续 5 秒内无长任务（执行时间超过 50 ms）且无两个以上正在进行中的 GET 请求
+往前回溯至 5 秒前的最后一个长任务结束的时间
+```
+
 作者：胡萝卜会飞
 链接：https://juejin.cn/post/7219669812158414903
 
@@ -39,7 +45,7 @@ LCP（Largest Contentful Paint） ：指浏览器渲染页面中最大可见元�
 
 前置
 SSR：将模板渲染前置到服务端处理
-prefetch、prerender、preload
+prefetch,prerender,preload
 容器预初始化
 管道：无需等所有数据加载完才处理，而是加载一部分就处理一部分（html 的渲染就是这样的）
 
