@@ -1,4 +1,0 @@
-## CyberConnect
-
-- graphQL
-- ts
